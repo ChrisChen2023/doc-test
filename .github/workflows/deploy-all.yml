@@ -12,9 +12,11 @@ on:
 
 jobs:
   deploy-zh:
+    permissions:
+      contents: write 
     uses: ./.github/workflows/deploy-zh.yml
-    secrets:
-      ZHSITE_PASSWORD: ${{ secrets.ZHSITE_PASSWORD }}
       
   deploy-en:
+    permissions:
+      contents: write  
     uses: ./.github/workflows/deploy-en.yml
