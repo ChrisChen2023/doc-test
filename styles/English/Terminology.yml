@@ -1,0 +1,36 @@
+---
+extends: existence
+message: "'%s' should be '%s'"
+level: warning
+ignorecase: true
+tokens:
+  - NebulaDB:nebula db
+  - NebulaDB:nebula_db
+  - NebulaDB:nebuladb
+  - NebulaGraph:nebula graph
+  - NebulaGraph:nebula_graph
+  - NebulaStudio:nebula studio
+  - NebulaStudio:nebula_studio
+  - nGQL:ngql
+  - nGQL:NGQL
+  - openCypher:opencypher
+  - openCypher:open_cypher
+  - openCypher:open cypher
+  - gRPC:grpc
+  - gRPC:GRPC
+  - RocksDB:rocksdb
+  - RocksDB:rocks db
+  - API:api
+  - CLI:cli
+  - SDK:sdk
+  - JSON:json
+  - YAML:yaml
+  - YAML:yml
+  - CSV:csv
+  - HTTP:http
+  - HTTPS:https
+  - GraphQL:graphql
+  - GraphQL:graph_ql
+  - REST:rest
+  - UTF-8:utf8
+  - UTF-8:utf_8
