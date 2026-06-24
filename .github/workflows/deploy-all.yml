@@ -13,8 +13,6 @@ on:
 jobs:
   deploy-zh:
     uses: ./.github/workflows/deploy-zh.yml
-    secrets:
-      ZHSITE_PASSWORD: ${{ secrets.ZHSITE_PASSWORD }}
       
   deploy-en:
     uses: ./.github/workflows/deploy-en.yml
