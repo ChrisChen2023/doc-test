@@ -12,7 +12,11 @@ on:
 
 jobs:
   deploy-zh:
+  permissions:
+      contents: write 
     uses: ./.github/workflows/deploy-zh.yml
       
   deploy-en:
+  permissions:
+      contents: write  
     uses: ./.github/workflows/deploy-en.yml
