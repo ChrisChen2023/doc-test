@@ -1,4 +1,4 @@
-name: Vale Content Linting
+name: Vale Content Linting (PR Check)
 
 on:
   pull_request:
@@ -11,7 +11,6 @@ on:
     branches:
       - main
       - master
-      - v*
     paths:
       - 'docs-2.0-en/**'
       - 'docs-2.0-zh/**'
@@ -20,7 +19,7 @@ on:
 
 jobs:
   vale:
-    name: Vale Linting
+    name: Vale Linting (Early Feedback)
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -46,13 +45,12 @@ jobs:
       - name: Generate Vale Report
         if: always()
         run: |
-          echo "## Vale Linting Report" >> $GITHUB_STEP_SUMMARY
+          echo "## Vale Linting Report (PR Check)" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "✅ Early feedback stage - Issues shown but don't block PR" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Note:** Deployment workflows perform final validation with `fail_on_error: true`" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "Checked files:" >> $GITHUB_STEP_SUMMARY
           echo "- English docs: \`docs-2.0-en/\`" >> $GITHUB_STEP_SUMMARY
           echo "- Chinese docs: \`docs-2.0-zh/\`" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Style guides applied:" >> $GITHUB_STEP_SUMMARY
-          echo "- Bilingual: Consistent terminology across languages" >> $GITHUB_STEP_SUMMARY
-          echo "- English: English-specific style rules" >> $GITHUB_STEP_SUMMARY
-          echo "- Chinese: Chinese-specific style rules" >> $GITHUB_STEP_SUMMARY

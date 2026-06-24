@@ -16,7 +16,23 @@ on:
       - 'docs-2.0-zh/**'
 
 jobs:
+  lint:
+    name: Vale Linting - Chinese
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Run Vale on Chinese docs
+        uses: errata-ai/vale-action@reviewdog
+        with:
+          files: docs-2.0-zh
+          reporter: github-pr-check
+          level: warning
+          fail_on_error: true
+
   deploy:
+    name: Deploy Chinese Docs
+    needs: lint
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -44,4 +60,3 @@ jobs:
           mike list
           mike deploy ${{ env.ACTIONTEST }} -b gh-pages-zh -p --rebase
           mike set-default ${{ env.ACTIONTEST }} -b gh-pages-zh -p --rebase
-    

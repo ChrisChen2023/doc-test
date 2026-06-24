@@ -93,18 +93,27 @@ Vale now ensures **consistent capitalization** across both EN and ZH docs:
 
 ## GitHub Workflow Integration
 
-The `.github/workflows/vale-lint.yml` workflow automatically:
+Your documentation now uses a **two-stage validation system**:
 
-- ✅ Runs on **Pull Requests** that modify documentation
-- ✅ Runs on **Pushes** to version branches  
-- ✅ Posts **inline comments** on PRs with issues
-- ✅ Generates a **summary report** in workflow logs
+### Stage 1: PR Check (vale-lint.yml) 
+- Runs on **every PR update** and pushes to main/master
+- Shows findings as **inline comments** on PRs
+- **Non-blocking** - issues don't prevent merging
+- ✅ Fast feedback for developers
+
+### Stage 2: Deployment (deploy-en.yml + deploy-zh.yml)
+- Runs when pushing to **version branches** (e.g., `v3.8.0`)
+- **Blocking check** - stops deployment if issues found
+- 🔒 Final quality gate before production
+- Prevents bad content from reaching users
 
 **Triggers on changes to:**
 - `docs-2.0-en/**` - English documentation
 - `docs-2.0-zh/**` - Chinese documentation
 - `.vale.ini` - Vale configuration
 - `styles/**` - Style guide files
+
+👉 **See `TWO_STAGE_VALIDATION.md` for complete details on how the validation system works.**
 
 ## Adding New Terms
 
