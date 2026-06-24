@@ -2,7 +2,7 @@ name: Publish Chinese docs via GitHub Pages
 env:
 
 
-  ACTIONTEST: 3.8.0
+  ACTIONTEST: 3.9.0
 
 on:
   workflow_call:
@@ -10,7 +10,7 @@ on:
   push:
     branches:
       # Remember to add v before the following version number unless the version is master.
-      - v3.8.0
+      - v3.9.0
 
     paths:
       - 'docs-2.0-zh/**'
