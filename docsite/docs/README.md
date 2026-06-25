@@ -1,10 +1,12 @@
-# Welcome to NebulaGraph {{ nebula.release }} Documentation
+# Welcome to NebulaGraph Documentation
 
 The original version plus proper bilingual support.
 
-!!! note
+:::note
 
-    This manual is revised on {{ now().year }}-{{ now().month }}-{{ now().day }}, with GitHub commit [{{ git.short_commit }}](https://github.com/vesoft-inc/nebula-docs/commits/v{{nebula.release}}).
+This manual is for NebulaGraph Community Edition. For the latest version and updates, visit the [GitHub repository](https://github.com/vesoft-inc/nebula-docs).
+
+:::
 
 NebulaGraph is a distributed, scalable, and lightning-fast graph database. It is the optimal solution in the world capable of hosting graphs with dozens of billions of vertices (nodes) and trillions of edges (relationships) with millisecond latency.
 
@@ -41,29 +43,41 @@ This manual has over 30 dangers.
 This manual has over 80 compatibilities and corresponding tips.
 -->
 
-!!! note
+:::note
 
-    Additional information or operation-related notes.
+Additional information or operation-related notes.
 
-!!! caution
+:::
 
-    May have adverse effects, such as causing performance degradation or triggering known minor problems.
+:::caution
 
-!!! warning
+May have adverse effects, such as causing performance degradation or triggering known minor problems.
 
-    May lead to serious issues, such as data loss or system crash.
+:::
 
-!!! danger
+:::warning
 
-    May lead to extremely serious issues, such as system damage or information leakage.
+May lead to serious issues, such as data loss or system crash.
 
-!!! compatibility
+:::
 
-    The compatibility notes between nGQL and openCypher, or between the current version of nGQL and its prior ones. 
+:::danger
 
-!!! enterpriseonly
+May lead to extremely serious issues, such as system damage or information leakage.
 
-    Differences between the NebulaGraph Community and Enterprise editions.
+:::
+
+:::info Compatibility
+
+The compatibility notes between nGQL and openCypher, or between the current version of nGQL and its prior ones.
+
+:::
+
+:::info Enterprise Only
+
+Differences between the NebulaGraph Community and Enterprise editions.
+
+:::
 
 ## Modify errors
  

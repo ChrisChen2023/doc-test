@@ -1,0 +1,61 @@
+name: Publish Docs via Docusaurus
+
+on:
+  push:
+    branches:
+      - v3.10.0 # 完全契合您旧工作流的分支配置
+    paths:
+      - 'docsite/docs/**'  
+      - 'docsite/i18n/**' 
+      - 'docsite/docusaurus.config.js'
+      - 'docsite/sidebars.js'
+      - 'docsite/package.json'
+
+permissions:
+  contents: write # 必须开放此权限用以向 gh-pages 分支进行 git push
+
+concurrency:
+  group: docusaurus-gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 采用 v5 版本避免旧 Actions 带来的 Node.js 20 弃用警告
+      - name: Checkout Repository
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      # 2. 部署现代化的 Node 环境
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22' # 采用目前业界长期支持的主流 LTS 版本
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: npm ci
+        working-directory: docsite
+
+      # 3. 完美继承您原有的 Git 身份标识
+      - name: Git Config
+        run: |
+          git config user.name "ChrisChen2023"
+          git config user.email "chris.chen@vesoft.com"
+
+      # 4. 构建 Docusaurus 站点
+      - name: Build Docusaurus
+        run: npm run build
+        working-directory: docsite
+
+      # 5. 发布到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docsite/build
+          publish_branch: gh-pages
+          user_name: ChrisChen2023
+          user_email: chris.chen@vesoft.com
