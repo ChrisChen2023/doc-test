@@ -22,7 +22,7 @@
 | 参数 | 是否必需 | 默认值 | 说明 |
 | :--- | :--- | :--- | :--- |
 | `--class`  | 是 | 无 | 指定驱动的主类。 |
-| `--master`  | 是 | 无 | 指定 Spark 集群的 master URL。详情请参见 [master-urls](https://spark.apache.org/docs/latest/submitting-applications.html#master-urls)。可选值为：</br>`local`：本地模式，使用单个线程运行 Spark 应用程序。适合在测试环境进行小数据量导入。</br>`yarn`：在 YARN 集群上运行 Spark 应用程序。适合在线上环境进行大数据量导入。</br>`spark://HOST:PORT`：连接到指定的 Spark standalone 集群。</br>`mesos://HOST:PORT`：连接到指定的 Mesos 集群。</br>`k8s://HOST:PORT`：连接到指定的 Kubernetes 集群。</br> |
+| `--master`  | 是 | 无 | 指定 Spark 集群的 master URL。详情请参见 [master-urls](https://spark.apache.org/docs/latest/submitting-applications.html#master-urls)。可选值为：<br />`local`：本地模式，使用单个线程运行 Spark 应用程序。适合在测试环境进行小数据量导入。<br />`yarn`：在 YARN 集群上运行 Spark 应用程序。适合在线上环境进行大数据量导入。<br />`spark://HOST:PORT`：连接到指定的 Spark standalone 集群。<br />`mesos://HOST:PORT`：连接到指定的 Mesos 集群。<br />`k8s://HOST:PORT`：连接到指定的 Kubernetes 集群。<br /> |
 | `-c`/`--config`  | 是 | 无 | 指定配置文件的路径。 |
 | `-h`/`--hive`  | 否 | `false` | 添加这个参数表示支持从 Hive 中导入数据。 |
 | `-D`/`--dry`  | 否 | `false` | 指定是否检查配置文件的格式。该参数仅用于检查配置文件的格式，不检查`tags`和`edges`配置项的有效性，也不会导入数据。需要导入数据时不要添加这个参数。 |

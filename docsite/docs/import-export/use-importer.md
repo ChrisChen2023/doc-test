@@ -176,9 +176,9 @@ client:
 |`client.user`|`root`|No| NebulaGraph user name.|
 |`client.password`|`nebula`|No| The password for the NebulaGraph user name.|
 |`client.ssl.enable`|`false`|No| Specifies whether to enable SSL authentication.|
-|`client.ssl.certPath`|-|No| Specifies the storage path for the SSL public key certificate.</br>This parameter is required when SSL authentication is enabled.|
-|`client.ssl.keyPath`|-|No|S pecifies the storage path for the SSL key.</br>This parameter is required when SSL authentication is enabled.|
-|`client.ssl.caPath`|-|No| Specifies the storage path for the CA root certificate.</br>This parameter is required when SSL authentication is enabled.|
+|`client.ssl.certPath`|-|No| Specifies the storage path for the SSL public key certificate.<br />This parameter is required when SSL authentication is enabled.|
+|`client.ssl.keyPath`|-|No|S pecifies the storage path for the SSL key.<br />This parameter is required when SSL authentication is enabled.|
+|`client.ssl.caPath`|-|No| Specifies the storage path for the CA root certificate.<br />This parameter is required when SSL authentication is enabled.|
 |`client.ssl.insecureSkipVerify`|`false`|No|Specifies whether the client skips verifying the server's certificate chain and hostname. If set to `true`, any certificate chain and hostname provided by the server is accepted.|
 |`client.concurrencyPerAddress`|`10`|No| The number of concurrent client connections for a single graph service.|
 |`client.reconnectInitialInterval`|`1s`|No| Reconnect interval time.|
@@ -219,7 +219,7 @@ manager:
 |Parameter|Default value|Required|Description|
 |:---|:---|:---|:---|
 |`manager.spaceName`|-|Yes| Specifies the NebulaGraph space to import the data into. Do not support importing multiple map spaces at the same time.|
-|`manager.batch`|`128`|No| The batch size for executing statements (global configuration).</br>Setting the batch size individually for a data source can using the parameter `sources.batch` below.|
+|`manager.batch`|`128`|No| The batch size for executing statements (global configuration).<br />Setting the batch size individually for a data source can using the parameter `sources.batch` below.|
 |`manager.readerConcurrency`|`50`|No| The number of concurrent reads of the data source by the reader.|
 |`manager.importerConcurrency`|`512`|No| The number of concurrent nGQL statements generated to be executed, and then will call the client to execute these nGQL statements.|
 |`manager.statsInterval`|`10s`|No| The time interval for printing statistical information|
@@ -399,14 +399,14 @@ The configuration mainly includes the following parts:
 
 |Parameter|Default value|Required|Description|
 |:---|:---|:---|:---|
-|`sources.path`</br>`sources.s3`</br>`sources.oss`</br>`sources.ftp`</br>`sources.sftp`</br>`sources.hdfs`   |-| No | Specify data source information, such as local file, HDFS, and S3. Only one source can be configured for the `source`. Configure multiple sources in multiple `source`.</br>See the comments in the example for configuration items for different data sources.       |  
+|`sources.path`<br />`sources.s3`<br />`sources.oss`<br />`sources.ftp`<br />`sources.sftp`<br />`sources.hdfs`   |-| No | Specify data source information, such as local file, HDFS, and S3. Only one source can be configured for the `source`. Configure multiple sources in multiple `source`.<br />See the comments in the example for configuration items for different data sources.       |  
 |`sources.batch`   |`256`| No | The batch size for executing statements when importing this data source. The priority is higher than `manager.batch`. |  
 |`sources.csv.delimiter`   |`,`| No |  Specifies the delimiter for the CSV file. Only 1-character string separators are supported. Special characters like tabs (`\t`) and hexadecimal values (e.g., `0x03` or `Ctrl+C`) must be properly escaped and enclosed in double quotes, such as `"\t"` for tabs and `"\x03"` or `"\u0003"` for hexadecimal values, instead of using single quotes. For details on escaping special characters in yaml format, see [Escaped Characters](https://yaml.org/spec/1.2.2/#escaped-characters).|         |  
 |`sources.csv.withHeader`   |`false`| No | Whether to ignore the first record in the CSV file.          |  
 |`sources.csv.lazyQuotes`   |`false`| No | Whether to allow lazy quotes. If `lazyQuotes` is true, a quote may appear in an unquoted field and a non-doubled quote may appear in a quoted field.    |  
 |`sources.tags.name`   |-| Yes | The tag name.         |  
 |`sources.tags.mode`   |`INSERT`| No | Batch operation types, including insert, update and delete. Optional values are `INSERT`, `UPDATE` and `DELETE` (The `DELETE` type is supported starting from NebulaGraph importer version 4.1.0).         |  
-|`sources.tags.filter.expr`   |-| No | Filter the data and only import if the filter conditions are met. </br>Supported comparison characters are `==`, `! =`, `<`, `>`, `<=` and `>=`. </br>Logical operators supported are `not` (!) , `and` (&&) and `or` (\|\|). </br>For example `(Record[0] == "Mahinda" or Record[0] == "Michael") and Record[3] == "male"`.         |  
+|`sources.tags.filter.expr`   |-| No | Filter the data and only import if the filter conditions are met. <br />Supported comparison characters are `==`, `! =`, `<`, `>`, `<=` and `>=`. <br />Logical operators supported are `not` (!) , `and` (&&) and `or` (\|\|). <br />For example `(Record[0] == "Mahinda" or Record[0] == "Michael") and Record[3] == "male"`.         |  
 |`sources.tags.id.type`   |`STRING`| No |  The type of the VID.       |  
 |`sources.tags.id.function`   |-| No | Functions to generate the VID. Currently, only function `hash` are supported.         |  
 |`sources.tags.id.index`   |-| No | The column number corresponding to the VID in the data file. If `sources.tags.id.concatItems` is not configured, this parameter must be configured.   |  
@@ -421,7 +421,7 @@ The configuration mainly includes the following parts:
 |`sources.tags.props.defaultValue`   |-| No | Ignored when `nullable` is `false`. The property default value, when all the values obtained by `index` and `alternativeIndices` are `nullValue`.         |  
 |`sources.edges.name`   |-| Yes | The edge type name.          |  
 |`sources.edges.mode`   |`INSERT`| No | Batch operation types, including insert, update and delete. Optional values are `INSERT`, `UPDATE` and `DELETE` (The `DELETE` type is supported starting from NebulaGraph importer version 4.1.0).       |  
-|`sources.edges.filter.expr`   |-| No | Filter the data and only import if the filter conditions are met. </br>Supported comparison characters are `==`, `! =`, `<`, `>`, `<=` and `>=`. </br>Logical operators supported are `not` (!) , `and` (&&) and `or` (\|\|). </br>For example `(Record[0] == "Mahinda" or Record[0] == "Michael") and Record[3] == "male"`.          |  
+|`sources.edges.filter.expr`   |-| No | Filter the data and only import if the filter conditions are met. <br />Supported comparison characters are `==`, `! =`, `<`, `>`, `<=` and `>=`. <br />Logical operators supported are `not` (!) , `and` (&&) and `or` (\|\|). <br />For example `(Record[0] == "Mahinda" or Record[0] == "Michael") and Record[3] == "male"`.          |  
 |`sources.edges.src.id.type`   |`STRING`| No |  The data type of the VID at the starting vertex on the edge.       |  
 |`sources.edges.src.id.index`   |-| Yes | The column number in the data file corresponding to the VID at the starting vertex on the edge.         |  
 |`sources.edges.dst.id.type`   |`STRING`| No | The data type of the VID at the destination vertex on the edge.         |  

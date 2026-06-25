@@ -165,7 +165,7 @@ env.execute("NebulaStreamSource");
   |`setGraphSpace` |String |是 | 图空间名称。 |
   |`setTag` |String |是 | Tag 名称。 |
   |`setIdIndex` |Int |是 | 向{{nebula.name}}写入数据时作为 VID 的流数据字段下标。  |
-  |`setFields`  |List|是 | Tag 的属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。</br>读取时需要确保`setNoColumn`为`false`，否则配置无效。</br>读取时本参数为空，表示读取所有属性。  |
+  |`setFields`  |List|是 | Tag 的属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。  |
   |`setPositions` |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入{{nebula.name}}。需要和`setFields`一一对应。  |
   |`setBatchSize` |String |否 | 每次写入{{nebula.name}}的最大数据记录条数。默认值为`2000`。  |
   |`setNoColumn` |String |否 | 读取数据时设置为`true`则不会读取属性。默认值为`false`。 |
@@ -180,7 +180,7 @@ env.execute("NebulaStreamSource");
   |`setSrcIndex`  |Int| 是| 向{{nebula.name}}写入数据时作为起始点 VID 的流数据字段下标。 |
   |`setDstIndex`  |Int| 是| 向{{nebula.name}}写入数据时作为目的点 VID 的流数据字段下标。 |
   |`setRankIndex` |Int| 是| 向{{nebula.name}}写入数据时作为边的 Rank 的流数据字段下标。 |
-  |`setFields`  |List| 是| Edge type 属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。</br>读取时需要确保`setNoColumn`为`false`，否则配置无效。</br>读取时本参数为空，表示读取所有属性。 |
+  |`setFields`  |List| 是| Edge type 属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。 |
   |`setPositions`  |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入{{nebula.name}}。需要和`setFields`一一对应。  |
   |`setBatchSize`  |String |否 | 每次写入{{nebula.name}}的最大数据记录条数。默认值为`2000`。  |
   |`setNoColumn`  |String |否 | 读取数据时设置为`true`则不会读取属性。默认值为`false`。 |
