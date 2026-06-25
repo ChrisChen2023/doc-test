@@ -104,7 +104,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
     <div data-md-component="skip">
       
         
-        <a href="#upgrade_nebulagraph_to_380" class="md-skip">
+        <a href="#upgrade_nebulagraph_to_390" class="md-skip">
           Skip to content
         </a>
       
@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8701,18 +8701,18 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
   
 
 
-<h1 id="upgrade_nebulagraph_to_380">Upgrade NebulaGraph to 3.8.0<a class="headerlink" href="#upgrade_nebulagraph_to_380" title="Permanent link">¶</a></h1>
-<p>This topic describes how to upgrade NebulaGraph from version 2.x and 3.x to 3.8.0, taking upgrading from version 2.6.1 to 3.8.0 as an example.</p>
+<h1 id="upgrade_nebulagraph_to_390">Upgrade NebulaGraph to 3.9.0<a class="headerlink" href="#upgrade_nebulagraph_to_390" title="Permanent link">¶</a></h1>
+<p>This topic describes how to upgrade NebulaGraph from version 2.x and 3.x to 3.9.0, taking upgrading from version 2.6.1 to 3.9.0 as an example.</p>
 <h2 id="applicable_source_versions">Applicable source versions<a class="headerlink" href="#applicable_source_versions" title="Permanent link">¶</a></h2>
-<p>This topic applies to upgrading NebulaGraph from 2.5.0 and later 2.x, and 3.x versions to 3.8.0. It does not apply to historical versions earlier than 2.5.0, including the 1.x versions.</p>
-<p>To upgrade NebulaGraph from historical versions to 3.8.0:</p>
+<p>This topic applies to upgrading NebulaGraph from 2.5.0 and later 2.x, and 3.x versions to 3.9.0. It does not apply to historical versions earlier than 2.5.0, including the 1.x versions.</p>
+<p>To upgrade NebulaGraph from historical versions to 3.9.0:</p>
 <ol>
 <li>Upgrade it to the latest 2.5 version according to the docs of that version.</li>
-<li>Follow this topic to upgrade it to 3.8.0.</li>
+<li>Follow this topic to upgrade it to 3.9.0.</li>
 </ol>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to 3.8.0, you need to find the <code>date_time_zonespec.csv</code> in the <code>share/resources</code> directory of 3.8.0 files, and then copy it to the same directory in the NebulaGraph installation path.</p>
+<p>To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to 3.9.0, you need to find the <code>date_time_zonespec.csv</code> in the <code>share/resources</code> directory of 3.9.0 files, and then copy it to the same directory in the NebulaGraph installation path.</p>
 </div>
 <h2 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">¶</a></h2>
 <ul>
@@ -8752,7 +8752,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <ul>
 <li>
 <p>Client compatibility</p>
-<p>After the upgrade, you will not be able to connect to NebulaGraph from old clients. You will need to upgrade all clients to a version compatible with NebulaGraph 3.8.0.</p>
+<p>After the upgrade, you will not be able to connect to NebulaGraph from old clients. You will need to upgrade all clients to a version compatible with NebulaGraph 3.9.0.</p>
 </li>
 </ul>
 <ul>
@@ -8789,7 +8789,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <h2 id="preparations_before_the_upgrade">Preparations before the upgrade<a class="headerlink" href="#preparations_before_the_upgrade" title="Permanent link">¶</a></h2>
 <ul>
 <li>
-<p>Download the package of NebulaGraph 3.8.0 according to your operating system and system architecture. You need the binary files during the upgrade. Find the package on <a href="https://nebula-graph.io/download/">the download page</a>.</p>
+<p>Download the package of NebulaGraph 3.9.0 according to your operating system and system architecture. You need the binary files during the upgrade. Find the package on <a href="https://nebula-graph.io/download/">the download page</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>You can also get the new binaries from the source code or the RPM/DEB package.</p>
@@ -8879,7 +8879,7 @@ nebula&gt; SUBMIT JOB STATS;
 nebula&gt; SHOW STATS;
 nebula&gt; MATCH (v) RETURN v LIMIT 5;
 </code></pre></div>
-<p>You can also test against <a href="../../../20.appendix/release-notes/nebula-comm-release-note/">new features</a> in version 3.8.0.</p>
+<p>You can also test against <a href="../../../20.appendix/release-notes/nebula-comm-release-note/">new features</a> in version 3.9.0.</p>
 </li>
 </ol>
 <h2 id="upgrade_failure_and_rollback">Upgrade failure and rollback<a class="headerlink" href="#upgrade_failure_and_rollback" title="Permanent link">¶</a></h2>

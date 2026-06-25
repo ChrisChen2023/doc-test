@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -9336,7 +9336,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 
 
 <h1 id="faq">FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h1>
-<p>This topic lists the frequently asked questions for using NebulaGraph 3.8.0. You can use the search box in the help center or the search function of the browser to match the questions you are looking for.</p>
+<p>This topic lists the frequently asked questions for using NebulaGraph 3.9.0. You can use the search box in the help center or the search function of the browser to match the questions you are looking for.</p>
 <p>If the solutions described in this topic cannot solve your problems, ask for help on the <a href="https://github.com/vesoft-inc/nebula/discussions">NebulaGraph forum</a> or submit an issue on <a href="https://github.com/vesoft-inc/nebula/issues">GitHub issue</a>.</p>
 <h2 id="about_manual_updates">About manual updates<a class="headerlink" href="#about_manual_updates" title="Permanent link">¶</a></h2>
 <h3 id="why_is_the_behavior_in_the_manual_not_consistent_with_the_system">"Why is the behavior in the manual not consistent with the system?"<a class="headerlink" href="#why_is_the_behavior_in_the_manual_not_consistent_with_the_system" title="Permanent link">¶</a></h3>
@@ -9353,14 +9353,14 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <h2 id="about_legacy_version_compatibility">About legacy version compatibility<a class="headerlink" href="#about_legacy_version_compatibility" title="Permanent link">¶</a></h2>
 <div class="admonition compatibility">
 <p class="admonition-title">Compatibility</p>
-<p>Neubla Graph 3.8.0 is <strong>not compatible</strong> with NebulaGraph 1.x nor 2.0-RC in both data formats and RPC-protocols, and <strong>vice versa</strong>. The service process may <strong>quit</strong> if using an <strong>lower version</strong> client to connect to a <strong>higher version</strong> server.</p>
+<p>Neubla Graph 3.9.0 is <strong>not compatible</strong> with NebulaGraph 1.x nor 2.0-RC in both data formats and RPC-protocols, and <strong>vice versa</strong>. The service process may <strong>quit</strong> if using an <strong>lower version</strong> client to connect to a <strong>higher version</strong> server.</p>
 <p>To upgrade data formats, see <a href="../../4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-comm/">Upgrade NebulaGraph to the current version</a>.
 Users must upgrade <a href="../6.eco-tool-version/">all clients</a>.</p>
 </div>
 <!--
 !!! compatibility "`Y` version compatibility"
 
-    Data formats of Neubla Graph 3.8.0 are compatible with NebulaGraph 2.0, while their clients are incompatible.
+    Data formats of Neubla Graph 3.9.0 are compatible with NebulaGraph 2.0, while their clients are incompatible.
 -->
 
 <h2 id="about_execution_errors">About execution errors<a class="headerlink" href="#about_execution_errors" title="Permanent link">¶</a></h2>
@@ -9502,7 +9502,7 @@ Got 1 rows (time spent 1235/1934 us)
 <p>This is caused by the release of NebulaGraph Console 2.6.0, not the change of NebulaGraph core. And it will not affect the content of the returned data itself.</p>
 <h3 id="about_dangling_edges">About dangling edges<a class="headerlink" href="#about_dangling_edges" title="Permanent link">¶</a></h3>
 <p>A dangling edge is an edge that only connects to a single vertex and only one part of the edge connects to the vertex.</p>
-<p>Dangling edges may appear in NebulaGraph 3.8.0 as the design. And there is no <code>MERGE</code> statements of openCypher. The guarantee for dangling edges depends entirely on the application level. For more information, see <a href="../../3.ngql-guide/12.vertex-statements/1.insert-vertex/">INSERT VERTEX</a>, <a href="../../3.ngql-guide/12.vertex-statements/4.delete-vertex/">DELETE VERTEX</a>, <a href="../../3.ngql-guide/13.edge-statements/1.insert-edge/">INSERT EDGE</a>, <a href="../../3.ngql-guide/13.edge-statements/4.delete-edge/">DELETE EDGE</a>.</p>
+<p>Dangling edges may appear in NebulaGraph 3.9.0 as the design. And there is no <code>MERGE</code> statements of openCypher. The guarantee for dangling edges depends entirely on the application level. For more information, see <a href="../../3.ngql-guide/12.vertex-statements/1.insert-vertex/">INSERT VERTEX</a>, <a href="../../3.ngql-guide/12.vertex-statements/4.delete-vertex/">DELETE VERTEX</a>, <a href="../../3.ngql-guide/13.edge-statements/1.insert-edge/">INSERT EDGE</a>, <a href="../../3.ngql-guide/13.edge-statements/4.delete-edge/">DELETE EDGE</a>.</p>
 <h3 id="can_i_set_replica_factor_as_an_even_number_in_create_space_statements_eg_replica_factor_2">"Can I set <code>replica_factor</code> as an even number in <code>CREATE SPACE</code> statements, e.g., <code>replica_factor = 2</code>?"<a class="headerlink" href="#can_i_set_replica_factor_as_an_even_number_in_create_space_statements_eg_replica_factor_2" title="Permanent link">¶</a></h3>
 <p>NO.</p>
 <p>The Storage service guarantees its availability based on the Raft consensus protocol. The number of failed replicas must not exceed half of the total replica number.</p>
@@ -9601,7 +9601,7 @@ nebula &gt; MATCH (s)&lt;-[e]-() WHERE id(s) == "given" RETURN count(e); #In-deg
 <h4 id="increase_or_decrease_the_number_of_meta_graph_or_storage_nodes">Increase or decrease the number of Meta, Graph, or Storage nodes<a class="headerlink" href="#increase_or_decrease_the_number_of_meta_graph_or_storage_nodes" title="Permanent link">¶</a></h4>
 <ul>
 <li>
-<p>NebulaGraph 3.8.0 does not provide any commands or tools to support automatic scale out/in. You can refer to the following steps:</p>
+<p>NebulaGraph 3.9.0 does not provide any commands or tools to support automatic scale out/in. You can refer to the following steps:</p>
 <ul>
 <li>
 <p>Scale out and scale in metad: The metad process can not be scaled out or scale in. The process cannot be moved to a new machine. You cannot add a new metad process to the service.</p>

@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8745,7 +8745,7 @@ nebula&gt; MATCH (v:player{name:"Tim Duncan"}) --&gt; (v2) \
 <!--
 ## Performance tip
 
-NebulaGraph 3.8.0 does not implement the pushdown optimization of the storage layer of the `LIMIT` statement. Statements similar to `MATCH (n:T) RETURN n LIMIT 10` or `LOOKUP on i_T | LIMIT 10` will generate excessive resource occupancies in the graphd process. A graphd process will retrieve all T-type vertices from all storaged processes and then return 10 vertices. If the total amount of data is large, the graphd process will consume a lot of memory at this time and even cause OOM.
+NebulaGraph 3.9.0 does not implement the pushdown optimization of the storage layer of the `LIMIT` statement. Statements similar to `MATCH (n:T) RETURN n LIMIT 10` or `LOOKUP on i_T | LIMIT 10` will generate excessive resource occupancies in the graphd process. A graphd process will retrieve all T-type vertices from all storaged processes and then return 10 vertices. If the total amount of data is large, the graphd process will consume a lot of memory at this time and even cause OOM.
 -->
 
 

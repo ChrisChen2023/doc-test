@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8665,7 +8665,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <li>Hadoop: 2.9.2, pseudo-distributed deployment</li>
 </ul>
 <ul>
-<li>NebulaGraph: 3.8.0. <a href="../../../../2.quick-start/1.quick-start-workflow/">Deploy NebulaGraph with Docker Compose</a>.</li>
+<li>NebulaGraph: 3.9.0. <a href="../../../../2.quick-start/1.quick-start-workflow/">Deploy NebulaGraph with Docker Compose</a>.</li>
 </ul>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">¶</a></h2>
 <p>Before importing data, you need to confirm the following information:</p>
@@ -8858,7 +8858,7 @@ nebula&gt; CREATE EDGE serve(start_year int, end_year int);
 
       # Specify a column of data in the table as the source of VIDs in the NebulaGraph.
       # The value of vertex must be consistent with the field in the Parquet file.
-      # Currently, NebulaGraph 3.8.0 supports only strings or integers of VID.
+      # Currently, NebulaGraph 3.9.0 supports only strings or integers of VID.
       vertex: {
         field:id
       # udf:{
@@ -8937,7 +8937,7 @@ nebula&gt; CREATE EDGE serve(start_year int, end_year int);
 
       # Specify a column as the source for the source and destination vertexes.
       # The values of vertex must be consistent with the fields in the Parquet file.
-      # Currently, NebulaGraph 3.8.0 supports only strings or integers of VID.
+      # Currently, NebulaGraph 3.9.0 supports only strings or integers of VID.
       source: {
         field: src
       # udf:{

@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8716,10 +8716,10 @@ $$.&lt;tag_name&gt;.&lt;prop_name&gt;   # Destination vertex property reference
 </code></pre></div>
 <div class="admonition compatibility">
 <p class="admonition-title">Legacy version compatibility</p>
-<p>Starting from NebulaGraph 2.6.0, <a href="../../6.functions-and-expressions/4.schema/">Schema-related functions</a> are supported. The preceding example can be rewritten as follows in NebulaGraph 3.8.0 to produce the same results: </p>
+<p>Starting from NebulaGraph 2.6.0, <a href="../../6.functions-and-expressions/4.schema/">Schema-related functions</a> are supported. The preceding example can be rewritten as follows in NebulaGraph 3.9.0 to produce the same results: </p>
 <div class="highlight"><pre><span></span><code>GO FROM "player100" OVER follow YIELD properties($^).name AS startName, properties($$).age AS endAge;
 </code></pre></div>
-<p>NebulaGraph 3.8.0 is compatible with both new and old syntax.</p>
+<p>NebulaGraph 3.9.0 is compatible with both new and old syntax.</p>
 </div>
 <h3 id="use_property_references_for_edges">Use property references for edges<a class="headerlink" href="#use_property_references_for_edges" title="Permanent link">¶</a></h3>
 <p>The following query returns the <code>degree</code> property of the edge type <code>follow</code>.</p>
@@ -8741,11 +8741,11 @@ $$.&lt;tag_name&gt;.&lt;prop_name&gt;   # Destination vertex property reference
 </code></pre></div>
 <div class="admonition compatibility">
 <p class="admonition-title">Legacy version compatibility</p>
-<p>Starting from NebulaGraph 2.6.0, <a href="../../6.functions-and-expressions/4.schema/">Schema-related functions</a> are supported. The preceding example can be rewritten as follows in NebulaGraph 3.8.0 to produce the same results: </p>
+<p>Starting from NebulaGraph 2.6.0, <a href="../../6.functions-and-expressions/4.schema/">Schema-related functions</a> are supported. The preceding example can be rewritten as follows in NebulaGraph 3.9.0 to produce the same results: </p>
 <div class="highlight"><pre><span></span><code>GO FROM "player100" OVER follow YIELD properties(edge).degree;
 GO FROM "player100" OVER follow YIELD src(edge), dst(edge), type(edge), rank(edge);
 </code></pre></div>
-<p>NebulaGraph 3.8.0 is compatible with both new and old syntax.</p>
+<p>NebulaGraph 3.9.0 is compatible with both new and old syntax.</p>
 </div>
 <h3 id="use_property_references_for_composite_queries">Use property references for composite queries<a class="headerlink" href="#use_property_references_for_composite_queries" title="Permanent link">¶</a></h3>
 <p>The following composite query performs the following actions:</p>

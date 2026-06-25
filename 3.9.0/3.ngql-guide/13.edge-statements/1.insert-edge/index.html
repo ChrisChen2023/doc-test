@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8552,7 +8552,7 @@ nebula&gt; FETCH PROP ON e2 "14"-&gt;"15"@1 YIELD edge AS e;
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>NebulaGraph 3.8.0 allows dangling edges. Therefore, you can write the edge before the source vertex or the destination vertex exists. At this time, you can get the (not written) vertex VID through <code>&lt;edgetype&gt;._src</code> or <code>&lt;edgetype&gt;._dst</code> (which is not recommended).</li>
+<li>NebulaGraph 3.9.0 allows dangling edges. Therefore, you can write the edge before the source vertex or the destination vertex exists. At this time, you can get the (not written) vertex VID through <code>&lt;edgetype&gt;._src</code> or <code>&lt;edgetype&gt;._dst</code> (which is not recommended).</li>
 <li>Atomic operation is not guaranteed during the entire process for now. If it fails, please try again. Otherwise, partial writing will occur. At this time, the behavior of reading the data is undefined. For example, if multiple machines are involved in the write operation, only one of the forward and reverse edges of a single edge is written successfully, or only part of the edge is written successfully when multiple edges are inserted. In this case, an error will be returned, so please execute the command again.</li>
 <li>Concurrently writing the same edge will cause an <code>edge conflict</code> error, so please try again later.</li>
 <li>The inserting speed of an edge is about half that of a vertex. Because in the storaged process, the insertion of an edge involves two tasks, while the insertion of a vertex involves only one task.</li>

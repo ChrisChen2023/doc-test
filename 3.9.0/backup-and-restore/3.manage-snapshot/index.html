@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8616,7 +8616,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <h3 id="snapshot_path">Snapshot path<a class="headerlink" href="#snapshot_path" title="Permanent link">¶</a></h3>
 <p>Snapshots are stored in the path specified by the <code>data_path</code> parameter in the Meta and Storage configuration files. When a snapshot is created, the <code>checkpoints</code> directory is checked in the datastore path of the leader Meta service and all Storage services for the existence, and if it is not there, it is automatically created. The newly created snapshot is stored as a subdirectory within the <code>checkpoints</code> directory. For example, <code>SNAPSHOT_2021_03_09_08_43_12</code>. The suffix <code>2021_03_09_08_43_12</code> is generated automatically based on the creation time (UTC).</p>
 <p>To fast locate the path where the snapshots are stored, you can use the Linux command <code>find</code> in the datastore path. For example:</p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/usr/local/nebula-graph-ent-3.8.0/data
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>/usr/local/nebula-graph-ent-3.9.0/data
 $<span class="w"> </span>find<span class="w"> </span><span class="p">|</span>grep<span class="w"> </span><span class="s1">'SNAPSHOT_2021_03_09_08_43_12'</span>
 ./data/meta2/nebula/0/checkpoints/SNAPSHOT_2021_03_09_08_43_12
 ./data/meta2/nebula/0/checkpoints/SNAPSHOT_2021_03_09_08_43_12/data

@@ -191,7 +191,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/zh/" class="md-select__link">
+                  <a href="/doc-test/zh/" class="md-select__link">
                     中文
                   </a>
                 </li>
@@ -8529,11 +8529,11 @@ prop_value_list:
 <p><code>tag_name</code> denotes the tag (vertex type), which must be created before <code>INSERT VERTEX</code>. For more information, see <a href="../../10.tag-statements/1.create-tag/">CREATE TAG</a>.</p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
-<p>NebulaGraph 3.8.0 supports inserting vertices without tags.</p>
+<p>NebulaGraph 3.9.0 supports inserting vertices without tags.</p>
 </div>
 <div class="admonition compatibility">
 <p class="admonition-title">Compatibility</p>
-<p>In NebulaGraph 3.8.0, inserting vertex without tag is not supported by default. If you want to use the vertex without tags, add <code>--graph_use_vertex_key=true</code> to the configuration files (<code>nebula-graphd.conf</code>) of all Graph services in the cluster, add <code>--use_vertex_key=true</code> to the configuration files (<code>nebula-storaged.conf</code>) of all Storage services in the cluster. An example of a command to insert a vertex without tag is <code>INSERT VERTEX VALUES "1":();</code>.</p>
+<p>In NebulaGraph 3.9.0, inserting vertex without tag is not supported by default. If you want to use the vertex without tags, add <code>--graph_use_vertex_key=true</code> to the configuration files (<code>nebula-graphd.conf</code>) of all Graph services in the cluster, add <code>--use_vertex_key=true</code> to the configuration files (<code>nebula-storaged.conf</code>) of all Storage services in the cluster. An example of a command to insert a vertex without tag is <code>INSERT VERTEX VALUES "1":();</code>.</p>
 </div>
 </li>
 </ul>
