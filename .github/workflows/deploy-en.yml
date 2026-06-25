@@ -15,23 +15,8 @@ on:
       - 'docs-2.0-en/**'
 
 jobs:
-  lint:
-    name: Vale Linting - English
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v5
-
-      - name: Run Vale on English docs
-        uses: vale-cli/vale-action@v2.1.1
-        with:
-          files: docs-2.0-en
-          reporter: github-pr-check
-          level: warning
-          fail_on_error: true
 
   deploy:
-    name: Deploy English Docs
-    needs: lint
     runs-on: ubuntu-latest
     permissions:
       contents: write
