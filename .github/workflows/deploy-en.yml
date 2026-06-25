@@ -22,7 +22,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Run Vale on English docs
-        uses: errata-ai/vale-action@reviewdog
+        uses: vale-cli/vale-action@v2.1.1
         with:
           files: docs-2.0-en
           reporter: github-pr-check
