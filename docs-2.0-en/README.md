@@ -1,5 +1,7 @@
 # Welcome to NebulaGraph {{ nebula.release }} Documentation
 
+The original version plus proper bilingual support.
+
 !!! note
 
     This manual is revised on {{ now().year }}-{{ now().month }}-{{ now().day }}, with GitHub commit [{{ git.short_commit }}](https://github.com/vesoft-inc/nebula-docs/commits/v{{nebula.release}}).

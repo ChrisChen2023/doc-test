@@ -1,7 +1,7 @@
 # NebulaGraph documentation
 
 - [English](https://docs.nebula-graph.io)
-- [中文](https://docs.nebula-graph.com.cn/)
+- [中文](https://docs.nebula-graph.io/zh/)
 
 ## Contributing
 
