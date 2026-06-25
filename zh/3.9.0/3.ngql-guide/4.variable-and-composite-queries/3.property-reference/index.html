@@ -193,7 +193,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/" class="md-select__link">
+                  <a href="/doc-test/" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -8776,10 +8776,10 @@ nebula&gt; GO FROM "player100" OVER follow YIELD $^.player.name AS startName, $$
 </code></pre></div>
 <div class="admonition compatibility">
 <p class="admonition-title">历史版本兼容性</p>
-<p>从NebulaGraph 2.6.0 起支持了新的 <a href="../../6.functions-and-expressions/4.schema/">Schema 相关函数</a>。以上示例在NebulaGraph 3.8.0 中的近似写法如下：</p>
+<p>从NebulaGraph 2.6.0 起支持了新的 <a href="../../6.functions-and-expressions/4.schema/">Schema 相关函数</a>。以上示例在NebulaGraph 3.9.0 中的近似写法如下：</p>
 <div class="highlight"><pre><span></span><code>GO FROM "player100" OVER follow YIELD properties($^).name AS startName, properties($$).age AS endAge;
 </code></pre></div>
-<p>NebulaGraph 3.8.0 兼容新旧语法。</p>
+<p>NebulaGraph 3.9.0 兼容新旧语法。</p>
 </div>
 <h3 id="_9">使用边属性引用符<a class="headerlink" href="#_9" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code># 返回 Edge type follow 的 degree 属性值。
@@ -8801,11 +8801,11 @@ nebula&gt; GO FROM "player100" OVER follow YIELD follow._src, follow._dst, follo
 </code></pre></div>
 <div class="admonition compatibility">
 <p class="admonition-title">历史版本兼容性</p>
-<p>从 NebulaGraph 2.6.0 起支持了新的 <a href="../../6.functions-and-expressions/4.schema/">Schema 相关函数</a>。以上示例在 NebulaGraph 3.8.0 中的近似写法如下：</p>
+<p>从 NebulaGraph 2.6.0 起支持了新的 <a href="../../6.functions-and-expressions/4.schema/">Schema 相关函数</a>。以上示例在 NebulaGraph 3.9.0 中的近似写法如下：</p>
 <div class="highlight"><pre><span></span><code>GO FROM "player100" OVER follow YIELD properties(edge).degree;
 GO FROM "player100" OVER follow YIELD src(edge), dst(edge), type(edge), rank(edge);
 </code></pre></div>
-<p>NebulaGraph 3.8.0 兼容新旧语法。</p>
+<p>NebulaGraph 3.9.0 兼容新旧语法。</p>
 </div>
 <h3 id="_10">复合查询中使用属性引用符<a class="headerlink" href="#_10" title="Permanent link">¶</a></h3>
 <p>以下复合查询语句示例执行操作如下：</p>

@@ -193,7 +193,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/" class="md-select__link">
+                  <a href="/doc-test/" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -8607,7 +8607,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 </code></pre></div>
 </li>
 <li>
-<p>编辑<code>nebula</code>集群配置，将集群服务的<code>version</code>的值从 3.5.0 修改至 v3.8.0。</p>
+<p>编辑<code>nebula</code>集群配置，将集群服务的<code>version</code>的值从 3.5.0 修改至 v3.9.0。</p>
 <ol>
 <li>
 <p>打开<code>nebula</code>集群的 YAML 文件。</p>
@@ -8623,13 +8623,13 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">nebula</span>
 <span class="nt">spec</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">graphd</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.8.0 //将值从 3.5.0 修改至 v3.8.0。</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.9.0 //将值从 3.5.0 修改至 v3.9.0。</span>
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
 <span class="w">  </span><span class="nt">metad</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.8.0 //将值从 3.5.0 修改至 v3.8.0。</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.9.0 //将值从 3.5.0 修改至 v3.9.0。</span>
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
 <span class="w">  </span><span class="nt">storaged</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.8.0 //将值从 3.5.0 修改至 v3.8.0。</span>
+<span class="w">    </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">v3.9.0 //将值从 3.5.0 修改至 v3.9.0。</span>
 <span class="w">    </span><span class="l l-Scalar l-Scalar-Plain">...</span>
 </code></pre></div>
 </li>
@@ -8640,13 +8640,13 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <p>保存 YAML 文件并退出后，Kubernetes 会自动更新集群的配置，并开始升级集群。</p>
 </li>
 <li>
-<p>等待约 2 分钟后，执行以下命令可查看到服务的镜像版本变更为 v3.8.0。</p>
+<p>等待约 2 分钟后，执行以下命令可查看到服务的镜像版本变更为 v3.9.0。</p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/cluster<span class="o">=</span>nebula<span class="w">  </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.items[*].spec.containers[*].image}"</span><span class="w"> </span><span class="p">|</span>tr<span class="w"> </span>-s<span class="w"> </span><span class="s1">'[[:space:]]'</span><span class="w"> </span><span class="s1">'\n'</span><span class="w"> </span><span class="p">|</span>sort<span class="w"> </span><span class="p">|</span>uniq<span class="w"> </span>-c
 </code></pre></div>
 <p>返回：</p>
-<div class="highlight"><pre><span></span><code><span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-graphd:v3.8.0
-<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-metad:v3.8.0
-<span class="w">      </span><span class="m">3</span><span class="w"> </span>vesoft/nebula-storaged:v3.8.0<span class="w">  </span>
+<div class="highlight"><pre><span></span><code><span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-graphd:v3.9.0
+<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-metad:v3.9.0
+<span class="w">      </span><span class="m">3</span><span class="w"> </span>vesoft/nebula-storaged:v3.9.0<span class="w">  </span>
 </code></pre></div>
 </li>
 </ol>
@@ -8665,11 +8665,11 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 </li>
 <li>
 <p>升级 NebulaGraph 集群。</p>
-<p>例如升级至 v3.8.0 NebulaGraph 集群的命令如下。</p>
+<p>例如升级至 v3.9.0 NebulaGraph 集群的命令如下。</p>
 <div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span><span class="s2">"</span><span class="si">${</span><span class="nv">NEBULA_CLUSTER_NAME</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span>nebula-operator/nebula-cluster<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--namespace<span class="o">=</span><span class="s2">"</span><span class="si">${</span><span class="nv">NEBULA_CLUSTER_NAMESPACE</span><span class="si">}</span><span class="s2">"</span><span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--set<span class="w"> </span><span class="nv">nameOverride</span><span class="o">=</span><span class="si">${</span><span class="nv">NEBULA_CLUSTER_NAME</span><span class="si">}</span><span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--set<span class="w"> </span>nebula.version<span class="o">=</span>v3.8.0
+<span class="w">    </span>--set<span class="w"> </span>nebula.version<span class="o">=</span>v3.9.0
 </code></pre></div>
 <p><code>--set nebula.version</code>的值指需要升级集群的目标版本号。</p>
 </li>
@@ -8689,9 +8689,9 @@ nebula-storaged-2<span class="w">   </span><span class="m">1</span>/1<span class
 </code></pre></div>
 <p>查看集群版本：</p>
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-l<span class="w"> </span>app.kubernetes.io/cluster<span class="o">=</span>nebula<span class="w">  </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">"{.items[*].spec.containers[*].image}"</span><span class="w"> </span><span class="p">|</span>tr<span class="w"> </span>-s<span class="w"> </span><span class="s1">'[[:space:]]'</span><span class="w"> </span><span class="s1">'\n'</span><span class="w"> </span><span class="p">|</span>sort<span class="w"> </span><span class="p">|</span>uniq<span class="w"> </span>-c
-<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-graphd:v3.8.0
-<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-metad:v3.8.0
-<span class="w">      </span><span class="m">3</span><span class="w"> </span>vesoft/nebula-storaged:v3.8.0
+<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-graphd:v3.9.0
+<span class="w">      </span><span class="m">1</span><span class="w"> </span>vesoft/nebula-metad:v3.9.0
+<span class="w">      </span><span class="m">3</span><span class="w"> </span>vesoft/nebula-storaged:v3.9.0
 </code></pre></div>
 </li>
 </ol>

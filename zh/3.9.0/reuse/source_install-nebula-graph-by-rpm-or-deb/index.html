@@ -189,7 +189,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/" class="md-select__link">
+                  <a href="/doc-test/" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -8471,7 +8471,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <p>RPM 和 DEB 是 Linux 系统下常见的两种安装包格式，本文介绍如何使用 RPM 或 DEB 文件在一台机器上快速安装 NebulaGraph 。</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>部署 NebulaGraph 集群的方式参见<a href="https://docs.nebula-graph.com.cn/3.8.0/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/">使用 RPM/DEB 包部署集群</a>。<!--这里用外链。--></p>
+<p>部署 NebulaGraph 集群的方式参见<a href="https://docs.nebula-graph.com.cn/3.9.0/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/">使用 RPM/DEB 包部署集群</a>。<!--这里用外链。--></p>
 </div>
 <h2 id="_1">前提条件<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <ul>
@@ -8505,13 +8505,13 @@ https://oss-cdn.nebula-graph.com.cn/package/&lt;release_version&gt;/nebula-graph
 //Ubuntu<span class="w"> </span><span class="m">2004</span>
 https://oss-cdn.nebula-graph.com.cn/package/&lt;release_version&gt;/nebula-graph-&lt;release_version&gt;.ubuntu2004.amd64.deb
 </code></pre></div>
-<p>例如要下载适用于<code>Centos 7.5</code>的<code>3.8.0</code>安装包：</p>
-<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.8.0/nebula-graph-3.8.0.el7.x86_64.rpm
-wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.8.0/nebula-graph-3.8.0.el7.x86_64.rpm.sha256sum.txt
+<p>例如要下载适用于<code>Centos 7.5</code>的<code>3.9.0</code>安装包：</p>
+<div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.9.0/nebula-graph-3.9.0.el7.x86_64.rpm
+wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.9.0/nebula-graph-3.9.0.el7.x86_64.rpm.sha256sum.txt
 </code></pre></div>
-<p>下载适用于<code>ubuntu 1804</code>的<code>3.8.0</code>安装包：
-  </p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.8.0/nebula-graph-3.8.0.ubuntu1804.amd64.deb
-wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.8.0/nebula-graph-3.8.0.ubuntu1804.amd64.deb.sha256sum.txt
+<p>下载适用于<code>ubuntu 1804</code>的<code>3.9.0</code>安装包：
+  </p><div class="highlight"><pre><span></span><code>wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.9.0/nebula-graph-3.9.0.ubuntu1804.amd64.deb
+wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/3.9.0/nebula-graph-3.9.0.ubuntu1804.amd64.deb.sha256sum.txt
 </code></pre></div><p></p>
 </li>
 </ul>
@@ -8558,8 +8558,8 @@ wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/nightly/
 <div class="highlight"><pre><span></span><code>$<span class="w"> </span>sudo<span class="w"> </span>rpm<span class="w"> </span>-ivh<span class="w"> </span>--prefix<span class="o">=</span>&lt;installation_path&gt;<span class="w"> </span>&lt;package_name&gt;
 </code></pre></div>
 <p><code>--prefix</code>为可选项，用于指定安装路径。如不设置，系统会将 NebulaGraph 安装到默认路径<code>/usr/local/nebula/</code>。</p>
-<p>例如，要在默认路径下安装3.8.0版本的 RPM 包，运行如下命令：</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rpm<span class="w"> </span>-ivh<span class="w"> </span>nebula-graph-3.8.0.el7.x86_64.rpm
+<p>例如，要在默认路径下安装3.9.0版本的 RPM 包，运行如下命令：</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>rpm<span class="w"> </span>-ivh<span class="w"> </span>nebula-graph-3.9.0.el7.x86_64.rpm
 </code></pre></div>
 </li>
 </ul>
@@ -8572,15 +8572,15 @@ wget<span class="w"> </span>https://oss-cdn.nebula-graph.com.cn/package/nightly/
 <p class="admonition-title">Note</p>
 <p>使用 DEB 包安装 NebulaGraph 时不支持自定义安装路径。默认安装路径为<code>/usr/local/nebula/</code>。</p>
 </div>
-<p>例如安装3.8.0版本的 DEB 包：</p>
-<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>nebula-graph-3.8.0.ubuntu1804.amd64.deb
+<p>例如安装3.9.0版本的 DEB 包：</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>dpkg<span class="w"> </span>-i<span class="w"> </span>nebula-graph-3.9.0.ubuntu1804.amd64.deb
 </code></pre></div>
 </li>
 </ul>
 <h2 id="_3">后续操作<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <ul>
-<li><a href="https://docs.nebula-graph.com.cn/3.8.0/2.quick-start/3.quick-start-on-premise/5.start-stop-service/">启动 NebulaGraph </a><!--这里用外链。--></li>
-<li><a href="https://docs.nebula-graph.com.cn/3.8.0/2.quick-start/3.quick-start-on-premise/3.connect-to-nebula-graph/">连接 NebulaGraph </a><!--这里用外链。--></li>
+<li><a href="https://docs.nebula-graph.com.cn/3.9.0/2.quick-start/3.quick-start-on-premise/5.start-stop-service/">启动 NebulaGraph </a><!--这里用外链。--></li>
+<li><a href="https://docs.nebula-graph.com.cn/3.9.0/2.quick-start/3.quick-start-on-premise/3.connect-to-nebula-graph/">连接 NebulaGraph </a><!--这里用外链。--></li>
 </ul>
 
 

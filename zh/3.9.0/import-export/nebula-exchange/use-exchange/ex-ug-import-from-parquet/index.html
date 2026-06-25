@@ -193,7 +193,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/" class="md-select__link">
+                  <a href="/doc-test/" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -8709,7 +8709,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <li>Hadoop：2.9.2 伪分布式部署</li>
 </ul>
 <ul>
-<li>NebulaGraph ：3.8.0。</li>
+<li>NebulaGraph ：3.9.0。</li>
 </ul>
 <h2 id="_3">前提条件<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <p>开始导入数据之前，用户需要确认以下信息：</p>
@@ -8902,7 +8902,7 @@ nebula&gt; CREATE EDGE serve(start_year int, end_year int);
 
       # 指定一个列作为 VID 的源。
       # vertex 的值必须与 Parquet 文件中的字段保持一致。
-      # 目前，NebulaGraph  3.8.0仅支持字符串或整数类型的 VID。
+      # 目前，NebulaGraph  3.9.0仅支持字符串或整数类型的 VID。
       vertex: {
         field:id
       # udf:{
@@ -8980,7 +8980,7 @@ nebula&gt; CREATE EDGE serve(start_year int, end_year int);
 
       # 指定一个列作为起始点和目的点的源。
       # vertex 的值必须与 Parquet 文件中的字段保持一致。
-      # 目前，NebulaGraph  3.8.0仅支持字符串或整数类型的 VID。
+      # 目前，NebulaGraph  3.9.0仅支持字符串或整数类型的 VID。
       source: {
         field: src
       # udf:{

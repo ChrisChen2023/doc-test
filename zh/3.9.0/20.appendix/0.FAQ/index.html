@@ -193,7 +193,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
             <ul class="md-select__list">
               
                 <li class="md-select__item">
-                  <a href="/" class="md-select__link">
+                  <a href="/doc-test/" class="md-select__link">
                     English
                   </a>
                 </li>
@@ -9416,7 +9416,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 
 
 <h1 id="faq">常见问题 FAQ<a class="headerlink" href="#faq" title="Permanent link">¶</a></h1>
-<p>本文列出了使用 NebulaGraph 3.8.0 时可能遇到的常见问题，用户可以使用文档中心或者浏览器的搜索功能查找相应问题。</p>
+<p>本文列出了使用 NebulaGraph 3.9.0 时可能遇到的常见问题，用户可以使用文档中心或者浏览器的搜索功能查找相应问题。</p>
 <p>如果按照文中的建议无法解决问题，请到<a href="https://discuss.nebula-graph.com.cn/"> NebulaGraph 论坛</a> 提问或提交 <a href="https://github.com/vesoft-inc/nebula/issues">GitHub issue</a>。</p>
 <h2 id="_1">关于本手册<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
 <h3 id="_2">为什么手册示例和系统行为不一致？<a class="headerlink" href="#_2" title="Permanent link">¶</a></h3>
@@ -9433,7 +9433,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <h2 id="_3">关于历史兼容性<a class="headerlink" href="#_3" title="Permanent link">¶</a></h2>
 <div class="admonition compatibility">
 <p class="admonition-title">Compatibility</p>
-<p>NebulaGraph 3.8.0 与 历史版本 （包括 NebulaGraph 1.x 和 2.x) 的数据格式、客户端通信协议均<strong>双向不兼容</strong>。
+<p>NebulaGraph 3.9.0 与 历史版本 （包括 NebulaGraph 1.x 和 2.x) 的数据格式、客户端通信协议均<strong>双向不兼容</strong>。
 使用<strong>老版本</strong>客户端连接<strong>新版本</strong>服务端，会导致服务进程<strong>退出</strong>。
 数据格式升级参见<a href="../../4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-comm/">升级 NebulaGraph 历史版本至当前版本</a>。
 客户端与工具均需要<a href="../6.eco-tool-version/">下载对应版本</a>。</p>
@@ -9441,7 +9441,7 @@ https://github.com/mkdocs/mkdocs/blob/master/mkdocs/themes/mkdocs/main.html --><
 <!-- TODO
 !!! compatibility "`Y`版本兼容性"
 
-    NebulaGraph 3.8.0 与 NebulaGraph 2.0 的数据格式兼容，客户端不兼容。
+    NebulaGraph 3.9.0 与 NebulaGraph 2.0 的数据格式兼容，客户端不兼容。
 -->
 
 <h2 id="_4">关于执行报错<a class="headerlink" href="#_4" title="Permanent link">¶</a></h2>
@@ -9585,7 +9585,7 @@ Got 1 rows (time spent 1235/1934 us)
 <p>这是 NebulaGraph Console 2.6.0 版本的变动造成的，不是 NebulaGraph 内核的变更，不影响返回数据本身的内容。</p>
 <h3 id="_6">关于悬挂边<a class="headerlink" href="#_6" title="Permanent link">¶</a></h3>
 <p>悬挂边 (Dangling edge) 是指一条边的起点或者终点在数据库中不存在。</p>
-<p>NebulaGraph  3.8.0 的数据模型中，由于设计允许图中存在“悬挂边”；
+<p>NebulaGraph  3.9.0 的数据模型中，由于设计允许图中存在“悬挂边”；
 没有 openCypher 中的 MERGE 语句。
 对于悬挂边的保证完全依赖应用层面。
 详见 <a href="../../3.ngql-guide/12.vertex-statements/1.insert-vertex/">INSERT VERTEX</a>, <a href="../../3.ngql-guide/12.vertex-statements/4.delete-vertex/">DELETE VERTEX</a>, <a href="../../3.ngql-guide/13.edge-statements/1.insert-edge/">INSERT EDGE</a>, <a href="../../3.ngql-guide/13.edge-statements/4.delete-edge/">DELETE EDGE</a>。</p>
@@ -9871,7 +9871,7 @@ telnet:<span class="w"> </span>connect<span class="w"> </span>to<span class="w">
 <h3 id="metagraphstorage">如何增加或减少 Meta、Graph、Storage 节点的数量<a class="headerlink" href="#metagraphstorage" title="Permanent link">¶</a></h3>
 <ul>
 <li>
-<p>NebulaGraph 3.8.0 未提供运维命令以实现自动扩缩容，但可参考以下步骤实现手动扩缩容：</p>
+<p>NebulaGraph 3.9.0 未提供运维命令以实现自动扩缩容，但可参考以下步骤实现手动扩缩容：</p>
 <ul>
 <li>
 <p>Meta 的扩容和缩容： Meta 不支持自动扩缩容。</p>
