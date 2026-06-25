@@ -14,10 +14,10 @@
 
 | 类型 | 名称 | 属性名（数据类型） | 说明 |
 | :--- | :--- | :---| :--- |
-| Tag |  **player**  | - `name` （`string`） <br>- `age` （`int`）  | 表示球员。  |
+| Tag |  **player**  | - `name` （`string`） <br />- `age` （`int`）  | 表示球员。  |
 | Tag |   **team** | - `name` （`string`） |  表示球队。 |
-| Edge type |  **serve**  | - `start_year` （`int`） <br> - `end_year` （`int`） | 表示球员的行为。<br>该行为将球员和球队联系起来，方向是从球员到球队。  |
-| Edge type |  **follow**  | - `degree`（`int`）  | 表示球员的行为。<br>该行为将两个球员联系起来，方向是从一个球员到另一个球员。  |
+| Edge type |  **serve**  | - `start_year` （`int`） <br /> - `end_year` （`int`） | 表示球员的行为。<br />该行为将球员和球队联系起来，方向是从球员到球队。  |
+| Edge type |  **follow**  | - `degree`（`int`）  | 表示球员的行为。<br />该行为将两个球员联系起来，方向是从一个球员到另一个球员。  |
 
 下图说明示例中 **player** 类点与 **team** 类点之间如何发生关系（**serve**/**follow**）。
 
