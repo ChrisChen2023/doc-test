@@ -1,6 +1,8 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import fs from 'fs';
+import path from 'path';
 
 // ==================== 1. NebulaGraph 全量组件宏矩阵定义 ====================
 const mkdocsMacros = {
@@ -106,7 +108,7 @@ const config = {
     },
   ],
 
-  // ==================== 4. 注入编译时文本替换拦截插件 ====================
+  // ==================== 4. 注入编译时文本替换及 Include 拦截插件 ====================
   plugins: [
     function docusaurusMacrosPlugin(context, options) {
       return {
@@ -117,10 +119,35 @@ const config = {
               rules: [
                 {
                   test: /\.mdx?$/,
-                  loader: 'string-replace-loader',
-                  options: {
-                    multiple: replacementRules
-                  },
+                  use: [
+                    {
+                      // 阶段二：执行版本宏矩阵全局替换
+                      loader: 'string-replace-loader',
+                      options: {
+                        multiple: replacementRules
+                      }
+                    },
+                    {
+                      // 阶段一：精准拦截匹配 {% include "/xxx.md" %} 语法并注入物理文件流
+                      loader: 'string-replace-loader',
+                      options: {
+                        search: '{%\\s*include\\s*"(.*?)"\\s*%}', 
+                        replace(match, p1) {
+                          // 解析出真实的 docs 下的物理路径
+                          const filePath = path.join(context.siteDir, 'docs', p1.replace(/^\//, ''));
+                          
+                          if (fs.existsSync(filePath)) {
+                            // 读取源文件纯文本完成无缝拼装
+                            return fs.readFileSync(filePath, 'utf8');
+                          } else {
+                            console.warn(`[Include Warning] File not found: ${filePath}`);
+                            return ``;
+                          }
+                        },
+                        flags: 'g'
+                      }
+                    }
+                  ],
                   include: [
                     /docs/,
                     /i18n/
