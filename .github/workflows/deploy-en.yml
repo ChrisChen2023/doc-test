@@ -3,6 +3,10 @@ env:
 
   ACTIONTEST: 3.9.0 # no need to add v before the version number
 
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
 on:
   workflow_call:
   push:

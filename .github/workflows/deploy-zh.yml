@@ -4,6 +4,10 @@ env:
 
   ACTIONTEST: 3.9.0
 
+concurrency:
+  group: gh-pages-deploy
+  cancel-in-progress: false
+
 on:
   workflow_call:
 
@@ -23,7 +27,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 1 # fetch all commits/branches for gitversion
+          fetch-depth: 0 # fetch all commits/branches for gitversion
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -40,8 +44,8 @@ jobs:
       - name: Mike Deploy
         run: |
           python ./scripts/render_chinese_only.py
-          git fetch origin gh-pages-zh --depth=1 # fix mike's CI update
+          git fetch origin gh-pages --depth=1 # fix mike's CI update
           mike list
-          mike deploy ${{ env.ACTIONTEST }} -b gh-pages-zh -p --rebase
-          mike set-default ${{ env.ACTIONTEST }} -b gh-pages-zh -p --rebase
+          mike deploy ${{ env.ACTIONTEST }} -b gh-pages --deploy-prefix zh -p --rebase
+          mike set-default ${{ env.ACTIONTEST }} -b gh-pages --deploy-prefix zh -p --rebase
     
