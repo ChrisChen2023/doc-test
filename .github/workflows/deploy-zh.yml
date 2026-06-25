@@ -46,6 +46,6 @@ jobs:
           python ./scripts/render_chinese_only.py
           git fetch origin gh-pages --depth=1 # fix mike's CI update
           mike list
-          mike deploy ${{ env.ACTIONTEST }} -b gh-pages --deploy-prefix zh -p --rebase
-          mike set-default ${{ env.ACTIONTEST }} -b gh-pages --deploy-prefix zh -p --rebase
+          mike deploy ${{ env.ACTIONTEST }} -b gh-pages --prefix zh -p --rebase
+          mike set-default ${{ env.ACTIONTEST }} -b gh-pages --prefix zh -p --rebase
     

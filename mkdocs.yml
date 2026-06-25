@@ -125,10 +125,6 @@ plugins:
       include_dir: docs-2.0-en/reuse/
 # en.end      
   - git-revision-date-localized
-# zh.begin
-  - mike:
-      deploy_prefix: zh
-# zh.end
 
   - exclude:
 # Exclude files with unix-style wildcards (globs)
