@@ -20,7 +20,7 @@
 
   在浏览器窗口中看到以下登录界面表示已经成功部署并启动了 Studio。
 
-  <img src="https://docs-cdn.nebula-graph.com.cn/figures/std_login_230912_cn.png" width="1200" alt="Studio 登录界面截屏">
+  <img src="https://docs-cdn.nebula-graph.com.cn/figures/std_login_230912_cn.png" width="1200" alt="Studio 登录界面截屏" />
 
 2. 在 Studio 的 **配置数据库** 页面上，输入以下信息：
 

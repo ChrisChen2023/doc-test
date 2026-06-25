@@ -8,7 +8,7 @@ In the top navigation bar, click **Console**.
 
 ## Overview
 
-<img src="https://docs-cdn.nebula-graph.com.cn/figures/std_console_240131_en.png" width="1200" alt="A screenshot that shows the overview of the console">
+<img src="https://docs-cdn.nebula-graph.com.cn/figures/std_console_240131_en.png" width="1200" alt="A screenshot that shows the overview of the console" />
 
 The following table lists the functions on the console page.
 
@@ -36,7 +36,7 @@ The following table lists the functions on the console page.
 
 The Studio can display the execution plan of the statement. The execution plan descriptions are as follows.
 
-<img src="https://docs-cdn.nebula-graph.com.cn/figures/eo_expl_excutionPlan_231226_en.png" width="1000" alt="A screenshot that shows the execute plan of studio">
+<img src="https://docs-cdn.nebula-graph.com.cn/figures/eo_expl_excutionPlan_231226_en.png" width="1000" alt="A screenshot that shows the execute plan of studio" />
 
 |No.|Description|
 |:---|:---|
