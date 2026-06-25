@@ -34,7 +34,7 @@ If the NebulaGraph service is normal, proceed to Step 4 to continue troubleshoot
 
 ### Step4: Confirm the network connection of the Graph service is normal
 
-Run a command (for example, telnet <graph_server_ip> 9669) on the Studio machine to confirm whether NebulaGraph's Graph service network connection is normal.
+Run a command (for example, telnet `<graph_server_ip>` 9669) on the Studio machine to confirm whether NebulaGraph's Graph service network connection is normal.
 
 If the connection fails, check according to the following steps:
 

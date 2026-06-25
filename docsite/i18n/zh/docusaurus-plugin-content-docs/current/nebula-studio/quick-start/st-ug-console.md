@@ -8,7 +8,7 @@
 
 ## 页面介绍
 
-<img src="https://docs-cdn.nebula-graph.com.cn/figures/std_console_240131_cn.png" width="1200" alt="控制台界面截屏">
+<img src="https://docs-cdn.nebula-graph.com.cn/figures/std_console_240131_cn.png" width="1200" alt="控制台界面截屏" />
 
 下表列出了控制台界面上的各种功能。
 
@@ -36,7 +36,7 @@
 
 Studio 可以展示语句的执行计划，界面说明如下。
 
-<img src="https://docs-cdn.nebula-graph.com.cn/figures/ec_expl_excutionPlan_231226_cn.png" width="1000" alt="执行计划截屏">
+<img src="https://docs-cdn.nebula-graph.com.cn/figures/ec_expl_excutionPlan_231226_cn.png" width="1000" alt="执行计划截屏" />
 
 |序号|说明|
 |:---|:---|
