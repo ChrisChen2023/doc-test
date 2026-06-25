@@ -27,15 +27,17 @@ const mkdocsMacros = {
   cloud: { azureRelease: '3.1.1', aliyunRelease: '3.1.1', azureLatestRelease: '3.1.0', aliyunLatestRelease: '3.1.0' }
 };
 
-// ==================== 2. 自动递归扁平化替换规则生成器 ====================
+// ==================== 2. 【升级版】自动兼容任意空格的正则替换规则生成器 ====================
 function generateMultipleReplacements(macros) {
   const multiple = [];
   for (const [component, tokens] of Object.entries(macros)) {
     for (const [key, val] of Object.entries(tokens)) {
+      // 使用带正则形式的字符串进行匹配
+      // \\s* 意味着允许在大括号和变量名之间存在 0 个、1 个或多个任意空格
       multiple.push({
-        search: `{{${component}.${key}}}`, // 精准锁定类似 {{nebula.release}} 结构的 MkDocs 宏
-        replace: String(val),              // 智能转为字符串，全量替换为对应的物理版本号
-        flags: 'g'                         // 开启全局修饰符以替换页面中的所有匹配项
+        search: `{{\\s*${component}\\.${key}\\s*}}`, 
+        replace: String(val),
+        flags: 'g'
       });
     }
   }
@@ -114,14 +116,14 @@ const config = {
             module: {
               rules: [
                 {
-                  test: /\.mdx?$/, // 仅针对所有 .md 和 .mdx 文档进行 Webpack 预处理拦截
+                  test: /\.mdx?$/,
                   loader: 'string-replace-loader',
                   options: {
-                    multiple: replacementRules // 将上方生成的全量版本映射数组一次性注入
+                    multiple: replacementRules
                   },
                   include: [
-                    /docs/, // 只处理基础英文包
-                    /i18n/  // 以及中文等国际化多语言包，最大化提升本地开发与编译时速度
+                    /docs/,
+                    /i18n/
                   ],
                 }
               ]

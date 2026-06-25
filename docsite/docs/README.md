@@ -1,6 +1,6 @@
 # Welcome to NebulaGraph Documentation
 
-The original version plus proper bilingual support.
+The original version converted to Docusaurus.
 
 :::note
 

@@ -177,9 +177,9 @@ client:
 |`client.user`|`root`|否| {{nebula.name}} 的用户名。|
 |`client.password`|`nebula`|否| {{nebula.name}} 用户名对应的密码。|
 |`client.ssl.enable`|`false`|否|指定是否开启 SSL 认证。|
-|`client.ssl.certPath`|-|否|指定 SSL 公钥证书的存储路径。</br>开启 SSL 认证后该参数必填。|
-|`client.ssl.keyPath`|-|否|指定 SSL 密钥的存储路径。</br>开启 SSL 认证后该参数必填。|
-|`client.ssl.caPath`|-|否|指定 CA 根证书的存储路径。</br>开启 SSL 认证后该参数必填。|
+|`client.ssl.certPath`|-|否|指定 SSL 公钥证书的存储路径。<br />开启 SSL 认证后该参数必填。|
+|`client.ssl.keyPath`|-|否|指定 SSL 密钥的存储路径。<br />开启 SSL 认证后该参数必填。|
+|`client.ssl.caPath`|-|否|指定 CA 根证书的存储路径。<br />开启 SSL 认证后该参数必填。|
 |`client.ssl.insecureSkipVerify`|`false`|否|指定是否跳过验证服务端的证书链和主机名。如果设置为`true`，则接受服务端提供的任何证书链和主机名。|
 |`client.concurrencyPerAddress`|`10`|否|单个 Graph 服务的客户端并发连接数。|
 |`client.reconnectInitialInterval`|`1s`|否|重连间隔时间。|
@@ -216,7 +216,7 @@ manager:
 |参数|默认值|是否必须|说明|
 |:---|:---|:---|:---|
 |`manager.spaceName`|-|是|指定数据要导入的图空间。不支持同时导入多个图空间。|
-|`manager.batch`|`128`|否|执行语句的批处理量（全局配置）。</br>对某个数据源单独设置批处理量可以使用下文的`sources.batch`。|
+|`manager.batch`|`128`|否|执行语句的批处理量（全局配置）。<br />对某个数据源单独设置批处理量可以使用下文的`sources.batch`。|
 |`manager.readerConcurrency`|`50`|否|读取器读取数据源的并发数。|
 |`manager.importerConcurrency`|`512`|否|生成待执行的 nGQL 语句的并发数，然后会调用客户端执行这些语句。|
 |`manager.statsInterval`|`10s`|否|打印统计信息的时间间隔。|
@@ -397,7 +397,7 @@ sources:
 
 |参数|默认值|是否必须|说明|
 |:---|:---|:---|:---|
-|`sources.path`</br>`sources.s3`</br>`sources.oss`</br>`sources.ftp`</br>`sources.sftp`</br>`sources.hdfs`   |-| 否 | 指定数据源信息，例如本地文件、HDFS、S3 等。一个`source`只能配置一种数据源，配置多个数据源请在多个`source`内配置。</br>不同数据源的配置项说明请参见示例内的注释。         |  
+|`sources.path`<br />`sources.s3`<br />`sources.oss`<br />`sources.ftp`<br />`sources.sftp`<br />`sources.hdfs`   |-| 否 | 指定数据源信息，例如本地文件、HDFS、S3 等。一个`source`只能配置一种数据源，配置多个数据源请在多个`source`内配置。<br />不同数据源的配置项说明请参见示例内的注释。         |  
 |`sources.batch`   |`256`| 否 | 导入该数据源时执行语句的批处理量。优先级高于`manager.batch`。          |  
 |`sources.csv.delimiter`   |`,`| 否 |  CSV 文件的分隔符。仅支持 1 个字符的字符串分隔符。使用特殊字符做分隔符时需要进行转义。例如当分隔符为十六进制`0x03`即`Ctrl+C`时，转义的写法为：`"\x03"`或`"\u0003"`。关于 yaml 格式特殊字符转义的细节请参见[Escaped Characters](https://yaml.org/spec/1.2.2/#escaped-characters)。|         |  
 |`sources.csv.withHeader`   |`false`| 否 | 是否忽略 CSV 文件中的第一条记录。         |  

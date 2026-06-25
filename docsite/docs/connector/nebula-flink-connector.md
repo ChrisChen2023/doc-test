@@ -168,7 +168,7 @@ env.execute("NebulaStreamSource");
   |`setGraphSpace` |String |Yes | The graph space name. |
   |`setTag` |String |Yes | The tag name. |
   |`setIdIndex` |Int |Yes | The subscript of the stream data field that is used as the VID when writing data to NebulaGraph.  |
-  |`setFields`  |List|Yes | A collection of the property names of a tag. It is used to write data to or read data from NebulaGraph.</br> Make sure the `setNoColumn` is `false` when reading data; otherwise, the configuration is invalid.</br> If this parameter is empty, all properties are read when reading data from NebulaGraph. |
+  |`setFields`  |List|Yes | A collection of the property names of a tag. It is used to write data to or read data from NebulaGraph.<br /> Make sure the `setNoColumn` is `false` when reading data; otherwise, the configuration is invalid.<br /> If this parameter is empty, all properties are read when reading data from NebulaGraph. |
   |`setPositions` |List |Yes | A collection of the subscripts of the stream data fields. It indicates that the corresponding field values are written to NebulaGraph as property values. This parameter needs to correspond to `setFields`.  |
   |`setBatchSize` |String |No | The maximum number of data records to write to NebulaGraph at a time. The default value is `2000`.  |
   |`setNoColumn` |String |No | The properties are not to be read if set to `true` when reading data. The default value is `false`. |
@@ -183,7 +183,7 @@ env.execute("NebulaStreamSource");
   |`setSrcIndex`  |Int| Yes| The subscript of the stream data field that is used as the VID of the source vertex when writing data to NebulaGraph. |
   |`setDstIndex`  |Int| Yes| The subscript of the stream data field that is used as the VID of the destination vertex when writing data to NebulaGraph. |
   |`setRankIndex` |Int| Yes| The subscript of the stream data field that is used as the rank of the edge when writing data to NebulaGraph. |
-  |`setFields`  |List| Yes| A collection of the property names of an edge type. It is used to write data to or read data from NebulaGraph.</br> Make sure the `setNoColumn` is `false` when reading data; otherwise, the configuration is invalid.</br> If this parameter is empty, all properties are read when reading data from NebulaGraph. |
+  |`setFields`  |List| Yes| A collection of the property names of an edge type. It is used to write data to or read data from NebulaGraph.<br /> Make sure the `setNoColumn` is `false` when reading data; otherwise, the configuration is invalid.<br /> If this parameter is empty, all properties are read when reading data from NebulaGraph. |
   |`setPositions`  |List |Yes | A collection of the subscripts of the stream data fields. It indicates that the corresponding field values are written to NebulaGraph as property values. This parameter needs to correspond to `setFields`.   |
   |`setBatchSize`  |String |No | The maximum number of data records to write to NebulaGraph at a time. The default value is `2000`.  |
   |`setNoColumn`  |String |No | The properties are not to be read if set to `true` when reading data. The default value is `false`. |
