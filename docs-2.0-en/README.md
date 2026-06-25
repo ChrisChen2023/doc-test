@@ -1,6 +1,6 @@
 # Welcome to NebulaGraph {{ nebula.release }} Documentation
 
-The original version plus vale check.
+The original version.
 
 !!! note
 
