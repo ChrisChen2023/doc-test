@@ -1,4 +1,4 @@
-# Welcome to NebulaGraph Documentation
+# Welcome to NebulaGraph Documentation {{nebula.release}}
 
 The original version converted to Docusaurus.
 
