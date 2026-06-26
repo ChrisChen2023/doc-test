@@ -161,12 +161,12 @@ extra:
   alternate:
 # en.begin
    - name: 中文
-     link: /doc-test/zh/
+     link: /doc-test/zh/3.9.0/
      lang: zh
 # en.end
 # zh.begin
    - name: English
-     link: /doc-test/
+     link: /doc-test/3.9.0/
      lang: en 
 # zh.end
 
