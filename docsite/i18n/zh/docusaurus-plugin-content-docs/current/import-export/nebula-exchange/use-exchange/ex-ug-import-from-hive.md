@@ -387,10 +387,11 @@ scala> sql("select playerid, teamid, start_year, end_year from basketball.serve"
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <hive_application.conf_path> -h
 ```
 
-!!! note
+:::note
 
-    JAR 包有两种获取方式：[自行编译](../ex-ug-compile.md)或者从 maven 仓库下载。
+JAR 包有两种获取方式：[自行编译](../ex-ug-compile.md)或者从 maven 仓库下载。
 
+:::
 示例：
 
 ```bash

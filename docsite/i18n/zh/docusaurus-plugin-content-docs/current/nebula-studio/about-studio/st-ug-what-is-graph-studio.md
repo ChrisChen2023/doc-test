@@ -2,10 +2,11 @@
 
 NebulaGraph Studio（简称 Studio）是一款可以通过 Web 访问的开源图数据库可视化工具，搭配 [{{nebula.name}} ](../../README.md) 内核使用，提供构图、数据导入、编写 nGQL 查询等一站式服务。用户可以在 {{nebula.name}} GitHub 仓库中查看最新源码，详情参见 [nebula-studio](https://github.com/vesoft-inc/nebula-studio)。
 
-!!! note
+:::note
 
-    用户可以[在线试用 Studio](https://playground.nebula-graph.com.cn/explore) 部分功能。企业版 NebulaGraph 提供功能更强大的可视化工具，点击[免费试用](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?ServiceId=service-39f4f251e9484369a778&ServiceVersion=20&isTrial=true)即可在阿里云上体验。
+用户可以[在线试用 Studio](https://playground.nebula-graph.com.cn/explore) 部分功能。企业版 NebulaGraph 提供功能更强大的可视化工具，点击[免费试用](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?ServiceId=service-39f4f251e9484369a778&ServiceVersion=20&isTrial=true)即可在阿里云上体验。
 
+:::
 ## 发行版本
 
 用户可以使用 RPM 包、DEB 包、tar 包和 Docker 服务安装部署 Studio，在 Kubernetes 集群里还支持使用 Helm 安装部署 Studio。详细信息参考 [部署 Studio](../deploy-connect/st-ug-deploy.md)。
@@ -38,10 +39,11 @@ Studio 可以方便管理 {{nebula.name}} 数据，具备以下功能：
 
 ## 版本兼容性
 
-!!! note
+:::note
 
-    Studio 版本发布节奏独立于 {{nebula.name}} 内核，其命名方式也不参照内核命名规则，两者兼容对应关系如下表。
+Studio 版本发布节奏独立于 {{nebula.name}} 内核，其命名方式也不参照内核命名规则，两者兼容对应关系如下表。
 
+:::
 | {{nebula.name}} 版本 | Studio 版本 |
 | --- | --- |
 | 3.8.0 | 3.10.0、3.9.x |

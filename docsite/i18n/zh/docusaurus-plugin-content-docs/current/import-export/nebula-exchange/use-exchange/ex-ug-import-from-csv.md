@@ -88,10 +88,11 @@
 
 1. 处理 CSV 文件以满足 Schema 的要求。
 
-  !!! note
+  :::note
 
-        Exchange 支持上传有表头或者无表头的 CSV 文件。
+    Exchange 支持上传有表头或者无表头的 CSV 文件。
 
+:::
 2. 获取 CSV 文件存储路径。
 
 ### 步骤 3：修改配置文件
@@ -356,10 +357,11 @@
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <csv_application.conf_path> 
 ```
 
-!!! note
+:::note
 
-    JAR 包有两种获取方式：[自行编译](../ex-ug-compile.md)或者从 maven 仓库下载。
+JAR 包有两种获取方式：[自行编译](../ex-ug-compile.md)或者从 maven 仓库下载。
 
+:::
 示例：
 
 ```bash

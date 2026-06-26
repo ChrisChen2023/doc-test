@@ -257,10 +257,11 @@ To deploy and start Docker-based Studio, run the following commands. Here we use
 
 6. When Docker-based Studio is started, use `http://<ip address>:7001` to get access to Studio.
   
-  !!! note
+  :::note
 
-        Run `ifconfig` or `ipconfig` to get the IP address of the machine where Docker-based Studio is running. On the machine running Docker-based Studio, you can use `http://localhost:7001` to get access to Studio.
+    Run `ifconfig` or `ipconfig` to get the IP address of the machine where Docker-based Studio is running. On the machine running Docker-based Studio, you can use `http://localhost:7001` to get access to Studio.
 
+:::
    If you can see the **Config Server** page on the browser, Docker-based Studio is started successfully.
 
    <img src="https://docs-cdn.nebula-graph.com.cn/figures/std_login_230912_en.png" width="1200" alt="A screenshot that shows the login UI of studio" />

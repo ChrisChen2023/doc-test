@@ -33,11 +33,12 @@ UNWIND <list> AS <alias> <RETURN clause>;
 
 - The `UNWIND` clause in native nGQL statements.
 
-  !!! note
+  :::note
 
-        To use a `UNWIND` clause in a native nGQL statement, use it after the `|` operator and use the `$-` prefix for variables. If you use a statement or clause after the `UNWIND` clause, use the `|` operator and use the `$-` prefix for variables.
+    To use a `UNWIND` clause in a native nGQL statement, use it after the `|` operator and use the `$-` prefix for variables. If you use a statement or clause after the `UNWIND` clause, use the `|` operator and use the `$-` prefix for variables.
 
 
+:::
   ```ngql
   <statement> | UNWIND $-.<var> AS <alias> <|> <clause>;
   ```
@@ -53,10 +54,11 @@ UNWIND <list> AS <alias> <RETURN clause>;
 
 - To transform a list of duplicates into a unique set of rows using `WITH DISTINCT` in a `UNWIND` clause.
 
-  !!! note
+  :::note
       
-      `WITH DISTINCT` is not available in native nGQL statements.  
+  `WITH DISTINCT` is not available in native nGQL statements.  
 
+:::
   ```ngql
   // Transform the list `[1,1,2,2,3,3]` into a unique set of rows, sort the rows, and then transform the rows into a list of unique values.
 

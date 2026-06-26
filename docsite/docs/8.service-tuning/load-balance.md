@@ -2,10 +2,11 @@
 
 You can use the `SUBMIT JOB BALANCE` statement to balance the distribution of partitions and Raft leaders, or clear some Storage servers for easy maintenance. For details, see [SUBMIT JOB BALANCE](../synchronization-and-migration/2.balance-syntax.md).
 
-!!! danger
+:::danger
 
-    The `BALANCE` commands migrate data and balance the distribution of partitions by creating and executing a set of subtasks. **DO NOT** stop any machine in the cluster or change its IP address until all the subtasks finish. Otherwise, the follow-up subtasks fail.
+The `BALANCE` commands migrate data and balance the distribution of partitions by creating and executing a set of subtasks. **DO NOT** stop any machine in the cluster or change its IP address until all the subtasks finish. Otherwise, the follow-up subtasks fail.
 
+:::
 ## Balance leader distribution
 
 To balance the raft leaders, run `SUBMIT JOB BALANCE LEADER`. It will start a job to balance the distribution of all the storage leaders in all graph spaces.
@@ -31,8 +32,9 @@ nebula> SHOW HOSTS;
 +------------------+------+----------+--------------+-----------------------------------+------------------------+----------------------+
 ```
 
-!!! caution
+:::caution
 
-    During leader partition replica switching in NebulaGraph, the leader replicas will be temporarily prohibited from being written to until the switch is completed. If there are a large number of write requests during the switching period, it will result in a request error (Storage Error `E_RPC_FAILURE`). See [FAQ](../20.appendix/0.FAQ.md#how_to_resolve_the_error_storage_error_e_rpc_failure) for error handling methods.
+During leader partition replica switching in NebulaGraph, the leader replicas will be temporarily prohibited from being written to until the switch is completed. If there are a large number of write requests during the switching period, it will result in a request error (Storage Error `E_RPC_FAILURE`). See [FAQ](../20.appendix/0.FAQ.md#how_to_resolve_the_error_storage_error_e_rpc_failure) for error handling methods.
 
-    You can set the value of `raft_heartbeat_interval_secs` in the Storage configuration file to control the timeout period for leader replica switching. For more information on the configuration file, see [Storage configuration file](../5.configurations-and-logs/1.configurations/4.storage-config.md).
+You can set the value of `raft_heartbeat_interval_secs` in the Storage configuration file to control the timeout period for leader replica switching. For more information on the configuration file, see [Storage configuration file](../5.configurations-and-logs/1.configurations/4.storage-config.md).
+:::

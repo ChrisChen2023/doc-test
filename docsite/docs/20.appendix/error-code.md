@@ -3,13 +3,14 @@
 NebulaGraph returns an error code when an error occurs. This topic describes the details of the error code returned.  
 
 
-!!! note
+:::note
 
-    - If an error occurs but no error code is returned, or if the error code description is unclear, we welcome your feedback or suggestions on the [forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues). 
+- If an error occurs but no error code is returned, or if the error code description is unclear, we welcome your feedback or suggestions on the [forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues). 
 
-    - When the code returned is `0`, it means that the operation is successful.
+- When the code returned is `0`, it means that the operation is successful.
 
 
+:::
 |Error name|Error Code|Description|
 |:---|:---|:---|
 |`E_DISCONNECTED`|`-1`| Lost connection |

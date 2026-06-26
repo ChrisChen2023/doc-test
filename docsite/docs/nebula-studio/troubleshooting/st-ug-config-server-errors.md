@@ -28,10 +28,11 @@ Check NebulaGraph service status. Regarding the operation of viewing services:
 
 If the NebulaGraph service is normal, proceed to Step 4 to continue troubleshooting. Otherwise, please restart NebulaGraph service.
 
-!!! note
+:::note
 
-    If you used `docker-compose up -d` to satrt NebulaGraph before, you must run the `docker-compose down` to stop NebulaGraph.
+If you used `docker-compose up -d` to satrt NebulaGraph before, you must run the `docker-compose down` to stop NebulaGraph.
 
+:::
 ### Step4: Confirm the network connection of the Graph service is normal
 
 Run a command (for example, telnet `<graph_server_ip>` 9669) on the Studio machine to confirm whether NebulaGraph's Graph service network connection is normal.

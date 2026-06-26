@@ -74,16 +74,18 @@ When the tag is created successfully, the **Define Properties** panel shows all 
 
    - To edit the TTL configuration: On the **Set TTL** panel, click **Edit** and then change the configuration of `TTL_COL` and `TTL_DURATION` (in seconds).
 
-    !!! note
+    :::note
 
-        For the problem of the coexistence of TTL and index, see [TTL](../../3.ngql-guide/8.clauses-and-options/ttl-options.md).
+    For the problem of the coexistence of TTL and index, see [TTL](../../3.ngql-guide/8.clauses-and-options/ttl-options.md).
 
+:::
 ## Delete a tag
 
-!!! danger
+:::danger
 
-    Confirm the [impact](../../3.ngql-guide/10.tag-statements/2.drop-tag.md) before deleting the tag. The deleted data cannot be restored if it is not [backup](../../backup-and-restore/nebula-br/1.what-is-br.md).
+Confirm the [impact](../../3.ngql-guide/10.tag-statements/2.drop-tag.md) before deleting the tag. The deleted data cannot be restored if it is not [backup](../../backup-and-restore/nebula-br/1.what-is-br.md).
 
+:::
 1. In the toolbar, click the **Schema** tab.
 
 2. In the **Graph Space List** page, find a graph space and then click its name or click **Schema** in the **Operations** column.

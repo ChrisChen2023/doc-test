@@ -6,10 +6,11 @@
 
 - 在 openCypher 兼容语句中，不允许在`LIMIT`子句前使用管道符，可以使用`SKIP`指明偏移量。
 
-  !!! note
+  :::note
 
-        在原生 nGQL 或 openCypher 方式中使用`LIMIT`时，使用`ORDER BY`子句限制输出顺序非常重要，否则会输出一个不可预知的子集。
+    在原生 nGQL 或 openCypher 方式中使用`LIMIT`时，使用`ORDER BY`子句限制输出顺序非常重要，否则会输出一个不可预知的子集。
 
+:::
 ## 原生 nGQL 语句中的 LIMIT
 
 在原生 nGQL 中，`LIMIT`有通用语法和`GO`语句中的专属语法。
@@ -114,10 +115,11 @@ nebula> GO 3 STEPS FROM "player102" OVER * BIDIRECT\
 
 `offset`和`number_rows`可以使用表达式，但是表达式的结果必须是非负整数。
 
-!!! note
+:::note
 
-    两个整数组成的分数表达式会自动向下取整。例如`8/6`向下取整为 1。
+两个整数组成的分数表达式会自动向下取整。例如`8/6`向下取整为 1。
 
+:::
 ### 单独使用 LIMIT
 
 `LIMIT`可以单独使用，返回指定数量的结果。

@@ -9,6 +9,7 @@ Cloud supports:
 - Self-managed cloud service based on Alibaba cloud, that is NebulaGraph Cloud Alibaba Edition.
 -->
 
-!!! note
+:::note
 
-    For now, Cloud does not support NebulaGraph core of version {{nebula.release}}. For the latest version of Cloud docs, see [What is NebulaGraph Cloud](https://docs.nebula-graph.io/{{cloud.azureLatestRelease}}/what-is-cloud/).
+For now, Cloud does not support NebulaGraph core of version {{nebula.release}}. For the latest version of Cloud docs, see [What is NebulaGraph Cloud](https://docs.nebula-graph.io/{{cloud.azureLatestRelease}}/what-is-cloud/).
+:::

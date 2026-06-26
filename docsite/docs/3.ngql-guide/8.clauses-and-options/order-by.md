@@ -18,10 +18,11 @@ There are two order options:
 | ORDER BY <expression> [ASC | DESC] [, <expression> [ASC | DESC] ...];
 ```
 
-!!! compatibility
+:::compatibility
 
-    In the native nGQL syntax, `$-.` must be used after `ORDER BY`. But it is not required in releases prior to 2.5.0.
+In the native nGQL syntax, `$-.` must be used after `ORDER BY`. But it is not required in releases prior to 2.5.0.
 
+:::
 ### Examples
 
 ```ngql

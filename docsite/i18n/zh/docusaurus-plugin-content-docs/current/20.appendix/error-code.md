@@ -2,12 +2,13 @@
 
 {{nebula.name}} 运行出现问题时，会返回错误码。本文介绍错误码的详细信息。
 
-!!! note
+:::note
     
-    - 如果出现错误但没有返回错误码，或错误码描述不清，请在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 反馈。
+- 如果出现错误但没有返回错误码，或错误码描述不清，请在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 反馈。
     
-    - 返回`0`表示执行成功。
+- 返回`0`表示执行成功。
 
+:::
 |错误名称|错误码|说明|
 |:---|:---|:---|
 |`E_DISCONNECTED`|`-1`| 连接断开 |

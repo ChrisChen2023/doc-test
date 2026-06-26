@@ -2,10 +2,11 @@
 
 `INNER JOIN`是一种连接查询。它基于两个表之间的共同列值进行匹配，并返回满足条件的记录。`INNER JOIN`通常用于根据关联列的值来创建一个包含两个表的结果集。在 {{nebula.name}} 中，可以显示地使用`INNER JOIN`子句在两个表之间进行连接查询，以获取更加复杂的查询结果。
 
-!!! note
+:::note
 
-    在 nGQL 语句中，`GO`的多跳查询隐式地使用了`INNER JOIN`子句。例如，`GO 1 TO 2 STEPS FROM "player101" OVER follow YIELD $$.player.name AS name, $$.player.age AS age`语句中，`GO`子句隐式地使用了`INNER JOIN`子句，将从`player101`出发沿`follow`边第一步查询的结果列和第二步查询的起点列进行匹配，然后基于匹配结果返回`name`和`age`。
+在 nGQL 语句中，`GO`的多跳查询隐式地使用了`INNER JOIN`子句。例如，`GO 1 TO 2 STEPS FROM "player101" OVER follow YIELD $$.player.name AS name, $$.player.age AS age`语句中，`GO`子句隐式地使用了`INNER JOIN`子句，将从`player101`出发沿`follow`边第一步查询的结果列和第二步查询的起点列进行匹配，然后基于匹配结果返回`name`和`age`。
 
+:::
 ## openCypher 兼容性
 
 `INNER JOIN`子句仅适用于原生 nGQL 语法。

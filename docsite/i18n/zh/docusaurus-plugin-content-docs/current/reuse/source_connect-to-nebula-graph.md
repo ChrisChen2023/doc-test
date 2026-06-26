@@ -2,10 +2,11 @@
 
 <!--本文中的链接必须用外链，因为这篇文档是复用的，用内部链接会出错。-->
 
-!!! caution
+:::caution
 
-    首次连接到 {{nebula.name}} 后，必须先[注册 Storage 服务](https://docs.nebula-graph.com.cn/{{nebula.release}}/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/)，才能正常查询数据。
+首次连接到 {{nebula.name}} 后，必须先[注册 Storage 服务](https://docs.nebula-graph.com.cn/{{nebula.release}}/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/)，才能正常查询数据。
 
+:::
  {{nebula.name}} 支持多种类型的客户端，包括命令行客户端、可视化界面客户端和流行编程语言客户端。详情参见[客户端列表](https://docs.nebula-graph.com.cn/{{nebula.release}}/14.client/1.nebula-client/)。
 
 ## 前提条件
@@ -16,37 +17,41 @@
 
 - NebulaGraph Console 的版本兼容 {{nebula.name}} 的版本。
 
-  !!! note
+  :::note
   
-        版本相同的 NebulaGraph Console 和 {{nebula.name}} 兼容程度最高，版本不同的 NebulaGraph Console 连接 {{nebula.name}} 时，可能会有兼容问题，或者无法连接并报错`incompatible version between client and server`。
+    版本相同的 NebulaGraph Console 和 {{nebula.name}} 兼容程度最高，版本不同的 NebulaGraph Console 连接 {{nebula.name}} 时，可能会有兼容问题，或者无法连接并报错`incompatible version between client and server`。
 
+:::
 ## 操作步骤
 
 1. 在 NebulaGraph Console [下载页面](https://github.com/vesoft-inc/nebula-console/releases "the nebula-console Releases page")，确认需要的版本，单击 **Assets**。
 
-  !!! note
+  :::note
 
-        建议选择**最新**版本。
+    建议选择**最新**版本。
 
+:::
 2. 在 **Assets** 区域找到机器运行所需的二进制文件，下载文件到机器上。
 
 
 3. （可选）为方便使用，重命名文件为`nebula-console`。
 
-  !!! note
+  :::note
 
-        在 Windows 系统中，请重命名为`nebula-console.exe`。
+    在 Windows 系统中，请重命名为`nebula-console.exe`。
 
+:::
 4. 在运行 NebulaGraph Console 的机器上执行如下命令，为用户授予 nebula-console 文件的执行权限。
 
-  !!! note
+  :::note
 
-       Windows 系统请跳过此步骤。
+   Windows 系统请跳过此步骤。
 
-    ```bash
-    $ chmod 111 nebula-console
-    ```
+```bash
+$ chmod 111 nebula-console
+```
 
+:::
 5. 在命令行界面中，切换工作目录至 nebula-console 文件所在目录。
 
 6. 执行如下命令连接 {{nebula.name}} 。

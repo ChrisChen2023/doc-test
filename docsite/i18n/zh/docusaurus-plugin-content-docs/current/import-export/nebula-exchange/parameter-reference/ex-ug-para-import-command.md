@@ -8,15 +8,16 @@
 <spark_install_path>/bin/spark-submit --master "spark://HOST:PORT" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange-2.x.y.jar_path> -c <application.conf_path> 
 ```
 
-!!! note
+:::note
 
-    如果数据的属性值包含中文字符，可能出现乱码。请在提交 Spark 任务时加上以下选项：
+如果数据的属性值包含中文字符，可能出现乱码。请在提交 Spark 任务时加上以下选项：
 
-    ```
-    --conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
-    --conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
-    ```
+```
+--conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
+--conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
+```
 
+:::
 参数说明如下。
 
 | 参数 | 是否必需 | 默认值 | 说明 |
@@ -30,22 +31,23 @@
 
 更多 Spark 的参数配置说明请参见 [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html#runtime-environment)。
 
-!!! note
+:::note
 
-    - JAR 文件版本号以实际编译得到的 JAR 文件名称为准。
+- JAR 文件版本号以实际编译得到的 JAR 文件名称为准。
 
-    - 如果使用 [yarn 模式](https://spark-reference-doc-cn.readthedocs.io/zh_CN/latest/deploy-guide/running-on-yarn.html)提交任务，请参考如下示例，**尤其是示例中的两个**`--conf`。
+- 如果使用 [yarn 模式](https://spark-reference-doc-cn.readthedocs.io/zh_CN/latest/deploy-guide/running-on-yarn.html)提交任务，请参考如下示例，**尤其是示例中的两个**`--conf`。
 
-    ```bash
-    $SPARK_HOME/bin/spark-submit     --master yarn \
-    --class com.vesoft.nebula.exchange.Exchange \
-    --files application.conf \
-    --conf spark.driver.extraClassPath=./ \
-    --conf spark.executor.extraClassPath=./ \
-    nebula-exchange-{{exchange.release}}.jar \
-    -c application.conf
-    ```
+```bash
+$SPARK_HOME/bin/spark-submit     --master yarn \
+--class com.vesoft.nebula.exchange.Exchange \
+--files application.conf \
+--conf spark.driver.extraClassPath=./ \
+--conf spark.executor.extraClassPath=./ \
+nebula-exchange-{{exchange.release}}.jar \
+-c application.conf
+```
 
+:::
 ## 导入 reload 文件
   
 如果导入数据时有一些数据导入失败，会将导入失败的数据存入 reload 文件，可以用参数`-r`尝试导入 reload 文件中的数据。

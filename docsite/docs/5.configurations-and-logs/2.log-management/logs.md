@@ -105,10 +105,11 @@ This section provides an example of how to use cron jobs to regularly delete old
   * * * * * find <log_path> -name "<YourProjectName>" -mtime +7 -delete
   ```
 
-  !!! caution
+  :::caution
 
-        The `find` command in the above command should be executed by the root user or a user with sudo privileges.
+    The `find` command in the above command should be executed by the root user or a user with sudo privileges.
 
+:::
   - `* * * * *`: This cron job time field signifies that the task is executed every minute. For other settings, see [Cron Expression](https://crontab.cronhub.io/).
   - `<log_path>`: The path of the service runtime log file, such as `/usr/local/nebula/logs`.
   - `<YourProjectName>`: The log file name, such as `nebula-graphd.*`.
@@ -128,10 +129,11 @@ This section provides an example of how to use cron jobs to regularly delete old
 
 Logrotate is a tool that can rotate specified log files for archiving and recycling.
 
-!!! note
+:::note
 
-    You must be the root user or a user with sudo privileges to install or run logrotate.
+You must be the root user or a user with sudo privileges to install or run logrotate.
 
+:::
 This section provides an example of how to use logrotate to manage the Graph service's `INFO` level log file (`/usr/local/nebula/logs/nebula-graphd.INFO.impl`). 
 
 1. In the Graph service configuration file, set `timestamp_in_logfile_name` to `false` so that the logrotate tool can recognize the log file name. Then, restart the service.

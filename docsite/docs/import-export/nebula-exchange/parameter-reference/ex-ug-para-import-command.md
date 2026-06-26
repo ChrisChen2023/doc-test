@@ -8,15 +8,16 @@ After editing the configuration file, run the following commands to import speci
 <spark_install_path>/bin/spark-submit --master "spark://HOST:PORT" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange-2.x.y.jar_path> -c <application.conf_path> 
 ```
 
-!!! note
+:::note
 
-    If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
+If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
 
-    ```
-    --conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
-    --conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
-    ```
+```
+--conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
+--conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
+```
 
+:::
 The following table lists command parameters.
 
 | Parameter | Required | Default value | Description |
@@ -30,22 +31,23 @@ The following table lists command parameters.
 
 For more Spark parameter configurations, see [Spark Configuration](https://spark.apache.org/docs/latest/configuration.html#runtime-environment).
 
-!!! note
+:::note
 
-    - The version number of a JAR file is subject to the name of the JAR file that is actually compiled.
+- The version number of a JAR file is subject to the name of the JAR file that is actually compiled.
 
-    - If users use the [yarn mode](https://spark-reference-doc-cn.readthedocs.io/zh_CN/latest/deploy-guide/running-on-yarn.html) to submit a job, see the following command, **especially the two '--conf' commands in the example**.
+- If users use the [yarn mode](https://spark-reference-doc-cn.readthedocs.io/zh_CN/latest/deploy-guide/running-on-yarn.html) to submit a job, see the following command, **especially the two '--conf' commands in the example**.
 
-    ```bash
-    $SPARK_HOME/bin/spark-submit     --master yarn \
-    --class com.vesoft.nebula.exchange.Exchange \
-    --files application.conf \
-    --conf spark.driver.extraClassPath=./ \
-    --conf spark.executor.extraClassPath=./ \
-    nebula-exchange-{{exchange.release}}.jar \
-    -c application.conf
-    ```
+```bash
+$SPARK_HOME/bin/spark-submit     --master yarn \
+--class com.vesoft.nebula.exchange.Exchange \
+--files application.conf \
+--conf spark.driver.extraClassPath=./ \
+--conf spark.executor.extraClassPath=./ \
+nebula-exchange-{{exchange.release}}.jar \
+-c application.conf
+```
 
+:::
 ## Import the reload file
 
 If some data fails to be imported during the import, the failed data will be stored in the reload file. Use the parameter `-r` to import the data in reload file.

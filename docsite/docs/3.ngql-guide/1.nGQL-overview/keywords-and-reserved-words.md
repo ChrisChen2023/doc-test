@@ -11,10 +11,11 @@ It is not recommended to use keywords to identify schemas. If you must use keywo
   - If the identifier contains any uppercase letter, you must enclose them with backticks (\`), such as \`Comment\`. Otherwise, the execution succeeds but the system automatically converts the identifier to all lowercase.
   - If the identifier contains all lowercase letters, you do not need to enclose them with backticks (\`).
 
-!!! note
+:::note
 
-    Keywords are case-insensitive.
+Keywords are case-insensitive.
 
+:::
 ```ngql
 nebula> CREATE TAG TAG(name string);
 [ERROR (-1004)]: SyntaxError: syntax error near `TAG'

@@ -72,14 +72,15 @@ NebulaGraph Console 的获取方式如下：
 
 NebulaGraph Console 可以保存参数，用于参数化查询。
 
-!!! note
+:::note
 
-    - VID 不支持参数化查询。
+- VID 不支持参数化查询。
 
-    - `SAMPLE`子句中不支持参数化查询。
+- `SAMPLE`子句中不支持参数化查询。
 
-    - 会话释放后，参数不会保留。
+- 会话释放后，参数不会保留。
 
+:::
 - 保存参数命令如下：
 
   ```ngql
@@ -129,14 +130,15 @@ NebulaGraph Console 可以保存参数，用于参数化查询。
 
 导出命令执行的返回结果，可以保存为 CSV 文件、 DOT 文件或者 Profile/Explain 结果。
 
-!!! note
+:::note
 
-    - 文件保存在当前工作目录中，即 Linux 命令`pwd`显示的目录。
+- 文件保存在当前工作目录中，即 Linux 命令`pwd`显示的目录。
 
-    - 命令只对下一条查询语句生效。
+- 命令只对下一条查询语句生效。
 
-    - DOT 文件的内容可以复制后在 [GraphvizOnline](https://dreampuf.github.io/GraphvizOnline/) 网页中粘贴，生成可视化的执行计划图。
+- DOT 文件的内容可以复制后在 [GraphvizOnline](https://dreampuf.github.io/GraphvizOnline/) 网页中粘贴，生成可视化的执行计划图。
 
+:::
 - 导出 CSV 文件命令如下：
 
   ```ngql
@@ -167,10 +169,11 @@ NebulaGraph Console 可以保存参数，用于参数化查询。
   nebula> :explain <file_name>;
   ```
 
-!!! note
+:::note
 
-    相比于 Studio 中的截图、CSV 文件，因为保有更多信息量和拥有更好的可读性，经由此命令输出的文本文件内容是首推的在 GitHub issue、论坛中报告执行计划、图查询调优的方式。
+相比于 Studio 中的截图、CSV 文件，因为保有更多信息量和拥有更好的可读性，经由此命令输出的文本文件内容是首推的在 GitHub issue、论坛中报告执行计划、图查询调优的方式。
 
+:::
   示例：
 
   ```ngql

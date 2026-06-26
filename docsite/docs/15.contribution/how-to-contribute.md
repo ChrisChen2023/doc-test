@@ -106,17 +106,18 @@ The NebulaGraph project has many [repositories](https://github.com/vesoft-inc). 
   git checkout -b myfeature
   ```
 
-  !!! note
+  :::note
 
-        Because the PR often consists of several commits, which might be squashed while being merged into upstream. We strongly suggest you to open a separate topic branch to make your changes on. After merged, this topic branch can be just abandoned, thus you could synchronize your master branch with upstream easily with a rebase like above. Otherwise, if you commit your changes directly into master, you need to use a hard reset on the master branch. For example:
+    Because the PR often consists of several commits, which might be squashed while being merged into upstream. We strongly suggest you to open a separate topic branch to make your changes on. After merged, this topic branch can be just abandoned, thus you could synchronize your master branch with upstream easily with a rebase like above. Otherwise, if you commit your changes directly into master, you need to use a hard reset on the master branch. For example:
 
-        ```bash
-        git fetch upstream
-        git checkout master
-        git reset --hard upstream/master
-        git push --force origin master
-        ```
+    ```bash
+    git fetch upstream
+    git checkout master
+    git reset --hard upstream/master
+    git push --force origin master
+    ```
 
+:::
 ## Step 4: Develop
 
 - Code style
@@ -131,10 +132,11 @@ The NebulaGraph project has many [repositories](https://github.com/vesoft-inc). 
 
   For more information, see [Install NebulaGraph by compiling the source code](../4.deployment-and-installation/2.compile-and-install-nebula-graph/1.install-nebula-graph-by-compiling-the-source-code.md).
 
-  !!! note
+  :::note
 
-        Make sure you have enabled the building of unit tests by setting `-DENABLE_TESTING=ON`.
+    Make sure you have enabled the building of unit tests by setting `-DENABLE_TESTING=ON`.
 
+:::
 - Run tests
 
   In the root directory of `nebula`, run the following command:

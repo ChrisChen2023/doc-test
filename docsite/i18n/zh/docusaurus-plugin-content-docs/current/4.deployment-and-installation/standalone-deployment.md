@@ -2,10 +2,11 @@
 
 存算合并版 {{nebula.name}} 将存储服务（Meta 和 Storage）和计算服务（Graph）合并至一个进程，用于部署在单台机器上。本文介绍存算合并版 {{nebula.name}} 的使用场景、安装步骤等。
 
-!!! danger
+:::danger
 
-    存算合并版 {{nebula.name}} 不用于生产环境。
+存算合并版 {{nebula.name}} 不用于生产环境。
 
+:::
 ## 背景信息
 
 传统的 {{nebula.name}} 架构由 3 个服务构成，每个服务都有可执行的二进制文件和对应的进程，进程之间通过 RPC 协议进行调用。而在存算合并版 {{nebula.name}} 中，{{nebula.name}} 中 3 个服务对应的 3 个进程被合为 1 个进程。

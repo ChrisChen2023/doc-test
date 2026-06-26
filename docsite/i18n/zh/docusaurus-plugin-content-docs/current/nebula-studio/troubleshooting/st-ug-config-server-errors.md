@@ -27,10 +27,11 @@
   
 如果 {{nebula.name}} 服务正常，进入第 4 步继续排查问题。否则，请重启 {{nebula.name}} 服务。
 
-!!! note
+:::note
 
-    如果之前使用 `docker-compose up -d` 启动 {{nebula.name}}，必须运行 `docker-compose down` 命令停止 {{nebula.name}} 。
+如果之前使用 `docker-compose up -d` 启动 {{nebula.name}}，必须运行 `docker-compose down` 命令停止 {{nebula.name}} 。
 
+:::
 ### 第 4 步。确认 Graph 服务的网络连接是否正常
 
 在 Studio 机器上运行命令（例如 `telnet <graph_server_ip> 9669`）确认 {{nebula.name}} 的 Graph 服务网络连接是否正常。

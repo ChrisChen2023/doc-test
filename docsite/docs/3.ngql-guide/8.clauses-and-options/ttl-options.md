@@ -25,12 +25,13 @@ The native nGQL TTL feature has the following options.
 |`ttl_col`|Specifies an existing property to set a lifespan on. The data type of the property must be `int` or `timestamp`.|
 |`ttl_duration`|Specifies the timeout adds-on value in seconds. The value must be a non-negative int64 number. A property expires if the sum of its value and the `ttl_duration` value is smaller than the current timestamp. If the `ttl_duration` value is `0`, the property never expires.<br/>You can set `ttl_use_ms` to `true` in the configuration file `nebula-storaged.conf` (default path: `/usr/local/nightly/etc/`) to set the default unit to milliseconds.|
 
-!!! warning
+:::warning
 
-    - Before setting `ttl_use_ms` to `true`, make sure that no TTL has been set for any property, as shortening the expiration time may cause data to be erroneously deleted.
+- Before setting `ttl_use_ms` to `true`, make sure that no TTL has been set for any property, as shortening the expiration time may cause data to be erroneously deleted.
  
-    - After setting `ttl_use_ms` to `true`, which sets the default TTL unit to milliseconds, the data type of the property specified by `ttl_col` must be `int`, and the property value needs to be manually converted to milliseconds. For example, when setting `ttl_col` to `a`, you need to convert the value of `a` to milliseconds, such as when the value of `a` is `now()`, you need to set the value of `a` to `now() * 1000`.
+- After setting `ttl_use_ms` to `true`, which sets the default TTL unit to milliseconds, the data type of the property specified by `ttl_col` must be `int`, and the property value needs to be manually converted to milliseconds. For example, when setting `ttl_col` to `a`, you need to convert the value of `a` to milliseconds, such as when the value of `a` is `now()`, you need to set the value of `a` to `now() * 1000`.
 
+:::
 ## Use TTL options
 
 You must use the TTL options together to set a lifespan on a property.
@@ -67,11 +68,12 @@ nebula> INSERT VERTEX t2(a, b, c) VALUES "102":(1648197138, 30, "Hello");
 ```
 ## Data expiration and deletion
 
-!!! caution
+:::caution
 
-    - When the TTL options are set for a property of a tag or an edge type and the property's value is `NULL`, the property never expires. 
-    - If a property with a default value of `now()` is added to a tag or an edge type and the TTL options are set for the property, the history data related to the tag or the edge type will never expire because the value of that property for the history data is the current timestamp.
+- When the TTL options are set for a property of a tag or an edge type and the property's value is `NULL`, the property never expires. 
+- If a property with a default value of `now()` is added to a tag or an edge type and the TTL options are set for the property, the history data related to the tag or the edge type will never expire because the value of that property for the history data is the current timestamp.
   
+:::
 ### Vertex property expiration
 
 Vertex property expiration has the following impact.
@@ -90,10 +92,11 @@ The expired data are still stored on the disk, but queries will filter them out.
 
 NebulaGraph automatically deletes the expired data and reclaims the disk space during the next [compaction](../../8.service-tuning/compaction.md).
 
-!!! note
+:::note
 
-    If TTL is [disabled](#remove_a_timeout), the corresponding data deleted after the last compaction can be queried again.
+If TTL is [disabled](#remove_a_timeout), the corresponding data deleted after the last compaction can be queried again.
 
+:::
 ## Remove a timeout
 
 To disable TTL and remove the timeout on a property, you can use the following approaches.

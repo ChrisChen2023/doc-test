@@ -320,10 +320,11 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
 
 When configuring either the `tags.exec` or `edges.exec` parameters, you need to fill in the Cypher query. To prevent loss of data during import, it is strongly recommended to include `ORDER BY` clause in Cypher queries. Meanwhile, in order to improve data import efficiency, it is better to select indexed properties for ordering. If there is no index, users can also observe the default order and select the appropriate properties for ordering to improve efficiency. If the pattern of the default order cannot be found, users can order them by the ID of the vertex or relationship and set the `partition` to a small value to reduce the ordering pressure of Neo4j.
 
-!!! note
+:::note
 
-    Using the `ORDER BY` clause lengthens the data import time.
+Using the `ORDER BY` clause lengthens the data import time.
 
+:::
 Exchange needs to execute different `SKIP` and `LIMIT` Cypher statements on different Spark partitions, so `SKIP` and `LIMIT` clauses cannot be included in the Cypher statements corresponding to `tags.exec` and `edges.exec`.
 
 #### tags.vertex or edges.vertex configuration
@@ -342,10 +343,11 @@ Run the following command to import Neo4j data into NebulaGraph. For a descripti
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <neo4j_application.conf_path> 
 ```
 
-!!! note
+:::note
 
-    JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
+JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
 
+:::
 For example:
 
 ```bash

@@ -2,11 +2,12 @@
 
 在 {{nebula.name}} 中，用户必须先有 Schema，才能向其中写入点数据和边数据。本文描述如何使用 {{nebula.name}} 的**控制台**或 **Schema** 功能创建 Schema。
 
-!!! note
+:::note
 
-    - 用户可以使用 nebula-console 创建 Schema。详情参见 [{{nebula.name}} 使用手册](../../README.md)和 [{{nebula.name}} 快速开始](../../2.quick-start/1.quick-start-overview.md)。
-    - 用户可以使用 Schema 草图功能图形化设计 Schema。详情参见 [Schema 草图](draft.md)。
+- 用户可以使用 nebula-console 创建 Schema。详情参见 [{{nebula.name}} 使用手册](../../README.md)和 [{{nebula.name}} 快速开始](../../2.quick-start/1.quick-start-overview.md)。
+- 用户可以使用 Schema 草图功能图形化设计 Schema。详情参见 [Schema 草图](draft.md)。
 
+:::
 ## 前提条件
 
 在 Studio 上创建 Schema 之前，用户需要确认以下信息：
@@ -19,10 +20,11 @@
 
 - 已经创建图空间。
 
-!!! note
+:::note
 
-    本示例已经创建图空间。如果账号拥有 GOD 权限，也可以在 **控制台** 或 **Schema** 上创建一个图空间。
+本示例已经创建图空间。如果账号拥有 GOD 权限，也可以在 **控制台** 或 **Schema** 上创建一个图空间。
 
+:::
 ## 使用 Schema 管理功能创建 Schema
 
 按以下步骤使用 **Schema** 管理功能创建 Schema：

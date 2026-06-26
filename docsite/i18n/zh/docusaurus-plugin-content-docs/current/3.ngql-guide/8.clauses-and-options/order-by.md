@@ -18,10 +18,11 @@
 | ORDER BY <expression> [ASC | DESC] [, <expression> [ASC | DESC] ...];
 ```
 
-!!! compatibility
+:::compatibility
 
-    原生 nGQL 语法中，`ORDER BY`命令后必须使用引用符`$-.`。但在 2.5.0 之前的版本中不需要。
+原生 nGQL 语法中，`ORDER BY`命令后必须使用引用符`$-.`。但在 2.5.0 之前的版本中不需要。
 
+:::
 ### 示例
 
 ```ngql

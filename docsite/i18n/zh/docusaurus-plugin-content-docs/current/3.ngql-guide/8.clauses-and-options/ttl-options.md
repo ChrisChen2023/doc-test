@@ -25,11 +25,12 @@ nGQL 支持的 TTL 选项如下。
 |`ttl_col`|指定一个现有的要设置存活时间的属性。属性的数据类型必须是`int`或者`timestamp`。|
 |`ttl_duration`|指定时间戳差值，默认单位：秒。时间戳差值必须为 64 位非负整数。属性值和时间戳差值之和如果小于当前时间戳，属性就会过期。如果`ttl_duration`为`0`，属性永不过期。<br/>可在配置文件`nebula-storaged.conf`（默认路径`/usr/local/nightly/etc/`）中设置`ttl_use_ms`为`true`将默认单位设为毫秒。|
 
-!!! warning
+:::warning
 
-    - 在设置`ttl_use_ms`为`true`前，请确保没有为属性设置 TTL，否则会因为过期时间缩短，导致数据被错误地删除。
-    - 在设置`ttl_use_ms`为`true`后，即设置`ttl_duration`的默认单位为毫秒后，`ttl_col`的默认单位仍然为秒，它的数据类型必须是`int`，并且需要手动转换属性值为毫秒。例如设置`ttl_col`为`a`，则需要将`a`的值转换为毫秒，如当`a`的值为`now()`，则需要将`a`的值设置为`now() * 1000`。
+- 在设置`ttl_use_ms`为`true`前，请确保没有为属性设置 TTL，否则会因为过期时间缩短，导致数据被错误地删除。
+- 在设置`ttl_use_ms`为`true`后，即设置`ttl_duration`的默认单位为毫秒后，`ttl_col`的默认单位仍然为秒，它的数据类型必须是`int`，并且需要手动转换属性值为毫秒。例如设置`ttl_col`为`a`，则需要将`a`的值转换为毫秒，如当`a`的值为`now()`，则需要将`a`的值设置为`now() * 1000`。
 
+:::
 ## 使用 TTL 选项
 
 在使用 TTL 功能之前，必须先创建一个时间戳或整数属性，并在 TTL 选项中指定了它。数据库不会自动为您创建或管理这个时间戳属性。
@@ -65,12 +66,13 @@ nebula> INSERT VERTEX t2(a, b, c) VALUES "102":(1648197138, 30, "Hello");
 
 ## 属性过期
 
-!!! caution 
+:::caution
 
-    - 当为一个 Tag 或 Edge type 的属性设置 TTL 并该属性的值为`NULL`时，TTL 功能不会生效，即该属性永不过期。
+- 当为一个 Tag 或 Edge type 的属性设置 TTL 并该属性的值为`NULL`时，TTL 功能不会生效，即该属性永不过期。
       
-    - 如果为一个 Tag 或 Edge type 新增默认值为`now()`的属性并且该属性设置了 TTL，该 Tag 或 Edge type 相关的历史数据不会过期，因为历史数据的该属性值为当前时间戳。
+- 如果为一个 Tag 或 Edge type 新增默认值为`now()`的属性并且该属性设置了 TTL，该 Tag 或 Edge type 相关的历史数据不会过期，因为历史数据的该属性值为当前时间戳。
 
+:::
 ### 点属性过期
 
 点属性过期有如下影响：
@@ -89,10 +91,11 @@ nebula> INSERT VERTEX t2(a, b, c) VALUES "102":(1648197138, 30, "Hello");
 
  {{nebula.name}} 自动删除过期数据后，会在下一次 [Compaction](../../8.service-tuning/compaction.md) 过程中回收硬盘空间。
 
-!!! note
+:::note
 
-    如果[关闭 TTL 选项](#ttl_1)，上一次 Compaction 之后的过期数据将可以被查询到。
+如果[关闭 TTL 选项](#ttl_1)，上一次 Compaction 之后的过期数据将可以被查询到。
 
+:::
 ## 删除存活时间
 
 删除存活时间可以使用如下几种方法：

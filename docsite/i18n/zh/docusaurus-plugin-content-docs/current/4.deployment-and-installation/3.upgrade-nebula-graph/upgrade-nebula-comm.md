@@ -15,11 +15,12 @@
 <!-- 结论：社区版 2.5之前的版本 不支持升级到3.4及以上 ，原因：2.x（x<5）之前的版本和3.x都没记录meta版本号，升级到3.4（记录版本号）时，无法识别是哪种，所以就在手册写禁止2.5之前的升级，而允许3.x的升级，因为2.5和2.6是有记录meta版本号的，所以可以升级至3.x；
 ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为是按照3.x来做的处理，某些情况下数据可能不正确（这里的某些比较复杂），所以就禁止了 -->
 
-!!! caution
+:::caution
 
-    如需从 2.0.0 之前的版本（含 1.x 版本）升级到 {{nebula.release}}，还需找到 {{nebula.release}} 版本文件中`share/resources`目录下的`date_time_zonespec.csv`文件，将其复制到 {{nebula.name}} 安装路径下的相同目录内。也可从 [GitHub](https://github.com/vesoft-inc/nebula/blob/master/resources/date_time_zonespec.csv) 下载该文件。
+如需从 2.0.0 之前的版本（含 1.x 版本）升级到 {{nebula.release}}，还需找到 {{nebula.release}} 版本文件中`share/resources`目录下的`date_time_zonespec.csv`文件，将其复制到 {{nebula.name}} 安装路径下的相同目录内。也可从 [GitHub](https://github.com/vesoft-inc/nebula/blob/master/resources/date_time_zonespec.csv) 下载该文件。
 
 
+:::
 - 不支持轮转热升级，需完全停止整个集群服务。
 
 - 未提供升级脚本，需手动在每台服务器上依次执行。
@@ -66,23 +67,26 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
 
   在升级部署了全文索引的 {{nebula.name}} 前，需要手动删除 Elasticsearch (ES) 中的全文索引。在升级后需要重新使用`SIGN IN`语句登录 ES 并重新创建全文索引。用户可通过 cURL 命令手动删除 ES 中全文索引。命令为`curl -XDELETE -u <es_username>:<es_password> '<es_access_ip>:<port>/<fullindex_name>'`，例如`curl -XDELETE -u elastic:elastic 'http://192.168.8.223:9200/nebula_index_2534'`。如果 ES 没有设置用户名及密码，则无需指定`-u`选项。 
 
-!!! caution
+:::caution
 
-    可能存在其它暂未发现的影响，建议升级前详细查看版本发布说明和产品手册，并密切关注[论坛](https://discuss.nebula-graph.com.cn/)与 [GitHub](https://github.com/vesoft-inc/nebula/issues) 的最新动态。
+可能存在其它暂未发现的影响，建议升级前详细查看版本发布说明和产品手册，并密切关注[论坛](https://discuss.nebula-graph.com.cn/)与 [GitHub](https://github.com/vesoft-inc/nebula/issues) 的最新动态。
 
+:::
 ## 升级准备
 
 - 根据操作系统和架构下载 {{nebula.name}} {{nebula.release}} 版本的包文件并解压，升级过程中需要其中的二进制文件。下载地址参见 [Download 页面](https://nebula-graph.io/download/)。
 
-  !!! note
+  :::note
 
-        编译源码或者下载 RPM/DEB、TAR 包都可以获取新版二进制文件。
+    编译源码或者下载 RPM/DEB、TAR 包都可以获取新版二进制文件。
 
+:::
 - 根据 Storage 和 Meta 服务配置中`data_path`参数的值找到数据文件的位置，并备份数据。默认路径为`nebula/data/storage`和`nebula/data/meta`。
 
-  !!! danger
-        升级时不会自动备份原有数据。务必手动备份数据，防止丢失。
+  :::danger
+    升级时不会自动备份原有数据。务必手动备份数据，防止丢失。
 
+:::
 - 备份配置文件。
 
 - 统计所有图空间升级前的数据量，供升级后比较。统计方法如下：
@@ -102,19 +106,22 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
 
   `storaged` 进程 flush 数据要等待约 1 分钟。运行命令后可继续运行`nebula.service status all`命令以确认所有服务都已停止。启动和停止服务的详细说明参见[管理服务](../manage-service.md)。
 
-  !!! note
+  :::note
 
-        如果超过 20 分钟不能停止服务，放弃本次升级，在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
+    如果超过 20 分钟不能停止服务，放弃本次升级，在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
 
-  !!! caution
+  :::
+  :::caution
 
-        从 3.0.0 开始，支持插入无 Tag 的点。如果用户需要保留无 Tag 的点，在集群内所有 Graph 服务的配置文件（`nebula-graphd.conf`）中新增`--graph_use_vertex_key=true`；在所有 Storage 服务的配置文件（`nebula-storaged.conf`）中新增`--use_vertex_key=true`。
+    从 3.0.0 开始，支持插入无 Tag 的点。如果用户需要保留无 Tag 的点，在集群内所有 Graph 服务的配置文件（`nebula-graphd.conf`）中新增`--graph_use_vertex_key=true`；在所有 Storage 服务的配置文件（`nebula-storaged.conf`）中新增`--use_vertex_key=true`。
 
+:::
 2. 在**升级准备**中下载的包的目的路径下，用此处`bin`目录中的新版二进制文件替换 {{nebula.name}} 安装路径下`bin`目录中的旧版二进制文件。
 
-  !!! note
-        每台部署了 {{nebula.name}} 服务的机器上都要更新相应服务的二进制文件。
+  :::note
+    每台部署了 {{nebula.name}} 服务的机器上都要更新相应服务的二进制文件。
 
+:::
 3. 编辑所有 Graph 服务的配置文件，修改以下参数以适应新版本的取值范围。如参数值已在规定范围内，忽略该步骤。
    <!-- 在3.0.0后可忽略该步骤，因为3.0.0及之后配置文件中改了该字段的默认值。 -->
 
@@ -133,15 +140,17 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
 
   启动后可以任意启动一个 Graph 服务节点，使用 {{nebula.name}} 连接该节点并运行[`SHOW HOSTS meta`](../../3.ngql-guide/7.general-query-statements/6.show/6.show-hosts.md)和[`SHOW META LEADER`](../../3.ngql-guide/7.general-query-statements/6.show/19.show-meta-leader.md)，如果能够正常返回 Meta 节点的状态，则 Meta 服务启动成功。
 
-  !!! note
-        如果启动异常，放弃本次升级，并在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
+  :::note
+    如果启动异常，放弃本次升级，并在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
 
 
+:::
 5. 启动所有 Graph 和 Storage 服务。
 
-  !!! note
-        如果启动异常，放弃本次升级，并在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
+  :::note
+    如果启动异常，放弃本次升级，并在[论坛](https://discuss.nebula-graph.com.cn/)或 [GitHub](https://github.com/vesoft-inc/nebula/issues) 提问。
 
+:::
 6. 连接新版 {{nebula.name}}，验证服务是否可用、数据是否正常。连接方法参见[连接服务](../connect-to-nebula-graph.md)。
 
   目前尚无有效方式判断升级是否完全成功，可用于测试的参考命令如下：

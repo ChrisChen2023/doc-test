@@ -16,15 +16,17 @@ This topic applies to native nGQL only. For the openCypher syntax, use [`RETURN`
 
 * In openCypher, `YIELD` is used in the `CALL[…YIELD]` clause to specify the output of the procedure call.
 
-  !!! note
+  :::note
 
-        NGQL does not support `CALL[…YIELD]` yet.
+    NGQL does not support `CALL[…YIELD]` yet.
 
+:::
 * In nGQL, `YIELD` works like `RETURN` in openCypher.
 
-!!! note
-    In the following examples, `$$` and `$-` are property references. For more information, see [Reference to properties](../4.variable-and-composite-queries/3.property-reference.md).
+:::note
+In the following examples, `$$` and `$-` are property references. For more information, see [Reference to properties](../4.variable-and-composite-queries/3.property-reference.md).
 
+:::
 ## YIELD clauses
 
 ### Syntax

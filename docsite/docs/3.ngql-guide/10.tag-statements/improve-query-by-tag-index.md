@@ -44,6 +44,7 @@ nebula> LOOKUP ON shareholder YIELD id(vertex);
 +-------------+
 ```
 
-!!! note
+:::note
 
-    If the index is created after inserting the test data, use the `REBUILD TAG INDEX <index_name_list>;` statement to rebuild the index.
+If the index is created after inserting the test data, use the `REBUILD TAG INDEX <index_name_list>;` statement to rebuild the index.
+:::

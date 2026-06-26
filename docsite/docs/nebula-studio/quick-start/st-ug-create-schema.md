@@ -2,11 +2,12 @@
 
 To batch import data into NebulaGraph, you must have a graph schema. You can create a schema on the **Console** page or on the **Schema** page of Studio.
 
-!!! note
+:::note
 
-    - Users can use nebula-console to create a schema. For more information, see [NebulaGraph Manual](../../README.md) and [Get started with NebulaGraph](../../2.quick-start/1.quick-start-workflow.md).
-    - Users can use the Schema drafting function to design schema visually. For more information, see [Schema drafting](draft.md).
+- Users can use nebula-console to create a schema. For more information, see [NebulaGraph Manual](../../README.md) and [Get started with NebulaGraph](../../2.quick-start/1.quick-start-workflow.md).
+- Users can use the Schema drafting function to design schema visually. For more information, see [Schema drafting](draft.md).
 
+:::
 ## Prerequisites
 
 To create a graph schema on Studio, you must do a check of these:
@@ -19,10 +20,11 @@ To create a graph schema on Studio, you must do a check of these:
 
 - A graph space is created.
   
-!!! note
+:::note
 
-    If no graph space exists and your account has the GOD privilege, you can create a graph space on the **Console** page. For more information, see [CREATE SPACE](../../3.ngql-guide/9.space-statements/1.create-space.md).
+If no graph space exists and your account has the GOD privilege, you can create a graph space on the **Console** page. For more information, see [CREATE SPACE](../../3.ngql-guide/9.space-statements/1.create-space.md).
 
+:::
 ## Create a schema with Schema
 
 1. Create tags. For more information, see [Operate tags](../manage-schema/st-ug-crud-tag.md).

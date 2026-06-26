@@ -73,14 +73,15 @@ For information on more parameters, see the [project repository](https://github.
 
 You can save parameters for parameterized queries.
 
-!!! note
+:::note
 
-    - Setting a parameter as a VID in a query is not supported.
+- Setting a parameter as a VID in a query is not supported.
 
-    - Parameters are not supported in `SAMPLE` clauses.
+- Parameters are not supported in `SAMPLE` clauses.
 
-    - Parameters are deleted when their sessions are released.
+- Parameters are deleted when their sessions are released.
 
+:::
 - The command to save a parameter is as follows:
 
   ```ngql
@@ -129,14 +130,15 @@ You can save parameters for parameterized queries.
 
 Export query results,  which can be saved as a CSV file, DOT file, and a format of Profile or Explain.
 
-!!! note
+:::note
 
-    - The exported file is stored in the working directory, i.e., what the linux command `pwd` shows.
+- The exported file is stored in the working directory, i.e., what the linux command `pwd` shows.
 
-    - This command only works for the next query statement.
+- This command only works for the next query statement.
 
-    - You can copy the contents of the DOT file and paste them in [GraphvizOnline](https://dreampuf.github.io/GraphvizOnline/) to generate a visualized execution plan.
+- You can copy the contents of the DOT file and paste them in [GraphvizOnline](https://dreampuf.github.io/GraphvizOnline/) to generate a visualized execution plan.
 
+:::
 - The command to export a csv file is as follows:
 
   ```ngql
@@ -167,10 +169,11 @@ Export query results,  which can be saved as a CSV file, DOT file, and a format 
   nebula> :explain <file_name>;
   ```
 
-  !!! note
+  :::note
 
-        The text file output by the above command is the preferred way to report issues in GitHub and execution plans in forums, and for graph query tuning because it has more information and is more readable than a screenshot or CSV file in Studio.
+    The text file output by the above command is the preferred way to report issues in GitHub and execution plans in forums, and for graph query tuning because it has more information and is more readable than a screenshot or CSV file in Studio.
 
+:::
   The example is as follows:
 
   ```ngql

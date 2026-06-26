@@ -43,6 +43,7 @@ nebula> LOOKUP ON shareholder YIELD id(vertex);
 +-------------+
 ```
 
-!!! note
+:::note
 
-    如果插入测试数据后才创建索引，请用`REBUILD TAG INDEX <index_name_list>;`语句重建索引。
+如果插入测试数据后才创建索引，请用`REBUILD TAG INDEX <index_name_list>;`语句重建索引。
+:::

@@ -11,10 +11,11 @@ To upgrade NebulaGraph from historical versions to {{nebula.release}}:
 1. Upgrade it to the latest 2.5 version according to the docs of that version.
 2. Follow this topic to upgrade it to {{nebula.release}}.
 
-!!! caution
+:::caution
 
-    To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to {{nebula.release}}, you need to find the `date_time_zonespec.csv` in the `share/resources` directory of {{nebula.release}} files, and then copy it to the same directory in the NebulaGraph installation path.
+To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to {{nebula.release}}, you need to find the `date_time_zonespec.csv` in the `share/resources` directory of {{nebula.release}} files, and then copy it to the same directory in the NebulaGraph installation path.
 
+:::
 ## Limitations
 
 * Rolling Upgrade is not supported. You must stop all the NebulaGraph services before the upgrade.
@@ -67,22 +68,25 @@ To upgrade NebulaGraph from historical versions to {{nebula.release}}:
 
   Before upgrading a NebulaGraph cluster with full-text indexes deployed, you must manually delete the full-text indexes in Elasticsearch, and then run the `SIGN IN` command to log into ES and recreate the indexes after the upgrade is complete. To manually delete the full-text indexes in Elasticsearch, you can use the curl command `curl -XDELETE -u <es_username>:<es_password> '<es_access_ip>:<port>/<fullindex_name>'`, for example, `curl -XDELETE -u elastic:elastic 'http://192.168.8.xxx:9200/nebula_index_2534'`. If no username and password are set for Elasticsearch, you can omit the `-u <es_username>:<es_password>` part.
 
-!!! caution
+:::caution
 
-    There may be other undiscovered influences. Before the upgrade, we recommend that you read the release notes and user manual carefully, and keep an eye on the [posts](https://github.com/vesoft-inc/nebula/discussions) on the forum and [issues](https://github.com/vesoft-inc/nebula/issues) on Github.
+There may be other undiscovered influences. Before the upgrade, we recommend that you read the release notes and user manual carefully, and keep an eye on the [posts](https://github.com/vesoft-inc/nebula/discussions) on the forum and [issues](https://github.com/vesoft-inc/nebula/issues) on Github.
 
+:::
 ## Preparations before the upgrade
 
 - Download the package of NebulaGraph {{nebula.release}} according to your operating system and system architecture. You need the binary files during the upgrade. Find the package on [the download page](https://nebula-graph.io/download/).
 
-  !!! note
-        You can also get the new binaries from the source code or the RPM/DEB package.
+  :::note
+    You can also get the new binaries from the source code or the RPM/DEB package.
 
+:::
 - Locate the data files based on the value of the `data_path` parameters in the Storage and Meta configurations, and backup the data files. The default paths are `nebula/data/storage` and `nebula/data/meta`.
 
-  !!! danger
-        The old data will not be automatically backed up during the upgrade. You must manually back up the data to avoid data loss.
+  :::danger
+    The old data will not be automatically backed up during the upgrade. You must manually back up the data to avoid data loss.
 
+:::
 - Backup the configuration files.
 
 - Collect the statistics of all graph spaces before the upgrade. After the upgrade, you can collect again and compare the results to make sure that no data is lost. To collect the statistics:
@@ -102,19 +106,22 @@ To upgrade NebulaGraph from historical versions to {{nebula.release}}:
 
   The storaged progress needs around 1 minute to flush data. You can run `nebula.service status all` to check if all services are stopped. For more information about starting and stopping services, see [Manage services](../manage-service.md).
 
-  !!! note
+  :::note
 
-        If the services are not fully stopped in 20 minutes, stop upgrading and ask for help on [the forum](https://github.com/vesoft-inc/nebula/discussions) or [Github](https://github.com/vesoft-inc/nebula/issues).
+    If the services are not fully stopped in 20 minutes, stop upgrading and ask for help on [the forum](https://github.com/vesoft-inc/nebula/discussions) or [Github](https://github.com/vesoft-inc/nebula/issues).
 
-  !!! caution
+  :::
+  :::caution
 
-        Starting from version 3.0.0, it is possible to insert vertices without tags. If you need to keep vertices without tags, add `--graph_use_vertex_key=true` in the configuration file (`nebula-graphd.conf`) of all Graph services within the cluster; and add `--use_vertex_key=true` in the configuration file (`nebula-storaged.conf`) of all Storage services."
+    Starting from version 3.0.0, it is possible to insert vertices without tags. If you need to keep vertices without tags, add `--graph_use_vertex_key=true` in the configuration file (`nebula-graphd.conf`) of all Graph services within the cluster; and add `--use_vertex_key=true` in the configuration file (`nebula-storaged.conf`) of all Storage services."
 
+:::
 2. In the target path where you unpacked the package, use the binaries in the `bin` directory to replace the old binaries in the `bin` directory in the NebulaGraph installation path.
 
-  !!! note
-        Update the binary of the corresponding service on each NebulaGraph server.
+  :::note
+    Update the binary of the corresponding service on each NebulaGraph server.
 
+:::
 3. Modify the following parameters in all Graph configuration files to accommodate the value range of the new version. If the parameter values are within the specified range, skip this step.
 
   - Set a value in [1,604800] for `session_idle_timeout_secs`. The recommended value is 28800.
@@ -132,14 +139,16 @@ To upgrade NebulaGraph from historical versions to {{nebula.release}}:
 
   To verify that Meta services are all started, you can start any Graph server, connect to it through NebulaGraph Console, and run [`SHOW HOSTS meta`](../../3.ngql-guide/7.general-query-statements/6.show/6.show-hosts.md) and [`SHOW META LEADER`](../../3.ngql-guide/7.general-query-statements/6.show/19.show-meta-leader.md). If the status of Meta services are correctly returned, the services are successfully started.
 
-  !!! note
-        If the operation fails, stop the upgrade and ask for help on [the forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues).
+  :::note
+    If the operation fails, stop the upgrade and ask for help on [the forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues).
 
+:::
 5. Start all the Graph and Storage services.
 
-  !!! note
-        If the operation fails, stop the upgrade and ask for help on [the forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues).
+  :::note
+    If the operation fails, stop the upgrade and ask for help on [the forum](https://discuss.nebula-graph.com.cn/) or [GitHub](https://github.com/vesoft-inc/nebula/issues).
 
+:::
 6. Connect to the new version of NebulaGraph to verify that services are available and data are complete. For how to connect, see [Connect to NebulaGraph](../connect-to-nebula-graph.md).
 
   Currently, there is no official way to check whether the upgrade is successful. You can run the following reference statements to test the upgrade:

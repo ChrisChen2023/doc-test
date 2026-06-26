@@ -4,10 +4,11 @@ NebulaGraph supports managing services with scripts.
 
 You can use the `nebula.service` script to start, stop, restart, terminate, and check the NebulaGraph services.
 
-!!! note
+:::note
 
-    `nebula.service` is stored in the `/usr/local/nebula/scripts` directory by default. If you have customized the path, use the actual path in your environment.
+`nebula.service` is stored in the `/usr/local/nebula/scripts` directory by default. If you have customized the path, use the actual path in your environment.
 
+:::
 ### Syntax
 
 ```bash
@@ -47,10 +48,11 @@ $ sudo /usr/local/nebula/scripts/nebula.service start all
 
 ## Stop NebulaGraph
 
-!!! danger
+:::danger
 
-    Do not run `kill -9` to forcibly terminate the processes. Otherwise, there is a low probability of data loss.
+Do not run `kill -9` to forcibly terminate the processes. Otherwise, there is a low probability of data loss.
 
+:::
 Run the following command to stop NebulaGraph.
 
 ```bash
@@ -82,10 +84,11 @@ $ sudo /usr/local/nebula/scripts/nebula.service status all
     [INFO] nebula-storaged(33fd35e): Running as 29147, Listening on 9779
     ```
 
-  !!! note
+  :::note
 
-        After starting NebulaGraph, the port of the `nebula-storaged` process is shown in red. Because the `nebula-storaged` process waits for the `nebula-metad` to add the current Storage service during the startup process. The Storage works after it receives the ready signal. Starting from NebulaGraph 3.0.0, the Meta service cannot directly read or write data in the Storage service that you add in the configuration file. The configuration file only registers the Storage service to the Meta service. You must run the `ADD HOSTS` command to enable the Meta to read and write data in the Storage service. For more information, see [Manage Storage hosts](../4.deployment-and-installation/manage-storage-host.md).
+    After starting NebulaGraph, the port of the `nebula-storaged` process is shown in red. Because the `nebula-storaged` process waits for the `nebula-metad` to add the current Storage service during the startup process. The Storage works after it receives the ready signal. Starting from NebulaGraph 3.0.0, the Meta service cannot directly read or write data in the Storage service that you add in the configuration file. The configuration file only registers the Storage service to the Meta service. You must run the `ADD HOSTS` command to enable the Meta to read and write data in the Storage service. For more information, see [Manage Storage hosts](../4.deployment-and-installation/manage-storage-host.md).
 
+:::
 * If the returned result is similar to the following one, there is a problem. You may also go to the [NebulaGraph community](https://github.com/vesoft-inc/nebula/discussions) for help.
 
     ```bash

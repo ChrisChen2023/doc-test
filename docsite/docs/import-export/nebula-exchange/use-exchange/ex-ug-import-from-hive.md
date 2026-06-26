@@ -46,10 +46,11 @@ scala> spark.sql("describe basketball.serve").show
 +----------+---------+-------+
 ```
 
-!!! note
+:::note
 
-    The Hive data type `bigint` corresponds to the NebulaGraph `int`.
+The Hive data type `bigint` corresponds to the NebulaGraph `int`.
 
+:::
 ## Environment
 
 This example is done on MacOS. Here is the environment configuration information:
@@ -392,10 +393,11 @@ Run the following command to import Hive data into NebulaGraph. For a descriptio
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <hive_application.conf_path> -h
 ```
 
-!!! note
+:::note
 
-    JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
+JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
 
+:::
 For example:
 
 ```bash
