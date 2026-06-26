@@ -52,29 +52,13 @@ jobs:
         run: npm run build
         working-directory: docsite
 
-      # 6. ⭐【核心新增】重新编排目录结构，将全量产物套娃塞进 3.10.0 文件夹中
-      - name: Restructure Build Directory for Versioning
-        run: |
-          cd docsite/build
-          # 1. 创建临时的外部平级文件夹，防止自己移动到自己导致死循环
-          mkdir ../_version_tmp
-          # 2. 将 build 文件夹下的所有内容（包括隐藏文件）移动到临时目录中
-          shopt -s dotglob
-          mv * ../_version_tmp/
-          # 3. 在原 build 目录下创建 3.10.0 目标文件夹
-          mkdir 3.10.0
-          # 4. 将临时目录里的所有东西完好无损地搬迁到 3.10.0 里
-          mv ../_version_tmp/* 3.10.0/
-          # 5. 顺手清理临时文件夹
-          rm -rf ../_version_tmp
-        shell: bash
 
-      # 7. 发布到 GitHub Pages
+      # 6. 发布到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docsite/build # 此时该目录内只有一个名为 3.10.0 的子文件夹
+          publish_dir: docsite/build 
           publish_branch: gh-pages
           user_name: ChrisChen2023
           user_email: chris.chen@vesoft.com
