@@ -4,6 +4,8 @@ import rehypeKatex from 'rehype-katex';
 import fs from 'fs';
 import path from 'path';
 
+const isProd = process.env.NODE_ENV === 'production';
+
 // ==================== 1. NebulaGraph 全量组件宏矩阵定义 ====================
 const mkdocsMacros = {
   nebula: { release: '3.10.0', nightly: 'nightly', master: 'master', base20: '2.0', base200: '2.0.0', branch: 'release-3.10', tag: 'v3.10.0', name: 'NebulaGraph' },
@@ -26,7 +28,7 @@ const mkdocsMacros = {
   operator: { release: '1.8.0', tag: 'v1.8.0', branch: 'release-1.8', upgrade_from: '3.5.0', upgrade_to: '3.6.0' },
   exporter: { release: '3.3.0', branch: 'release-3.3', tag: 'v3.3.0' },
   gateway: { release: '3.4.0', branch: 'release-3.4', tag: 'v3.4.0' },
-  cloud: { azureRelease: '3.1.1', aliyunRelease: '3.1.1', azureLatestRelease: '3.1.0', aliyunLatestRelease: '3.1.0' }
+  cloud: { azureRelease: '3.1.1', aliyunRelease: '3.1.1', azureLatestRelease: '3.1.0', aliyunLatestRelease: '3.1.0', name: 'NebulaGraph Cloud' }
 };
 
 // ==================== 2. 【升级版】自动兼容任意空格的正则替换规则生成器 ====================
@@ -77,6 +79,7 @@ const config = {
       {
         docs: {
           path: 'docs',
+          routeBasePath: '/',
           sidebarPath: './sidebars.js',
           editUrl: 'https://github.com/vesoft-inc/nebula-docs/edit/master/',
           remarkPlugins: [remarkMath],
@@ -93,10 +96,14 @@ const config = {
         theme: {
           customCss: './src/css/custom.css',
         },
-        gtag: {
-          trackingID: 'G-7YZEG0W61R',
-          anonymizeIP: true,
-        },
+        ...(isProd
+          ? {
+              gtag: {
+                trackingID: 'G-7YZEG0W61R',
+                anonymizeIP: true,
+              },
+            }
+          : {}),
       },
     ],
   ],

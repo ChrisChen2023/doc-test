@@ -2,7 +2,7 @@
 
 !!! note
     
-    本文档更新时间{{ now().year }}-{{ now().month }}-{{ now().day }}，GitHub commit [{{ git.short_commit }}](https://github.com/vesoft-inc/nebula-docs/commits/v{{nebula.release}})。该版本主色系为"桑色"，色号为 #55295B。
+    本文档更新时间 2026-06，GitHub commit `latest`。该版本主色系为"桑色"，色号为 #55295B。
 
 <!--
     
