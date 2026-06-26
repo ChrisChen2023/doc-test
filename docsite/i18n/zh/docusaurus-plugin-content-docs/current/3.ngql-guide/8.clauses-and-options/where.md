@@ -14,9 +14,10 @@
 
 ## 基础用法
 
-!!! note
-    下文示例中的`$$`、`$^`等是引用符号，详情请参见[引用符](../4.variable-and-composite-queries/3.property-reference.md)。
+:::note
+下文示例中的`$$`、`$^`等是引用符号，详情请参见[引用符](../4.variable-and-composite-queries/3.property-reference.md)。
 
+:::
 ### 用布尔运算符定义条件
 
 在`WHERE`子句中使用布尔运算符`NOT`、`AND`、`OR`和`XOR`定义条件。关于运算符的优先级，请参见[运算符优先级](../5.operators/9.precedence.md)。

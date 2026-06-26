@@ -39,10 +39,11 @@ $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/nebula -DENABLE_TESTING=OFF -DCMAKE_BU
 
 In our test environment, we use [NebulaGraph Bench](https://github.com/nebula-contrib/NebulaGraph-Bench) to prepare the test data and collect the profile data by running the ***FindShortestPath***, ***Go1Step***, ***Go2Step***, ***Go3Step***, ***InsertPersonScenario*** 5 scenarios. 
 
-!!! note
+:::note
 
-    You can use your ***TopN*** queries in your production environment to collect the profile data, the performance can gain more in your environment.
+You can use your ***TopN*** queries in your production environment to collect the profile data, the performance can gain more in your environment.
 
+:::
 ## Prepare Profile Data
 
 ### Collect Perf Data For AutoFdo Tool
@@ -63,10 +64,11 @@ Get the pid of `storaged`, `graphd`, `metad`.
   perf record -p 305516,305707 -b -e br_inst_retired.near_taken:pp -o ~/FindShortestPath.data
   ```
 
-  !!! note
+  :::note
 
-        Because the `nebula-metad` service contribution percent is small compared with `nebula-graphd` and `nebula-storaged` services. To reduce effort, we didn't collect the perf data for `nebula-metad` service.
+    Because the `nebula-metad` service contribution percent is small compared with `nebula-graphd` and `nebula-storaged` services. To reduce effort, we didn't collect the perf data for `nebula-metad` service.
 
+:::
 3. Start the benchmark test for ***FindShortestPath*** scenario.
 
   ```bash
@@ -124,10 +126,11 @@ diff --git a/cmake/nebula/GeneralCompilerConfig.cmake b/cmake/nebula/GeneralComp
 +add_compile_options(-fauto-profile=~/fbdata.afdo)
 ```
 
-!!! note
+:::note
 
-    When you use multiple fbdata.afdo to compile multiple times, please remember to `make clean` before re-compile, baucase only change the fbdata.afdo will not trigger re-compile.
+When you use multiple fbdata.afdo to compile multiple times, please remember to `make clean` before re-compile, baucase only change the fbdata.afdo will not trigger re-compile.
 
+:::
 ## Performance Test Result
 
 ### Hardware & Software Environment

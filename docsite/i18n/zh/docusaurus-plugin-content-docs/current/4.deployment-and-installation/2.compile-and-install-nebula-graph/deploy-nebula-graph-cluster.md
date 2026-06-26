@@ -2,10 +2,11 @@
 
 本文介绍通过 RPM 或 DEB 文件部署集群的示例。
 
-!!! note
+:::note
 
-    用户还可以通过官方工具部署 {{nebula.name}} 多机集群。详情参见[使用生态工具安装集群](6.deploy-nebula-graph-with-peripherals.md)。
+用户还可以通过官方工具部署 {{nebula.name}} 多机集群。详情参见[使用生态工具安装集群](6.deploy-nebula-graph-with-peripherals.md)。
 
+:::
 ## 部署方案
 
 | 机器名称 |IP 地址          | graphd 进程数量   | storaged 进程数量    |  metad 进程数量   |
@@ -50,18 +51,19 @@
 
 用户可以参考如下配置文件的内容，仅展示集群通信的部分设置，未展示的内容为默认设置，便于用户了解集群间各个服务器的关系。
 
-!!! note
+:::note
 
-    主要修改的配置是`meta_server_addrs`，所有配置文件都需要填写所有 Meta 服务的 IP 地址和端口，同时需要修改`local_ip`为机器本身的联网 IP 地址。配置参数的详细说明请参见：
+主要修改的配置是`meta_server_addrs`，所有配置文件都需要填写所有 Meta 服务的 IP 地址和端口，同时需要修改`local_ip`为机器本身的联网 IP 地址。配置参数的详细说明请参见：
 
-    - [Meta 服务配置](../../5.configurations-and-logs/1.configurations/2.meta-config.md)
+- [Meta 服务配置](../../5.configurations-and-logs/1.configurations/2.meta-config.md)
 
-    - [Graph 服务配置](../../5.configurations-and-logs/1.configurations/3.graph-config.md)
+- [Graph 服务配置](../../5.configurations-and-logs/1.configurations/3.graph-config.md)
 
-    - [Storage 服务配置](../../5.configurations-and-logs/1.configurations/4.storage-config.md)
+- [Storage 服务配置](../../5.configurations-and-logs/1.configurations/4.storage-config.md)
 
 
 
+:::
 - 机器 A 配置
 
   - `nebula-graphd.conf`
@@ -284,14 +286,15 @@
 sudo /usr/local/nebula/scripts/nebula.service start <metad|graphd|storaged|all>
 ```
 
-!!! note
+:::note
 
-    - 确保每个服务器中的对应进程都已启动，否则服务将启动失败。
+- 确保每个服务器中的对应进程都已启动，否则服务将启动失败。
 
-    - 当需都启动 graphd、storaged 和 metad 时，可以用 all 代替。
+- 当需都启动 graphd、storaged 和 metad 时，可以用 all 代替。
 
-    - `/usr/local/nebula`是 {{nebula.name}} 的默认安装路径，如果修改过安装路径，请使用实际路径。更多启停服务的内容，请参见[管理 {{nebula.name}} 服务](../../2.quick-start/3.quick-start-on-premise/5.start-stop-service.md)。
+- `/usr/local/nebula`是 {{nebula.name}} 的默认安装路径，如果修改过安装路径，请使用实际路径。更多启停服务的内容，请参见[管理 {{nebula.name}} 服务](../../2.quick-start/3.quick-start-on-premise/5.start-stop-service.md)。
 
+:::
 ### 检查集群
 
 安装原生 CLI 客户端 [NebulaGraph Console](../../2.quick-start/3.quick-start-on-premise/3.connect-to-nebula-graph.md#_1)，然后连接任何一个已启动 graphd 进程的机器，添加 Storage 主机，然后执行命令`SHOW HOSTS`检查集群状态。例如：

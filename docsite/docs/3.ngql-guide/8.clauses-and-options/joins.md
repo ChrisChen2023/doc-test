@@ -2,10 +2,11 @@
 
 `INNER JOIN` is a type of join query that matches records based on common column values between two tables. It is commonly used to create a result set that includes two tables based on values in their associated columns. In NebulaGraph, the `INNER JOIN` clause can be explicitly used to conduct join queries between two tables, leading to more complex query results.
 
-!!! note
+:::note
 
-    In nGQL statements, the multi-hop query of `GO` implicitly utilizes the `INNER JOIN` clause. For example, in the statement `GO 1 TO 2 STEPS FROM "player101" OVER follow YIELD $$.player.name AS name, $$.player.age AS age`, the `GO` clause implicitly utilizes the `INNER JOIN` clause, matching the result columns of the first-hop query starting from `player101` along the `follow` edge with the starting columns of the second-hop query. Then, based on the matching results, it returns `name` and `age`. 
+In nGQL statements, the multi-hop query of `GO` implicitly utilizes the `INNER JOIN` clause. For example, in the statement `GO 1 TO 2 STEPS FROM "player101" OVER follow YIELD $$.player.name AS name, $$.player.age AS age`, the `GO` clause implicitly utilizes the `INNER JOIN` clause, matching the result columns of the first-hop query starting from `player101` along the `follow` edge with the starting columns of the second-hop query. Then, based on the matching results, it returns `name` and `age`. 
 
+:::
 ## openCypher compatibility
 
 The `INNER JOIN` clause is only applicable to the native nGQL syntax.

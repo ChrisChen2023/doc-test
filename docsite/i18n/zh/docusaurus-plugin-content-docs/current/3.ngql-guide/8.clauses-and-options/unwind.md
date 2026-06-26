@@ -33,10 +33,11 @@ UNWIND <list> AS <alias> <RETURN clause>;
 
 - 原生 nGQL 语句中使用`UNWIND`子句。
 
-  !!! note
+  :::note
 
-        在原生 nGQL 语句中使用`UNWIND`子句时，需要用在管道符`|`之后，并使用`$-`引用管道符之前的变量。如果`UNWIND`后使用语句或子句，需要使用管道符`|`并且使用`$-`引用管道符之前的变量。
+    在原生 nGQL 语句中使用`UNWIND`子句时，需要用在管道符`|`之后，并使用`$-`引用管道符之前的变量。如果`UNWIND`后使用语句或子句，需要使用管道符`|`并且使用`$-`引用管道符之前的变量。
 
+:::
   ```ngql
   <statement> | UNWIND $-.<var> AS <alias> <|> <clause>;
   ```
@@ -53,10 +54,11 @@ UNWIND <list> AS <alias> <RETURN clause>;
 
 - 在`UNWIND`子句中使用`WITH DISTINCT`可以将列表中的重复项忽略，返回去重后的结果。
 
-  !!! note
+  :::note
       
-      原生 nGQL 语句不支持`WITH DISTINCT`。  
+  原生 nGQL 语句不支持`WITH DISTINCT`。  
 
+:::
   ```ngql
   // 拆分列表`[1,1,2,2,3,3]`，删除重复行，排序行，将行转换为列表。
   nebula> WITH [1,1,2,2,3,3] AS n \

@@ -2,11 +2,12 @@
 
 This topic will describe the comments in nGQL.
 
-!!! compatibility "Legacy version compatibility"
+:::compatibility Legacy version compatibility
 
-    * In NebulaGraph 1.x, there are four comment styles: `#`, `--`, `//`, `/* */`.
-    * Since NebulaGraph 2.x, `--` cannot be used as comments.
+* In NebulaGraph 1.x, there are four comment styles: `#`, `--`, `//`, `/* */`.
+* Since NebulaGraph 2.x, `--` cannot be used as comments.
 
+:::
 ## Examples
 
 ```ngql
@@ -19,11 +20,12 @@ Use a backslash as a line break.   \
 */ 12;
 ```
 
-!!! note
+:::note
 
-    - In nGQL statements, the backslash `\` in a line indicates a line break.
-    - If a statement starts with `#` or `//`, the statement is not executed and the error `StatementEmpty` is returned.
+- In nGQL statements, the backslash `\` in a line indicates a line break.
+- If a statement starts with `#` or `//`, the statement is not executed and the error `StatementEmpty` is returned.
 
+:::
 ## OpenCypher compatibility
 
 * In nGQL, you must add a `\` at the end of every line, even in multi-line comments `/* */`.

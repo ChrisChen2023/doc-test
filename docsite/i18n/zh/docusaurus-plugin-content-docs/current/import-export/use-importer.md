@@ -28,10 +28,11 @@ NebulaGraph Importer 版本和 {{nebula.name}} 内核的版本对应关系如下
 | 3.x.x      |  3.x.x、4.x.x        | 
 | 2.x.x      |  2.x.x、3.x.x        |
 
-!!! note
+:::note
 
-    Importer 4.0.0 对 Importer 进行了重做，性能得到了提高，但配置文件不兼容旧版本。建议使用新版 Importer。
+Importer 4.0.0 对 Importer 进行了重做，性能得到了提高，但配置文件不兼容旧版本。建议使用新版 Importer。
 
+:::
 ## 更新说明
 
 [Release notes](https://github.com/vesoft-inc/nebula-importer/releases/tag/{{importer.tag}})
@@ -56,17 +57,19 @@ NebulaGraph Importer 版本和 {{nebula.name}} 内核的版本对应关系如下
 
 准备好待导入的 CSV 文件并配置 YAML 文件，即可使用本工具向 {{nebula.name}} 批量导入数据。
 
-!!! note
+:::note
 
-    YAML 配置文件说明请参见下文的[配置文件说明](#_8)。
+YAML 配置文件说明请参见下文的[配置文件说明](#_8)。
 
+:::
 ### 下载二进制包运行
 
 1. 在 [Release](https://github.com/vesoft-inc/nebula-importer/releases/tag/{{importer.tag}}) 页面下载和安装二进制包，并添加执行权限。
 
-  !!! note
-        使用 RPM/DEB 包安装的文件路径为`/usr/bin/nebula-importer`。
+  :::note
+    使用 RPM/DEB 包安装的文件路径为`/usr/bin/nebula-importer`。
 
+:::
 2. 在`nebula-importer`的安装目录下，执行以下命令导入数据。
 
   ```bash
@@ -83,10 +86,11 @@ NebulaGraph Importer 版本和 {{nebula.name}} 内核的版本对应关系如下
   $ git clone -b {{importer.branch}} https://github.com/vesoft-inc/nebula-importer.git
   ```
 
-  !!! note
+  :::note
   
-        请使用正确的分支。不同分支的 rpc 协议不同。
+    请使用正确的分支。不同分支的 rpc 协议不同。
 
+:::
 2. 进入目录`nebula-importer`。
 
   ```bash
@@ -123,9 +127,10 @@ $ docker run --rm -ti \
 - `<data_dir>`：填写 CSV 数据文件的绝对路径。如果文件不在本地，请忽略该参数。
 - `<version>`：填写 Importer 的版本号，请填写`v4`。
 
-!!! note
-    建议使用相对路径。如果使用本地绝对路径，请检查路径映射到 Docker 中的路径。
+:::note
+建议使用相对路径。如果使用本地绝对路径，请检查路径映射到 Docker 中的路径。
 
+:::
 例如：
 
 ```bash
@@ -142,10 +147,11 @@ $ docker run --rm -ti \
 
 NebulaGraph Importer 的 [Github](https://github.com/vesoft-inc/nebula-importer/tree/{{importer.branch}}/examples) 内提供多种示例配置文件。配置文件用来描述待导入文件信息、 {{nebula.name}} 服务器信息等。下文将分类介绍配置文件内的字段。
 
-!!! note
+:::note
 
-    如果用户下载的是二进制包，请手动创建配置文件。
+如果用户下载的是二进制包，请手动创建配置文件。
 
+:::
 ### Client 配置
 
 Client 配置存储客户端连接 {{nebula.name}} 相关的配置。
@@ -433,20 +439,22 @@ sources:
 |`sources.edges.props.nullValue`   |-| 否 | `nullable`设置为`true`时，属性的值与`nullValue`相等则将该属性值设置为`NULL`。         |  
 |`sources.edges.props.defaultValue`   |-| 否 | 当`nullable`为`false`时忽略。根据`index`和`alternativeIndices`获取的所有值为`nullValue`时设置默认值。         |  
 
-!!! note
+:::note
 
-    CSV 文件中列的序号从 0 开始，即第一列的序号为 0，第二列的序号为 1。
+CSV 文件中列的序号从 0 开始，即第一列的序号为 0，第二列的序号为 1。
 
+:::
 ## 社区用户实践
 
 * [NebulaGraph Importer 数据导入实践和总结](https://discuss.nebula-graph.com.cn/t/topic/8757)
 * [基于 Nebula-Importer 批量导入工具性能验证方案总结](https://discuss.nebula-graph.com.cn/t/topic/3843)
 * [详解 nebula-importer 性能测试和数据导入调优](https://discuss.nebula-graph.com.cn/t/topic/4159)
 
-!!! note
+:::note
 
-    阅读他人实践后倘若想按原文实践，请留意原文所用的内核和周边工具版本号，请确保你的软件环境和原文兼容。
+阅读他人实践后倘若想按原文实践，请留意原文所用的内核和周边工具版本号，请确保你的软件环境和原文兼容。
 
+:::
 ## 常见问题
 
 ### 日志输出的字段含义是什么？

@@ -2,10 +2,11 @@
 
 本文简单说明如何使用 Exchange 将存储在 Kafka 上的数据导入 {{nebula.name}} 。
 
-!!! compatibility
+:::compatibility
 
-    导入 Kafka 数据时请使用 Exchange 3.5.0/3.3.0/3.0.0 版本。3.4.0 版本增加了对导入数据的缓存，不支持流式数据导入。
+导入 Kafka 数据时请使用 Exchange 3.5.0/3.3.0/3.0.0 版本。3.4.0 版本增加了对导入数据的缓存，不支持流式数据导入。
 
+:::
 ## 环境配置
 
 本文示例在 MacOS 下完成，以下是相关的环境配置信息：
@@ -96,10 +97,11 @@
 
 编译 Exchange 后，复制`target/classes/application.conf`文件设置 Kafka 数据源相关的配置。在本示例中，复制的文件名为`kafka_application.conf`。各个配置项的详细说明请参见[配置说明](../parameter-reference/ex-ug-parameter.md)。
 
-!!! note
+:::note
 
-    导入 Kafka 数据时，一个配置文件只能处理一个 Tag 或 Edge type。如果有多个 Tag 或 Edge type，需要创建多个配置文件。
+导入 Kafka 数据时，一个配置文件只能处理一个 Tag 或 Edge type。如果有多个 Tag 或 Edge type，需要创建多个配置文件。
 
+:::
 ```conf
 {
   # Spark 相关配置
@@ -305,11 +307,12 @@
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <kafka_application.conf_path>
 ```
 
-!!! note
+:::note
 
-    - JAR 包需要从[{{nebula.name}}套餐](https://nebula-graph.com.cn/pricing/)中获取。
-    - 如果 Kafka 启用了安全认证，导入数据时需要配置驱动程序和执行器，参见下方示例。
+- JAR 包需要从[{{nebula.name}}套餐](https://nebula-graph.com.cn/pricing/)中获取。
+- 如果 Kafka 启用了安全认证，导入数据时需要配置驱动程序和执行器，参见下方示例。
 
+:::
 示例：
 
 - 无安全认证

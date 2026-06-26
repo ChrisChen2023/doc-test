@@ -105,10 +105,11 @@ glog 本身不支持回收日志，如果需要回收日志，可以使用 Linux
   * * * * * find <log_path> -name "<YourProjectName>" -mtime +7 -delete
   ```
 
-  !!! caution
+  :::caution
 
-        以上命令中的`find`命令需要使用 root 用户或者具有 sudo 权限的用户来执行。
+    以上命令中的`find`命令需要使用 root 用户或者具有 sudo 权限的用户来执行。
 
+:::
   - `* * * * *`：定时任务的时间字段，五个星号表示这个任务每分钟都会执行。其他设置，参见[Cron Expression](https://crontab.cronhub.io/)。
   - `<log_path>`：服务运行日志文件的路径，例如`/usr/local/nebula/logs`。
   - `<YourProjectName>`：日志文件名，例如`nebula-graphd.*`。
@@ -128,10 +129,11 @@ glog 本身不支持回收日志，如果需要回收日志，可以使用 Linux
 
 用户可以使用 logrotate 工具对指定的日志文件进行轮转，以达到归档和回收日志的目的。
 
-!!! note
+:::note
 
-    需要使用 root 用户或者具有 sudo 权限的用户来安装 logrotate 或者运行 logrotate。
+需要使用 root 用户或者具有 sudo 权限的用户来安装 logrotate 或者运行 logrotate。
 
+:::
 本文以回收 Graph 服务`INFO`级别的日志文件（`/usr/local/nebula/logs/nebula-graphd.INFO.impl`）为例说明如何使用 logrotate 工具。操作步骤如下：
 
 1. 在 [Graph 服务配置文件](../1.configurations/3.graph-config.md)中，将`timestamp_in_logfile_name`设置为`false`，以便 logrotate 工具可以识别日志文件名。然后重启服务。

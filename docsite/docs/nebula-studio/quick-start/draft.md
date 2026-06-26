@@ -31,19 +31,21 @@ The following steps take designing the schema of the `basketballplayer` dataset 
 1. Select the draft that you want to import from the **Draft list** on the left side of the page, and then click **Apply to Space** at the upper right corner.
 2. Import the schema to a new or existing space, and click **Confirm**.
 
-  !!! note
+  :::note
 
-      - For more information about the parameters for creating a graph space, see [CREATE SPACE](../../3.ngql-guide/9.space-statements/1.create-space.md).
-      - If the same schema exists in the graph space, the import operation fails, and the system prompts you to modify the name or change the graph space.
+  - For more information about the parameters for creating a graph space, see [CREATE SPACE](../../3.ngql-guide/9.space-statements/1.create-space.md).
+  - If the same schema exists in the graph space, the import operation fails, and the system prompts you to modify the name or change the graph space.
 
+:::
 ## Modify schema
 
 Select the schema draft that you want to modify from the **Draft list** on the left side of the page. Click ![save](https://docs-cdn.nebula-graph.com.cn/figures/workflow-saveAs-220623.png) at the upper right corner after the modification.
 
-!!! note
+:::note
 
-    The graph space to which the schema has been applied will not be modified synchronously.
+The graph space to which the schema has been applied will not be modified synchronously.
 
+:::
 ## Delete schema
 
 Select the schema draft that you want to delete from the **Draft list** on the left side of the page, click **X** at the upper right corner of the thumbnail, and confirm to delete it.

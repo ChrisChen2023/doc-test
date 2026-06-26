@@ -22,10 +22,11 @@ The following describes the scenarios, implementation methods, prerequisites, an
 
 - Suitable for online services, because the generation almost does not affect services (just reads the Schema), and the import speed is fast.
 
-  !!! caution
+  :::caution
   
-        Although the import speed is fast, write operations in the corresponding space are blocked during the import period (about 10 seconds). Therefore, you are advised to import data in off-peak hours.
+    Although the import speed is fast, write operations in the corresponding space are blocked during the import period (about 10 seconds). Therefore, you are advised to import data in off-peak hours.
 
+:::
 - Suitable for scenarios with a large amount of data from data sources for its fast import speed.
 
 ## Implementation methods
@@ -97,14 +98,15 @@ Before importing data, you need to confirm the following information:
 
 - The Hadoop service has been installed and started.
 
-  !!! note
+  :::note
 
-      - To generate SST files of other data sources, see documents of the corresponding data source and check the prerequisites.
+  - To generate SST files of other data sources, see documents of the corresponding data source and check the prerequisites.
 
-      - To generate SST files only, users do not need to install the Hadoop service on the machine where the Storage service is deployed.
+  - To generate SST files only, users do not need to install the Hadoop service on the machine where the Storage service is deployed.
 
-      - To delete the SST file after the ingest (data import) operation, add the configuration `-- move_Files =true` to the Storage Service configuration file.
+  - To delete the SST file after the ingest (data import) operation, add the configuration `-- move_Files =true` to the Storage Service configuration file.
 
+:::
 ## Steps
 
 ### Step 1: Create the Schema in NebulaGraph
@@ -153,10 +155,11 @@ Confirm the following information:
 
 1. Process CSV files to meet Schema requirements.
 
-  !!! note
+  :::note
 
-        Exchange supports uploading CSV files with or without headers.
+    Exchange supports uploading CSV files with or without headers.
 
+:::
 2. Obtain the CSV file storage path.
 
 ### Step 3: Modify configuration files
@@ -428,14 +431,16 @@ Run the following command to generate the SST file from the CSV source file. For
 ${SPARK_HOME}/bin/spark-submit --master "local" --conf spark.sql.shuffle.partition=<shuffle_concurrency> --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <sst_application.conf_path> 
 ```
 
-!!! note
+:::note
 
-    When generating SST files, the shuffle operation of Spark will be involved. Note that the configuration of `spark.sql.shuffle.partition` should be added when you submit the command.
+When generating SST files, the shuffle operation of Spark will be involved. Note that the configuration of `spark.sql.shuffle.partition` should be added when you submit the command.
 
-!!! note
+:::
+:::note
 
-    JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
+JAR packages are available in two ways: [compiled them yourself](../ex-ug-compile.md), or [download](https://repo1.maven.org/maven2/com/vesoft/nebula-exchange/) the compiled `.jar` file directly.
 
+:::
 For example:
 
 ```bash
@@ -444,22 +449,24 @@ ${SPARK_HOME}/bin/spark-submit  --master "local" --conf spark.sql.shuffle.partit
 
 After the task is complete, you can view the generated SST file in the `/sst` directory (specified by the `nebula.path.remote` parameter) on HDFS.
 
-!!! note
+:::note
 
-    If you modify the Schema, such as rebuilding the graph space, modifying the Tag, or modifying the Edge type, you need to regenerate the SST file because the SST file verifies the space ID, Tag ID, and Edge ID.
+If you modify the Schema, such as rebuilding the graph space, modifying the Tag, or modifying the Edge type, you need to regenerate the SST file because the SST file verifies the space ID, Tag ID, and Edge ID.
 
+:::
 ### Step 5: Import the SST file
 
-!!! note
+:::note
 
-    Confirm the following information before importing:
+Confirm the following information before importing:
 
-    - Confirm that the Hadoop service has been deployed on all the machines where the Storage service is deployed, and configure `HADOOP_HOME` and `JAVA_HOME`.
+- Confirm that the Hadoop service has been deployed on all the machines where the Storage service is deployed, and configure `HADOOP_HOME` and `JAVA_HOME`.
 
-    - The `--ws_storage_http_port` in the Meta service configuration file (add it manually if it does not exist) is the same as the `--ws_http_port` in the Storage service configuration file. For example, both are `19779`.
+- The `--ws_storage_http_port` in the Meta service configuration file (add it manually if it does not exist) is the same as the `--ws_http_port` in the Storage service configuration file. For example, both are `19779`.
 
-    - The `--ws_meta_http_port` in the Graph service configuration file (add it manually if it does not exist) is the same as the `--ws_http_port` in the Meta service configuration file. For example, both are `19559`.
+- The `--ws_meta_http_port` in the Graph service configuration file (add it manually if it does not exist) is the same as the `--ws_http_port` in the Meta service configuration file. For example, both are `19559`.
 
+:::
 Connect to the NebulaGraph database using the client tool and import the SST file as follows:
 
 1. Run the following command to select the graph space you created earlier.
@@ -486,12 +493,13 @@ Connect to the NebulaGraph database using the client tool and import the SST fil
   nebula> SUBMIT JOB INGEST;
   ```
 
-!!! note
+:::note
 
-    - To download the SST file again, delete the `download` folder in the space ID in the `data/storage/nebula` directory in the NebulaGraph installation path, and then download the SST file again. If the space has multiple copies, the `download` folder needs to be deleted on all machines where the copies are saved.
+- To download the SST file again, delete the `download` folder in the space ID in the `data/storage/nebula` directory in the NebulaGraph installation path, and then download the SST file again. If the space has multiple copies, the `download` folder needs to be deleted on all machines where the copies are saved.
 
-    - If there is a problem with the import and re-importing is required, re-execute `SUBMIT JOB INGEST;`.
+- If there is a problem with the import and re-importing is required, re-execute `SUBMIT JOB INGEST;`.
 
+:::
 ### Step 6: (Optional) Validate data
 
 Users can verify that data has been imported by executing a query in the NebulaGraph client (for example, NebulaGraph Studio). For example:

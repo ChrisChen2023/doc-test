@@ -59,10 +59,11 @@ The graph computing algorithms supported by NebulaGraph Algorithm are as follows
 | DFS       | Depth-First Search  | Sequence traversal, shortest path planning|     dfs          |    string   |
 | Node2Vec  |     -     | Graph classification         |     node2vec       |    string   |
 
-!!! note
+:::note
 
-    When writing the algorithm results into the NebulaGraph, make sure that the tag in the corresponding graph space has properties names and data types corresponding to the table above.
+When writing the algorithm results into the NebulaGraph, make sure that the tag in the corresponding graph space has properties names and data types corresponding to the table above.
 
+:::
 ## Implementation methods
 
 NebulaGraph Algorithm implements the graph calculating as follows:
@@ -111,15 +112,16 @@ After the compilation, a similar file `nebula-algorithm-3.x.x.jar` is generated 
 
 ## How to use
 
-!!! note
+:::note
 
-    If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
+If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
 
-    ```
-    --conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
-    --conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
-    ```
+```
+--conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
+--conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
+```
 
+:::
 ### Use algorithm interface (recommended)
 
 The `lib` repository provides 10 common graph algorithms.
@@ -136,9 +138,10 @@ The `lib` repository provides 10 common graph algorithms.
 
 2. Use the algorithm (take PageRank as an example) by filling in parameters. For more examples, see [example](https://github.com/vesoft-inc/nebula-algorithm/tree/master/example/src/main/scala/com/vesoft/nebula/algorithm).
 
-  !!! note
-        By default, the DataFrame that executes the algorithm sets the first column as the starting vertex, the second column as the destination vertex, and the third column as the edge weights (not the rank in the NebulaGraph).
+  :::note
+    By default, the DataFrame that executes the algorithm sets the first column as the starting vertex, the second column as the destination vertex, and the third column as the edge weights (not the rank in the NebulaGraph).
 
+:::
   ```bash
   val prConfig = new PRConfig(5, 1.0)
   val prResult = PageRankAlgo.apply(spark, data, prConfig, false)
@@ -269,10 +272,11 @@ The `lib` repository provides 10 common graph algorithms.
   }
   ```
 
-  !!! note
+  :::note
 
-        When `sink: nebula` is configured, it means that the algorithm results will be written back to the NebulaGraph cluster. The property names of the tag have implicit conventions. For details, see **Supported algorithms** section of this topic.
+    When `sink: nebula` is configured, it means that the algorithm results will be written back to the NebulaGraph cluster. The property names of the tag have implicit conventions. For details, see **Supported algorithms** section of this topic.
 
+:::
 2. Submit the graph computing task.
 
   ```bash

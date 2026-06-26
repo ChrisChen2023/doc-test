@@ -37,10 +37,11 @@ To operate a graph space on the **Schema** page of Studio, you must do a check o
 
 ## Delete a graph space
 
-!!! danger
+:::danger
 
-    Deleting the space will delete all the data in it, and the deleted data cannot be restored if it is not [backed up](../../backup-and-restore/3.manage-snapshot.md).
+Deleting the space will delete all the data in it, and the deleted data cannot be restored if it is not [backed up](../../backup-and-restore/3.manage-snapshot.md).
 
+:::
 1. In the toolbar, click the **Schema** tab.
 
 2. In the **Graph Space List**, find the space you want to be deleted, and click **Delete Graph Space** in the **Operation** column.

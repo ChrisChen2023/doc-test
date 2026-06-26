@@ -85,10 +85,11 @@ NebulaGraph Spark Connector {{sparkconnector.release}}版本特性如下：
 
 3. 编译打包。不同版本的 Spark 命令略有不同。
 
-  !!! note
+  :::note
 
-        需已安装对应版本 Spark。
+    需已安装对应版本 Spark。
 
+:::
   - Spark 2.4
 
     ```bash
@@ -129,15 +130,16 @@ dataframe.write.nebula().writeEdges()
 
 `nebula()`接收两个配置参数，包括连接配置和读写配置。
 
-!!! note
+:::note
 
-    如果数据的属性值包含中文字符，可能出现乱码。请在提交 Spark 任务时加上以下选项：
+如果数据的属性值包含中文字符，可能出现乱码。请在提交 Spark 任务时加上以下选项：
 
-    ```
-    --conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
-    --conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
-    ```
+```
+--conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
+--conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
+```
 
+:::
 ### 从 {{nebula.name}} 读取数据
 
 ```scala
@@ -200,11 +202,12 @@ val edge = spark.read.nebula(config, nebulaReadEdgeConfig).loadEdgesToDF()
 
 ### 向 {{nebula.name}} 写入数据
 
-!!! note
+:::note
 
-    - DataFrame 中的列会自动作为属性写入 {{nebula.name}} 。
-    - 请确保 DataFrame 中的列名和{{nebula.name}}中的属性名一致。若不一致，可通过`DataFrame.withColumnRenamed`方法修改列名。
+- DataFrame 中的列会自动作为属性写入 {{nebula.name}} 。
+- 请确保 DataFrame 中的列名和{{nebula.name}}中的属性名一致。若不一致，可通过`DataFrame.withColumnRenamed`方法修改列名。
 
+:::
 ```scala
 val config = NebulaConnectionConfig
   .builder()

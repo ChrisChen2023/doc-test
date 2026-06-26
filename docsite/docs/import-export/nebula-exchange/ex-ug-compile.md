@@ -12,10 +12,11 @@ To download Exchange Enterprise Edition, [contact us](mailto:inquiry@vesoft.com)
 
 You can get the JAR file of Exchange Community Edition by compiling the source code. The following introduces how to compile the source code of Exchange.
 
-!!! enterpriseonly
+:::enterpriseonly
 
-    You can get Exchange Enterprise Edition in NebulaGraph Enterprise Edition Package only.
+You can get Exchange Enterprise Edition in NebulaGraph Enterprise Edition Package only.
 
+:::
 ### Prerequisites
 
 - Install [Maven](https://maven.apache.org/download.cgi).
@@ -61,10 +62,11 @@ You can get the JAR file of Exchange Community Edition by compiling the source c
 
 After the compilation is successful, you can find the `nebula-exchange_spark_x.x-{{exchange.branch}}.jar` file in the `nebula-exchange_spark_x.x/target/` directory. `x.x` indicates the Spark version, for example, `2.4`.
 
-!!! note
+:::note
 
-    The JAR file version changes with the release of the NebulaGraph Java Client. Users can view the latest version on the [Releases page](https://github.com/vesoft-inc/nebula-java/releases).
+The JAR file version changes with the release of the NebulaGraph Java Client. Users can view the latest version on the [Releases page](https://github.com/vesoft-inc/nebula-java/releases).
 
+:::
 When migrating data, you can refer to configuration file [`target/classes/application.conf`](https://github.com/vesoft-inc/nebula-exchange/blob/master/nebula-exchange_spark_2.4/src/main/resources/application.conf).
 
 ### Failed to download the dependency package

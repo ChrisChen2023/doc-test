@@ -22,6 +22,7 @@
 - 使用 [Spark-connector](../connector/nebula-spark-connector.md)/[Flink-connector](../connector/nebula-flink-connector.md) 读写 API：这种方式需要编写少量代码来使用 Spark/Flink 连接器提供的 API。
 - 使用 Exchange 导出功能将数据导出至 CSV 文件或另一个图空间（支持不同 {{nebula.name}} 集群）中。
 
-  !!! enterpriseonly
+  :::enterpriseonly
 
-        仅企业版 Exchange 提供导出功能。如需企业版，请[联系我们](https://discuss.nebula-graph.com.cn/uploads/default/optimized/3X/7/6/76add3b56ce137be42ebf6e79027bef8a1a0de6b_2_648x1000.jpeg)。
+    仅企业版 Exchange 提供导出功能。如需企业版，请[联系我们](https://discuss.nebula-graph.com.cn/uploads/default/optimized/3X/7/6/76add3b56ce137be42ebf6e79027bef8a1a0de6b_2_648x1000.jpeg)。
+:::

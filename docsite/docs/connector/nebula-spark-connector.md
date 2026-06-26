@@ -85,10 +85,11 @@ The features of NebulaGraph Spark Connector {{sparkconnector.release}} are as fo
 
 3. Compile and package. The procedure varies with Spark versions.
 
-!!! note
+:::note
 
-        Spark of the corresponding version has been installed.
+    Spark of the corresponding version has been installed.
 
+:::
   - Spark 2.4
 
     ```bash
@@ -129,15 +130,16 @@ dataframe.write.nebula().writeEdges()
 
 `nebula()` receives two configuration parameters, including connection configuration and read-write configuration.
 
-!!! note
+:::note
 
-    If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
+If the value of the properties contains Chinese characters, the encoding error may appear. Please add the following options when submitting the Spark task:
 
-    ```
-    --conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
-    --conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
-    ```
+```
+--conf spark.driver.extraJavaOptions=-Dfile.encoding=utf-8
+--conf spark.executor.extraJavaOptions=-Dfile.encoding=utf-8
+```
 
+:::
 ### Reading data from NebulaGraph
 
 ```scala
@@ -200,11 +202,12 @@ val edge = spark.read.nebula(config, nebulaReadEdgeConfig).loadEdgesToDF()
 
 ### Write data into NebulaGraph
 
-!!! note
+:::note
 
-    - The values of columns in a DataFrame are automatically written to NebulaGraph as property values.
-    - Make sure that the column names in the DataFrame are consistent with the property names in NebulaGraph. If they are inconsistent, you can use `DataFrame.withColumnRenamed` to rename the column names first.
+- The values of columns in a DataFrame are automatically written to NebulaGraph as property values.
+- Make sure that the column names in the DataFrame are consistent with the property names in NebulaGraph. If they are inconsistent, you can use `DataFrame.withColumnRenamed` to rename the column names first.
 
+:::
 ```scala
 val config = NebulaConnectionConfig
   .builder()

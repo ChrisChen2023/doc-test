@@ -31,10 +31,11 @@
     nebula-web-docker_web_1        docker-entrypoint.sh npm r ...   Up      0.0.0.0:32784->7001/tcp
     ```
 
-  !!! note
+  :::note
 
-        如果之前使用 `docker-compose up -d` 启动 Studio，必须运行 `docker-compose down` 命令停止 Studio。
+    如果之前使用 `docker-compose up -d` 启动 Studio，必须运行 `docker-compose down` 命令停止 Studio。
 
+:::
 如果服务没有正常运行，请重新启动 Studio。详细信息，参考[部署 Studio](../deploy-connect/st-ug-deploy.md)。
 
 ### 3.确认访问地址

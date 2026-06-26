@@ -6,10 +6,11 @@
 
 `Compaction`操作会读取硬盘上的数据，然后重组数据结构和索引，然后再写回硬盘，可以成倍提升读取性能。将大量数据写入 {{nebula.name}} 后，为了提高读取性能，需要手动触发`Compaction`操作（全量`Compaction`）。
 
-!!! note
+:::note
 
-    `Compaction`操作会长时间占用硬盘的 IO，建议在业务低峰期（例如凌晨）执行该操作。
+`Compaction`操作会长时间占用硬盘的 IO，建议在业务低峰期（例如凌晨）执行该操作。
 
+:::
  {{nebula.name}} 有两种类型的`Compaction`操作：自动`Compaction`和全量`Compaction`。
 
 ## 自动`Compaction`
@@ -21,10 +22,11 @@
 
 ### 关闭自动`Compaction`
 
-!!! danger
+:::danger
 
-    命令`UPDATE CONFIGS`会将未设置的参数恢复为默认值，因此修改前需要使用`SHOW CONFIGS STORAGE`查看`rocksdb_column_family_options`配置，然后一起重新传入值。
+命令`UPDATE CONFIGS`会将未设置的参数恢复为默认值，因此修改前需要使用`SHOW CONFIGS STORAGE`查看`rocksdb_column_family_options`配置，然后一起重新传入值。
 
+:::
 ```ngql
 # 查看当前 rocksdb_column_family_options 设置，复制 value 列内容。
 nebula> SHOW CONFIGS STORAGE;
@@ -57,10 +59,11 @@ nebula> SHOW CONFIGS STORAGE;
 
 全量`Compaction`可以对图空间进行大规模后台操作，例如合并文件、删除 TTL 过期数据等，该操作需要手动发起。使用如下语句执行全量`Compaction`操作：
 
-!!! note
+:::note
 
-    建议在业务低峰期（例如凌晨）执行该操作，避免大量占用硬盘 IO 影响业务。
+建议在业务低峰期（例如凌晨）执行该操作，避免大量占用硬盘 IO 影响业务。
 
+:::
 ```ngql
 nebula> USE <your_graph_space>;
 nebula> SUBMIT JOB COMPACT;

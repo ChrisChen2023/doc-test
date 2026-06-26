@@ -1,9 +1,10 @@
 This topic provides basic instruction on how to use the native CLI client NebulaGraph Console to connect to NebulaGraph.
 
-!!! caution
+:::caution
 
-    When connecting to NebulaGraph for the first time, you must [register the Storage Service](../2.quick-start/3.1add-storage-hosts.md) before querying data.
+When connecting to NebulaGraph for the first time, you must [register the Storage Service](../2.quick-start/3.1add-storage-hosts.md) before querying data.
 
+:::
 NebulaGraph supports multiple types of clients, including a CLI client, a GUI client, and clients developed in popular programming languages. For more information, see the [client list](../14.client/1.nebula-client.md).
 
 ## Prerequisites
@@ -14,36 +15,40 @@ NebulaGraph supports multiple types of clients, including a CLI client, a GUI cl
 
 * The NebulaGraph Console version is compatible with the NebulaGraph version.
 
-  !!! note
+  :::note
   
-        NebulaGraph Console and NebulaGraph of the same version number are the most compatible. There may be compatibility issues when connecting to NebulaGraph with a different version of NebulaGraph Console. The error message `incompatible version between client and server` is displayed when there is such an issue.
+    NebulaGraph Console and NebulaGraph of the same version number are the most compatible. There may be compatibility issues when connecting to NebulaGraph with a different version of NebulaGraph Console. The error message `incompatible version between client and server` is displayed when there is such an issue.
 
+:::
 ### Steps
 
 1. On the NebulaGraph Console [releases page](https://github.com/vesoft-inc/nebula-console/releases "the nebula-console Releases page"), select a NebulaGraph Console version and click **Assets**.
 
-  !!! note
+  :::note
 
-        It is recommended to select the **latest** version.
+    It is recommended to select the **latest** version.
 
+:::
 2. In the **Assets** area, find the correct binary file for the machine where you want to run NebulaGraph Console and download the file to the machine.
 
 3. (Optional) Rename the binary file to `nebula-console` for convenience.
 
-  !!! note
+  :::note
 
-        For Windows, rename the file to `nebula-console.exe`.
+    For Windows, rename the file to `nebula-console.exe`.
 
+:::
 4. On the machine to run NebulaGraph Console, grant the execute permission of the nebula-console binary file to the user.
 
-  !!! note
+  :::note
 
-        For Windows, skip this step.
+    For Windows, skip this step.
 
-    ```bash
-    $ chmod 111 nebula-console
-    ```
+```bash
+$ chmod 111 nebula-console
+```
 
+:::
 5. In the command line interface, change the working directory to the one where the nebula-console binary file is stored.
 
 6. Run the following command to connect to NebulaGraph.

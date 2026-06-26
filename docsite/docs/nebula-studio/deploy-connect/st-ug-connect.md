@@ -26,11 +26,12 @@ To connect Studio to NebulaGraph, follow these steps:
 
   - **Graphd IP address**: Enter the IP address of the Graph service of NebulaGraph. For example, `192.168.10.100`.
 
-    !!! note
+    :::note
 
-        - When NebulaGraph and Studio are deployed on the same machine, you must enter the IP address of the machine, instead of `127.0.0.1` or `localhost`.
-        - When connecting to a NebulaGraph database on a new browser tab, a new session will overwrite the sessions of the old tab. If you need to log in to multiple NebulaGraph databases simultaneously, you can use a different browser or non-trace mode.
+    - When NebulaGraph and Studio are deployed on the same machine, you must enter the IP address of the machine, instead of `127.0.0.1` or `localhost`.
+    - When connecting to a NebulaGraph database on a new browser tab, a new session will overwrite the sessions of the old tab. If you need to log in to multiple NebulaGraph databases simultaneously, you can use a different browser or non-trace mode.
 
+:::
   - **Port**: The port of the Graph service. The default port is `9669`.
 
   - **Username** and **Password**: Fill in the log in account according to the authentication settings of NebulaGraph.
@@ -43,10 +44,11 @@ To connect Studio to NebulaGraph, follow these steps:
 
 3. After the configuration, click the **Connect** button.
 
-  !!! note
+  :::note
 
-        One session continues for up to 30 minutes. If you do not operate Studio within 30 minutes, the active session will time out and you must connect to NebulaGraph again.
+    One session continues for up to 30 minutes. If you do not operate Studio within 30 minutes, the active session will time out and you must connect to NebulaGraph again.
 
+:::
 A welcome page is displayed on the first login, showing the relevant functions according to the usage process, and the test datasets can be automatically downloaded and imported.
 
 To visit the welcome page, click ![help](https://docs-cdn.nebula-graph.com.cn/figures/navbar-help.png).
@@ -60,10 +62,11 @@ When Studio is successfully connected to NebulaGraph, you can do these operation
 - Execute nGQL statements on the **Console** page.
 - Design the schema visually on the **Schema drafting** page.
 
-!!! note
+:::note
 
-    The permissions of an account determine the operations that can be performed. For details, see [Roles and privileges](../../7.data-security/1.authentication/3.role-list.md).
+The permissions of an account determine the operations that can be performed. For details, see [Roles and privileges](../../7.data-security/1.authentication/3.role-list.md).
 
+:::
 ### Log out
 <!--
 On NebulaGraph Cloud Service, users cannot clear the connection.

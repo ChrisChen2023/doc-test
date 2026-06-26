@@ -34,10 +34,11 @@ Run `docker-compose ps` to check if the service has started normally.
 
 If the above result is not returned, stop Studio and restart it first. For details, refer to [Deploy Studio](../deploy-connect/st-ug-deploy.md).
 
-  !!! note
+  :::note
 
-        If you used `docker-compose up -d` to satrt NebulaGraph before, you must run the `docker-compose down` to stop NebulaGraph.
+    If you used `docker-compose up -d` to satrt NebulaGraph before, you must run the `docker-compose down` to stop NebulaGraph.
 
+:::
 ### Step3: Confirm address
 
 If Studio and the browser are on the same machine, users can use `localhost:7001`, `127.0.0.1:7001` or `0.0.0.0:7001` in the browser to access Studio.

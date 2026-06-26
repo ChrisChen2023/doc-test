@@ -2,10 +2,11 @@
 
 nGQL 没有严格的构建格式要求，但根据恰当而统一的风格创建 nGQL 语句有利于提高可读性、避免歧义。在同一组织或项目中使用相同的 nGQL 风格有利于降低维护成本，规避因格式混乱或误解造成的问题。本文为写作 nGQL 语句提供了风格参考。
 
-!!! compatibility
+:::compatibility
 
-    nGQL 风格与 [Cypher Style Guide](https://s3.amazonaws.com/artifacts.opencypher.org/M15/docs/style-guide.pdf) 不同。
+nGQL 风格与 [Cypher Style Guide](https://s3.amazonaws.com/artifacts.opencypher.org/M15/docs/style-guide.pdf) 不同。
 
+:::
 ## 换行
 
 1. 换行写子句。
@@ -63,10 +64,11 @@ nGQL 没有严格的构建格式要求，但根据恰当而统一的风格创建
   RETURN v2;
   ```
 
-!!! note
+:::note
 
-    即使子句不超过 80 个字符，如需换行后有助于理解，也可将子句再次分行。
+即使子句不超过 80 个字符，如需换行后有助于理解，也可将子句再次分行。
 
+:::
 ## 标识符命名
 
 在 nGQL 语句中，关键字、标点符号、空格以外的字符内容都是标识符。推荐的标识符命名方式如下。
@@ -185,14 +187,15 @@ nGQL 没有严格的构建格式要求，但根据恰当而统一的风格创建
   RETURN "Hello Nebula!\"123\"";
   ```
 
-!!! note
+:::note
 
-    字符串中需要嵌套单引号或双引号时，用反斜线（\）转义。例如：
+字符串中需要嵌套单引号或双引号时，用反斜线（\）转义。例如：
 
-    ```ngql
-    RETURN "\"The database is amazing,\" the user says.";
-    ```
+```ngql
+RETURN "\"The database is amazing,\" the user says.";
+```
 
+:::
 <!--## 空格 TODO-->
 
 ## 结束语句

@@ -2,10 +2,11 @@
 
 Standalone NebulaGraph merges the Meta, Storage, and Graph services into a single process deployed on a single machine. This topic introduces scenarios, deployment steps, etc. of standalone NebulaGraph.
 
-!!! danger
+:::danger
 
-    Do not use standalone NebulaGraph in production environments. 
+Do not use standalone NebulaGraph in production environments. 
 
+:::
 ## Background
 
 The traditional NebulaGraph consists of three services, each service having executable binary files and the corresponding process. Processes communicate with each other by RPC. In standalone NebulaGraph, the three processes corresponding to the three services are combined into one process. For more information about NebulaGraph, see [Architecture overview](../1.introduction/3.nebula-graph-architecture/1.architecture-overview.md).

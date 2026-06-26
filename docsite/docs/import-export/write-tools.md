@@ -20,6 +20,7 @@ The following figure shows the positions of these ways:
 - Read and write APIs with [Spark-connector](../connector/nebula-spark-connector.md)/[Flink-connector](../connector/nebula-flink-connector.md): This method requires you to write a small amount of code to make use of the APIs provided by Spark/Flink connector.
 - Export the data in database to a CSV file or another graph space (different NebulaGraph database clusters are supported) using the export function of the Exchange.
 
-  !!! enterpriseonly
+  :::enterpriseonly
 
-        The export function is exclusively available in the Enterprise Edition. If you require access to this version, please [contact us](mailto:inquiry@vesoft.com).
+    The export function is exclusively available in the Enterprise Edition. If you require access to this version, please [contact us](mailto:inquiry@vesoft.com).
+:::

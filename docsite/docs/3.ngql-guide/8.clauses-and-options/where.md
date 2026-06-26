@@ -14,9 +14,10 @@ The `WHERE` clause usually works in the following queries:
 
 ## Basic usage
 
-!!! note
-    In the following examples, `$$` and `$^` are reference operators. For more information, see [Operators](../4.variable-and-composite-queries/3.property-reference.md).
+:::note
+In the following examples, `$$` and `$^` are reference operators. For more information, see [Operators](../4.variable-and-composite-queries/3.property-reference.md).
 
+:::
 ### Define conditions with boolean operators
 
 Use the boolean operators `NOT`, `AND`, `OR`, and `XOR` to define conditions in `WHERE` clauses. For the precedence of the operators, see [Precedence](../5.operators/9.precedence.md).

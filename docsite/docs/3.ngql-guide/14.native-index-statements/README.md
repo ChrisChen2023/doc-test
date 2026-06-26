@@ -53,10 +53,11 @@ Full-text indexes are used to do prefix, wildcard, regexp, and fuzzy search on a
 
 - Full-text indexes do not support logical operations such as `AND`, `OR`, and `NOT`.
 
-!!! note
+:::note
 
-    To do complete string matches, use native indexes.
+To do complete string matches, use native indexes.
 
+:::
 ## Null values
 
 Indexes do not support indexing null values.

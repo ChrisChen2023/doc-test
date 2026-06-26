@@ -40,10 +40,11 @@ $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/nebula -DENABLE_TESTING=OFF -DCMAKE_BU
 
 在测试环境中，我们使用 [NebulaGraph Bench](https://github.com/nebula-contrib/NebulaGraph-Bench) 来准备测试数据，并通过运行 **FindShortestPath**、**Go1Step**、**Go2Step**、**Go3Step**、**InsertPersonScenario** 这5个场景脚本来收集性能数据。
 
-!!! note
+:::note
 
-    可以在生产环境中使用 **TopN** 查询来收集性能数据，在你的环境中可以提高更多性能。
+可以在生产环境中使用 **TopN** 查询来收集性能数据，在你的环境中可以提高更多性能。
 
+:::
 ## 准备性能数据
 
 ### 收集 AutoFDO 工具的性能数据
@@ -63,10 +64,11 @@ $ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/nebula -DENABLE_TESTING=OFF -DCMAKE_BU
   perf record -p 305516,305707 -b -e br_inst_retired.near_taken:pp -o ~/FindShortestPath.data
   ```
 
-  !!! note
+  :::note
 
-        因为与`nebula-graphd`和`nebula-storaged`相比，`nebula-metad`的贡献率很小。为了减少工作量，我们没有收集 `nebula-metad` 的性能数据。
+    因为与`nebula-graphd`和`nebula-storaged`相比，`nebula-metad`的贡献率很小。为了减少工作量，我们没有收集 `nebula-metad` 的性能数据。
 
+:::
 3. 启动 **FindShortestPath** 场景的基准测试。
 
   ```bash
@@ -124,10 +126,11 @@ diff --git a/cmake/nebula/GeneralCompilerConfig.cmake b/cmake/nebula/GeneralComp
 +add_compile_options(-fauto-profile=~/fbdata.afdo)
 ```
 
-!!! note
+:::note
 
-    当你使用多个`fbdata.afdo`多次编译时，请在重新编译之前执行`make clean`操作，因为只是修改`fbdata.afdo`不会触发重新编译。
+当你使用多个`fbdata.afdo`多次编译时，请在重新编译之前执行`make clean`操作，因为只是修改`fbdata.afdo`不会触发重新编译。
 
+:::
 ## 性能测试结果
 
 ### 软硬件环境

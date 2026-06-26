@@ -6,11 +6,12 @@ The `LIMIT` clause constrains the number of rows in the output. The usage of `LI
 
 - OpenCypher compatible statements: No pipes are permitted before the `LIMIT` clause. And you can use `SKIP` to indicate an offset.
 
-!!! note
+:::note
 
-        When using `LIMIT` in either syntax above, it is important to use an `ORDER BY` clause that constrains the output into a unique order. Otherwise, you will get an unpredictable subset of the output.
+    When using `LIMIT` in either syntax above, it is important to use an `ORDER BY` clause that constrains the output into a unique order. Otherwise, you will get an unpredictable subset of the output.
 
 
+:::
 ## LIMIT in native nGQL statements
 
 In native nGQL, `LIMIT` has general syntax and exclusive syntax in `GO` statements.
@@ -115,10 +116,11 @@ In openCypher compatible statements such as `MATCH`, there is no need to use a p
 
 Both `offset` and `number_rows` accept expressions, but the result of the expression must be a non-negative integer.
 
-!!! note
+:::note
 
-    Fraction expressions composed of two integers are automatically floored to integers. For example, `8/6` is floored to 1.
+Fraction expressions composed of two integers are automatically floored to integers. For example, `8/6` is floored to 1.
 
+:::
 ### Examples of LIMIT
 
 `LIMIT` can be used alone to return a specified number of results.

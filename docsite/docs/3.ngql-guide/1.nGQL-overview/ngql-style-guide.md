@@ -2,10 +2,11 @@
 
 nGQL does not have strict formatting requirements, but creating nGQL statements according to an appropriate and uniform style can improve readability and avoid ambiguity. Using the same nGQL style in the same organization or project helps reduce maintenance costs and avoid problems caused by format confusion or misunderstanding. This topic will provide a style guide for writing nGQL statements.
 
-!!! compatibility
+:::compatibility
 
-    The styles of nGQL and [Cypher Style Guide](https://s3.amazonaws.com/artifacts.opencypher.org/M15/docs/style-guide.pdf) are different.
+The styles of nGQL and [Cypher Style Guide](https://s3.amazonaws.com/artifacts.opencypher.org/M15/docs/style-guide.pdf) are different.
 
+:::
 ## Newline
 
 1. Start a new line to write a clause.
@@ -63,10 +64,11 @@ nGQL does not have strict formatting requirements, but creating nGQL statements 
   RETURN v2;
   ```
 
-!!! note
+:::note
 
-    If needed, you can also start a new line for better understanding, even if the clause does not exceed 80 characters. 
+If needed, you can also start a new line for better understanding, even if the clause does not exceed 80 characters. 
 
+:::
 ## Identifier naming
 
 In nGQL statements, characters other than keywords, punctuation marks, and blanks are all identifiers. Recommended methods to name the identifiers are as follows.
@@ -185,14 +187,15 @@ The strings should be surrounded by double quotes.
   RETURN "Hello Nebula!\"123\"";
   ```
 
-!!! note
+:::note
 
-    When single or double quotes need to be nested in a string, use a backslash (\) to escape. For example:
+When single or double quotes need to be nested in a string, use a backslash (\) to escape. For example:
 
-    ```ngql
-    RETURN "\"NebulaGraph is amazing,\" the user says.";
-    ```
+```ngql
+RETURN "\"NebulaGraph is amazing,\" the user says.";
+```
 
+:::
 <!--## 空格 TODO-->
 
 ## Statement termination

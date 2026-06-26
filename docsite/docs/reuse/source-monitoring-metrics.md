@@ -124,10 +124,11 @@
 
 ### Graph space
 
-!!! note
+:::note
 
-    Space-level metrics are created dynamically, so that only when the behavior is triggered in the graph space, the corresponding metric is created and can be queried by the user.
+Space-level metrics are created dynamically, so that only when the behavior is triggered in the graph space, the corresponding metric is created and can be queried by the user.
 
+:::
 | Parameter                                           | Description                                      |
 | ---------------------------------------------- | ----------------------------------------- |
 | `num_active_queries`                             | The number of queries currently being executed.                    |

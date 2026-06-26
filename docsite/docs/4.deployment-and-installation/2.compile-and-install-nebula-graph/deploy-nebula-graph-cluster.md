@@ -2,10 +2,11 @@
 
 You can deploy a NebulaGraph cluster with RPM or DEB package manually. This topic provides an example of deploying a NebulaGraph cluster across multiple servers (machines).
 
-!!! note
+:::note
 
-    You can also deploy a NebulaGraph cluster with official tools. For more information, see [Install NebulaGraph with ecosystem tools](6.deploy-nebula-graph-with-peripherals.md)
+You can also deploy a NebulaGraph cluster with official tools. For more information, see [Install NebulaGraph with ecosystem tools](6.deploy-nebula-graph-with-peripherals.md)
 
+:::
 ## Deployment
 
 | Machine name |       IP address | Number of graphd | Number of storaged | Number of metad   |
@@ -47,16 +48,17 @@ All the configuration files for NebulaGraph, including `nebula-graphd.conf`, `ne
 
 Users can refer to the content of the following configurations, which only show part of the cluster settings. The hidden content uses the default setting so that users can better understand the relationship between the servers in the NebulaGraph cluster.
 
-!!! note
+:::note
 
-    The main configuration to be modified is `meta_server_addrs`. All configurations need to fill in the IP addresses and ports of all Meta services. At the same time, `local_ip` needs to be modified as the network IP address of the machine itself. For detailed descriptions of the configuration parameters, see:
+The main configuration to be modified is `meta_server_addrs`. All configurations need to fill in the IP addresses and ports of all Meta services. At the same time, `local_ip` needs to be modified as the network IP address of the machine itself. For detailed descriptions of the configuration parameters, see:
 
-    - [Meta Service configurations](../../5.configurations-and-logs/1.configurations/2.meta-config.md)
+- [Meta Service configurations](../../5.configurations-and-logs/1.configurations/2.meta-config.md)
 
-    - [Graph Service configurations](../../5.configurations-and-logs/1.configurations/3.graph-config.md)
+- [Graph Service configurations](../../5.configurations-and-logs/1.configurations/3.graph-config.md)
 
-    - [Storage Service configurations](../../5.configurations-and-logs/1.configurations/4.storage-config.md)
+- [Storage Service configurations](../../5.configurations-and-logs/1.configurations/4.storage-config.md)
 
+:::
 - Deploy machine A
 
   - `nebula-graphd.conf`
@@ -277,14 +279,15 @@ The command to start the NebulaGraph services is as follows.
 sudo /usr/local/nebula/scripts/nebula.service start <metad|graphd|storaged|all>
 ```
 
-!!! note
+:::note
 
-    - Make sure all the processes of services on each machine are started. Otherwise, you will fail to start NebulaGraph.
+- Make sure all the processes of services on each machine are started. Otherwise, you will fail to start NebulaGraph.
 
-    - When the graphd process, the storaged process, and the metad process are all started, you can use `all` instead.
+- When the graphd process, the storaged process, and the metad process are all started, you can use `all` instead.
 
-    - `/usr/local/nebula` is the default installation path for NebulaGraph. Use the actual path if you have customized the path. For more information about how to start and stop the services, see [Manage NebulaGraph services](../manage-service.md).
+- `/usr/local/nebula` is the default installation path for NebulaGraph. Use the actual path if you have customized the path. For more information about how to start and stop the services, see [Manage NebulaGraph services](../manage-service.md).
 
+:::
 ### Check the cluster status
 
 Install the native CLI client [NebulaGraph Console](../../2.quick-start/3.connect-to-nebula-graph.md), then connect to any machine that has started the graphd process, run `ADD HOSTS` command to add storage hosts, and run `SHOW HOSTS` to check the cluster status. For example:

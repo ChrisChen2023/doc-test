@@ -2,10 +2,11 @@
 
 This topic provides a simple guide to importing Data stored on Kafka into NebulaGraph using Exchange.
 
-!!! compatibility
+:::compatibility
 
-    Please use Exchange 3.5.0/3.3.0/3.0.0 when importing Kafka data. In version 3.4.0, caching of imported data was added, and streaming data import is not supported.
+Please use Exchange 3.5.0/3.3.0/3.0.0 when importing Kafka data. In version 3.4.0, caching of imported data was added, and streaming data import is not supported.
     
+:::
 ## Environment
 
 This example is done on MacOS. Here is the environment configuration information:
@@ -94,16 +95,18 @@ For more information, see [Quick start workflow](../../../2.quick-start/1.quick-
 
 ### Step 2: Modify configuration files
 
-!!! note
+:::note
 
-    If some data is stored in Kafka's value field, you need to modify the source code, get the value from Kafka, parse the value through the from_JSON function, and return it as a Dataframe.
+If some data is stored in Kafka's value field, you need to modify the source code, get the value from Kafka, parse the value through the from_JSON function, and return it as a Dataframe.
 
+:::
 After Exchange is compiled, copy the conf file `target/classes/application.conf` to set Kafka data source configuration. In this example, the copied file is called `kafka_application.conf`. For details on each configuration item, see [Parameters in the configuration file](../parameter-reference/ex-ug-parameter.md).
 
-!!! note
+:::note
 
-    When importing Kafka data, a configuration file can only handle one tag or edge type. If there are multiple tag or edge types, you need to create multiple configuration files.
+When importing Kafka data, a configuration file can only handle one tag or edge type. If there are multiple tag or edge types, you need to create multiple configuration files.
 
+:::
 ```conf
 {
   # Spark configuration
@@ -319,11 +322,12 @@ Run the following command to import Kafka data into NebulaGraph. For a descripti
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange <nebula-exchange.jar_path> -c <kafka_application.conf_path>
 ```
 
-!!! note
+:::note
 
-    - The JAR package needs to be obtained from the [NebulaGraph Enterprise Edition Package](https://nebula-graph.io/pricing).
-    - If Kafka's security certification is enabled, you need to configure the driver and executor when importing data. See the example below.
+- The JAR package needs to be obtained from the [NebulaGraph Enterprise Edition Package](https://nebula-graph.io/pricing).
+- If Kafka's security certification is enabled, you need to configure the driver and executor when importing data. See the example below.
 
+:::
 Example:
 
 - No security certification

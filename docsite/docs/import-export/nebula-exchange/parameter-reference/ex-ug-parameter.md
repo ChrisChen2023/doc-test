@@ -121,25 +121,26 @@ Users only need to configure parameters for connecting to Hive if Spark and Hive
 |`nebula.rate.limit`|int|`1024`|No|The limit on the number of tokens in the token bucket when importing data.|
 |`nebula.rate.timeout`|int|`1000`|No|The timeout period for getting tokens from a token bucket. Unit: milliseconds.|
 
-!!! note
+:::note
 
-    NebulaGraph doesn't support vertices without tags by default. To import vertices without tags, [enable vertices without tags](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md) in the NebulaGraph cluster and then add parameter `nebula.enableTagless` to the Exchange configuration with the value `true`. For example:
+NebulaGraph doesn't support vertices without tags by default. To import vertices without tags, [enable vertices without tags](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md) in the NebulaGraph cluster and then add parameter `nebula.enableTagless` to the Exchange configuration with the value `true`. For example:
 
-    ```bash
-    nebula: {
-        address:{
-          graph:["127.0.0.1:9669"]
-          meta:["127.0.0.1:9559"]
-        }
-        user: root
-        pswd: nebula
-        space: test
-        enableTagless: true
-        ......
+```bash
+nebula: {
+    address:{
+      graph:["127.0.0.1:9669"]
+      meta:["127.0.0.1:9559"]
+    }
+    user: root
+    pswd: nebula
+    space: test
+    enableTagless: true
+    ......
 
-     }
-    ```
+ }
+```
 
+:::
 ### Vertex configurations
 
 For different data sources, the vertex configurations are different. There are many general parameters and some specific parameters. General parameters and specific parameters of different data sources need to be configured when users configure vertices.

@@ -28,10 +28,11 @@ The version correspondence between NebulaGraph and NebulaGraph Importer is as fo
 | 3.x.x      |  3.x.x, 4.x.x        | 
 | 2.x.x      |  2.x.x, 3.x.x        |
 
-!!! note
+:::note
 
-    Importer 4.0.0 has redone the Importer for improved performance, but the configuration file is not compatible with older versions. It is recommended to use the new version of Importer.
+Importer 4.0.0 has redone the Importer for improved performance, but the configuration file is not compatible with older versions. It is recommended to use the new version of Importer.
 
+:::
 ## Release note
 
 [Release](https://github.com/vesoft-inc/nebula-importer/releases/tag/{{importer.tag}})
@@ -54,18 +55,20 @@ Before using NebulaGraph Importer, make sure:
 
 Prepare the CSV file to be imported and configure the YAML file to use the tool to batch write data into NebulaGraph.
 
-!!! note
+:::note
 
-    For details about the YAML configuration file, see [Configuration File Description](#configuration_file_description) at the end of topic.
+For details about the YAML configuration file, see [Configuration File Description](#configuration_file_description) at the end of topic.
 
+:::
 ### Download binary package and run
 
 1. Download the executable [binary package](https://github.com/vesoft-inc/nebula-importer/releases/tag/{{importer.tag}}).
 
-  !!! note
+  :::note
 
-        The file installation path based on the RPM/DEB package is `/usr/bin/nebula-importer`. 
+    The file installation path based on the RPM/DEB package is `/usr/bin/nebula-importer`. 
 
+:::
 2. Under the directory where the binary file is located, run the following command to start importing data.
 
   ```bash
@@ -82,10 +85,11 @@ Compiling the source code requires deploying a Golang environment. For details, 
   git clone -b {{importer.branch}} https://github.com/vesoft-inc/nebula-importer.git
   ```
 
-  !!! note
+  :::note
   
-        Use the correct branch. Different branches have different RPC protocols.
+    Use the correct branch. Different branches have different RPC protocols.
 
+:::
 2. Access the directory `nebula-importer`.
 
   ```bash
@@ -122,9 +126,10 @@ docker run --rm -ti \
 - `<data_dir>`: The absolute path to the CSV data file. If the file is not local, ignore this parameter.
 - `<version>`: NebulaGraph 3.x Please fill in 'v3'.
 
-!!! note
-    A relative path is recommended. If you use a local absolute path, check that the path maps to the path in the Docker.
+:::note
+A relative path is recommended. If you use a local absolute path, check that the path maps to the path in the Docker.
 
+:::
 Example:
 
 ```bash
@@ -141,10 +146,11 @@ docker run --rm -ti \
 
 Various example configuration files are available within the [Github](https://github.com/vesoft-inc/nebula-importer/tree/{{importer.branch}}/examples) of the NebulaGraph Importer. The configuration files are used to describe information about the files to be imported, NebulaGraph server information, etc. The following section describes the fields within the configuration file in categories.
 
-!!! note
+:::note
 
-    If users download a binary package, create the configuration file manually.
+If users download a binary package, create the configuration file manually.
 
+:::
 ### Client configuration
 
 Client configuration stores the configuration associated with the client's connection to the NebulaGraph.
@@ -435,9 +441,10 @@ The configuration mainly includes the following parts:
 |`sources.edges.props.nullValue`   |-| No | Ignored when `nullable` is `false`. The value used to determine whether it is a `NULL`. The property is set to `NULL` when the value is equal to `nullValue`.       |  
 |`sources.edges.props.defaultValue`   |-| No | Ignored when `nullable` is `false`. The property default value, when all the values obtained by `index` and `alternativeIndices` are `nullValue`.          |  
 
-!!! note
-    The sequence numbers of the columns in the CSV file start from 0, that is, the sequence numbers of the first column are 0, and the sequence numbers of the second column are 1.
+:::note
+The sequence numbers of the columns in the CSV file start from 0, that is, the sequence numbers of the first column are 0, and the sequence numbers of the second column are 1.
 
+:::
 ## FAQ
 
 ### What are the descriptions of the fields in the log output?

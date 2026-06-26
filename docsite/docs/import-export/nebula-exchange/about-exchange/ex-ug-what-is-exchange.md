@@ -22,10 +22,11 @@ Exchange applies to the following scenarios:
 
 - The data saved in NebulaGraph needs to be exported.
 
-  !!! enterpriseonly
+  :::enterpriseonly
 
-        Exporting the data saved in NebulaGraph is supported by Exchange Enterprise Edition only.
+    Exporting the data saved in NebulaGraph is supported by Exchange Enterprise Edition only.
 
+:::
 ## Advantages
 
 Exchange has the following advantages:
@@ -38,10 +39,11 @@ Exchange has the following advantages:
 
 - Resumable data import: It supports resumable data import to save time and improve data import efficiency.
 
-  !!! note
+  :::note
 
-        Resumable data import is currently supported when migrating Neo4j data only.
+    Resumable data import is currently supported when migrating Neo4j data only.
 
+:::
 - Asynchronous operation: An insert statement is generated in the source data and sent to the Graph service. Then the insert operation is performed.
 
 - Great flexibility: It supports importing multiple Tags and Edge types at the same time. Different Tags and Edge types can be from different data sources or in different formats.

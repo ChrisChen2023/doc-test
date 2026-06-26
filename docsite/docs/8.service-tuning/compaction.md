@@ -6,10 +6,11 @@ In NebulaGraph, `Compaction` is the most important background process and has an
 
 `Compaction` reads the data that is written on the hard disk, then re-organizes the data structure and the indexes, and then writes back to the hard disk. The read performance can increase by times after compaction. Thus, to get high read performance, trigger `compaction` (full `compaction`) manually when writing a large amount of data into Nebula Graph.
 
-!!! note
+:::note
 
-    Note that `compaction` leads to long-time hard disk IO. We suggest that users do compaction during off-peak hours (for example, early morning).
+Note that `compaction` leads to long-time hard disk IO. We suggest that users do compaction during off-peak hours (for example, early morning).
 
+:::
 NebulaGraph has two types of `compaction`: automatic `compaction` and full `compaction`.
 
 ## Automatic `compaction`
@@ -21,10 +22,11 @@ To control `compaction` manually, users can disable automatic `compaction`.
 
 ### Disable automatic `compaction`
 
-!!! danger
+:::danger
 
-    The `UPDATE CONFIGS` command overwrites the unset parameters to the default value. Use `SHOW CONFIGS STORAGE` to check `rocksdb_column_family_options` before the updates and then overwrite the values.
+The `UPDATE CONFIGS` command overwrites the unset parameters to the default value. Use `SHOW CONFIGS STORAGE` to check `rocksdb_column_family_options` before the updates and then overwrite the values.
 
+:::
 ```ngql
 # Check the current value of rocksdb_column_family_options and copy the content of the value column.
 nebula> SHOW CONFIGS STORAGE;
@@ -57,10 +59,11 @@ nebula> SHOW CONFIGS STORAGE;
 
 Full `compaction` enables large-scale background operations for a graph space such as merging files, deleting the data expired by TTL. This operation needs to be initiated manually. Use the following statements to enable full `compaction`:
 
-!!! note
+:::note
 
-    We recommend you to do the full compaction during off-peak hours because full compaction has a lot of IO operations.
+We recommend you to do the full compaction during off-peak hours because full compaction has a lot of IO operations.
 
+:::
 ```ngql
 nebula> USE <your_graph_space>;
 nebula> SUBMIT JOB COMPACT;
@@ -90,15 +93,16 @@ These are some operation suggestions to keep Nebula Graph performing well.
 
 - To control the write traffic limitation for `compactions`, set the following parameter in the `nebula-storaged.conf` configuration file.
   
-  !!! note
+  :::note
 
-        This parameter limits the rate of all writes including normal writes and compaction writes. 
+    This parameter limits the rate of all writes including normal writes and compaction writes. 
 
-    ```bash
-    # Limit the write rate to 20MB/s.
-    --rocksdb_rate_limit=20 (in MB/s)
-    ```
+```bash
+# Limit the write rate to 20MB/s.
+--rocksdb_rate_limit=20 (in MB/s)
+```
 
+:::
 ## FAQ
 
 ### "Where are the logs related to `Compaction` stored?"

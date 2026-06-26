@@ -12,10 +12,11 @@
 
 社区版 Exchange 的 JAR 文件还可以通过编译源代码获取。下文介绍如何编译 Exchange 源代码。
 
-!!! enterpriseonly
+:::enterpriseonly
 
-    企业版 Exchange 仅能在 {{nebula.name}} 企业版套餐中获取。
+企业版 Exchange 仅能在 {{nebula.name}} 企业版套餐中获取。
 
+:::
 ### 前提条件
 
 - 安装 [Maven](https://maven.apache.org/download.cgi)。
@@ -60,9 +61,10 @@
 
 编译成功后，可以在`nebula-exchange_spark_x.x/target/`目录里找到`nebula-exchange_spark_x.x-{{exchange.branch}}.jar`文件。`x.x`代表 Spark 版本，例如`2.4`。
 
-!!! note
-    JAR 文件版本号会因 NebulaGraph Java Client 的发布版本而变化。用户可以在 [Releases 页面](https://github.com/vesoft-inc/nebula-java/releases)查看最新版本。
+:::note
+JAR 文件版本号会因 NebulaGraph Java Client 的发布版本而变化。用户可以在 [Releases 页面](https://github.com/vesoft-inc/nebula-java/releases)查看最新版本。
 
+:::
 迁移数据时，用户可以参考配置文件 [`target/classes/application.conf`](https://github.com/vesoft-inc/nebula-exchange/blob/master/nebula-exchange_spark_2.4/src/main/resources/application.conf)。
 
 ### 下载依赖包失败

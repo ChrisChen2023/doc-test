@@ -68,16 +68,18 @@
    - 如果要删除已经配置的 TTL 信息：在 **设置 TTL** 区域，取消勾选 **设置TTL（存活时间）**，然后点击 **确定**。
    - 如果要配置 TTL 信息：在 **设置 TTL** 区域，勾选 **设置TTL（存活时间）**，设置`TTL_COL`和`TTL_DURATION`（单位：秒），点击 **确认**。详情参考 [TTL 配置](../../3.ngql-guide/8.clauses-and-options/ttl-options.md "点击前往 {{nebula.name}} 网站")。
 
-    !!! note
+    :::note
 
-        TTL 与索引的共存问题，详情参考 [TTL](../../3.ngql-guide/8.clauses-and-options/ttl-options.md)。
+    TTL 与索引的共存问题，详情参考 [TTL](../../3.ngql-guide/8.clauses-and-options/ttl-options.md)。
 
+:::
 ## 删除 Tag
 
-!!! danger
+:::danger
 
-    删除 Tag 前先确认[影响](../../3.ngql-guide/10.tag-statements/2.drop-tag.md)，已删除的数据如未[备份](../../backup-and-restore/nebula-br/1.what-is-br.md)无法恢复。
+删除 Tag 前先确认[影响](../../3.ngql-guide/10.tag-statements/2.drop-tag.md)，已删除的数据如未[备份](../../backup-and-restore/nebula-br/1.what-is-br.md)无法恢复。
 
+:::
 1. 在顶部导航栏中，点击 **Schema** 页签。
 
 2. 在 **图空间列表** 中，找到图空间，点击图空间名称或者在 **操作** 列中点击 **Schema**。

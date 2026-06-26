@@ -22,9 +22,10 @@ Exchange 适用于以下场景：
 
 - 需要导出 {{nebula.name}} 中保存的数据。
 
-  !!! enterpriseonly
-        仅企业版 Exchange 支持从 {{nebula.name}} 中导出数据。
+  :::enterpriseonly
+    仅企业版 Exchange 支持从 {{nebula.name}} 中导出数据。
 
+:::
 ## 产品优点
 
 Exchange 具有以下优点：
@@ -37,10 +38,11 @@ Exchange 具有以下优点：
 
 - 支持断点续传：导入数据时支持断点续传，有助于节省时间，提高数据导入效率。
 
-  !!! note
+  :::note
 
-        目前仅迁移 Neo4j 数据时支持断点续传。
+    目前仅迁移 Neo4j 数据时支持断点续传。
 
+:::
 - 异步操作：会在源数据中生成一条插入语句，发送给 Graph 服务，最后再执行插入操作。
 
 - 灵活性强：支持同时导入多个 Tag 和 Edge type，不同 Tag 和 Edge type 可以是不同的数据来源或格式。

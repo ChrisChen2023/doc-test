@@ -123,25 +123,26 @@ check: the real password decrypted by private key and encrypted password is: neb
 |`nebula.rate.limit`|int|`1024`|否|导入数据时令牌桶的令牌数量限制。|
 |`nebula.rate.timeout`|int|`1000`|否|令牌桶中拿取令牌的超时时间，单位：毫秒。|
 
-!!! note
+:::note
 
-     {{nebula.name}} 默认不支持无 Tag 的点。如果需要导入无 Tag 的点，需要先在集群内开启[支持无 Tag 点](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md)，然后在 Exchange 的配置文件内新增`nebula.enableTagless`参数，值为`true`。示例如下：
+ {{nebula.name}} 默认不支持无 Tag 的点。如果需要导入无 Tag 的点，需要先在集群内开启[支持无 Tag 点](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md)，然后在 Exchange 的配置文件内新增`nebula.enableTagless`参数，值为`true`。示例如下：
 
-    ```bash
-    nebula: {
-        address:{
-          graph:["127.0.0.1:9669"]
-          meta:["127.0.0.1:9559"]
-        }
-        user: root
-        pswd: nebula
-        space: test
-        enableTagless: true
-        ......
+```bash
+nebula: {
+    address:{
+      graph:["127.0.0.1:9669"]
+      meta:["127.0.0.1:9559"]
+    }
+    user: root
+    pswd: nebula
+    space: test
+    enableTagless: true
+    ......
 
-     }
-    ```
+ }
+```
 
+:::
 ### 点配置
 
 对于不同的数据源，点的配置也有所不同，有很多通用参数，也有部分特有参数，配置时需要配置通用参数和不同数据源的特有参数。
