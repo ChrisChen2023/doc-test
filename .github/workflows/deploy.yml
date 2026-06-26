@@ -3,7 +3,7 @@ name: Publish Docs via Docusaurus
 on:
   push:
     branches:
-      - v3.10.0 # 完全契合您旧工作流的分支配置
+      - v3.10.0
     paths:
       - 'docsite/docs/**'  
       - 'docsite/i18n/**' 
@@ -12,7 +12,7 @@ on:
       - 'docsite/package.json'
 
 permissions:
-  contents: write # 必须开放此权限用以向 gh-pages 分支进行 git push
+  contents: write
 
 concurrency:
   group: docusaurus-gh-pages-deploy
@@ -22,40 +22,60 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      # 1. 采用 v5 版本避免旧 Actions 带来的 Node.js 20 弃用警告
+      # 1. 修正为官方合法的 v4 版本
       - name: Checkout Repository
-        uses: actions/checkout@v5
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      # 2. 部署现代化的 Node 环境
+      # 2. 部署现代化 Node 环境并精准锁定依赖缓存路径
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # 采用目前业界长期支持的主流 LTS 版本
+          node-version: '22'
           cache: 'npm'
+          cache-dependency-path: docsite/package-lock.json # 确保子目录缓存能精准命中
 
+      # 3. 安装依赖（享受缓存带来的闪电速度）
       - name: Install Project Dependencies
         run: npm ci
         working-directory: docsite
 
-      # 3. 完美继承您原有的 Git 身份标识
+      # 4. 完美继承您原有的 Git 身份标识
       - name: Git Config
         run: |
           git config user.name "ChrisChen2023"
           git config user.email "chris.chen@vesoft.com"
 
-      # 4. 构建 Docusaurus 站点
+      # 5. 构建 Docusaurus 静态站点
       - name: Build Docusaurus
         run: npm run build
         working-directory: docsite
 
-      # 5. 发布到 GitHub Pages
+      # 6. ⭐【核心新增】重新编排目录结构，将全量产物套娃塞进 3.10.0 文件夹中
+      - name: Restructure Build Directory for Versioning
+        run: |
+          cd docsite/build
+          # 1. 创建临时的外部平级文件夹，防止自己移动到自己导致死循环
+          mkdir ../_version_tmp
+          # 2. 将 build 文件夹下的所有内容（包括隐藏文件）移动到临时目录中
+          shopt -s dotglob
+          mv * ../_version_tmp/
+          # 3. 在原 build 目录下创建 3.10.0 目标文件夹
+          mkdir 3.10.0
+          # 4. 将临时目录里的所有东西完好无损地搬迁到 3.10.0 里
+          mv ../_version_tmp/* 3.10.0/
+          # 5. 顺手清理临时文件夹
+          rm -rf ../_version_tmp
+        shell: bash
+
+      # 7. 发布到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: docsite/build
+          publish_dir: docsite/build # 此时该目录内只有一个名为 3.10.0 的子文件夹
           publish_branch: gh-pages
           user_name: ChrisChen2023
           user_email: chris.chen@vesoft.com
+          keep_files: true
