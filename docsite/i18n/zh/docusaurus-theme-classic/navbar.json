@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "NebulaGraph",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "NebulaGraph Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Manual": {
+    "message": "Manual",
+    "description": "Navbar item with label Manual"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

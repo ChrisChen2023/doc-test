@@ -12,6 +12,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Introduction',
+      key: 'sidebar.category.nebula-intro',
       collapsible: true,
       collapsed: true,
       link: {
@@ -49,7 +50,7 @@ const sidebars = {
           type: 'category',
           label: 'nGQL overview',
           items: [
-            { type: 'doc', id: 'ngql-guide/nGQL-overview/overview', label: 'Overview' },
+            { type: 'doc', id: 'ngql-guide/nGQL-overview/overview', label: 'nGQL Overview' },
             { type: 'doc', id: 'ngql-guide/nGQL-overview/graph-patterns', label: 'Graph patterns' },
             { type: 'doc', id: 'ngql-guide/nGQL-overview/comments', label: 'Comments' },
             { type: 'doc', id: 'ngql-guide/nGQL-overview/identifier-case-sensitivity', label: 'Identifier case sensitivity' },
@@ -62,12 +63,12 @@ const sidebars = {
           label: 'Data types',
           items: [
             { type: 'doc', id: 'ngql-guide/data-types/numeric', label: 'Numeric' },
-            { type: 'doc', id: 'ngql-guide/data-types/boolean', label: 'Boolean' },
-            { type: 'doc', id: 'ngql-guide/data-types/string', label: 'String' },
+            { type: 'doc', id: 'ngql-guide/data-types/boolean', label: 'Boolean' , key: 'sidebar.doc.datatype-boolean'},
+            { type: 'doc', id: 'ngql-guide/data-types/string', label: 'String', key: 'sidebar.doc.datatype-string' },
             { type: 'doc', id: 'ngql-guide/data-types/date-and-time', label: 'Date and time' },
             { type: 'doc', id: 'ngql-guide/data-types/null', label: 'Null' },
-            { type: 'doc', id: 'ngql-guide/data-types/list', label: 'List' },
-            { type: 'doc', id: 'ngql-guide/data-types/set', label: 'Set' },
+            { type: 'doc', id: 'ngql-guide/data-types/list', label: 'List', key: 'sidebar.doc.datatype-list' },
+            { type: 'doc', id: 'ngql-guide/data-types/set', label: 'Set', key: 'sidebar.doc.datatype-set' },
             { type: 'doc', id: 'ngql-guide/data-types/map', label: 'Map' },
             { type: 'doc', id: 'ngql-guide/data-types/type-conversion', label: 'Type conversion' },
             { type: 'doc', id: 'ngql-guide/data-types/geography', label: 'Geography' },
@@ -78,11 +79,11 @@ const sidebars = {
           label: 'Operators',
           items: [
             { type: 'doc', id: 'ngql-guide/operators/comparison', label: 'Comparison' },
-            { type: 'doc', id: 'ngql-guide/operators/boolean', label: 'Boolean' },
+            { type: 'doc', id: 'ngql-guide/operators/boolean', label: 'Boolean', key: 'sidebar.doc.operator-boolean' },
             { type: 'doc', id: 'ngql-guide/operators/pipe', label: 'Pipe' },
-            { type: 'doc', id: 'ngql-guide/operators/set', label: 'Set' },
-            { type: 'doc', id: 'ngql-guide/operators/string', label: 'String' },
-            { type: 'doc', id: 'ngql-guide/operators/list', label: 'List' },
+            { type: 'doc', id: 'ngql-guide/operators/set', label: 'Set' , key: 'sidebar.doc.operator-set' },
+            { type: 'doc', id: 'ngql-guide/operators/string', label: 'String', key: 'sidebar.doc.operator-string' },
+            { type: 'doc', id: 'ngql-guide/operators/list', label: 'List', key: 'sidebar.doc.operator-list' },
             { type: 'doc', id: 'ngql-guide/operators/arithmetic', label: 'Arithmetic' },
             { type: 'doc', id: 'ngql-guide/operators/precedence', label: 'Precedence' },
           ],
@@ -107,7 +108,7 @@ const sidebars = {
           type: 'category',
           label: 'General queries statements',
           items: [
-            { type: 'doc', id: 'ngql-guide/general-query-statements/general-query-statements-overview', label: 'Overview' },
+            { type: 'doc', id: 'ngql-guide/general-query-statements/general-query-statements-overview', label: 'Overview', key: 'sidebar.doc.query-overview' },
             { type: 'doc', id: 'ngql-guide/general-query-statements/match', label: 'MATCH' },
             { type: 'doc', id: 'ngql-guide/general-query-statements/optional-match', label: 'OPTIONAL MATCH' },
             { type: 'doc', id: 'ngql-guide/general-query-statements/lookup', label: 'LOOKUP' },
@@ -122,12 +123,12 @@ const sidebars = {
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-create-space', label: 'SHOW CREATE SPACE' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-create-tag-edge', label: 'SHOW CREATE TAG/EDGE' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-hosts', label: 'SHOW HOSTS' },
-                { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-index-status', label: 'SHOW INDEX STATUS' },
+                { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-index-status', label: 'SHOW INDEX STATUS', key: 'sidebar.doc.show-general-index-status' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-indexes', label: 'SHOW INDEXES' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-parts', label: 'SHOW PARTS' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-roles', label: 'SHOW ROLES' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-snapshots', label: 'SHOW SNAPSHOTS' },
-                { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-spaces', label: 'SHOW SPACES' },
+                { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-spaces', label: 'SHOW SPACES' , key: 'sidebar.doc.show-general-spaces'},
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-stats', label: 'SHOW STATS' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-tags-edges', label: 'SHOW TAGS/EDGES' },
                 { type: 'doc', id: 'ngql-guide/general-query-statements/show/show-users', label: 'SHOW USERS' },
@@ -172,7 +173,7 @@ const sidebars = {
           items: [
             { type: 'doc', id: 'ngql-guide/space-statements/create-space', label: 'CREATE SPACE' },
             { type: 'doc', id: 'ngql-guide/space-statements/use-space', label: 'USE SPACE' },
-            { type: 'doc', id: 'ngql-guide/space-statements/show-spaces', label: 'SHOW SPACES' },
+            { type: 'doc', id: 'ngql-guide/space-statements/show-spaces', label: 'SHOW SPACES', key: 'sidebar.doc.show-space-statements'},
             { type: 'doc', id: 'ngql-guide/space-statements/describe-space', label: 'DESCRIBE SPACE' },
             { type: 'doc', id: 'ngql-guide/space-statements/clear-space', label: 'CLEAR SPACE' },
             { type: 'doc', id: 'ngql-guide/space-statements/drop-space', label: 'DROP SPACE' },
@@ -232,7 +233,7 @@ const sidebars = {
             { type: 'doc', id: 'ngql-guide/native-index-statements/2.1.show-create-index', label: 'SHOW CREATE INDEX' },
             { type: 'doc', id: 'ngql-guide/native-index-statements/describe-native-index', label: 'DESCRIBE INDEX' },
             { type: 'doc', id: 'ngql-guide/native-index-statements/rebuild-native-index', label: 'REBUILD INDEX' },
-            { type: 'doc', id: 'ngql-guide/native-index-statements/show-native-index-status', label: 'SHOW INDEX STATUS' },
+            { type: 'doc', id: 'ngql-guide/native-index-statements/show-native-index-status', label: 'SHOW INDEX STATUS', key: 'sidebar.doc.show-native-index-status' },
             { type: 'doc', id: 'ngql-guide/native-index-statements/drop-native-index', label: 'DROP INDEX' },
           ],
         },
@@ -395,7 +396,7 @@ const sidebars = {
       collapsible: true,
       collapsed: true,
       items: [
-        { type: 'doc', id: 'import-export/write-tools', label: 'Overview' },
+        { type: 'doc', id: 'import-export/write-tools', label: 'Overview' ,key: 'sidebar.doc.write-tools-overview'},
         { type: 'doc', id: 'import-export/use-importer', label: 'Use NebulaGraph Importer' },
         {
           type: 'category',
@@ -404,9 +405,10 @@ const sidebars = {
             {
               type: 'category',
               label: 'Introduction',
+              key: 'sidebar.category.nebula-exchange-intro',
               items: [
                 { type: 'doc', id: 'import-export/nebula-exchange/about-exchange/ex-ug-what-is-exchange', label: 'What is NebulaGraph Exchange' },
-                { type: 'doc', id: 'import-export/nebula-exchange/about-exchange/ex-ug-limitations', label: 'Limitations' },
+                { type: 'doc', id: 'import-export/nebula-exchange/about-exchange/ex-ug-limitations', label: 'Limitations' , key: 'sidebar.doc.exchange-limitations'},
               ],
             },
             { type: 'doc', id: 'import-export/nebula-exchange/ex-ug-compile', label: 'Get Exchange' },
@@ -505,7 +507,7 @@ const sidebars = {
           label: 'About NebulaGraph Studio',
           items: [
             { type: 'doc', id: 'nebula-studio/about-studio/st-ug-what-is-graph-studio', label: 'What is NebulaGraph Studio' },
-            { type: 'doc', id: 'nebula-studio/about-studio/st-ug-limitations', label: 'Limitations' },
+            { type: 'doc', id: 'nebula-studio/about-studio/st-ug-limitations', label: 'Limitations', key: 'sidebar.doc.studio-limitations' },
           ],
         },
         {
@@ -545,7 +547,7 @@ const sidebars = {
           items: [
             { type: 'doc', id: 'nebula-studio/troubleshooting/st-ug-config-server-errors', label: 'Database connection error' },
             { type: 'doc', id: 'nebula-studio/troubleshooting/st-ug-connection-errors', label: 'Unable to access Studio' },
-            { type: 'doc', id: 'nebula-studio/troubleshooting/st-ug-faq', label: 'FAQ' },
+            { type: 'doc', id: 'nebula-studio/troubleshooting/st-ug-faq', label: 'FAQ', key: 'sidebar.doc.studio-faq' },
           ],
         },
       ],
@@ -643,7 +645,7 @@ const sidebars = {
             },
           ],
         },
-        { type: 'doc', id: 'k8s-operator/FAQ', label: 'FAQ' },
+        { type: 'doc', id: 'k8s-operator/FAQ', label: 'FAQ', key: 'sidebar.doc.k8s-faq' },
       ],
     },
 
@@ -660,7 +662,7 @@ const sidebars = {
 
     // Bench & FAQ
     { type: 'doc', id: 'nebula-bench', label: 'Bench' },
-    { type: 'doc', id: 'appendix/FAQ', label: 'FAQ' },
+    { type: 'doc', id: 'appendix/FAQ', label: 'FAQ', key: 'sidebar.doc.faq' },
 
     // Appendix
     {
