@@ -1,3 +1,9 @@
 site/
 *.DS_Store
 *.diff
+
+# Docusaurus local artifacts
+node_modules/
+.docusaurus/
+build/
+npm-debug.log*

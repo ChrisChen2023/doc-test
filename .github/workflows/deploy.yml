@@ -1,0 +1,66 @@
+name: Publish Docs via Docusaurus
+
+on:
+  push:
+    branches:
+      - v3.10.0
+    paths:
+      - 'docsite/docs/**'  
+      - 'docsite/i18n/**' 
+      - 'docsite/docusaurus.config.js'
+      - 'docsite/sidebars.js'
+      - 'docsite/package.json'
+      - '.github/workflows/deploy.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: docusaurus-gh-pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. 修正为官方合法的 v4 版本
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # 2. 部署现代化 Node 环境并精准锁定依赖缓存路径
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: docsite/package-lock.json # 确保子目录缓存能精准命中
+
+      # 3. 安装依赖（享受缓存带来的闪电速度）
+      - name: Install Project Dependencies
+        run: npm ci
+        working-directory: docsite
+
+      # 4. 完美继承您原有的 Git 身份标识
+      - name: Git Config
+        run: |
+          git config user.name "ChrisChen2023"
+          git config user.email "chris.chen@vesoft.com"
+
+      # 5. 构建 Docusaurus 静态站点
+      - name: Build Docusaurus
+        run: npm run build
+        working-directory: docsite
+
+
+      # 6. 发布到 GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docsite/build 
+          publish_branch: gh-pages
+          user_name: ChrisChen2023
+          user_email: chris.chen@vesoft.com
+          keep_files: true
