@@ -3,7 +3,7 @@ name: Publish Docs via Docusaurus
 on:
   push:
     branches:
-      - v3.10.0
+      - v3.11.0
     paths:
       - 'docsite/docs/**'  
       - 'docsite/i18n/**' 
