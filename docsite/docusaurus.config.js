@@ -181,11 +181,11 @@ const config = {
         { type: 'docsVersionDropdown', position: 'right', dropdownItemsAfter: [
           {
               href: 'https://chrischen2023.github.io/doc-test/3.9.0/', // 显式写入 MkDocs 的绝对在线路径
-              label: 'v3.9.0 (MkDocs)',                             // 菜单中显示的文本，可以加个备注区分技术栈
+              label: '3.9.0 (MkDocs)',                             // 菜单中显示的文本，可以加个备注区分技术栈
           },
           {
               href: 'https://chrischen2023.github.io/doc-test/3.8.0/', // 同理配置 3.8.0
-              label: 'v3.8.0 (MkDocs)',
+              label: '3.8.0 (MkDocs)',
           },
   ], }, 
         { type: 'localeDropdown', position: 'right' },      
