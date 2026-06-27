@@ -37,7 +37,8 @@ jobs:
 
       # 4. 写入翻译
       - name: Write translations
-        run: npm run write-translations -- --locale zh        
+        run: npm run write-translations -- --locale zh
+        working-directory: docsite        
 
       # 5. 完美继承您原有的 Git 身份标识
       - name: Git Config
