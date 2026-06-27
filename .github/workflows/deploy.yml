@@ -3,14 +3,7 @@ name: Publish Docs via Docusaurus
 on:
   push:
     branches:
-      - v3.11.0
-    paths:
-      - 'docsite/docs/**'  
-      - 'docsite/i18n/**' 
-      - 'docsite/docusaurus.config.js'
-      - 'docsite/sidebars.js'
-      - 'docsite/package.json'
-      - '.github/workflows/deploy.yml'
+      - main
 
 permissions:
   contents: write
@@ -42,25 +35,27 @@ jobs:
         run: npm ci
         working-directory: docsite
 
-      # 4. 完美继承您原有的 Git 身份标识
+      # 4. 写入翻译
+      - name: Write translations
+        run: npm run write-translations -- --locale zh        
+
+      # 5. 完美继承您原有的 Git 身份标识
       - name: Git Config
         run: |
           git config user.name "ChrisChen2023"
           git config user.email "chris.chen@vesoft.com"
 
-      # 5. 构建 Docusaurus 静态站点
+      # 6. 构建 Docusaurus 静态站点
       - name: Build Docusaurus
         run: npm run build
         working-directory: docsite
 
 
-      # 6. 发布到 GitHub Pages
+      # 7. 发布到 GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: docsite/build 
           publish_branch: gh-pages
-          user_name: ChrisChen2023
-          user_email: chris.chen@vesoft.com
           keep_files: true
