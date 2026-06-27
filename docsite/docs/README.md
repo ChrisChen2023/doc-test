@@ -1,6 +1,6 @@
 # Welcome to NebulaGraph Documentation {{nebula.release}}
 
-The original version converted to Docusaurus.
+The original version converted to Docusaurus with optimizations.
 
 :::note
 
