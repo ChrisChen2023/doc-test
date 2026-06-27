@@ -4,19 +4,19 @@
     "description": "The label for version current"
   },
   "sidebar.docsSidebar.category.sidebar.category.nebula-intro": {
-    "message": "产品简介",
+    "message": "简介",
     "description": "The label for category 'Introduction' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.sidebar.category.nebula-intro.link.generated-index.title": {
-    "message": "Introduction",
+    "message": "NebulaGraph 简介",
     "description": "The generated-index page title for category 'Introduction' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.sidebar.category.nebula-intro.link.generated-index.description": {
-    "message": "Learn about NebulaGraph, including its architecture, data model, and key concepts.",
+    "message": "了解 NebulaGraph，包括其架构、数据模型和关键概念。",
     "description": "The generated-index page description for category 'Introduction' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.NebulaGraph architecture": {
-    "message": "NebulaGraph 架构设计",
+    "message": "服务架构",
     "description": "The label for category 'NebulaGraph architecture' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.nGQL guide": {
@@ -24,23 +24,23 @@
     "description": "The label for category 'nGQL guide' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.nGQL overview": {
-    "message": "nGQL overview",
+    "message": "nGQL 概述",
     "description": "The label for category 'nGQL overview' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Data types": {
-    "message": "Data types",
+    "message": "数据类型",
     "description": "The label for category 'Data types' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Operators": {
-    "message": "Operators",
+    "message": "运算符",
     "description": "The label for category 'Operators' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Functions and expressions": {
-    "message": "Functions and expressions",
+    "message": "函数和表达式",
     "description": "The label for category 'Functions and expressions' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.General queries statements": {
-    "message": "General queries statements",
+    "message": "通用查询语句",
     "description": "The label for category 'General queries statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.SHOW": {
@@ -48,95 +48,95 @@
     "description": "The label for category 'SHOW' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Clauses and options": {
-    "message": "Clauses and options",
+    "message": "子句和选项",
     "description": "The label for category 'Clauses and options' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Variables and composite queries": {
-    "message": "Variables and composite queries",
+    "message": "变量和复合查询",
     "description": "The label for category 'Variables and composite queries' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Space statements": {
-    "message": "Space statements",
+    "message": "图空间语句",
     "description": "The label for category 'Space statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Tag statements": {
-    "message": "Tag statements",
+    "message": "Tag 语句",
     "description": "The label for category 'Tag statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Edge type statements": {
-    "message": "Edge type statements",
+    "message": "Edge type 语句",
     "description": "The label for category 'Edge type statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Vertex statements": {
-    "message": "Vertex statements",
+    "message": "Vertex 语句",
     "description": "The label for category 'Vertex statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Edge statements": {
-    "message": "Edge statements",
+    "message": "Edge 语句",
     "description": "The label for category 'Edge statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Native index statements": {
-    "message": "Native index statements",
+    "message": "原生索引语句",
     "description": "The label for category 'Native index statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Full-text index statements": {
-    "message": "Full-text index statements",
+    "message": "全文索引语句",
     "description": "The label for category 'Full-text index statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Query tuning and terminating statements": {
-    "message": "Query tuning and terminating statements",
+    "message": "查询调优和终止",
     "description": "The label for category 'Query tuning and terminating statements' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Deploy and install": {
-    "message": "Deploy and install",
+    "message": "安装部署",
     "description": "The label for category 'Deploy and install' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Compile and install": {
-    "message": "Compile and install",
+    "message": "编译和安装",
     "description": "The label for category 'Compile and install' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Local single-node installation": {
-    "message": "Local single-node installation",
+    "message": "本地单机安装",
     "description": "The label for category 'Local single-node installation' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Configure and log": {
-    "message": "Configure and log",
+    "message": "配置和日志",
     "description": "The label for category 'Configure and log' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Configurations": {
-    "message": "Configurations",
+    "message": "配置",
     "description": "The label for category 'Configurations' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Log management": {
-    "message": "Log management",
+    "message": "日志管理",
     "description": "The label for category 'Log management' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Monitor": {
-    "message": "Monitor",
+    "message": "监控",
     "description": "The label for category 'Monitor' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Data security": {
-    "message": "Data security",
+    "message": "数据安全",
     "description": "The label for category 'Data security' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Authentication and authorization": {
-    "message": "Authentication and authorization",
+    "message": "验证和授权",
     "description": "The label for category 'Authentication and authorization' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Backup and restore": {
-    "message": "Backup and restore",
+    "message": "备份和恢复",
     "description": "The label for category 'Backup and restore' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.NebulaGraph BR Community": {
-    "message": "NebulaGraph BR Community",
+    "message": "NebulaGraph BR 社区版",
     "description": "The label for category 'NebulaGraph BR Community' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Synchronize and migrate": {
-    "message": "Synchronize and migrate",
+    "message": "同步和迁移",
     "description": "The label for category 'Synchronize and migrate' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Import and export": {
-    "message": "Import and export",
+    "message": "导入和导出",
     "description": "The label for category 'Import and export' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.NebulaGraph Exchange": {
@@ -144,35 +144,35 @@
     "description": "The label for category 'NebulaGraph Exchange' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.sidebar.category.nebula-exchange-intro": {
-    "message": "Introduction",
+    "message": "认识 Exchange",
     "description": "The label for category 'Introduction' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Exchange configurations": {
-    "message": "Exchange configurations",
+    "message": "Exchange 参数说明",
     "description": "The label for category 'Exchange configurations' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Use NebulaGraph Exchange": {
-    "message": "Use NebulaGraph Exchange",
+    "message": "使用 Exchange",
     "description": "The label for category 'Use NebulaGraph Exchange' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Connectors": {
-    "message": "Connectors",
+    "message": "连接器",
     "description": "The label for category 'Connectors' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Best practices": {
-    "message": "Best practices",
+    "message": "最佳实践",
     "description": "The label for category 'Best practices' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Clients": {
-    "message": "Clients",
+    "message": "客户端",
     "description": "The label for category 'Clients' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Studio": {
-    "message": "Studio",
+    "message": "NebulaGraph Studio",
     "description": "The label for category 'Studio' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.About NebulaGraph Studio": {
-    "message": "About NebulaGraph Studio",
+    "message": "认识 Studio",
     "description": "The label for category 'About NebulaGraph Studio' in sidebar 'docsSidebar'"
   },
   "sidebar.docsSidebar.category.Deploy and connect": {
