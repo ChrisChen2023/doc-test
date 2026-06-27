@@ -1,3 +1,6 @@
 {
-  "theme.navbar.item.link.3.9.0 (MkDocs)": "https://chrischen2023.github.io/doc-test/zh/3.9.0/"
+  "theme.navbar.item.link.3.9.0 (MkDocs)": {
+    "message": "https://chrischen2023.github.io/doc-test/zh/3.9.0/",
+    "description": "The href of navbar item with label 3.9.0 (MkDocs)"
+  }
 }
