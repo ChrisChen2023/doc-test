@@ -1,0 +1,1254 @@
+{
+  "sidebar.docsSidebar.item.id.README": {
+    "message": "关于项目",
+    "description": "About"
+  },
+  "sidebar.docsSidebar.category.Introduction": {
+    "message": "产品简介",
+    "description": "Introduction"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/1.what-is-nebula-graph": {
+    "message": "什么是 NebulaGraph",
+    "description": "What is NebulaGraph"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/2.data-model": {
+    "message": "数据模型",
+    "description": "Data model"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/2.1.path": {
+    "message": "图路径 (Path)",
+    "description": "Path"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/3.vid": {
+    "message": "点目标标识 (VID)",
+    "description": "VID"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph architecture": {
+    "message": "NebulaGraph 架构体系",
+    "description": "NebulaGraph architecture"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/3.nebula-graph-architecture/1.architecture-overview": {
+    "message": "架构总览",
+    "description": "Architecture overview"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/3.nebula-graph-architecture/2.meta-service": {
+    "message": "元数据服务 (Meta Service)",
+    "description": "Meta Service"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/3.nebula-graph-architecture/3.graph-service": {
+    "message": "计算服务 (Graph Service)",
+    "description": "Graph Service"
+  },
+  "sidebar.docsSidebar.item.id.1.introduction/3.nebula-graph-architecture/4.storage-service": {
+    "message": "存储服务 (Storage Service)",
+    "description": "Storage Service"
+  },
+  "sidebar.docsSidebar.category.nGQL guide": {
+    "message": "nGQL 操作指南",
+    "description": "nGQL guide"
+  },
+  "sidebar.docsSidebar.category.nGQL overview": {
+    "message": "nGQL 语法概述",
+    "description": "nGQL overview"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/1.overview": {
+    "message": "语法总览",
+    "description": "Overview"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/3.graph-patterns": {
+    "message": "图模式 (Graph Patterns)",
+    "description": "Graph patterns"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/comments": {
+    "message": "注释规范",
+    "description": "Comments"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/identifier-case-sensitivity": {
+    "message": "标识符大小写敏感度说明",
+    "description": "Identifier case sensitivity"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/keywords-and-reserved-words": {
+    "message": "关键字与保留字列表",
+    "description": "Keywords"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/1.nGQL-overview/ngql-style-guide": {
+    "message": "nGQL 代码编写风格指南",
+    "description": "nGQL style guide"
+  },
+  "sidebar.docsSidebar.category.Data types": {
+    "message": "基础数据类型",
+    "description": "Data types"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/1.numeric": {
+    "message": "数值型 (Numeric)",
+    "description": "Numeric"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/2.boolean": {
+    "message": "布尔型 (Boolean)",
+    "description": "Boolean"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/3.string": {
+    "message": "字符串型 (String)",
+    "description": "String"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/4.date-and-time": {
+    "message": "日期与时间型 (Date & Time)",
+    "description": "Date and time"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/5.null": {
+    "message": "空值 (Null)",
+    "description": "Null"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/6.list": {
+    "message": "列表型 (List)",
+    "description": "List"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/7.set": {
+    "message": "集合型 (Set)",
+    "description": "Set"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/8.map": {
+    "message": "映射型 (Map)",
+    "description": "Map"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/9.type-conversion": {
+    "message": "数据类型转换规范",
+    "description": "Type conversion"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/3.data-types/10.geography": {
+    "message": "地理空间数据型 (Geography)",
+    "description": "Geography"
+  },
+  "sidebar.docsSidebar.category.Operators": {
+    "message": "运算符与操作符",
+    "description": "Operators"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/1.comparison": {
+    "message": "比较运算符",
+    "description": "Comparison"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/2.boolean": {
+    "message": "逻辑/布尔运算符",
+    "description": "Boolean"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/4.pipe": {
+    "message": "管道符 (Pipe)",
+    "description": "Pipe"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/6.set": {
+    "message": "集合运算符",
+    "description": "Set"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/7.string": {
+    "message": "字符串运算符",
+    "description": "String"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/8.list": {
+    "message": "列表操作符",
+    "description": "List"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/10.arithmetic": {
+    "message": "算术运算符",
+    "description": "Arithmetic"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/5.operators/9.precedence": {
+    "message": "运算符优先级说明",
+    "description": "Precedence"
+  },
+  "sidebar.docsSidebar.category.Functions and expressions": {
+    "message": "内置函数与表达式",
+    "description": "Functions and expressions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/1.math": {
+    "message": "数学函数",
+    "description": "Math functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/15.aggregating": {
+    "message": "聚合函数",
+    "description": "Aggregate functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/2.string": {
+    "message": "字符串处理函数",
+    "description": "String functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/3.date-and-time": {
+    "message": "日期时间处理函数",
+    "description": "Date and time functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/4.schema": {
+    "message": "图模式函数 (Schema)",
+    "description": "Schema functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/6.list": {
+    "message": "列表操作函数",
+    "description": "List functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/16.type-conversion": {
+    "message": "显式类型转换函数",
+    "description": "Type conversion functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/5.conditional-expressions": {
+    "message": "条件表达式",
+    "description": "Conditional expressions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/8.predicate": {
+    "message": "断言函数 (Predicate)",
+    "description": "Predicate functions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/6.functions-and-expressions/14.geo": {
+    "message": "地理空间函数",
+    "description": "Geography functions"
+  },
+  "sidebar.docsSidebar.category.General queries statements": {
+    "message": "常用查询语句",
+    "description": "General queries statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/1.general-query-statements-overview": {
+    "message": "查询语句总览",
+    "description": "Overview"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/2.match": {
+    "message": "MATCH 语句",
+    "description": "MATCH"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/optional-match": {
+    "message": "OPTIONAL MATCH 语句",
+    "description": "OPTIONAL MATCH"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/5.lookup": {
+    "message": "LOOKUP 语句",
+    "description": "LOOKUP"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/3.go": {
+    "message": "GO 语句",
+    "description": "GO"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/4.fetch": {
+    "message": "FETCH 语句",
+    "description": "FETCH"
+  },
+  "sidebar.docsSidebar.category.SHOW": {
+    "message": "SHOW 查看状态语句",
+    "description": "SHOW"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/1.show-charset": {
+    "message": "SHOW CHARSET",
+    "description": "SHOW CHARSET"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/2.show-collation": {
+    "message": "SHOW COLLATION",
+    "description": "SHOW COLLATION"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/4.show-create-space": {
+    "message": "SHOW CREATE SPACE",
+    "description": "SHOW CREATE SPACE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/5.show-create-tag-edge": {
+    "message": "SHOW CREATE TAG/EDGE",
+    "description": "SHOW CREATE TAG/EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/6.show-hosts": {
+    "message": "SHOW HOSTS",
+    "description": "SHOW HOSTS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/7.show-index-status": {
+    "message": "SHOW INDEX STATUS",
+    "description": "SHOW INDEX STATUS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/8.show-indexes": {
+    "message": "SHOW INDEXES",
+    "description": "SHOW INDEXES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/9.show-parts": {
+    "message": "SHOW PARTS",
+    "description": "SHOW PARTS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/10.show-roles": {
+    "message": "SHOW ROLES",
+    "description": "SHOW ROLES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/11.show-snapshots": {
+    "message": "SHOW SNAPSHOTS",
+    "description": "SHOW SNAPSHOTS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/12.show-spaces": {
+    "message": "SHOW SPACES",
+    "description": "SHOW SPACES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/14.show-stats": {
+    "message": "SHOW STATS",
+    "description": "SHOW STATS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/15.show-tags-edges": {
+    "message": "SHOW TAGS/EDGES",
+    "description": "SHOW TAGS/EDGES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/16.show-users": {
+    "message": "SHOW USERS",
+    "description": "SHOW USERS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/17.show-sessions": {
+    "message": "SHOW SESSIONS",
+    "description": "SHOW SESSIONS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/18.show-queries": {
+    "message": "SHOW QUERIES",
+    "description": "SHOW QUERIES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.show/19.show-meta-leader": {
+    "message": "SHOW META LEADER",
+    "description": "SHOW META LEADER"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/6.find-path": {
+    "message": "FIND PATH 路径查找",
+    "description": "FIND PATH"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/7.general-query-statements/7.get-subgraph": {
+    "message": "GET SUBGRAPH 获取子图",
+    "description": "GET SUBGRAPH"
+  },
+  "sidebar.docsSidebar.category.Clauses and options": {
+    "message": "子句与运行选项",
+    "description": "Clauses and options"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/group-by": {
+    "message": "GROUP BY 分组子句",
+    "description": "GROUP BY"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/limit": {
+    "message": "LIMIT 和 SKIP 分页子句",
+    "description": "LIMIT and SKIP"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/sample": {
+    "message": "SAMPLE 采样采样",
+    "description": "SAMPLE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/order-by": {
+    "message": "ORDER BY 排序子句",
+    "description": "ORDER BY"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/return": {
+    "message": "RETURN 返回子句",
+    "description": "RETURN"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/ttl-options": {
+    "message": "TTL 数据生存时间选项",
+    "description": "TTL"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/where": {
+    "message": "WHERE 条件过滤子句",
+    "description": "WHERE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/yield": {
+    "message": "YIELD 输出子句",
+    "description": "YIELD"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/with": {
+    "message": "WITH 管道传递子句",
+    "description": "WITH"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/unwind": {
+    "message": "UNWIND 列表展开子句",
+    "description": "UNWIND"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/8.clauses-and-options/joins": {
+    "message": "INNER JOIN 内连接子句",
+    "description": "INNER JOIN"
+  },
+  "sidebar.docsSidebar.category.Variables and composite queries": {
+    "message": "变量与组合查询",
+    "description": "Variables and composite queries"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/4.variable-and-composite-queries/1.composite-queries": {
+    "message": "复合语句/组合查询",
+    "description": "Composite queries"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/4.variable-and-composite-queries/2.user-defined-variables": {
+    "message": "用户自定义变量",
+    "description": "User-defined variables"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/4.variable-and-composite-queries/3.property-reference": {
+    "message": "属性引用规范",
+    "description": "Property references"
+  },
+  "sidebar.docsSidebar.category.Space statements": {
+    "message": "图空间操作语句 (Space)",
+    "description": "Space statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/1.create-space": {
+    "message": "CREATE SPACE 创建空间",
+    "description": "CREATE SPACE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/2.use-space": {
+    "message": "USE SPACE 切换空间",
+    "description": "USE SPACE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/3.show-spaces": {
+    "message": "SHOW SPACES 空间列表",
+    "description": "SHOW SPACES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/4.describe-space": {
+    "message": "DESCRIBE SPACE 查看空间结构",
+    "description": "DESCRIBE SPACE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/6.clear-space": {
+    "message": "CLEAR SPACE 清空图空间",
+    "description": "CLEAR SPACE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/9.space-statements/5.drop-space": {
+    "message": "DROP SPACE 删除空间",
+    "description": "DROP SPACE"
+  },
+  "sidebar.docsSidebar.category.Tag statements": {
+    "message": "标签管理语句 (Tag)",
+    "description": "Tag statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/1.create-tag": {
+    "message": "CREATE TAG 创建标签",
+    "description": "CREATE TAG"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/2.drop-tag": {
+    "message": "DROP TAGS 删除标签",
+    "description": "DROP TAGS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/3.alter-tag": {
+    "message": "ALTER TAG 修改标签结构",
+    "description": "ALTER TAG"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/4.show-tags": {
+    "message": "SHOW TAGS 标签列表",
+    "description": "SHOW TAGS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/5.describe-tag": {
+    "message": "DESCRIBE TAG 查看标签详情",
+    "description": "DESCRIBE TAG"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/6.delete-tag": {
+    "message": "DELETE TAG 移除点上的标签",
+    "description": "DELETE TAG"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/10.tag-statements/improve-query-by-tag-index": {
+    "message": "利用索引创建/删除强化标签查询",
+    "description": "Add or delete tag"
+  },
+  "sidebar.docsSidebar.category.Edge type statements": {
+    "message": "边类型管理语句 (Edge Type)",
+    "description": "Edge type statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/11.edge-type-statements/1.create-edge": {
+    "message": "CREATE EDGE 创建边类型",
+    "description": "CREATE EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/11.edge-type-statements/2.drop-edge": {
+    "message": "DROP EDGE 删除边类型",
+    "description": "DROP EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/11.edge-type-statements/3.alter-edge": {
+    "message": "ALTER EDGE 修改边结构",
+    "description": "ALTER EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/11.edge-type-statements/4.show-edges": {
+    "message": "SHOW EDGES 边类型列表",
+    "description": "SHOW EDGES"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/11.edge-type-statements/5.describe-edge": {
+    "message": "DESCRIBE EDGE 查看边详情",
+    "description": "DESCRIBE EDGE"
+  },
+  "sidebar.docsSidebar.category.Vertex statements": {
+    "message": "图顶点管理语句 (Vertex)",
+    "description": "Vertex statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/12.vertex-statements/1.insert-vertex": {
+    "message": "INSERT VERTEX 插入顶点",
+    "description": "INSERT VERTEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/12.vertex-statements/4.delete-vertex": {
+    "message": "DELETE VERTEX 删除顶点",
+    "description": "DELETE VERTEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/12.vertex-statements/2.update-vertex": {
+    "message": "UPDATE VERTEX 更新顶点属性",
+    "description": "UPDATE VERTEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/12.vertex-statements/3.upsert-vertex": {
+    "message": "UPSERT VERTEX 插入或更新点",
+    "description": "UPSERT VERTEX"
+  },
+  "sidebar.docsSidebar.category.Edge statements": {
+    "message": "图边实体操作语句 (Edge)",
+    "description": "Edge statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/13.edge-statements/1.insert-edge": {
+    "message": "INSERT EDGE 插入边数据",
+    "description": "INSERT EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/13.edge-statements/4.delete-edge": {
+    "message": "DELETE EDGE 删除边实体",
+    "description": "DELETE EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/13.edge-statements/2.update-edge": {
+    "message": "UPDATE EDGE 更新边属性",
+    "description": "UPDATE EDGE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/13.edge-statements/3.upsert-edge": {
+    "message": "UPSERT EDGE 覆盖或插入边",
+    "description": "UPSERT EDGE"
+  },
+  "sidebar.docsSidebar.category.Native index statements": {
+    "message": "原生原生索引语句",
+    "description": "Native index statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/README": {
+    "message": "原生索引机制总览",
+    "description": "Index overview"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/1.create-native-index": {
+    "message": "CREATE INDEX 创建原生索引",
+    "description": "CREATE INDEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/2.show-native-indexes": {
+    "message": "SHOW INDEX 索引列表展示",
+    "description": "SHOW INDEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/2.1.show-create-index": {
+    "message": "SHOW CREATE INDEX 查看索引创建细节",
+    "description": "SHOW CREATE INDEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/3.describe-native-index": {
+    "message": "DESCRIBE INDEX 查看索引定义",
+    "description": "DESCRIBE INDEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/4.rebuild-native-index": {
+    "message": "REBUILD INDEX 重建本地索引",
+    "description": "REBUILD INDEX"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/5.show-native-index-status": {
+    "message": "SHOW INDEX STATUS 查看索引健康度",
+    "description": "SHOW INDEX STATUS"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/14.native-index-statements/6.drop-native-index": {
+    "message": "DROP INDEX 移除原生索引",
+    "description": "DROP INDEX"
+  },
+  "sidebar.docsSidebar.category.Full-text index statements": {
+    "message": "全文搜索引擎索引语句",
+    "description": "Full-text index statements"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/6.deploy-text-based-index/1.text-based-index-restrictions": {
+    "message": "全文检索前置限制说明",
+    "description": "Full-text restrictions"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/6.deploy-text-based-index/2.deploy-es": {
+    "message": "部署安装 Elasticsearch 集群",
+    "description": "Deploy Elasticsearch cluster"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/6.deploy-text-based-index/3.deploy-listener": {
+    "message": "部署安装 Raft 监听器集群 (Listener)",
+    "description": "Deploy Raft Listener cluster"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/15.full-text-index-statements/1.search-with-text-based-index": {
+    "message": "配合全文索引执行模糊检索",
+    "description": "Search with full-text index"
+  },
+  "sidebar.docsSidebar.category.Query tuning and terminating statements": {
+    "message": "语句性能调优与进程控制",
+    "description": "Query tuning and terminating statements"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/17.query-tuning-statements/1.explain-and-profile": {
+    "message": "EXPLAIN 与 PROFILE 执行计划分析",
+    "description": "EXPLAIN and PROFILE"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/17.query-tuning-statements/6.kill-query": {
+    "message": "Kill queries 强行终止长查询",
+    "description": "Kill queries"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/17.query-tuning-statements/2.kill-session": {
+    "message": "Kill sessions 强制切断会话",
+    "description": "Kill sessions"
+  },
+  "sidebar.docsSidebar.item.id.3.ngql-guide/4.job-statements": {
+    "message": "异步任务管理语句 (Job)",
+    "description": "Job statements"
+  },
+  "sidebar.docsSidebar.category.Deploy and install": {
+    "message": "系统部署与安装集成",
+    "description": "Deploy and install"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/1.resource-preparations": {
+    "message": "前置服务器硬件资源资源盘算",
+    "description": "Resource preparations"
+  },
+  "sidebar.docsSidebar.category.Compile and install": {
+    "message": "源码编译安装指南",
+    "description": "Compile and install"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/1.install-nebula-graph-by-compiling-the-source-code": {
+    "message": "在本地原生环境中编译源码",
+    "description": "Compile the source"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/7.compile-using-docker": {
+    "message": "通过隔离的 Docker 容器包执行源码编译",
+    "description": "Compile using Docker"
+  },
+  "sidebar.docsSidebar.category.Local single-node installation": {
+    "message": "本地单节点伪集群安装",
+    "description": "Local single-node installation"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/2.install-nebula-graph-by-rpm-or-deb": {
+    "message": "通过系统原生包管理器安装 (RPM/DEB)",
+    "description": "Install using RPM or DEB package"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/4.install-nebula-graph-from-tar": {
+    "message": "通过通用二进制归档压缩包安装 (TAR)",
+    "description": "Install using TAR package"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/standalone-deployment": {
+    "message": "独立单机部署 Standalone 节点",
+    "description": "Install standalone NebulaGraph"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/deploy-nebula-graph-cluster": {
+    "message": "生产环境多机物理节点分布式集群安装",
+    "description": "Local multi-node installation"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/3.deploy-nebula-graph-with-docker-compose": {
+    "message": "使用 Docker Compose 快速一键编排启动",
+    "description": "Install using Docker Compose"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/8.deploy-nebula-graph-with-lite": {
+    "message": "使用轻量级套件移动端部署 (NebulaGraph Lite)",
+    "description": "Install using NebulaGraph Lite"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/2.compile-and-install-nebula-graph/6.deploy-nebula-graph-with-peripherals": {
+    "message": "配合外围生态拓展组件一并安装",
+    "description": "Install with ecosystem tools"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/manage-service": {
+    "message": "服务管理",
+    "description": "Manage Service"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/connect-to-nebula-graph": {
+    "message": "连接到服务",
+    "description": "Connect to Service"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/manage-storage-host": {
+    "message": "管理 Storage 存储层节点状态",
+    "description": "Manage Storage host"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/3.upgrade-nebula-graph/upgrade-nebula-comm": {
+    "message": "集群平滑大版本升级方案",
+    "description": "Upgrade"
+  },
+  "sidebar.docsSidebar.item.id.4.deployment-and-installation/4.uninstall-nebula-graph": {
+    "message": "全量干净卸载 NebulaGraph 节点",
+    "description": "Uninstall NebulaGraph"
+  },
+  "sidebar.docsSidebar.category.Configure and log": {
+    "message": "系统级系统配置项与日志追踪",
+    "description": "Configure and log"
+  },
+  "sidebar.docsSidebar.category.Configurations": {
+    "message": "核心系统配置",
+    "description": "Configurations"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/1.configurations/1.configurations": {
+    "message": "配置文件基本参数机制解析",
+    "description": "Configurations"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/1.configurations/2.meta-config": {
+    "message": "元数据服务核心参数配置说明 (Meta Config)",
+    "description": "Meta Service configurations"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/1.configurations/3.graph-config": {
+    "message": "计算层查询引擎参数配置说明 (Graph Config)",
+    "description": "Graph Service configurations"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/1.configurations/4.storage-config": {
+    "message": "底层强一致性存储引擎参数配置说明 (Storage Config)",
+    "description": "Storage Service configurations"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/1.configurations/6.kernel-config": {
+    "message": "操作系统底层内核级调优推荐",
+    "description": "Kernel configurations"
+  },
+  "sidebar.docsSidebar.category.Log management": {
+    "message": "系统运维日志管理",
+    "description": "Log management"
+  },
+  "sidebar.docsSidebar.item.id.5.configurations-and-logs/2.log-management/logs": {
+    "message": "服务在线运行时监控日志调阅",
+    "description": "Runtime logs"
+  },
+  "sidebar.docsSidebar.category.Monitor": {
+    "message": "监控与性能度量指标",
+    "description": "Monitor"
+  },
+  "sidebar.docsSidebar.item.id.6.monitor-and-metrics/1.query-performance-metrics": {
+    "message": "拉取与检索系统内生性能度量指标",
+    "description": "Query NebulaGraph metrics"
+  },
+  "sidebar.docsSidebar.item.id.6.monitor-and-metrics/2.rocksdb-statistics": {
+    "message": "底层引擎物理持久化 RocksDB 统计监控数据",
+    "description": "RocksDB Statistics"
+  },
+  "sidebar.docsSidebar.category.Data security": {
+    "message": "企业级数据访问安全防护",
+    "description": "Data security"
+  },
+  "sidebar.docsSidebar.category.Authentication and authorization": {
+    "message": "身份核验与多租户权限隔离",
+    "description": "Authentication and authorization"
+  },
+  "sidebar.docsSidebar.item.id.7.data-security/1.authentication/1.authentication": {
+    "message": "用户鉴权登录机制开启方案",
+    "description": "Authentication"
+  },
+  "sidebar.docsSidebar.item.id.7.data-security/1.authentication/2.management-user": {
+    "message": "企业级多用户账号全生命周期管理",
+    "description": "User management"
+  },
+  "sidebar.docsSidebar.item.id.7.data-security/1.authentication/3.role-list": {
+    "message": "基于角色的访问权限控制体系矩阵 (RBAC)",
+    "description": "Roles and privileges"
+  },
+  "sidebar.docsSidebar.item.id.7.data-security/4.ssl": {
+    "message": "全传输链路层 SSL/TLS 传输加密配置",
+    "description": "SSL"
+  },
+  "sidebar.docsSidebar.category.Backup and restore": {
+    "message": "数据灾备、备份与强恢复方案",
+    "description": "Backup and restore"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph BR Community": {
+    "message": "开源社区版官方物理灾备套件 (BR Community)",
+    "description": "NebulaGraph BR Community"
+  },
+  "sidebar.docsSidebar.item.id.backup-and-restore/nebula-br/1.what-is-br": {
+    "message": "开源社区灾备工具 BR 核心设计演进与解析",
+    "description": "What is BR Community"
+  },
+  "sidebar.docsSidebar.item.id.backup-and-restore/nebula-br/2.compile-br": {
+    "message": "编译并构建获取备份回滚二进制工具包",
+    "description": "Install BR"
+  },
+  "sidebar.docsSidebar.item.id.backup-and-restore/nebula-br/3.br-backup-data": {
+    "message": "生产级别数据一键冷热物理备份操作实务",
+    "description": "Use BR to back up data"
+  },
+  "sidebar.docsSidebar.item.id.backup-and-restore/nebula-br/4.br-restore-data": {
+    "message": "数据故障时利用物理快照回滚重组数据流",
+    "description": "Use BR to restore data"
+  },
+  "sidebar.docsSidebar.item.id.backup-and-restore/3.manage-snapshot": {
+    "message": "基于 Raft 状态机的轻量级逻辑快照集群管理",
+    "description": "Manage snapshots"
+  },
+  "sidebar.docsSidebar.category.Synchronize and migrate": {
+    "message": "多源集群数据同步与在线平移",
+    "description": "Synchronize and migrate"
+  },
+  "sidebar.docsSidebar.item.id.synchronization-and-migration/2.balance-syntax": {
+    "message": "分布式集群拓扑再平衡与数据重组语句 (Balance)",
+    "description": "Load balance"
+  },
+  "sidebar.docsSidebar.category.Import and export": {
+    "message": "高通量海量数据并行导入导出工具组",
+    "description": "Import and export"
+  },
+  "sidebar.docsSidebar.item.id.import-export/write-tools": {
+    "message": "数据导入落盘方案技术选型总览",
+    "description": "Overview"
+  },
+  "sidebar.docsSidebar.item.id.import-export/use-importer": {
+    "message": "使用 Go 高速文件级导入器 (NebulaGraph Importer)",
+    "description": "Use NebulaGraph Importer"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Exchange": {
+    "message": "大分布式异构计算生态导入桥接引擎 (Exchange)",
+    "description": "NebulaGraph Exchange"
+  },
+  "sidebar.docsSidebar.category.Introduction": {
+    "message": "Exchange 设计及架构简析",
+    "description": "Introduction"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/about-exchange/ex-ug-what-is-exchange": {
+    "message": "什么是分布式桥接转换器 NebulaGraph Exchange",
+    "description": "What is NebulaGraph Exchange"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/about-exchange/ex-ug-limitations": {
+    "message": "Exchange 核心作业场景边界与约束限制说明",
+    "description": "Limitations"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/ex-ug-compile": {
+    "message": "下载或手动构建基于 Spark 的 Exchange Jar 包",
+    "description": "Get Exchange"
+  },
+  "sidebar.docsSidebar.category.Exchange configurations": {
+    "message": "Exchange 批处理流计算配置规则说明",
+    "description": "Exchange configurations"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/parameter-reference/ex-ug-para-import-command": {
+    "message": "Spark 提交任务运行时传递的传参标志及标志位",
+    "description": "Options for import"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/parameter-reference/ex-ug-parameter": {
+    "message": "Exchange 的 HOCON/对配置文件各字段配置项全解",
+    "description": "Parameters in the configuration file"
+  },
+  "sidebar.docsSidebar.category.Use NebulaGraph Exchange": {
+    "message": "Exchange 在各种主流分布式外部源下的对接接入实战",
+    "description": "Use NebulaGraph Exchange"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-csv": {
+    "message": "清洗并导入高通量 CSV 纯文本文件数据入图",
+    "description": "Import data from CSV files"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-json": {
+    "message": "清洗并解析半结构化 JSON 对象文件入图",
+    "description": "Import data from JSON files"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-orc": {
+    "message": "读取分布式文件系统下高性能 ORC 压缩文件数据入图",
+    "description": "Import data from ORC files"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-parquet": {
+    "message": "集成并并行抓取列式持久化 Parquet 格式数据入图",
+    "description": "Import data from Parquet files"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-hbase": {
+    "message": "桥接宽表分布式存储 NoSQL 原生引擎 HBase 数据入图",
+    "description": "Import data from HBase"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-mysql": {
+    "message": "抓取并异构同步经典关系型数据库 MySQL/PostgreSQL 数据入图",
+    "description": "Import data from MySQL/PostgreSQL"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-oracle": {
+    "message": "对接企业级大型关系数据库集群 Oracle 提取导入数据",
+    "description": "Import data from Oracle"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-clickhouse": {
+    "message": "从海量 OLAP 分析引擎 ClickHouse 中读取结构化数据入图",
+    "description": "Import data from ClickHouse"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-neo4j": {
+    "message": "从集中式传统图数据库 Neo4j 中直接平移点边模型入图",
+    "description": "Import data from Neo4j"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-hive": {
+    "message": "对接大型分布式离线数据仓库 Apache Hive 库表数据入图",
+    "description": "Import data from Hive"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-maxcompute": {
+    "message": "承接阿里云超大型数仓引擎 MaxCompute (ODPS) 数据入图",
+    "description": "Import data from MaxCompute"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-pulsar": {
+    "message": "从企业级流计算消息队列系统 Apache Pulsar 中读取流数据入图",
+    "description": "Import data from Pulsar"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-kafka": {
+    "message": "通过分布式订阅制高吞吐实时消息系统 Apache Kafka 流式入图",
+    "description": "Import data from Kafka"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-jdbc": {
+    "message": "利用标准 JDBC 泛型驱动协议加载任意外部数据库入图",
+    "description": "Import data from JDBC"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-sst": {
+    "message": "通过生成原生底层物理 SST 文件绕过查询层实现极速离线入图",
+    "description": "Import data from SST files"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/use-exchange/ex-ug-import-from-custom": {
+    "message": "高级拓展：为特殊定制化外部业务数据源扩展 Exchange 接口",
+    "description": "Import data from custom data sources"
+  },
+  "sidebar.docsSidebar.item.id.import-export/nebula-exchange/ex-ug-FAQ": {
+    "message": "Exchange 常见故障原因与运维排卡 FAQ",
+    "description": "Exchange FAQ"
+  },
+  "sidebar.docsSidebar.category.Connectors": {
+    "message": "分布式大计算体系连接器生态 (Connectors)",
+    "description": "Connectors"
+  },
+  "sidebar.docsSidebar.item.id.connector/nebula-spark-connector": {
+    "message": "分布式图计算双向桥接套件 (NebulaGraph Spark Connector)",
+    "description": "NebulaGraph Spark Connector"
+  },
+  "sidebar.docsSidebar.item.id.connector/nebula-flink-connector": {
+    "message": "实时高通量有界流/无界流图连接器 (NebulaGraph Flink Connector)",
+    "description": "NebulaGraph Flink Connector"
+  },
+  "sidebar.docsSidebar.category.Best practices": {
+    "message": "大厂图数据库线上运维生产最佳实践",
+    "description": "Best practices"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/compaction": {
+    "message": "物理存储空间压缩与碎片整理 (Compaction) 策略实践",
+    "description": "Compaction"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/load-balance": {
+    "message": "存储层分布式 Raft 物理分区健康度与动态负载均衡调优",
+    "description": "Storage load balance"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/2.graph-modeling": {
+    "message": "千万级大工业场景下的图结构Schema建模深度避坑建议",
+    "description": "Modeling suggestions"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/3.system-design": {
+    "message": "超高吞吐复杂分布式系统应用架构拓扑设计建议",
+    "description": "System design suggestions"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/4.plan", {
+    "message": "复杂多阶深度查询执行计划调优与索引命中率精进",
+    "description": "Execution plan"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/super-node": {
+    "message": "工业图场景头疼的大稠密点/超级节点 (Super Vertices) 处理技术手段",
+    "description": "Processing super vertices"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/enable_autofdo_for_nebulagraph": {
+    "message": "高级特性：开启基于运行时反馈的编译器自动优化 (AutoFDO)",
+    "description": "Enable AutoFDO"
+  },
+  "sidebar.docsSidebar.item.id.8.service-tuning/practice": {
+    "message": "全栈一揽子核心业务架构落地方案推荐汇总",
+    "description": "Best practices"
+  },
+  "sidebar.docsSidebar.category.Clients": {
+    "message": "主流多语言语言原生客户端 SDK",
+    "description": "Clients"
+  },
+  "sidebar.docsSidebar.item.id.14.client/1.nebula-client": {
+    "message": "多语言客户端底层长连接池连接规范及总览",
+    "description": "Clients overview"
+  },
+  "sidebar.docsSidebar.item.id.nebula-console": {
+    "message": "终端交互式原生 CLI 工具 (NebulaGraph Console)",
+    "description": "NebulaGraph Console"
+  },
+  "sidebar.docsSidebar.item.id.14.client/3.nebula-cpp-client": {
+    "message": "高超性能 C++ 原生客户端驱动 SDK",
+    "description": "NebulaGraph CPP"
+  },
+  "sidebar.docsSidebar.item.id.14.client/4.nebula-java-client": {
+    "message": "企业级 Java 原生开发客户端驱动 SDK",
+    "description": "NebulaGraph Java"
+  },
+  "sidebar.docsSidebar.item.id.14.client/5.nebula-python-client": {
+    "message": "数据分析/算法侧 Python 开发客户端驱动 SDK",
+    "description": "NebulaGraph Python"
+  },
+  "sidebar.docsSidebar.item.id.14.client/6.nebula-go-client": {
+    "message": "云原生微服务 Go 开发客户端驱动 SDK",
+    "description": "NebulaGraph Go"
+  },
+  "sidebar.docsSidebar.item.id.14.client/contributed-clients": {
+    "message": "开源技术社区贡献者演进出的三方多语言驱动 SDK",
+    "description": "Community contributed clients"
+  },
+  "sidebar.docsSidebar.category.Studio": {
+    "message": "官方一站式可视化工坊 (NebulaGraph Studio)",
+    "description": "Studio"
+  },
+  "sidebar.docsSidebar.category.About NebulaGraph Studio": {
+    "message": "关于 Studio 可视化管理平台",
+    "description": "About NebulaGraph Studio"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/about-studio/st-ug-what-is-graph-studio": {
+    "message": "什么是可视化全家桶 Studio 工具集",
+    "description": "What is NebulaGraph Studio"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/about-studio/st-ug-limitations": {
+    "message": "Studio 在大规模点边批量展示下的软硬件渲染边界约束",
+    "description": "Limitations"
+  },
+  "sidebar.docsSidebar.category.Deploy and connect": {
+    "message": "Studio 平台的部署与长连配置",
+    "description": "Deploy and connect"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/deploy-connect/st-ug-deploy": {
+    "message": "如何安装启动网页端可视化服务 Studio",
+    "description": "Deploy Studio"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/deploy-connect/st-ug-connect": {
+    "message": "从前端网页无缝向远程图集群建立安全鉴权连接",
+    "description": "Connect to NebulaGraph"
+  },
+  "sidebar.docsSidebar.category.Quick start": {
+    "message": "Studio 可视化一键上手机操步骤",
+    "description": "Quick start"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/quick-start/st-ug-plan-schema": {
+    "message": "第一步：在白板可视化界面交互式设计点边业务模型",
+    "description": "Design a schema"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/quick-start/st-ug-create-schema": {
+    "message": "第二步：一键实例化下发图 Schema 结构到真实数据库",
+    "description": "Create a schema"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/quick-start/st-ug-import-data": {
+    "message": "第三步：在前端拖拽配置文件完成小批量测试数据的快捷导入",
+    "description": "Import data"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/quick-start/st-ug-console": {
+    "message": "第四步：利用内置的网页端控制台执行交互式语句分析",
+    "description": "Use Console"
+  },
+  "sidebar.docsSidebar.category.Use Schema": {
+    "message": "模型与元数据可视化深度调阅",
+    "description": "Use Schema"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/manage-schema/st-ug-crud-space": {
+    "message": "全量在线图空间的状态查看与增删改查",
+    "description": "Manage graph spaces"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/manage-schema/st-ug-crud-tag": {
+    "message": "标签管理：在线更新/拓展各节点标签属性",
+    "description": "Manage tags"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/manage-schema/st-ug-crud-edge-type": {
+    "message": "边型管理：可视化调配各边类型的拓扑约束",
+    "description": "Manage edge types"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/manage-schema/st-ug-crud-index": {
+    "message": "原生本地高性能索引的一键管理与构建监控",
+    "description": "Manage indexes"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/manage-schema/st-ug-view-schema": {
+    "message": "动态渲染渲染展示整体全局的图空间网络拓扑Schema",
+    "description": "View schema"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/quick-start/draft": {
+    "message": "画布模型草稿箱本地持久化归档",
+    "description": "Schema drafting"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/system-settings": {
+    "message": "Studio 平台全局参数与多语言选项变更",
+    "description": "Global settings"
+  },
+  "sidebar.docsSidebar.category.Troubleshooting": {
+    "message": "Studio 网页端故障诊断与异常修复",
+    "description": "Troubleshooting"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/troubleshooting/st-ug-config-server-errors": {
+    "message": "排查代理网关报错：后端服务拒绝数据库长连接",
+    "description": "Database connection error"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/troubleshooting/st-ug-connection-errors": {
+    "message": "排查网络层报错：浏览器完全无法打开或加载 Studio 网页",
+    "description": "Unable to access Studio"
+  },
+  "sidebar.docsSidebar.item.id.nebula-studio/troubleshooting/st-ug-faq": {
+    "message": "Studio 前端高频故障原因解答与运维排卡集锦",
+    "description": "FAQ"
+  },
+  "sidebar.docsSidebar.category.Dashboard (Community)": {
+    "message": "开源社区版集群性能大屏看板 (Dashboard Community)",
+    "description": "Dashboard (Community)"
+  },
+  "sidebar.docsSidebar.item.id.nebula-dashboard/1.what-is-dashboard": {
+    "message": "什么是集群监控度量可视化面板 Dashboard",
+    "description": "What is NebulaGraph Dashboard"
+  },
+  "sidebar.docsSidebar.item.id.nebula-dashboard/2.deploy-dashboard": {
+    "message": "如何拉取并部署启动 Dashboard 监控大屏中心",
+    "description": "Deploy Dashboard"
+  },
+  "sidebar.docsSidebar.item.id.nebula-dashboard/3.connect-dashboard": {
+    "message": "绑定并接入需要被监控的分布式图集群物理机节点",
+    "description": "Connect to Dashboard"
+  },
+  "sidebar.docsSidebar.item.id.nebula-dashboard/4.use-dashboard": {
+    "message": "看懂大屏：多集群物理机 CPU/内存/磁盘读写指标调阅",
+    "description": "Use Dashboard"
+  },
+  "sidebar.docsSidebar.item.id.nebula-dashboard/6.monitor-parameter": {
+    "message": "Dashboard 阈值告警机制参数及配置推荐说明",
+    "description": "Monitoring metrics"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Operator": {
+    "message": "云原生 Kubernetes 编排运维套件 (Operator)",
+    "description": "NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/1.introduction-to-nebula-operator", {
+    "message": "云原生 K8s 自动化运维控制器 Operator 核心能力总览",
+    "description": "What is NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.category.Getting started": {
+    "message": "云原生极速上手与环境打通",
+    "description": "Getting started"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/2.get-started/2.1.install-operator": {
+    "message": "使用 Helm 仓库在 K8s 命名空间下安装 Operator 控制器",
+    "description": "Install NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/2.get-started/2.3.create-cluster": {
+    "message": "下发声明式 CRD 文件自动快速起一套图集群资源实例",
+    "description": "Create a NebulaGraph cluster"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/2.get-started/2.4.connect-to-cluster": {
+    "message": "配置 K8s 内网 Service 服务发现以供客户端代理连接",
+    "description": "Connect to a NebulaGraph cluster"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Operator management": {
+    "message": "Operator 控制器本体的高级运维",
+    "description": "NebulaGraph Operator management"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/3.operator-management/3.1.customize-installation": {
+    "message": "进阶：自定义深度定制 Helm 启动项的全局默认初始参数",
+    "description": "Customize installation defaults"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/3.operator-management/3.2.update-operator": {
+    "message": "在不中断受管集群业务的前提下热更新 Operator 版本",
+    "description": "Update NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/3.operator-management/3.5.cluster-scope-config": {
+    "message": "集群级作用域下的精准管理与命名空间软安全隔离配置",
+    "description": "Manage specific clusters"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/3.operator-management/3.3.upgrade-operator": {
+    "message": "Operator 全量 CRD 升级的稳定性及高可用方案说明",
+    "description": "Upgrade NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/3.operator-management/3.4.unistall-operator": {
+    "message": "从 Kubernetes 基础设施中无痕彻底卸载 Operator 套件",
+    "description": "Uninstall NebulaGraph Operator"
+  },
+  "sidebar.docsSidebar.category.Cluster administration": {
+    "message": "受管分布式集群架构下的深度云原生运维管理",
+    "description": "Cluster administration"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "全生命周期交付管理",
+    "description": "Deployment"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.1.installation/4.1.1.cluster-install": {
+    "message": "精细化配置物理资源亲和性(Affinity)安装多租户图集群",
+    "description": "Install clusters"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.1.installation/4.1.2.cluster-upgrade": {
+    "message": "云原生架构下受管 StatefulSet 节点的灰度滚动无损升级",
+    "description": "Upgrade clusters"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.1.installation/4.1.3.cluster-uninstall": {
+    "message": "安全下线并清理解退 K8s 集群中托管的所有图资源",
+    "description": "Uninstall clusters"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.2.configuration": {
+    "message": "通过 ConfigMap 及声明式定义自定义受管图节点内部各项配置",
+    "description": "Customize cluster configurations"
+  },
+  "sidebar.docsSidebar.category.Storage management": {
+    "message": "云原生弹性云硬盘持久化存储卷管理",
+    "description": "Storage management"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.4.storage-management/4.4.2.pv-expansion": {
+    "message": "不宕机平滑在线扩容云硬盘底层持久化存储卷 (PV Volume)",
+    "description": "Dynamically expand persistent volumes"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.4.storage-management/4.4.1.use-local-pv": {
+    "message": "性能优化：配合高随机读写 IOPS 调度使用本地高速物理 NVMe 存储卷",
+    "description": "Use local PV"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.4.storage-management/4.4.3.configure-pv-reclaim": {
+    "message": "防范灾难性删除：精细化调配底层云存储卷的回收再利用保留策略 (Reclaim Policy)",
+    "description": "Configure PV reclaim"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.5.logging": {
+    "message": "Pod 容器化环境下的标准输出及外置日志持久化收集推荐",
+    "description": "Log management"
+  },
+  "sidebar.docsSidebar.category.Security": {
+    "message": "云原生安全合规与加固",
+    "description": "Security"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.7.security/4.7.2.enable-admission-control": {
+    "message": "防范非法资源入侵：配置并启用 K8s 动态准入控制器安全校验 (Validating Webhook)",
+    "description": "Enable admission control"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.7.security/4.7.3.config-deletion-protection": {
+    "message": "生产安全熔断墙：开启误删保护拦截非法 kubectl delete 毁灭性攻击",
+    "description": "Configure deletion protection"
+  },
+  "sidebar.docsSidebar.category.HA and balancing": {
+    "message": "高可用弹性高可用与节点自愈",
+    "description": "HA and balancing"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.8.ha-and-balancing/4.8.1.self-healing": {
+    "message": "当物理机突发故障断网时受管 Pod 节点漂移及状态自愈机制详解",
+    "description": "Self-healing overview"
+  },
+  "sidebar.docsSidebar.category.Advanced": {
+    "message": "K8s 底层高级高级编排拓展黑科技",
+    "description": "Advanced"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.9.advanced/4.9.1.rolling-update-strategy": {
+    "message": "黑科技：滚动更新时配合 Raft 状态机提前触发优雅 Leader 转移以实现真正的零停机升级",
+    "description": "Optimize leader transfer in rolling updates"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/4.cluster-administration/4.9.advanced/4.9.2.restart-cluster": {
+    "message": "在维持集群拓扑不变的前提下优雅重启全部底层 Pod 容器进程",
+    "description": "Restart clusters"
+  },
+  "sidebar.docsSidebar.item.id.k8s-operator/5.FAQ": {
+    "message": "Operator 云原生架构下高频排坑故障避错集锦",
+    "description": "FAQ"
+  },
+  "sidebar.docsSidebar.category.Graph computing": {
+    "message": "图大规模图计算与图分析网络图算法",
+    "description": "Graph computing"
+  },
+  "sidebar.docsSidebar.item.id.graph-computing/nebula-algorithm": {
+    "message": "基于 Spark 算力的轻量图算法套件工具 (NebulaGraph Algorithm)",
+    "description": "NebulaGraph Algorithm"
+  },
+  "sidebar.docsSidebar.item.id.nebula-bench": {
+    "message": "官方基准基准压力测试框架平台 (NebulaGraph Bench)",
+    "description": "Bench"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/0.FAQ": {
+    "message": "产品全功能通用高频故障排查大百科 FAQ",
+    "description": "FAQ"
+  },
+  "sidebar.docsSidebar.category.Appendix": {
+    "message": "附录备查与开源开发者社区规约",
+    "description": "Appendix"
+  },
+  "sidebar.docsSidebar.category.Release Note": {
+    "message": "全生态产品历代版本更迭特性日志 (Release Notes)",
+    "description": "Release Note"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/release-notes/nebula-comm-release-note": {
+    "message": "NebulaGraph 核心开源社区版内核版本更迭说明",
+    "description": "NebulaGraph Community"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/release-notes/studio-release-note": {
+    "message": "Studio 可视化管理平台功能更迭升级日志",
+    "description": "NebulaGraph Studio"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/release-notes/dashboard-comm-release-note": {
+    "message": "Dashboard 监控面板开源版更迭特新日志",
+    "description": "NebulaGraph Dashboard Community"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/6.eco-tool-version": {
+    "message": "全线周边生态拓展开源工具大版本兼容性对齐矩阵看板",
+    "description": "Ecosystem tools"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/port-guide": {
+    "message": "企业级全产品物理网络通信防火墙开放端口规划指南",
+    "description": "Port guide for company products"
+  },
+  "sidebar.docsSidebar.item.id.15.contribution/how-to-contribute": {
+    "message": "开源技术社区代码及文档规范提交流程 (How to contribute)",
+    "description": "How to contribute"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/history": {
+    "message": "产品核心架构演进大事件历史编年史时间线",
+    "description": "History timeline"
+  },
+  "sidebar.docsSidebar.item.id.20.appendix/error-code": {
+    "message": "客户端执行状态码及内核级底层系统错误代码字典对照表",
+    "description": "Error code"
+  }
+}
