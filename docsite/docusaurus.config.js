@@ -88,13 +88,9 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '3.11.0',
-              path: '3.11.0',
+              label: '3.12.0',
+              path: '3.12.0',
             },
-            '3.10.0': {
-              label: '3.10.0',
-              path: '3.10.0',
-            }
           },
         },
         theme: {
