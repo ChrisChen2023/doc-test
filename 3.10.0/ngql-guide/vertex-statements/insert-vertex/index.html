@@ -15,7 +15,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/assets/css/styles.be8b16df.css">
-<script src="/doc-test/assets/js/runtime~main.e5e99fb7.js" defer="defer"></script>
+<script src="/doc-test/assets/js/runtime~main.22f00fdd.js" defer="defer"></script>
 <script src="/doc-test/assets/js/main.b08ba378.js" defer="defer"></script>
 </head>
 <body>
@@ -41,8 +41,8 @@
 <ul>
 <li class="">
 <p><code>tag_name</code> denotes the tag (vertex type), which must be created before <code>INSERT VERTEX</code>. For more information, see <a class="" href="/doc-test/3.10.0/ngql-guide/tag-statements/create-tag">CREATE TAG</a>.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>NebulaGraph 3.11.0 supports inserting vertices without tags.</p></div></div>
-<div><p>In NebulaGraph 3.11.0, inserting vertex without tag is not supported by default. If you want to use the vertex without tags, add <code>--graph_use_vertex_key=true</code> to the configuration files (<code>nebula-graphd.conf</code>) of all Graph services in the cluster, add <code>--use_vertex_key=true</code> to the configuration files (<code>nebula-storaged.conf</code>) of all Storage services in the cluster. An example of a command to insert a vertex without tag is <code>INSERT VERTEX VALUES &quot;1&quot;:();</code>.</p></div>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>NebulaGraph 3.12.0 supports inserting vertices without tags.</p></div></div>
+<div><p>In NebulaGraph 3.12.0, inserting vertex without tag is not supported by default. If you want to use the vertex without tags, add <code>--graph_use_vertex_key=true</code> to the configuration files (<code>nebula-graphd.conf</code>) of all Graph services in the cluster, add <code>--use_vertex_key=true</code> to the configuration files (<code>nebula-storaged.conf</code>) of all Storage services in the cluster. An example of a command to insert a vertex without tag is <code>INSERT VERTEX VALUES &quot;1&quot;:();</code>.</p></div>
 </li>
 </ul>
 <p>:::</p>

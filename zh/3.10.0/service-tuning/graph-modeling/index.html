@@ -15,7 +15,7 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/zh/assets/css/styles.be8b16df.css">
-<script src="/doc-test/zh/assets/js/runtime~main.9d51f130.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/runtime~main.57d15f2e.js" defer="defer"></script>
 <script src="/doc-test/zh/assets/js/main.181106a4.js" defer="defer"></script>
 </head>
 <body>
@@ -38,7 +38,7 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="区分经常改变的部分和不经常改变的部分">区分“经常改变的部分”和“不经常改变的部分”<a href="#区分经常改变的部分和不经常改变的部分" class="hash-link" aria-label="区分“经常改变的部分”和“不经常改变的部分”的直接链接" title="区分“经常改变的部分”和“不经常改变的部分”的直接链接" translate="no">​</a></h3>
 <p>改变指的是业务模型和数据模型上的改变（元信息），不是数据自身的改变。</p>
 <p>一些图数据库产品是 schema-free 的设计，所以在数据模型上，不论是图拓扑结构还是属性，都可以非常自由。属性可以建模转变为图拓扑，反之亦然。这类系统通常对于图拓扑的访问有特别的优化。</p>
-<p>而 NebulaGraph 3.11.0 是强 Schema 的（行存型）系统，这意味着业务数据模型中的部分是“不应该经常改变的”，例如属性 Schema 应该避免改变。类似于 MySQL 中 ALTER TABLE 是应该尽量避免的操作。</p>
+<p>而 NebulaGraph 3.12.0 是强 Schema 的（行存型）系统，这意味着业务数据模型中的部分是“不应该经常改变的”，例如属性 Schema 应该避免改变。类似于 MySQL 中 ALTER TABLE 是应该尽量避免的操作。</p>
 <p>而点及邻边可以非常低成本的增删，因此可以将业务模型中“经常改变的部分”建模成点或边（关系），而不是属性 Schema。</p>
 <p>例如，在一个业务模型中，人的属性是相对固定的，例如“年龄”，“性别”，“姓名”。而“通信好友”，“出入场所”，“交易账号”，“登录设备”等是相对容易改变的。前者适合建模为属性，后者适合建模为点或边。</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="自环">自环<a href="#自环" class="hash-link" aria-label="自环的直接链接" title="自环的直接链接" translate="no">​</a></h3>
@@ -54,10 +54,10 @@
 <iframe src="////player.bilibili.com/player.html?aid=467674856&amp;bvid=BV1E5411S7t2&amp;cid=563290238&amp;autoplay=0&amp;page=1&amp;high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"></iframe>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="悬挂边">悬挂边<a href="#悬挂边" class="hash-link" aria-label="悬挂边的直接链接" title="悬挂边的直接链接" translate="no">​</a></h3>
 <p>悬挂边 (Dangling edge) 是指一条起点或者终点不存在于数据库中的边。</p>
-<p>在 NebulaGraph 3.11.0中，有两种情况可能会出现悬挂边。</p>
+<p>在 NebulaGraph 3.12.0中，有两种情况可能会出现悬挂边。</p>
 <p>第一种情况：在起点和终点插入之前，用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/edge-statements/insert-edge">INSERT EDGE</a> 语句插入一条边。</p>
 <p>第二种情况：使用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/vertex-statements/delete-vertex">DELETE VERTEX</a> 语句删除点的时候，没有使用<code>WITH EDGE</code>选项。此时系统默认不删除该点关联的出边和入边，这些边将变成悬挂边。</p>
-<p>NebulaGraph 3.11.0 的数据模型中，由于设计允许图中存在“悬挂边”；没有 openCypher 中的 MERGE 语句。对于悬挂边的保证完全依赖应用层面。用户可以使用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/go">GO</a> 和 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/lookup">LOOKUP</a> 语句查询到悬挂边，但无法使用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/match">MATCH</a> 语句查询到悬挂边。</p>
+<p>NebulaGraph 3.12.0 的数据模型中，由于设计允许图中存在“悬挂边”；没有 openCypher 中的 MERGE 语句。对于悬挂边的保证完全依赖应用层面。用户可以使用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/go">GO</a> 和 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/lookup">LOOKUP</a> 语句查询到悬挂边，但无法使用 <a class="" href="/doc-test/zh/3.10.0/ngql-guide/general-query-statements/match">MATCH</a> 语句查询到悬挂边。</p>
 <p>示例：</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">// 插入起点为“11”，终点为“13”并且都不存在于数据库中的悬挂边</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; CREATE EDGE IF NOT EXISTS e1 (name string, age int);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; INSERT EDGE e1 (name, age) VALUES &quot;11&quot;-&gt;&quot;13&quot;:(&quot;n1&quot;, 1);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// 使用 GO 语句查询</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; GO FROM &quot;11&quot; over e1 YIELD properties(edge);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+----------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| properties(EDGE)     |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+----------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| {age: 1, name: &quot;n1&quot;} |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+----------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// 使用 LOOKUP 语句查询</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; LOOKUP ON e1 YIELD EDGE AS r;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| r                                                     |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| [:e2 &quot;11&quot;-&gt;&quot;13&quot; @0 {age: 1, name: &quot;n1&quot;}]              |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-------------------------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">// 使用 MATCH 查询，不能查询到悬挂边</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; MATCH ()-[e:e1]-&gt;() RETURN e;</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| e |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">Empty set (time spent 3153/3573 us)</span><br></div></code></pre></div></div>
 <ul>
@@ -70,7 +70,7 @@
 <p>NebulaGraph 基于图拓扑结构进行深度图遍历的性能较低，广度优先遍历以及获取属性的性能较好。例如，模型 a 包括姓名、年龄、眼睛颜色三种属性，建议创建一个 Tag<code>person</code>，然后为它添加姓名、年龄、眼睛颜色的属性。如果创建一个包含眼睛颜色的 Tag 和一个 Edge type<code>has</code>，然后创建一个边用来表示人拥有的眼睛颜色，这种建模方法会降低遍历性能。</p>
 </li>
 <li class="">
-<p>“通过边属性获取边”的性能与“通过点属性获取点”的性能是接近的。在一些数据库中，会建议将边上的属性重新建模为中间节点的属性：例如 <code>(src)-[edge {P1, P2}]-&gt;(dst)</code>，<code>edge</code> 上有属性 <code>P1, P2</code>，会建议建模为 <code>(src)-[edge1]-&gt;(i_node {P1, P2})-[edge2]-&gt;(dst)</code>。在 NebulaGraph 3.11.0 中可以直接使用 <code>(src)-[edge {P1, P2}]-&gt;(dst)</code>，减少遍历深度有助于性能。</p>
+<p>“通过边属性获取边”的性能与“通过点属性获取点”的性能是接近的。在一些数据库中，会建议将边上的属性重新建模为中间节点的属性：例如 <code>(src)-[edge {P1, P2}]-&gt;(dst)</code>，<code>edge</code> 上有属性 <code>P1, P2</code>，会建议建模为 <code>(src)-[edge1]-&gt;(i_node {P1, P2})-[edge2]-&gt;(dst)</code>。在 NebulaGraph 3.12.0 中可以直接使用 <code>(src)-[edge {P1, P2}]-&gt;(dst)</code>，减少遍历深度有助于性能。</p>
 </li>
 </ul>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="边的方向">边的方向<a href="#边的方向" class="hash-link" aria-label="边的方向的直接链接" title="边的方向的直接链接" translate="no">​</a></h3>
@@ -89,7 +89,7 @@
 <p>为边创建属性时请勿使用长文本：这些属性会被<a class="" href="/doc-test/zh/3.10.0/introduction/nebula-graph-architecture/storage-service">存储 2 份</a>，导致写入放大问题（write amplification）。此时建议将长文本放在 HBase/ES 中，将其地址存放在 NebulaGraph 中。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="关于支持动态图时序图">关于支持动态图（时序图）<a href="#关于支持动态图时序图" class="hash-link" aria-label="关于支持动态图（时序图）的直接链接" title="关于支持动态图（时序图）的直接链接" translate="no">​</a></h2>
 <p>在某些场景下，图需要同时带有时序信息，以描述整个图的结构随着时间变化的情况 <sup><a href="#user-content-fn-twitter" id="user-content-fnref-twitter" data-footnote-ref="true" aria-describedby="footnote-label" class="anchorTargetStickyNavbar_Vzrq">1</a></sup>。</p>
-<p>NebulaGraph 3.11.0 的边可以使用 Rank 字段存放时间信息 (int64)，但是点上没有字段可以存放时间信息（存放在属性会被新写入覆盖）。一个折中的办法是在点上设计自己指向自己的自环，并将时间信息放置在自环的 Rank 上。</p>
+<p>NebulaGraph 3.12.0 的边可以使用 Rank 字段存放时间信息 (int64)，但是点上没有字段可以存放时间信息（存放在属性会被新写入覆盖）。一个折中的办法是在点上设计自己指向自己的自环，并将时间信息放置在自环的 Rank 上。</p>
 <p><img decoding="async" loading="lazy" src="https://docs-cdn.nebula-graph.com.cn/figures/sequence.png" alt="image" class="img_ev3q"></p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="一些免费的建模工具">一些免费的建模工具<a href="#一些免费的建模工具" class="hash-link" aria-label="一些免费的建模工具的直接链接" title="一些免费的建模工具的直接链接" translate="no">​</a></h2>
 <p><a href="https://arrows.app/" target="_blank" rel="noopener noreferrer" class="">arrows.app</a></p>
