@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 // ==================== 1. NebulaGraph 全量组件宏矩阵定义 ====================
 const mkdocsMacros = {
-  nebula: { release: '3.11.0', nightly: 'nightly', master: 'master', base20: '2.0', base200: '2.0.0', branch: 'release-3.10', tag: 'v3.11.0', name: 'NebulaGraph' },
+  nebula: { release: '3.12.0', nightly: 'nightly', master: 'master', base20: '2.0', base200: '2.0.0', branch: 'release-3.10', tag: 'v3.12.0', name: 'NebulaGraph' },
   studio: { base111b: '1.1.1-beta', base220: '2.2.1', base300: '3.0.0', release: '3.10.0', tag: 'v3.10.0' },
   exchange: { release: '3.8.0', branch: 'release-3.8', tag: 'v3.8.0' },
   importer: { release: '4.1.0', branch: 'release-4.1', tag: 'v4.1.0' },

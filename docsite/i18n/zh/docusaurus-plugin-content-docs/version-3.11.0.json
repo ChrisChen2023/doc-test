@@ -1,7 +1,7 @@
 {
   "version.label": {
     "message": "3.11.0",
-    "description": "The label for version current"
+    "description": "The label for version 3.11.0"
   },
   "sidebar.docsSidebar.category.sidebar.category.nebula-intro": {
     "message": "简介",
