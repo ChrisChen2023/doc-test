@@ -1,23 +1,56 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
+/* src/pages/index.module.css */
 .heroBanner {
-  padding: 4rem 0;
+  padding: 6rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+  /* 炫酷的科技感渐变背景 */
+  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+  color: #ffffff;
 }
 
 .buttons {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.sectionGray {
+  background-color: var(--ifm-background-color-highlight);
+}
+
+.featureCard {
+  border: 1px solid var(--ifm-contents-border-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  height: 100%;
+  transition: all 0.3s ease;
+  background: var(--ifm-card-background-color);
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  border-color: var(--ifm-color-primary);
+}
+
+.featureIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.codeBlockWrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }

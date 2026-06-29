@@ -329,5 +329,11 @@
   "theme.tags.tagsPageTitle": {
     "message": "标签",
     "description": "The title of the tag list page"
+  },
+  "homepage.cta.start": {
+    "message": "快速开始 🚀"
+  },
+  "homepage.quickstart.title": {
+    "message": "只需 1 分钟，快速上手"
   }
 }
