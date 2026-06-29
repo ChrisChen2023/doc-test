@@ -1,0 +1,1266 @@
+{
+  "version.label": {
+    "message": "3.11.0",
+    "description": "The label for version current"
+  },
+  "sidebar.docsSidebar.category.sidebar.category.nebula-intro": {
+    "message": "简介",
+    "description": "The label for category 'Introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.sidebar.category.nebula-intro.link.generated-index.title": {
+    "message": "NebulaGraph 简介",
+    "description": "The generated-index page title for category 'Introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.sidebar.category.nebula-intro.link.generated-index.description": {
+    "message": "了解 NebulaGraph，包括其架构、数据模型和关键概念。",
+    "description": "The generated-index page description for category 'Introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph architecture": {
+    "message": "服务架构",
+    "description": "The label for category 'NebulaGraph architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nGQL guide": {
+    "message": "nGQL 指南",
+    "description": "The label for category 'nGQL guide' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nGQL overview": {
+    "message": "nGQL 概述",
+    "description": "The label for category 'nGQL overview' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Data types": {
+    "message": "数据类型",
+    "description": "The label for category 'Data types' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Operators": {
+    "message": "运算符",
+    "description": "The label for category 'Operators' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Functions and expressions": {
+    "message": "函数和表达式",
+    "description": "The label for category 'Functions and expressions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.General queries statements": {
+    "message": "通用查询语句",
+    "description": "The label for category 'General queries statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.SHOW": {
+    "message": "SHOW",
+    "description": "The label for category 'SHOW' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Clauses and options": {
+    "message": "子句和选项",
+    "description": "The label for category 'Clauses and options' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Variables and composite queries": {
+    "message": "变量和复合查询",
+    "description": "The label for category 'Variables and composite queries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Space statements": {
+    "message": "图空间语句",
+    "description": "The label for category 'Space statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Tag statements": {
+    "message": "Tag 语句",
+    "description": "The label for category 'Tag statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Edge type statements": {
+    "message": "Edge type 语句",
+    "description": "The label for category 'Edge type statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Vertex statements": {
+    "message": "Vertex 语句",
+    "description": "The label for category 'Vertex statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Edge statements": {
+    "message": "Edge 语句",
+    "description": "The label for category 'Edge statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Native index statements": {
+    "message": "原生索引语句",
+    "description": "The label for category 'Native index statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Full-text index statements": {
+    "message": "全文索引语句",
+    "description": "The label for category 'Full-text index statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Query tuning and terminating statements": {
+    "message": "查询调优和终止",
+    "description": "The label for category 'Query tuning and terminating statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deploy and install": {
+    "message": "安装部署",
+    "description": "The label for category 'Deploy and install' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Compile and install": {
+    "message": "编译和安装",
+    "description": "The label for category 'Compile and install' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Local single-node installation": {
+    "message": "本地单机安装",
+    "description": "The label for category 'Local single-node installation' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Configure and log": {
+    "message": "配置和日志",
+    "description": "The label for category 'Configure and log' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Configurations": {
+    "message": "配置",
+    "description": "The label for category 'Configurations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Log management": {
+    "message": "日志管理",
+    "description": "The label for category 'Log management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Monitor": {
+    "message": "监控",
+    "description": "The label for category 'Monitor' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Data security": {
+    "message": "数据安全",
+    "description": "The label for category 'Data security' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Authentication and authorization": {
+    "message": "验证和授权",
+    "description": "The label for category 'Authentication and authorization' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Backup and restore": {
+    "message": "备份和恢复",
+    "description": "The label for category 'Backup and restore' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph BR Community": {
+    "message": "NebulaGraph BR 社区版",
+    "description": "The label for category 'NebulaGraph BR Community' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Synchronize and migrate": {
+    "message": "同步和迁移",
+    "description": "The label for category 'Synchronize and migrate' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Import and export": {
+    "message": "导入和导出",
+    "description": "The label for category 'Import and export' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Exchange": {
+    "message": "NebulaGraph Exchange",
+    "description": "The label for category 'NebulaGraph Exchange' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.sidebar.category.nebula-exchange-intro": {
+    "message": "认识 Exchange",
+    "description": "The label for category 'Introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Exchange configurations": {
+    "message": "Exchange 参数说明",
+    "description": "The label for category 'Exchange configurations' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Use NebulaGraph Exchange": {
+    "message": "使用 Exchange",
+    "description": "The label for category 'Use NebulaGraph Exchange' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Connectors": {
+    "message": "连接器",
+    "description": "The label for category 'Connectors' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Best practices": {
+    "message": "最佳实践",
+    "description": "The label for category 'Best practices' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Clients": {
+    "message": "客户端",
+    "description": "The label for category 'Clients' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Studio": {
+    "message": "NebulaGraph Studio",
+    "description": "The label for category 'Studio' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.About NebulaGraph Studio": {
+    "message": "认识 Studio",
+    "description": "The label for category 'About NebulaGraph Studio' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deploy and connect": {
+    "message": "安装与登录",
+    "description": "The label for category 'Deploy and connect' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Quick start": {
+    "message": "快速开始",
+    "description": "The label for category 'Quick start' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Use Schema": {
+    "message": "管理 Schema",
+    "description": "The label for category 'Use Schema' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Troubleshooting": {
+    "message": "故障排查",
+    "description": "The label for category 'Troubleshooting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Dashboard (Community)": {
+    "message": "Dashboard (社区版)",
+    "description": "The label for category 'Dashboard (Community)' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Operator": {
+    "message": "NebulaGraph Operator",
+    "description": "The label for category 'NebulaGraph Operator' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Getting started": {
+    "message": "快速入门",
+    "description": "The label for category 'Getting started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.NebulaGraph Operator management": {
+    "message": "管理 Operator",
+    "description": "The label for category 'NebulaGraph Operator management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Cluster administration": {
+    "message": "管理集群",
+    "description": "The label for category 'Cluster administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Deployment": {
+    "message": "部署",
+    "description": "The label for category 'Deployment' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Storage management": {
+    "message": "存储管理",
+    "description": "The label for category 'Storage management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Security": {
+    "message": "安全",
+    "description": "The label for category 'Security' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.HA and balancing": {
+    "message": "高可用与负载均衡",
+    "description": "The label for category 'HA and balancing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Advanced": {
+    "message": "高阶功能",
+    "description": "The label for category 'Advanced' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Graph computing": {
+    "message": "图计算",
+    "description": "The label for category 'Graph computing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Appendix": {
+    "message": "附录",
+    "description": "The label for category 'Appendix' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.Release Note": {
+    "message": "发布说明",
+    "description": "The label for category 'Release Note' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.doc.About": {
+    "message": "前言",
+    "description": "The label for the doc item 'About' in sidebar 'docsSidebar', linking to the doc README"
+  },
+  "sidebar.docsSidebar.doc.What is NebulaGraph": {
+    "message": "什么是 NebulaGraph",
+    "description": "The label for the doc item 'What is NebulaGraph' in sidebar 'docsSidebar', linking to the doc introduction/what-is-nebula-graph"
+  },
+  "sidebar.docsSidebar.doc.Data model": {
+    "message": "数据模型",
+    "description": "The label for the doc item 'Data model' in sidebar 'docsSidebar', linking to the doc introduction/data-model"
+  },
+  "sidebar.docsSidebar.doc.Path": {
+    "message": "路径",
+    "description": "The label for the doc item 'Path' in sidebar 'docsSidebar', linking to the doc introduction/2.1.path"
+  },
+  "sidebar.docsSidebar.doc.VID": {
+    "message": "VID",
+    "description": "The label for the doc item 'VID' in sidebar 'docsSidebar', linking to the doc introduction/vid"
+  },
+  "sidebar.docsSidebar.doc.Architecture overview": {
+    "message": "架构总览",
+    "description": "The label for the doc item 'Architecture overview' in sidebar 'docsSidebar', linking to the doc introduction/nebula-graph-architecture/architecture-overview"
+  },
+  "sidebar.docsSidebar.doc.Meta Service": {
+    "message": "Meta Service",
+    "description": "The label for the doc item 'Meta Service' in sidebar 'docsSidebar', linking to the doc introduction/nebula-graph-architecture/meta-service"
+  },
+  "sidebar.docsSidebar.doc.Graph Service": {
+    "message": "Graph Service",
+    "description": "The label for the doc item 'Graph Service' in sidebar 'docsSidebar', linking to the doc introduction/nebula-graph-architecture/graph-service"
+  },
+  "sidebar.docsSidebar.doc.Storage Service": {
+    "message": "Storage Service",
+    "description": "The label for the doc item 'Storage Service' in sidebar 'docsSidebar', linking to the doc introduction/nebula-graph-architecture/storage-service"
+  },
+  "sidebar.docsSidebar.doc.nGQL Overview": {
+    "message": "nGQL 概述",
+    "description": "The label for the doc item 'nGQL Overview' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/overview"
+  },
+  "sidebar.docsSidebar.doc.Graph patterns": {
+    "message": "图模式",
+    "description": "The label for the doc item 'Graph patterns' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/graph-patterns"
+  },
+  "sidebar.docsSidebar.doc.Comments": {
+    "message": "注释",
+    "description": "The label for the doc item 'Comments' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/comments"
+  },
+  "sidebar.docsSidebar.doc.Identifier case sensitivity": {
+    "message": "区分大小写",
+    "description": "The label for the doc item 'Identifier case sensitivity' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/identifier-case-sensitivity"
+  },
+  "sidebar.docsSidebar.doc.Keywords": {
+    "message": "关键字",
+    "description": "The label for the doc item 'Keywords' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/keywords-and-reserved-words"
+  },
+  "sidebar.docsSidebar.doc.nGQL style guide": {
+    "message": "nGQL 风格指南",
+    "description": "The label for the doc item 'nGQL style guide' in sidebar 'docsSidebar', linking to the doc ngql-guide/nGQL-overview/ngql-style-guide"
+  },
+  "sidebar.docsSidebar.doc.Numeric": {
+    "message": "Numeric",
+    "description": "The label for the doc item 'Numeric' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/numeric"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.datatype-boolean": {
+    "message": "Boolean",
+    "description": "The label for the doc item 'Boolean' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/boolean"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.datatype-string": {
+    "message": "String",
+    "description": "The label for the doc item 'String' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/string"
+  },
+  "sidebar.docsSidebar.doc.Date and time": {
+    "message": "Date and time",
+    "description": "The label for the doc item 'Date and time' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/date-and-time"
+  },
+  "sidebar.docsSidebar.doc.Null": {
+    "message": "Null",
+    "description": "The label for the doc item 'Null' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/null"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.datatype-list": {
+    "message": "List",
+    "description": "The label for the doc item 'List' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/list"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.datatype-set": {
+    "message": "Set",
+    "description": "The label for the doc item 'Set' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/set"
+  },
+  "sidebar.docsSidebar.doc.Map": {
+    "message": "Map",
+    "description": "The label for the doc item 'Map' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/map"
+  },
+  "sidebar.docsSidebar.doc.Type conversion": {
+    "message": "类型转换",
+    "description": "The label for the doc item 'Type conversion' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/type-conversion"
+  },
+  "sidebar.docsSidebar.doc.Geography": {
+    "message": "Geography",
+    "description": "The label for the doc item 'Geography' in sidebar 'docsSidebar', linking to the doc ngql-guide/data-types/geography"
+  },
+  "sidebar.docsSidebar.doc.Comparison": {
+    "message": "Comparison",
+    "description": "The label for the doc item 'Comparison' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/comparison"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.operator-boolean": {
+    "message": "Boolean",
+    "description": "The label for the doc item 'Boolean' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/boolean"
+  },
+  "sidebar.docsSidebar.doc.Pipe": {
+    "message": "Pipe",
+    "description": "The label for the doc item 'Pipe' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/pipe"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.operator-set": {
+    "message": "Set",
+    "description": "The label for the doc item 'Set' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/set"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.operator-string": {
+    "message": "String",
+    "description": "The label for the doc item 'String' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/string"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.operator-list": {
+    "message": "List",
+    "description": "The label for the doc item 'List' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/list"
+  },
+  "sidebar.docsSidebar.doc.Arithmetic": {
+    "message": "Arithmetic",
+    "description": "The label for the doc item 'Arithmetic' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/arithmetic"
+  },
+  "sidebar.docsSidebar.doc.Precedence": {
+    "message": "优先级",
+    "description": "The label for the doc item 'Precedence' in sidebar 'docsSidebar', linking to the doc ngql-guide/operators/precedence"
+  },
+  "sidebar.docsSidebar.doc.Math functions": {
+    "message": "数学函数",
+    "description": "The label for the doc item 'Math functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/math"
+  },
+  "sidebar.docsSidebar.doc.Aggregate functions": {
+    "message": "聚合函数",
+    "description": "The label for the doc item 'Aggregate functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/aggregating"
+  },
+  "sidebar.docsSidebar.doc.String functions": {
+    "message": "字符串函数",
+    "description": "The label for the doc item 'String functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/string"
+  },
+  "sidebar.docsSidebar.doc.Date and time functions": {
+    "message": "日期和时间函数",
+    "description": "The label for the doc item 'Date and time functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/date-and-time"
+  },
+  "sidebar.docsSidebar.doc.Schema functions": {
+    "message": "Schema 函数",
+    "description": "The label for the doc item 'Schema functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/schema"
+  },
+  "sidebar.docsSidebar.doc.List functions": {
+    "message": "列表函数",
+    "description": "The label for the doc item 'List functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/list"
+  },
+  "sidebar.docsSidebar.doc.Type conversion functions": {
+    "message": "类型转换函数",
+    "description": "The label for the doc item 'Type conversion functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/type-conversion"
+  },
+  "sidebar.docsSidebar.doc.Conditional expressions": {
+    "message": "条件表达式函数",
+    "description": "The label for the doc item 'Conditional expressions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/conditional-expressions"
+  },
+  "sidebar.docsSidebar.doc.Predicate functions": {
+    "message": "谓词函数",
+    "description": "The label for the doc item 'Predicate functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/predicate"
+  },
+  "sidebar.docsSidebar.doc.Geography functions": {
+    "message": "Geo 函数",
+    "description": "The label for the doc item 'Geography functions' in sidebar 'docsSidebar', linking to the doc ngql-guide/functions-and-expressions/geo"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.query-overview": {
+    "message": "查询语句概览",
+    "description": "The label for the doc item 'Overview' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/general-query-statements-overview"
+  },
+  "sidebar.docsSidebar.doc.MATCH": {
+    "message": "MATCH",
+    "description": "The label for the doc item 'MATCH' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/match"
+  },
+  "sidebar.docsSidebar.doc.OPTIONAL MATCH": {
+    "message": "OPTIONAL MATCH",
+    "description": "The label for the doc item 'OPTIONAL MATCH' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/optional-match"
+  },
+  "sidebar.docsSidebar.doc.LOOKUP": {
+    "message": "LOOKUP",
+    "description": "The label for the doc item 'LOOKUP' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/lookup"
+  },
+  "sidebar.docsSidebar.doc.GO": {
+    "message": "GO",
+    "description": "The label for the doc item 'GO' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/go"
+  },
+  "sidebar.docsSidebar.doc.FETCH": {
+    "message": "FETCH",
+    "description": "The label for the doc item 'FETCH' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/fetch"
+  },
+  "sidebar.docsSidebar.doc.SHOW CHARSET": {
+    "message": "SHOW CHARSET",
+    "description": "The label for the doc item 'SHOW CHARSET' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-charset"
+  },
+  "sidebar.docsSidebar.doc.SHOW COLLATION": {
+    "message": "SHOW COLLATION",
+    "description": "The label for the doc item 'SHOW COLLATION' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-collation"
+  },
+  "sidebar.docsSidebar.doc.SHOW CREATE SPACE": {
+    "message": "SHOW CREATE SPACE",
+    "description": "The label for the doc item 'SHOW CREATE SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-create-space"
+  },
+  "sidebar.docsSidebar.doc.SHOW CREATE TAG/EDGE": {
+    "message": "SHOW CREATE TAG/EDGE",
+    "description": "The label for the doc item 'SHOW CREATE TAG/EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-create-tag-edge"
+  },
+  "sidebar.docsSidebar.doc.SHOW HOSTS": {
+    "message": "SHOW HOSTS",
+    "description": "The label for the doc item 'SHOW HOSTS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-hosts"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.show-general-index-status": {
+    "message": "SHOW INDEX STATUS",
+    "description": "The label for the doc item 'SHOW INDEX STATUS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-index-status"
+  },
+  "sidebar.docsSidebar.doc.SHOW INDEXES": {
+    "message": "SHOW INDEXES",
+    "description": "The label for the doc item 'SHOW INDEXES' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-indexes"
+  },
+  "sidebar.docsSidebar.doc.SHOW PARTS": {
+    "message": "SHOW PARTS",
+    "description": "The label for the doc item 'SHOW PARTS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-parts"
+  },
+  "sidebar.docsSidebar.doc.SHOW ROLES": {
+    "message": "SHOW ROLES",
+    "description": "The label for the doc item 'SHOW ROLES' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-roles"
+  },
+  "sidebar.docsSidebar.doc.SHOW SNAPSHOTS": {
+    "message": "SHOW SNAPSHOTS",
+    "description": "The label for the doc item 'SHOW SNAPSHOTS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-snapshots"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.show-general-spaces": {
+    "message": "SHOW SPACES",
+    "description": "The label for the doc item 'SHOW SPACES' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-spaces"
+  },
+  "sidebar.docsSidebar.doc.SHOW STATS": {
+    "message": "SHOW STATS",
+    "description": "The label for the doc item 'SHOW STATS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-stats"
+  },
+  "sidebar.docsSidebar.doc.SHOW TAGS/EDGES": {
+    "message": "SHOW TAGS/EDGES",
+    "description": "The label for the doc item 'SHOW TAGS/EDGES' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-tags-edges"
+  },
+  "sidebar.docsSidebar.doc.SHOW USERS": {
+    "message": "SHOW USERS",
+    "description": "The label for the doc item 'SHOW USERS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-users"
+  },
+  "sidebar.docsSidebar.doc.SHOW SESSIONS": {
+    "message": "SHOW SESSIONS",
+    "description": "The label for the doc item 'SHOW SESSIONS' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-sessions"
+  },
+  "sidebar.docsSidebar.doc.SHOW QUERIES": {
+    "message": "SHOW QUERIES",
+    "description": "The label for the doc item 'SHOW QUERIES' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-queries"
+  },
+  "sidebar.docsSidebar.doc.SHOW META LEADER": {
+    "message": "SHOW META LEADER",
+    "description": "The label for the doc item 'SHOW META LEADER' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/show/show-meta-leader"
+  },
+  "sidebar.docsSidebar.doc.FIND PATH": {
+    "message": "FIND PATH",
+    "description": "The label for the doc item 'FIND PATH' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/find-path"
+  },
+  "sidebar.docsSidebar.doc.GET SUBGRAPH": {
+    "message": "GET SUBGRAPH",
+    "description": "The label for the doc item 'GET SUBGRAPH' in sidebar 'docsSidebar', linking to the doc ngql-guide/general-query-statements/get-subgraph"
+  },
+  "sidebar.docsSidebar.doc.GROUP BY": {
+    "message": "GROUP BY",
+    "description": "The label for the doc item 'GROUP BY' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/group-by"
+  },
+  "sidebar.docsSidebar.doc.LIMIT and SKIP": {
+    "message": "LIMIT and SKIP",
+    "description": "The label for the doc item 'LIMIT and SKIP' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/limit"
+  },
+  "sidebar.docsSidebar.doc.SAMPLE": {
+    "message": "SAMPLE",
+    "description": "The label for the doc item 'SAMPLE' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/sample"
+  },
+  "sidebar.docsSidebar.doc.ORDER BY": {
+    "message": "ORDER BY",
+    "description": "The label for the doc item 'ORDER BY' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/order-by"
+  },
+  "sidebar.docsSidebar.doc.RETURN": {
+    "message": "RETURN",
+    "description": "The label for the doc item 'RETURN' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/return"
+  },
+  "sidebar.docsSidebar.doc.TTL": {
+    "message": "TTL",
+    "description": "The label for the doc item 'TTL' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/ttl-options"
+  },
+  "sidebar.docsSidebar.doc.WHERE": {
+    "message": "WHERE",
+    "description": "The label for the doc item 'WHERE' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/where"
+  },
+  "sidebar.docsSidebar.doc.YIELD": {
+    "message": "YIELD",
+    "description": "The label for the doc item 'YIELD' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/yield"
+  },
+  "sidebar.docsSidebar.doc.WITH": {
+    "message": "WITH",
+    "description": "The label for the doc item 'WITH' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/with"
+  },
+  "sidebar.docsSidebar.doc.UNWIND": {
+    "message": "UNWIND",
+    "description": "The label for the doc item 'UNWIND' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/unwind"
+  },
+  "sidebar.docsSidebar.doc.INNER JOIN": {
+    "message": "INNER JOIN",
+    "description": "The label for the doc item 'INNER JOIN' in sidebar 'docsSidebar', linking to the doc ngql-guide/clauses-and-options/joins"
+  },
+  "sidebar.docsSidebar.doc.Composite queries": {
+    "message": "复合查询",
+    "description": "The label for the doc item 'Composite queries' in sidebar 'docsSidebar', linking to the doc ngql-guide/variable-and-composite-queries/composite-queries"
+  },
+  "sidebar.docsSidebar.doc.User-defined variables": {
+    "message": "自定义变量",
+    "description": "The label for the doc item 'User-defined variables' in sidebar 'docsSidebar', linking to the doc ngql-guide/variable-and-composite-queries/user-defined-variables"
+  },
+  "sidebar.docsSidebar.doc.Property references": {
+    "message": "引用属性",
+    "description": "The label for the doc item 'Property references' in sidebar 'docsSidebar', linking to the doc ngql-guide/variable-and-composite-queries/property-reference"
+  },
+  "sidebar.docsSidebar.doc.CREATE SPACE": {
+    "message": "CREATE SPACE",
+    "description": "The label for the doc item 'CREATE SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/create-space"
+  },
+  "sidebar.docsSidebar.doc.USE SPACE": {
+    "message": "USE SPACE",
+    "description": "The label for the doc item 'USE SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/use-space"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.show-space-statements": {
+    "message": "SHOW SPACES",
+    "description": "The label for the doc item 'SHOW SPACES' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/show-spaces"
+  },
+  "sidebar.docsSidebar.doc.DESCRIBE SPACE": {
+    "message": "DESCRIBE SPACE",
+    "description": "The label for the doc item 'DESCRIBE SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/describe-space"
+  },
+  "sidebar.docsSidebar.doc.CLEAR SPACE": {
+    "message": "CLEAR SPACE",
+    "description": "The label for the doc item 'CLEAR SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/clear-space"
+  },
+  "sidebar.docsSidebar.doc.DROP SPACE": {
+    "message": "DROP SPACE",
+    "description": "The label for the doc item 'DROP SPACE' in sidebar 'docsSidebar', linking to the doc ngql-guide/space-statements/drop-space"
+  },
+  "sidebar.docsSidebar.doc.CREATE TAG": {
+    "message": "CREATE TAG",
+    "description": "The label for the doc item 'CREATE TAG' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/create-tag"
+  },
+  "sidebar.docsSidebar.doc.DROP TAGS": {
+    "message": "DROP TAGS",
+    "description": "The label for the doc item 'DROP TAGS' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/drop-tag"
+  },
+  "sidebar.docsSidebar.doc.ALTER TAG": {
+    "message": "ALTER TAG",
+    "description": "The label for the doc item 'ALTER TAG' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/alter-tag"
+  },
+  "sidebar.docsSidebar.doc.SHOW TAGS": {
+    "message": "SHOW TAGS",
+    "description": "The label for the doc item 'SHOW TAGS' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/show-tags"
+  },
+  "sidebar.docsSidebar.doc.DESCRIBE TAG": {
+    "message": "DESCRIBE TAG",
+    "description": "The label for the doc item 'DESCRIBE TAG' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/describe-tag"
+  },
+  "sidebar.docsSidebar.doc.DELETE TAG": {
+    "message": "DELETE TAG",
+    "description": "The label for the doc item 'DELETE TAG' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/delete-tag"
+  },
+  "sidebar.docsSidebar.doc.Add or delete tag": {
+    "message": "增减 Tag",
+    "description": "The label for the doc item 'Add or delete tag' in sidebar 'docsSidebar', linking to the doc ngql-guide/tag-statements/improve-query-by-tag-index"
+  },
+  "sidebar.docsSidebar.doc.CREATE EDGE": {
+    "message": "CREATE EDGE",
+    "description": "The label for the doc item 'CREATE EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-type-statements/create-edge"
+  },
+  "sidebar.docsSidebar.doc.DROP EDGE": {
+    "message": "DROP EDGE",
+    "description": "The label for the doc item 'DROP EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-type-statements/drop-edge"
+  },
+  "sidebar.docsSidebar.doc.ALTER EDGE": {
+    "message": "ALTER EDGE",
+    "description": "The label for the doc item 'ALTER EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-type-statements/alter-edge"
+  },
+  "sidebar.docsSidebar.doc.SHOW EDGES": {
+    "message": "SHOW EDGES",
+    "description": "The label for the doc item 'SHOW EDGES' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-type-statements/show-edges"
+  },
+  "sidebar.docsSidebar.doc.DESCRIBE EDGE": {
+    "message": "DESCRIBE EDGE",
+    "description": "The label for the doc item 'DESCRIBE EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-type-statements/describe-edge"
+  },
+  "sidebar.docsSidebar.doc.INSERT VERTEX": {
+    "message": "INSERT VERTEX",
+    "description": "The label for the doc item 'INSERT VERTEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/vertex-statements/insert-vertex"
+  },
+  "sidebar.docsSidebar.doc.DELETE VERTEX": {
+    "message": "DELETE VERTEX",
+    "description": "The label for the doc item 'DELETE VERTEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/vertex-statements/delete-vertex"
+  },
+  "sidebar.docsSidebar.doc.UPDATE VERTEX": {
+    "message": "UPDATE VERTEX",
+    "description": "The label for the doc item 'UPDATE VERTEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/vertex-statements/update-vertex"
+  },
+  "sidebar.docsSidebar.doc.UPSERT VERTEX": {
+    "message": "UPSERT VERTEX",
+    "description": "The label for the doc item 'UPSERT VERTEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/vertex-statements/upsert-vertex"
+  },
+  "sidebar.docsSidebar.doc.INSERT EDGE": {
+    "message": "INSERT EDGE",
+    "description": "The label for the doc item 'INSERT EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-statements/insert-edge"
+  },
+  "sidebar.docsSidebar.doc.DELETE EDGE": {
+    "message": "DELETE EDGE",
+    "description": "The label for the doc item 'DELETE EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-statements/delete-edge"
+  },
+  "sidebar.docsSidebar.doc.UPDATE EDGE": {
+    "message": "UPDATE EDGE",
+    "description": "The label for the doc item 'UPDATE EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-statements/update-edge"
+  },
+  "sidebar.docsSidebar.doc.UPSERT EDGE": {
+    "message": "UPSERT EDGE",
+    "description": "The label for the doc item 'UPSERT EDGE' in sidebar 'docsSidebar', linking to the doc ngql-guide/edge-statements/upsert-edge"
+  },
+  "sidebar.docsSidebar.doc.Index overview": {
+    "message": "索引概览",
+    "description": "The label for the doc item 'Index overview' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/README"
+  },
+  "sidebar.docsSidebar.doc.CREATE INDEX": {
+    "message": "CREATE INDEX",
+    "description": "The label for the doc item 'CREATE INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/create-native-index"
+  },
+  "sidebar.docsSidebar.doc.SHOW INDEX": {
+    "message": "SHOW INDEX",
+    "description": "The label for the doc item 'SHOW INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/show-native-indexes"
+  },
+  "sidebar.docsSidebar.doc.SHOW CREATE INDEX": {
+    "message": "SHOW CREATE INDEX",
+    "description": "The label for the doc item 'SHOW CREATE INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/2.1.show-create-index"
+  },
+  "sidebar.docsSidebar.doc.DESCRIBE INDEX": {
+    "message": "DESCRIBE INDEX",
+    "description": "The label for the doc item 'DESCRIBE INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/describe-native-index"
+  },
+  "sidebar.docsSidebar.doc.REBUILD INDEX": {
+    "message": "REBUILD INDEX",
+    "description": "The label for the doc item 'REBUILD INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/rebuild-native-index"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.show-native-index-status": {
+    "message": "SHOW INDEX STATUS",
+    "description": "The label for the doc item 'SHOW INDEX STATUS' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/show-native-index-status"
+  },
+  "sidebar.docsSidebar.doc.DROP INDEX": {
+    "message": "DROP INDEX",
+    "description": "The label for the doc item 'DROP INDEX' in sidebar 'docsSidebar', linking to the doc ngql-guide/native-index-statements/drop-native-index"
+  },
+  "sidebar.docsSidebar.doc.Full-text restrictions": {
+    "message": "全文索引限制",
+    "description": "The label for the doc item 'Full-text restrictions' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/deploy-text-based-index/text-based-index-restrictions"
+  },
+  "sidebar.docsSidebar.doc.Deploy Elasticsearch cluster": {
+    "message": "部署全文索引",
+    "description": "The label for the doc item 'Deploy Elasticsearch cluster' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/deploy-text-based-index/deploy-es"
+  },
+  "sidebar.docsSidebar.doc.Deploy Raft Listener cluster": {
+    "message": "部署 Raft Listener",
+    "description": "The label for the doc item 'Deploy Raft Listener cluster' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/deploy-text-based-index/deploy-listener"
+  },
+  "sidebar.docsSidebar.doc.Search with full-text index": {
+    "message": "全文搜索",
+    "description": "The label for the doc item 'Search with full-text index' in sidebar 'docsSidebar', linking to the doc ngql-guide/full-text-index-statements/search-with-text-based-index"
+  },
+  "sidebar.docsSidebar.doc.EXPLAIN and PROFILE": {
+    "message": "EXPLAIN 与 PROFILE",
+    "description": "The label for the doc item 'EXPLAIN and PROFILE' in sidebar 'docsSidebar', linking to the doc ngql-guide/query-tuning-statements/explain-and-profile"
+  },
+  "sidebar.docsSidebar.doc.Kill queries": {
+    "message": "终止查询",
+    "description": "The label for the doc item 'Kill queries' in sidebar 'docsSidebar', linking to the doc ngql-guide/query-tuning-statements/kill-query"
+  },
+  "sidebar.docsSidebar.doc.Kill sessions": {
+    "message": "终止会话",
+    "description": "The label for the doc item 'Kill sessions' in sidebar 'docsSidebar', linking to the doc ngql-guide/query-tuning-statements/kill-session"
+  },
+  "sidebar.docsSidebar.doc.Job statements": {
+    "message": "作业管理语句",
+    "description": "The label for the doc item 'Job statements' in sidebar 'docsSidebar', linking to the doc ngql-guide/job-statements"
+  },
+  "sidebar.docsSidebar.doc.Resource preparations": {
+    "message": "准备资源",
+    "description": "The label for the doc item 'Resource preparations' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/resource-preparations"
+  },
+  "sidebar.docsSidebar.doc.Compile the source": {
+    "message": "源码编译",
+    "description": "The label for the doc item 'Compile the source' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/install-nebula-graph-by-compiling-the-source-code"
+  },
+  "sidebar.docsSidebar.doc.Compile using Docker": {
+    "message": "使用 Docker 编译",
+    "description": "The label for the doc item 'Compile using Docker' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/compile-using-docker"
+  },
+  "sidebar.docsSidebar.doc.Install using RPM or DEB package": {
+    "message": "使用 RPM 或 DEB 包安装",
+    "description": "The label for the doc item 'Install using RPM or DEB package' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/install-nebula-graph-by-rpm-or-deb"
+  },
+  "sidebar.docsSidebar.doc.Install using TAR package": {
+    "message": "使用 TAR 包安装",
+    "description": "The label for the doc item 'Install using TAR package' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/install-nebula-graph-from-tar"
+  },
+  "sidebar.docsSidebar.doc.Install standalone NebulaGraph": {
+    "message": "安装独立版 NebulaGraph",
+    "description": "The label for the doc item 'Install standalone NebulaGraph' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/standalone-deployment"
+  },
+  "sidebar.docsSidebar.doc.Local multi-node installation": {
+    "message": "本地多节点安装",
+    "description": "The label for the doc item 'Local multi-node installation' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/deploy-nebula-graph-cluster"
+  },
+  "sidebar.docsSidebar.doc.Install using Docker Compose": {
+    "message": "使用 Docker Compose 安装",
+    "description": "The label for the doc item 'Install using Docker Compose' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/deploy-nebula-graph-with-docker-compose"
+  },
+  "sidebar.docsSidebar.doc.Install using NebulaGraph Lite": {
+    "message": "使用 NebulaGraph Lite 安装",
+    "description": "The label for the doc item 'Install using NebulaGraph Lite' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/deploy-nebula-graph-with-lite"
+  },
+  "sidebar.docsSidebar.doc.Install with ecosystem tools": {
+    "message": "使用生态系统工具安装",
+    "description": "The label for the doc item 'Install with ecosystem tools' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/compile-and-install-nebula-graph/deploy-nebula-graph-with-peripherals"
+  },
+  "sidebar.docsSidebar.doc.Manage Service": {
+    "message": "管理服务",
+    "description": "The label for the doc item 'Manage Service' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/manage-service"
+  },
+  "sidebar.docsSidebar.doc.Connect to Service": {
+    "message": "连接服务",
+    "description": "The label for the doc item 'Connect to Service' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/connect-to-nebula-graph"
+  },
+  "sidebar.docsSidebar.doc.Manage Storage host": {
+    "message": "管理存储主机",
+    "description": "The label for the doc item 'Manage Storage host' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/manage-storage-host"
+  },
+  "sidebar.docsSidebar.doc.Upgrade": {
+    "message": "升级版本",
+    "description": "The label for the doc item 'Upgrade' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/upgrade-nebula-graph/upgrade-nebula-comm"
+  },
+  "sidebar.docsSidebar.doc.Uninstall NebulaGraph": {
+    "message": "卸载",
+    "description": "The label for the doc item 'Uninstall NebulaGraph' in sidebar 'docsSidebar', linking to the doc deployment-and-installation/uninstall-nebula-graph"
+  },
+  "sidebar.docsSidebar.doc.Configurations": {
+    "message": "配置",
+    "description": "The label for the doc item 'Configurations' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/configurations/configurations"
+  },
+  "sidebar.docsSidebar.doc.Meta Service configurations": {
+    "message": "Meta Service 配置",
+    "description": "The label for the doc item 'Meta Service configurations' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/configurations/meta-config"
+  },
+  "sidebar.docsSidebar.doc.Graph Service configurations": {
+    "message": "Graph Service 配置",
+    "description": "The label for the doc item 'Graph Service configurations' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/configurations/graph-config"
+  },
+  "sidebar.docsSidebar.doc.Storage Service configurations": {
+    "message": "Storage Service 配置",
+    "description": "The label for the doc item 'Storage Service configurations' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/configurations/storage-config"
+  },
+  "sidebar.docsSidebar.doc.Kernel configurations": {
+    "message": "内核配置",
+    "description": "The label for the doc item 'Kernel configurations' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/configurations/kernel-config"
+  },
+  "sidebar.docsSidebar.doc.Runtime logs": {
+    "message": "运行日志",
+    "description": "The label for the doc item 'Runtime logs' in sidebar 'docsSidebar', linking to the doc configurations-and-logs/log-management/logs"
+  },
+  "sidebar.docsSidebar.doc.Query NebulaGraph metrics": {
+    "message": "查询监控指标",
+    "description": "The label for the doc item 'Query NebulaGraph metrics' in sidebar 'docsSidebar', linking to the doc monitor-and-metrics/query-performance-metrics"
+  },
+  "sidebar.docsSidebar.doc.RocksDB Statistics": {
+    "message": "RocksDB 统计信息",
+    "description": "The label for the doc item 'RocksDB Statistics' in sidebar 'docsSidebar', linking to the doc monitor-and-metrics/rocksdb-statistics"
+  },
+  "sidebar.docsSidebar.doc.Authentication": {
+    "message": "身份认证",
+    "description": "The label for the doc item 'Authentication' in sidebar 'docsSidebar', linking to the doc data-security/authentication/authentication"
+  },
+  "sidebar.docsSidebar.doc.User management": {
+    "message": "用户管理",
+    "description": "The label for the doc item 'User management' in sidebar 'docsSidebar', linking to the doc data-security/authentication/management-user"
+  },
+  "sidebar.docsSidebar.doc.Roles and privileges": {
+    "message": "角色和权限",
+    "description": "The label for the doc item 'Roles and privileges' in sidebar 'docsSidebar', linking to the doc data-security/authentication/role-list"
+  },
+  "sidebar.docsSidebar.doc.SSL": {
+    "message": "SSL 加密",
+    "description": "The label for the doc item 'SSL' in sidebar 'docsSidebar', linking to the doc data-security/ssl"
+  },
+  "sidebar.docsSidebar.doc.What is BR Community": {
+    "message": "BR 社区版概述",
+    "description": "The label for the doc item 'What is BR Community' in sidebar 'docsSidebar', linking to the doc backup-and-restore/nebula-br/what-is-br"
+  },
+  "sidebar.docsSidebar.doc.Install BR": {
+    "message": "安装 BR",
+    "description": "The label for the doc item 'Install BR' in sidebar 'docsSidebar', linking to the doc backup-and-restore/nebula-br/compile-br"
+  },
+  "sidebar.docsSidebar.doc.Use BR to back up data": {
+    "message": "使用 BR 备份数据",
+    "description": "The label for the doc item 'Use BR to back up data' in sidebar 'docsSidebar', linking to the doc backup-and-restore/nebula-br/br-backup-data"
+  },
+  "sidebar.docsSidebar.doc.Use BR to restore data": {
+    "message": "使用 BR 恢复数据",
+    "description": "The label for the doc item 'Use BR to restore data' in sidebar 'docsSidebar', linking to the doc backup-and-restore/nebula-br/br-restore-data"
+  },
+  "sidebar.docsSidebar.doc.Manage snapshots": {
+    "message": "快照",
+    "description": "The label for the doc item 'Manage snapshots' in sidebar 'docsSidebar', linking to the doc backup-and-restore/manage-snapshot"
+  },
+  "sidebar.docsSidebar.doc.Load balance": {
+    "message": "负载均衡",
+    "description": "The label for the doc item 'Load balance' in sidebar 'docsSidebar', linking to the doc synchronization-and-migration/balance-syntax"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.write-tools-overview": {
+    "message": "概述",
+    "description": "The label for the doc item 'Overview' in sidebar 'docsSidebar', linking to the doc import-export/write-tools"
+  },
+  "sidebar.docsSidebar.doc.Use NebulaGraph Importer": {
+    "message": "使用 Importer",
+    "description": "The label for the doc item 'Use NebulaGraph Importer' in sidebar 'docsSidebar', linking to the doc import-export/use-importer"
+  },
+  "sidebar.docsSidebar.doc.What is NebulaGraph Exchange": {
+    "message": "什么是 Exchange",
+    "description": "The label for the doc item 'What is NebulaGraph Exchange' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/about-exchange/ex-ug-what-is-exchange"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.exchange-limitations": {
+    "message": "限制条件",
+    "description": "The label for the doc item 'Limitations' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/about-exchange/ex-ug-limitations"
+  },
+  "sidebar.docsSidebar.doc.Get Exchange": {
+    "message": "获取 Exchange",
+    "description": "The label for the doc item 'Get Exchange' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/ex-ug-compile"
+  },
+  "sidebar.docsSidebar.doc.Options for import": {
+    "message": "导入命令参数",
+    "description": "The label for the doc item 'Options for import' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/parameter-reference/ex-ug-para-import-command"
+  },
+  "sidebar.docsSidebar.doc.Parameters in the configuration file": {
+    "message": "配置参数",
+    "description": "The label for the doc item 'Parameters in the configuration file' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/parameter-reference/ex-ug-parameter"
+  },
+  "sidebar.docsSidebar.doc.Import data from CSV files": {
+    "message": "导入 CSV 文件数据",
+    "description": "The label for the doc item 'Import data from CSV files' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-csv"
+  },
+  "sidebar.docsSidebar.doc.Import data from JSON files": {
+    "message": "导入 JSON 文件数据",
+    "description": "The label for the doc item 'Import data from JSON files' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-json"
+  },
+  "sidebar.docsSidebar.doc.Import data from ORC files": {
+    "message": "导入 ORC 文件数据",
+    "description": "The label for the doc item 'Import data from ORC files' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-orc"
+  },
+  "sidebar.docsSidebar.doc.Import data from Parquet files": {
+    "message": "导入 Parquet 文件数据",
+    "description": "The label for the doc item 'Import data from Parquet files' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-parquet"
+  },
+  "sidebar.docsSidebar.doc.Import data from HBase": {
+    "message": "导入 HBase 数据",
+    "description": "The label for the doc item 'Import data from HBase' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-hbase"
+  },
+  "sidebar.docsSidebar.doc.Import data from MySQL/PostgreSQL": {
+    "message": "导入 MySQL/PostgreSQL 数据",
+    "description": "The label for the doc item 'Import data from MySQL/PostgreSQL' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-mysql"
+  },
+  "sidebar.docsSidebar.doc.Import data from Oracle": {
+    "message": "导入 Oracle 数据",
+    "description": "The label for the doc item 'Import data from Oracle' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-oracle"
+  },
+  "sidebar.docsSidebar.doc.Import data from ClickHouse": {
+    "message": "导入 ClickHouse 数据",
+    "description": "The label for the doc item 'Import data from ClickHouse' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-clickhouse"
+  },
+  "sidebar.docsSidebar.doc.Import data from Neo4j": {
+    "message": "导入 Neo4j 数据",
+    "description": "The label for the doc item 'Import data from Neo4j' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-neo4j"
+  },
+  "sidebar.docsSidebar.doc.Import data from Hive": {
+    "message": "导入 Hive 数据",
+    "description": "The label for the doc item 'Import data from Hive' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-hive"
+  },
+  "sidebar.docsSidebar.doc.Import data from MaxCompute": {
+    "message": "导入 MaxCompute 数据",
+    "description": "The label for the doc item 'Import data from MaxCompute' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-maxcompute"
+  },
+  "sidebar.docsSidebar.doc.Import data from Pulsar": {
+    "message": "导入 Pulsar 数据",
+    "description": "The label for the doc item 'Import data from Pulsar' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-pulsar"
+  },
+  "sidebar.docsSidebar.doc.Import data from Kafka": {
+    "message": "导入 Kafka 数据",
+    "description": "The label for the doc item 'Import data from Kafka' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-kafka"
+  },
+  "sidebar.docsSidebar.doc.Import data from JDBC": {
+    "message": "导入 JDBC 数据",
+    "description": "The label for the doc item 'Import data from JDBC' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-jdbc"
+  },
+  "sidebar.docsSidebar.doc.Import data from SST files": {
+    "message": "导入 SST 文件数据",
+    "description": "The label for the doc item 'Import data from SST files' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-sst"
+  },
+  "sidebar.docsSidebar.doc.Import data from custom data sources": {
+    "message": "导入自定义数据源数据",
+    "description": "The label for the doc item 'Import data from custom data sources' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/use-exchange/ex-ug-import-from-custom"
+  },
+  "sidebar.docsSidebar.doc.Exchange FAQ": {
+    "message": "Exchange FAQ",
+    "description": "The label for the doc item 'Exchange FAQ' in sidebar 'docsSidebar', linking to the doc import-export/nebula-exchange/ex-ug-FAQ"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Spark Connector": {
+    "message": "NebulaGraph Spark Connector",
+    "description": "The label for the doc item 'NebulaGraph Spark Connector' in sidebar 'docsSidebar', linking to the doc connector/nebula-spark-connector"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Flink Connector": {
+    "message": "NebulaGraph Flink Connector",
+    "description": "The label for the doc item 'NebulaGraph Flink Connector' in sidebar 'docsSidebar', linking to the doc connector/nebula-flink-connector"
+  },
+  "sidebar.docsSidebar.doc.Compaction": {
+    "message": "Compaction",
+    "description": "The label for the doc item 'Compaction' in sidebar 'docsSidebar', linking to the doc service-tuning/compaction"
+  },
+  "sidebar.docsSidebar.doc.Storage load balance": {
+    "message": "Storage 负载均衡",
+    "description": "The label for the doc item 'Storage load balance' in sidebar 'docsSidebar', linking to the doc service-tuning/load-balance"
+  },
+  "sidebar.docsSidebar.doc.Modeling suggestions": {
+    "message": "图建模",
+    "description": "The label for the doc item 'Modeling suggestions' in sidebar 'docsSidebar', linking to the doc service-tuning/graph-modeling"
+  },
+  "sidebar.docsSidebar.doc.System design suggestions": {
+    "message": "系统建模",
+    "description": "The label for the doc item 'System design suggestions' in sidebar 'docsSidebar', linking to the doc service-tuning/system-design"
+  },
+  "sidebar.docsSidebar.doc.Execution plan": {
+    "message": "执行计划",
+    "description": "The label for the doc item 'Execution plan' in sidebar 'docsSidebar', linking to the doc service-tuning/plan"
+  },
+  "sidebar.docsSidebar.doc.Processing super vertices": {
+    "message": "超级节点",
+    "description": "The label for the doc item 'Processing super vertices' in sidebar 'docsSidebar', linking to the doc service-tuning/super-node"
+  },
+  "sidebar.docsSidebar.doc.Enable AutoFDO": {
+    "message": "启用 AutoFDO",
+    "description": "The label for the doc item 'Enable AutoFDO' in sidebar 'docsSidebar', linking to the doc service-tuning/enable_autofdo_for_nebulagraph"
+  },
+  "sidebar.docsSidebar.doc.Best practices": {
+    "message": "最佳实践",
+    "description": "The label for the doc item 'Best practices' in sidebar 'docsSidebar', linking to the doc service-tuning/practice"
+  },
+  "sidebar.docsSidebar.doc.Clients overview": {
+    "message": "客户端概览",
+    "description": "The label for the doc item 'Clients overview' in sidebar 'docsSidebar', linking to the doc client/nebula-client"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Console": {
+    "message": "NebulaGraph Console",
+    "description": "The label for the doc item 'NebulaGraph Console' in sidebar 'docsSidebar', linking to the doc nebula-console"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph CPP": {
+    "message": "NebulaGraph CPP",
+    "description": "The label for the doc item 'NebulaGraph CPP' in sidebar 'docsSidebar', linking to the doc client/nebula-cpp-client"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Java": {
+    "message": "NebulaGraph Java",
+    "description": "The label for the doc item 'NebulaGraph Java' in sidebar 'docsSidebar', linking to the doc client/nebula-java-client"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Python": {
+    "message": "NebulaGraph Python",
+    "description": "The label for the doc item 'NebulaGraph Python' in sidebar 'docsSidebar', linking to the doc client/nebula-python-client"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Go": {
+    "message": "NebulaGraph Go",
+    "description": "The label for the doc item 'NebulaGraph Go' in sidebar 'docsSidebar', linking to the doc client/nebula-go-client"
+  },
+  "sidebar.docsSidebar.doc.Community contributed clients": {
+    "message": "社区贡献的客户端",
+    "description": "The label for the doc item 'Community contributed clients' in sidebar 'docsSidebar', linking to the doc client/contributed-clients"
+  },
+  "sidebar.docsSidebar.doc.What is NebulaGraph Studio": {
+    "message": "什么是 NebulaGraph Studio",
+    "description": "The label for the doc item 'What is NebulaGraph Studio' in sidebar 'docsSidebar', linking to the doc nebula-studio/about-studio/st-ug-what-is-graph-studio"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.studio-limitations": {
+    "message": "使用限制",
+    "description": "The label for the doc item 'Limitations' in sidebar 'docsSidebar', linking to the doc nebula-studio/about-studio/st-ug-limitations"
+  },
+  "sidebar.docsSidebar.doc.Deploy Studio": {
+    "message": "部署 Studio",
+    "description": "The label for the doc item 'Deploy Studio' in sidebar 'docsSidebar', linking to the doc nebula-studio/deploy-connect/st-ug-deploy"
+  },
+  "sidebar.docsSidebar.doc.Connect to NebulaGraph": {
+    "message": "连接数据库",
+    "description": "The label for the doc item 'Connect to NebulaGraph' in sidebar 'docsSidebar', linking to the doc nebula-studio/deploy-connect/st-ug-connect"
+  },
+  "sidebar.docsSidebar.doc.Design a schema": {
+    "message": "规划 schema",
+    "description": "The label for the doc item 'Design a schema' in sidebar 'docsSidebar', linking to the doc nebula-studio/quick-start/st-ug-plan-schema"
+  },
+  "sidebar.docsSidebar.doc.Create a schema": {
+    "message": "创建 schema",
+    "description": "The label for the doc item 'Create a schema' in sidebar 'docsSidebar', linking to the doc nebula-studio/quick-start/st-ug-create-schema"
+  },
+  "sidebar.docsSidebar.doc.Import data": {
+    "message": "导入数据",
+    "description": "The label for the doc item 'Import data' in sidebar 'docsSidebar', linking to the doc nebula-studio/quick-start/st-ug-import-data"
+  },
+  "sidebar.docsSidebar.doc.Use Console": {
+    "message": "使用控制台",
+    "description": "The label for the doc item 'Use Console' in sidebar 'docsSidebar', linking to the doc nebula-studio/quick-start/st-ug-console"
+  },
+  "sidebar.docsSidebar.doc.Manage graph spaces": {
+    "message": "管理图空间",
+    "description": "The label for the doc item 'Manage graph spaces' in sidebar 'docsSidebar', linking to the doc nebula-studio/manage-schema/st-ug-crud-space"
+  },
+  "sidebar.docsSidebar.doc.Manage tags": {
+    "message": "管理 tags",
+    "description": "The label for the doc item 'Manage tags' in sidebar 'docsSidebar', linking to the doc nebula-studio/manage-schema/st-ug-crud-tag"
+  },
+  "sidebar.docsSidebar.doc.Manage edge types": {
+    "message": "管理 edge types",
+    "description": "The label for the doc item 'Manage edge types' in sidebar 'docsSidebar', linking to the doc nebula-studio/manage-schema/st-ug-crud-edge-type"
+  },
+  "sidebar.docsSidebar.doc.Manage indexes": {
+    "message": "管理索引",
+    "description": "The label for the doc item 'Manage indexes' in sidebar 'docsSidebar', linking to the doc nebula-studio/manage-schema/st-ug-crud-index"
+  },
+  "sidebar.docsSidebar.doc.View schema": {
+    "message": "查看 schema",
+    "description": "The label for the doc item 'View schema' in sidebar 'docsSidebar', linking to the doc nebula-studio/manage-schema/st-ug-view-schema"
+  },
+  "sidebar.docsSidebar.doc.Schema drafting": {
+    "message": "Schema 草图",
+    "description": "The label for the doc item 'Schema drafting' in sidebar 'docsSidebar', linking to the doc nebula-studio/quick-start/draft"
+  },
+  "sidebar.docsSidebar.doc.Global settings": {
+    "message": "全局设置",
+    "description": "The label for the doc item 'Global settings' in sidebar 'docsSidebar', linking to the doc nebula-studio/system-settings"
+  },
+  "sidebar.docsSidebar.doc.Database connection error": {
+    "message": "数据库连接错误",
+    "description": "The label for the doc item 'Database connection error' in sidebar 'docsSidebar', linking to the doc nebula-studio/troubleshooting/st-ug-config-server-errors"
+  },
+  "sidebar.docsSidebar.doc.Unable to access Studio": {
+    "message": "无法访问 Studio",
+    "description": "The label for the doc item 'Unable to access Studio' in sidebar 'docsSidebar', linking to the doc nebula-studio/troubleshooting/st-ug-connection-errors"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.studio-faq": {
+    "message": "FAQ",
+    "description": "The label for the doc item 'FAQ' in sidebar 'docsSidebar', linking to the doc nebula-studio/troubleshooting/st-ug-faq"
+  },
+  "sidebar.docsSidebar.doc.What is NebulaGraph Dashboard": {
+    "message": "什么是 Dashboard",
+    "description": "The label for the doc item 'What is NebulaGraph Dashboard' in sidebar 'docsSidebar', linking to the doc nebula-dashboard/what-is-dashboard"
+  },
+  "sidebar.docsSidebar.doc.Deploy Dashboard": {
+    "message": "部署 Dashboard",
+    "description": "The label for the doc item 'Deploy Dashboard' in sidebar 'docsSidebar', linking to the doc nebula-dashboard/deploy-dashboard"
+  },
+  "sidebar.docsSidebar.doc.Connect to Dashboard": {
+    "message": "连接 Dashboard",
+    "description": "The label for the doc item 'Connect to Dashboard' in sidebar 'docsSidebar', linking to the doc nebula-dashboard/connect-dashboard"
+  },
+  "sidebar.docsSidebar.doc.Use Dashboard": {
+    "message": "Dashboard 页面介绍",
+    "description": "The label for the doc item 'Use Dashboard' in sidebar 'docsSidebar', linking to the doc nebula-dashboard/use-dashboard"
+  },
+  "sidebar.docsSidebar.doc.Monitoring metrics": {
+    "message": "监控指标",
+    "description": "The label for the doc item 'Monitoring metrics' in sidebar 'docsSidebar', linking to the doc nebula-dashboard/monitor-parameter"
+  },
+  "sidebar.docsSidebar.doc.What is NebulaGraph Operator": {
+    "message": "什么是 Operator",
+    "description": "The label for the doc item 'What is NebulaGraph Operator' in sidebar 'docsSidebar', linking to the doc k8s-operator/introduction-to-nebula-operator"
+  },
+  "sidebar.docsSidebar.doc.Install NebulaGraph Operator": {
+    "message": "安装 NebulaGraph Operator",
+    "description": "The label for the doc item 'Install NebulaGraph Operator' in sidebar 'docsSidebar', linking to the doc k8s-operator/get-started/2.1.install-operator"
+  },
+  "sidebar.docsSidebar.doc.Create a NebulaGraph cluster": {
+    "message": "创建 NebulaGraph 集群",
+    "description": "The label for the doc item 'Create a NebulaGraph cluster' in sidebar 'docsSidebar', linking to the doc k8s-operator/get-started/2.3.create-cluster"
+  },
+  "sidebar.docsSidebar.doc.Connect to a NebulaGraph cluster": {
+    "message": "连接到 NebulaGraph 集群",
+    "description": "The label for the doc item 'Connect to a NebulaGraph cluster' in sidebar 'docsSidebar', linking to the doc k8s-operator/get-started/2.4.connect-to-cluster"
+  },
+  "sidebar.docsSidebar.doc.Customize installation defaults": {
+    "message": "自定义安装配置",
+    "description": "The label for the doc item 'Customize installation defaults' in sidebar 'docsSidebar', linking to the doc k8s-operator/operator-management/3.1.customize-installation"
+  },
+  "sidebar.docsSidebar.doc.Update NebulaGraph Operator": {
+    "message": "更新 NebulaGraph Operator",
+    "description": "The label for the doc item 'Update NebulaGraph Operator' in sidebar 'docsSidebar', linking to the doc k8s-operator/operator-management/3.2.update-operator"
+  },
+  "sidebar.docsSidebar.doc.Manage specific clusters": {
+    "message": "管理指定集群",
+    "description": "The label for the doc item 'Manage specific clusters' in sidebar 'docsSidebar', linking to the doc k8s-operator/operator-management/3.5.cluster-scope-config"
+  },
+  "sidebar.docsSidebar.doc.Upgrade NebulaGraph Operator": {
+    "message": "升级 NebulaGraph Operator",
+    "description": "The label for the doc item 'Upgrade NebulaGraph Operator' in sidebar 'docsSidebar', linking to the doc k8s-operator/operator-management/3.3.upgrade-operator"
+  },
+  "sidebar.docsSidebar.doc.Uninstall NebulaGraph Operator": {
+    "message": "卸载 NebulaGraph Operator",
+    "description": "The label for the doc item 'Uninstall NebulaGraph Operator' in sidebar 'docsSidebar', linking to the doc k8s-operator/operator-management/3.4.unistall-operator"
+  },
+  "sidebar.docsSidebar.doc.Install clusters": {
+    "message": "安装集群",
+    "description": "The label for the doc item 'Install clusters' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.1.installation/4.1.1.cluster-install"
+  },
+  "sidebar.docsSidebar.doc.Upgrade clusters": {
+    "message": "升级集群",
+    "description": "The label for the doc item 'Upgrade clusters' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.1.installation/4.1.2.cluster-upgrade"
+  },
+  "sidebar.docsSidebar.doc.Uninstall clusters": {
+    "message": "卸载集群",
+    "description": "The label for the doc item 'Uninstall clusters' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.1.installation/4.1.3.cluster-uninstall"
+  },
+  "sidebar.docsSidebar.doc.Customize cluster configurations": {
+    "message": "自定义集群配置",
+    "description": "The label for the doc item 'Customize cluster configurations' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.2.configuration"
+  },
+  "sidebar.docsSidebar.doc.Dynamically expand persistent volumes": {
+    "message": "动态扩展持久卷",
+    "description": "The label for the doc item 'Dynamically expand persistent volumes' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.4.storage-management/4.4.2.pv-expansion"
+  },
+  "sidebar.docsSidebar.doc.Use local PV": {
+    "message": "使用本地 PV",
+    "description": "The label for the doc item 'Use local PV' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.4.storage-management/4.4.1.use-local-pv"
+  },
+  "sidebar.docsSidebar.doc.Configure PV reclaim": {
+    "message": "配置 PV 回收",
+    "description": "The label for the doc item 'Configure PV reclaim' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.4.storage-management/4.4.3.configure-pv-reclaim"
+  },
+  "sidebar.docsSidebar.doc.Log management": {
+    "message": "日志管理",
+    "description": "The label for the doc item 'Log management' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.5.logging"
+  },
+  "sidebar.docsSidebar.doc.Enable admission control": {
+    "message": "启用准入控制",
+    "description": "The label for the doc item 'Enable admission control' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.7.security/4.7.2.enable-admission-control"
+  },
+  "sidebar.docsSidebar.doc.Configure deletion protection": {
+    "message": "配置删除保护",
+    "description": "The label for the doc item 'Configure deletion protection' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.7.security/4.7.3.config-deletion-protection"
+  },
+  "sidebar.docsSidebar.doc.Self-healing overview": {
+    "message": "自愈概览",
+    "description": "The label for the doc item 'Self-healing overview' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.8.ha-and-balancing/4.8.1.self-healing"
+  },
+  "sidebar.docsSidebar.doc.Optimize leader transfer in rolling updates": {
+    "message": "优化滚动更新中的主节点转移",
+    "description": "The label for the doc item 'Optimize leader transfer in rolling updates' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.9.advanced/4.9.1.rolling-update-strategy"
+  },
+  "sidebar.docsSidebar.doc.Restart clusters": {
+    "message": "重启集群",
+    "description": "The label for the doc item 'Restart clusters' in sidebar 'docsSidebar', linking to the doc k8s-operator/cluster-administration/4.9.advanced/4.9.2.restart-cluster"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.k8s-faq": {
+    "message": "FAQ",
+    "description": "The label for the doc item 'FAQ' in sidebar 'docsSidebar', linking to the doc k8s-operator/FAQ"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Algorithm": {
+    "message": "NebulaGraph Algorithm",
+    "description": "The label for the doc item 'NebulaGraph Algorithm' in sidebar 'docsSidebar', linking to the doc graph-computing/nebula-algorithm"
+  },
+  "sidebar.docsSidebar.doc.Bench": {
+    "message": "Bench",
+    "description": "The label for the doc item 'Bench' in sidebar 'docsSidebar', linking to the doc nebula-bench"
+  },
+  "sidebar.docsSidebar.doc.sidebar.doc.faq": {
+    "message": "FAQ",
+    "description": "The label for the doc item 'FAQ' in sidebar 'docsSidebar', linking to the doc appendix/FAQ"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Community": {
+    "message": "NebulaGraph 社区版",
+    "description": "The label for the doc item 'NebulaGraph Community' in sidebar 'docsSidebar', linking to the doc appendix/release-notes/nebula-comm-release-note"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Studio": {
+    "message": "NebulaGraph Studio",
+    "description": "The label for the doc item 'NebulaGraph Studio' in sidebar 'docsSidebar', linking to the doc appendix/release-notes/studio-release-note"
+  },
+  "sidebar.docsSidebar.doc.NebulaGraph Dashboard Community": {
+    "message": "NebulaGraph Dashboard 社区版",
+    "description": "The label for the doc item 'NebulaGraph Dashboard Community' in sidebar 'docsSidebar', linking to the doc appendix/release-notes/dashboard-comm-release-note"
+  },
+  "sidebar.docsSidebar.doc.Ecosystem tools": {
+    "message": "生态工具概览",
+    "description": "The label for the doc item 'Ecosystem tools' in sidebar 'docsSidebar', linking to the doc appendix/eco-tool-version"
+  },
+  "sidebar.docsSidebar.doc.Port guide for company products": {
+    "message": "产品端口全集",
+    "description": "The label for the doc item 'Port guide for company products' in sidebar 'docsSidebar', linking to the doc appendix/port-guide"
+  },
+  "sidebar.docsSidebar.doc.How to contribute": {
+    "message": "社区参与",
+    "description": "The label for the doc item 'How to contribute' in sidebar 'docsSidebar', linking to the doc contribution/how-to-contribute"
+  },
+  "sidebar.docsSidebar.doc.History timeline": {
+    "message": "年表",
+    "description": "The label for the doc item 'History timeline' in sidebar 'docsSidebar', linking to the doc appendix/history"
+  },
+  "sidebar.docsSidebar.doc.Error code": {
+    "message": "错误码",
+    "description": "The label for the doc item 'Error code' in sidebar 'docsSidebar', linking to the doc appendix/error-code"
+  }
+}
