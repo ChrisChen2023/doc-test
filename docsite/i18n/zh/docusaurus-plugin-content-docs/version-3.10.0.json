@@ -1,0 +1,262 @@
+{
+  "version.label": {
+    "message": "3.10.0",
+    "description": "The label for version 3.10.0"
+  },
+  "sidebar.docsSidebar.category.introduction": {
+    "message": "introduction",
+    "description": "The label for category 'introduction' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-graph-architecture": {
+    "message": "nebula-graph-architecture",
+    "description": "The label for category 'nebula-graph-architecture' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.quick-start": {
+    "message": "quick-start",
+    "description": "The label for category 'quick-start' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.ngql-guide": {
+    "message": "ngql-guide",
+    "description": "The label for category 'ngql-guide' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nGQL-overview": {
+    "message": "nGQL-overview",
+    "description": "The label for category 'nGQL-overview' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.data-types": {
+    "message": "data-types",
+    "description": "The label for category 'data-types' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.variable-and-composite-queries": {
+    "message": "variable-and-composite-queries",
+    "description": "The label for category 'variable-and-composite-queries' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.operators": {
+    "message": "operators",
+    "description": "The label for category 'operators' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.functions-and-expressions": {
+    "message": "functions-and-expressions",
+    "description": "The label for category 'functions-and-expressions' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.general-query-statements": {
+    "message": "general-query-statements",
+    "description": "The label for category 'general-query-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.show": {
+    "message": "show",
+    "description": "The label for category 'show' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.clauses-and-options": {
+    "message": "clauses-and-options",
+    "description": "The label for category 'clauses-and-options' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.space-statements": {
+    "message": "space-statements",
+    "description": "The label for category 'space-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.tag-statements": {
+    "message": "tag-statements",
+    "description": "The label for category 'tag-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.edge-type-statements": {
+    "message": "edge-type-statements",
+    "description": "The label for category 'edge-type-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.vertex-statements": {
+    "message": "vertex-statements",
+    "description": "The label for category 'vertex-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.edge-statements": {
+    "message": "edge-statements",
+    "description": "The label for category 'edge-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.索引介绍": {
+    "message": "索引介绍",
+    "description": "The label for category '索引介绍' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.full-text-index-statements": {
+    "message": "full-text-index-statements",
+    "description": "The label for category 'full-text-index-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.query-tuning-statements": {
+    "message": "query-tuning-statements",
+    "description": "The label for category 'query-tuning-statements' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.deployment-and-installation": {
+    "message": "deployment-and-installation",
+    "description": "The label for category 'deployment-and-installation' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.compile-and-install-nebula-graph": {
+    "message": "compile-and-install-nebula-graph",
+    "description": "The label for category 'compile-and-install-nebula-graph' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.upgrade-nebula-graph": {
+    "message": "upgrade-nebula-graph",
+    "description": "The label for category 'upgrade-nebula-graph' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.deploy-text-based-index": {
+    "message": "deploy-text-based-index",
+    "description": "The label for category 'deploy-text-based-index' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.configurations-and-logs": {
+    "message": "configurations-and-logs",
+    "description": "The label for category 'configurations-and-logs' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.配置管理": {
+    "message": "配置管理",
+    "description": "The label for category '配置管理' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.log-management": {
+    "message": "log-management",
+    "description": "The label for category 'log-management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.monitor-and-metrics": {
+    "message": "monitor-and-metrics",
+    "description": "The label for category 'monitor-and-metrics' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.data-security": {
+    "message": "data-security",
+    "description": "The label for category 'data-security' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.身份验证": {
+    "message": "身份验证",
+    "description": "The label for category '身份验证' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.service-tuning": {
+    "message": "service-tuning",
+    "description": "The label for category 'service-tuning' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.client": {
+    "message": "client",
+    "description": "The label for category 'client' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.contribution": {
+    "message": "contribution",
+    "description": "The label for category 'contribution' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.appendix": {
+    "message": "appendix",
+    "description": "The label for category 'appendix' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.release-notes": {
+    "message": "release-notes",
+    "description": "The label for category 'release-notes' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.backup-and-restore": {
+    "message": "backup-and-restore",
+    "description": "The label for category 'backup-and-restore' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-br": {
+    "message": "nebula-br",
+    "description": "The label for category 'nebula-br' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.connector": {
+    "message": "connector",
+    "description": "The label for category 'connector' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.graph-computing": {
+    "message": "graph-computing",
+    "description": "The label for category 'graph-computing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.import-export": {
+    "message": "import-export",
+    "description": "The label for category 'import-export' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-exchange": {
+    "message": "nebula-exchange",
+    "description": "The label for category 'nebula-exchange' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.about-exchange": {
+    "message": "about-exchange",
+    "description": "The label for category 'about-exchange' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.parameter-reference": {
+    "message": "parameter-reference",
+    "description": "The label for category 'parameter-reference' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.use-exchange": {
+    "message": "use-exchange",
+    "description": "The label for category 'use-exchange' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.k8s-operator": {
+    "message": "k8s-operator",
+    "description": "The label for category 'k8s-operator' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.get-started": {
+    "message": "get-started",
+    "description": "The label for category 'get-started' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.operator-management": {
+    "message": "operator-management",
+    "description": "The label for category 'operator-management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.cluster-administration": {
+    "message": "cluster-administration",
+    "description": "The label for category 'cluster-administration' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4.1.installation": {
+    "message": "4.1.installation",
+    "description": "The label for category '4.1.installation' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4.4.storage-management": {
+    "message": "4.4.storage-management",
+    "description": "The label for category '4.4.storage-management' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4.7.security": {
+    "message": "4.7.security",
+    "description": "The label for category '4.7.security' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4.8.ha-and-balancing": {
+    "message": "4.8.ha-and-balancing",
+    "description": "The label for category '4.8.ha-and-balancing' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.4.9.advanced": {
+    "message": "4.9.advanced",
+    "description": "The label for category '4.9.advanced' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-cloud": {
+    "message": "nebula-cloud",
+    "description": "The label for category 'nebula-cloud' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.solution": {
+    "message": "solution",
+    "description": "The label for category 'solution' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-dashboard": {
+    "message": "nebula-dashboard",
+    "description": "The label for category 'nebula-dashboard' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-studio": {
+    "message": "nebula-studio",
+    "description": "The label for category 'nebula-studio' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.about-studio": {
+    "message": "about-studio",
+    "description": "The label for category 'about-studio' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.deploy-connect": {
+    "message": "deploy-connect",
+    "description": "The label for category 'deploy-connect' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.manage-schema": {
+    "message": "manage-schema",
+    "description": "The label for category 'manage-schema' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.nebula-studio-quick-start": {
+    "message": "Quick start",
+    "description": "The label for category 'Quick start' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.troubleshooting": {
+    "message": "troubleshooting",
+    "description": "The label for category 'troubleshooting' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.reuse": {
+    "message": "reuse",
+    "description": "The label for category 'reuse' in sidebar 'docsSidebar'"
+  },
+  "sidebar.docsSidebar.category.synchronization-and-migration": {
+    "message": "synchronization-and-migration",
+    "description": "The label for category 'synchronization-and-migration' in sidebar 'docsSidebar'"
+  }
+}
