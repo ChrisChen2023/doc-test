@@ -1,6 +1,6 @@
 # 社区贡献的客户端
 
-你可以使用社区用户开发的以下客户端连接和管理 <ProductName_CN /> 图数据库：
+你可以使用社区用户开发的以下客户端连接和管理 <ProductName /> 图数据库：
 
 - [NebulaGraph Rust](https://github.com/vesoft-inc/nebula-rust)
 - [NebulaGraph PHP](https://github.com/nebula-contrib/nebula-php) 

@@ -1,6 +1,6 @@
 # 实践案例
 
- <ProductName_CN /> 在各行各业都有应用，本文介绍部分实践案例。更多实践分享内容请参见[博客](https://nebula-graph.com.cn/posts/)。
+ <ProductName /> 在各行各业都有应用，本文介绍部分实践案例。更多实践分享内容请参见[博客](https://nebula-graph.com.cn/posts/)。
 
 ## 业务场景
 
@@ -14,13 +14,13 @@
 
 - [MATCH 中变长 Pattern 的实现](https://nebula-graph.com.cn/posts/nebula-graph-source-code-reading-06/)
 
-- [如何向 <ProductName_CN /> 增加一个测试用例](https://nebula-graph.com.cn/posts/bdd-testing-practice-add-test-case/)
+- [如何向 <ProductName /> 增加一个测试用例](https://nebula-graph.com.cn/posts/bdd-testing-practice-add-test-case/)
 
-- [基于 BDD 理论的 <ProductName_CN /> 集成测试框架重构（上）](https://nebula-graph.com.cn/posts/bdd-testing-practice/)
+- [基于 BDD 理论的 <ProductName /> 集成测试框架重构（上）](https://nebula-graph.com.cn/posts/bdd-testing-practice/)
 
-- [基于 BDD 理论的 <ProductName_CN /> 集成测试框架重构（下）](https://nebula-graph.com.cn/posts/bdd-testing-practice-volume-2/)
+- [基于 BDD 理论的 <ProductName /> 集成测试框架重构（下）](https://nebula-graph.com.cn/posts/bdd-testing-practice-volume-2/)
 
-- [解析 <ProductName_CN /> 子图设计及实践](https://nebula-graph.com.cn/posts/nebula-graph-subgraph-introduction/)
+- [解析 <ProductName /> 子图设计及实践](https://nebula-graph.com.cn/posts/nebula-graph-subgraph-introduction/)
 
 - [基于全文搜索引擎的文本搜索](https://nebula-graph.com.cn/posts/how-fulltext-index-works/)
 
@@ -28,19 +28,19 @@
 
 ## 周边工具
 
-- [基于 <ProductName_CN /> Importer 批量导入工具性能验证方案总结](https://nebula-graph.com.cn/posts/nebula-importer-practice/)
+- [基于 <ProductName /> Importer 批量导入工具性能验证方案总结](https://nebula-graph.com.cn/posts/nebula-importer-practice/)
 
-- [详解 <ProductName_CN /> 3.0 性能报告](https://nebula-graph.com.cn/posts/nebula-graph-v3.0.0-benchmark-report/)
+- [详解 <ProductName /> 3.0 性能报告](https://nebula-graph.com.cn/posts/nebula-graph-v3.0.0-benchmark-report/)
 
-- [<ProductName_CN />  支持 JDBC 协议](https://nebula-graph.com.cn/posts/what-is-nebula-jdbc/)
+- [<ProductName />  支持 JDBC 协议](https://nebula-graph.com.cn/posts/what-is-nebula-jdbc/)
 
 - [Nebula·利器 | Norm 知乎开源的 ORM 工具](https://nebula-graph.com.cn/posts/zhihu-open-source-orm-tool/)
 
-- [基于 <ProductName_CN /> 的 Betweenness Centrality 算法](https://nebula-graph.com.cn/posts/introduction-to-betweenness-centrality-algorithm/)
+- [基于 <ProductName /> 的 Betweenness Centrality 算法](https://nebula-graph.com.cn/posts/introduction-to-betweenness-centrality-algorithm/)
 
 - [无依赖单机尝鲜 NebulaGraph Exchange 的 SST 导入](https://nebula-graph.com.cn/posts/import-sst-data-without-dependence/)
 
-- [logrotate 在 <ProductName_CN /> 的日志滚动实践](https://discuss.nebula-graph.com.cn/t/topic/7803)
+- [logrotate 在 <ProductName /> 的日志滚动实践](https://discuss.nebula-graph.com.cn/t/topic/7803)
 
 
 ## 视频
@@ -58,7 +58,7 @@
 
  <iframe src="//player.bilibili.com/player.html?aid=720938617&bvid=BV1nQ4y1B7Qd&cid=422221688&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
- * [从零到一：如何使用 <ProductName_CN /> 构建一个企业股权图谱系统](https://www.bilibili.com/video/BV1RT4y1U7rg)（09 分 34 秒）
+ * [从零到一：如何使用 <ProductName /> 构建一个企业股权图谱系统](https://www.bilibili.com/video/BV1RT4y1U7rg)（09 分 34 秒）
 
  <iframe src="//player.bilibili.com/player.html?aid=937361773&bvid=BV1RT4y1U7rg&cid=549912700&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
@@ -78,7 +78,7 @@
 
  <iframe src="//player.bilibili.com/player.html?aid=722762232&bvid=BV1CS4y1f77x&cid=473024233&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
- * [<ProductName_CN /> 在网易游戏业务中的实践](https://www.bilibili.com/video/BV1bP4y1n7Dg)（47 分 40 秒）
+ * [<ProductName /> 在网易游戏业务中的实践](https://www.bilibili.com/video/BV1bP4y1n7Dg)（47 分 40 秒）
 
  <iframe src="//player.bilibili.com/player.html?aid=892850447&bvid=BV1bP4y1n7Dg&cid=473024230&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
@@ -86,14 +86,14 @@
 
  <iframe src="//player.bilibili.com/player.html?aid=592803838&bvid=BV16q4y117ua&cid=473020879&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
- * [<ProductName_CN /> 保险反欺诈解决方案 Demo 分享](https://www.bilibili.com/video/BV1FT411n7AW)（39 分 54 秒）
+ * [<ProductName /> 保险反欺诈解决方案 Demo 分享](https://www.bilibili.com/video/BV1FT411n7AW)（39 分 54 秒）
 
  <iframe src="//player.bilibili.com/player.html?aid=471018638&bvid=BV1FT411n7AW&cid=776901004&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
- * [<ProductName_CN /> 人际关系查询之疫情防控场景 Demo 分享](https://www.bilibili.com/video/BV1Ya411S7Cp)（1 时 01 分 55 秒）
+ * [<ProductName /> 人际关系查询之疫情防控场景 Demo 分享](https://www.bilibili.com/video/BV1Ya411S7Cp)（1 时 01 分 55 秒）
 
  <iframe src="//player.bilibili.com/player.html?aid=258535249&bvid=BV1Ya411S7Cp&cid=776893817&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>
 
- * [<ProductName_CN /> 在携程金融风控的应用](https://www.bilibili.com/video/BV1W34y1v7vZ)（29 分 06 秒）
+ * [<ProductName /> 在携程金融风控的应用](https://www.bilibili.com/video/BV1W34y1v7vZ)（29 分 06 秒）
 
  <iframe src="//player.bilibili.com/player.html?aid=810651219&bvid=BV1W34y1v7vZ&cid=575766639&autoplay=0&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="720px" height="480px"> </iframe>

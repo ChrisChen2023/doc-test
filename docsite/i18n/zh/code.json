@@ -335,5 +335,8 @@
   },
   "homepage.quickstart.title": {
     "message": "只需 1 分钟，快速上手"
+  },
+  "global.macro.productName": {
+    "message": "悦数图数据库"
   }
 }

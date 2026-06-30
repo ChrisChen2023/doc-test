@@ -1,12 +1,16 @@
 // src/theme/MDXComponents.js
 import MDXComponents from '@theme-original/MDXComponents';
 import React from 'react';
+import Translate from '@docusaurus/Translate'; 
 import { useActivePluginAndVersion } from '@docusaurus/plugin-content-docs/client';
 
 // ======= 1. 静态不变量组件定义 =======
 const StudioName = () => <span>NebulaGraph Studio</span>;
-const ProductName = () => <span>NebulaGraph Database</span>;
-const ProductName_CN = () => <span>悦数图数据库</span>;
+const ProductName = () => (
+  <span>
+    <Translate id="global.macro.productName">NebulaGraph Database</Translate>
+  </span>
+);
 
 // ======= 2. 动态多版本变量数据引入 =======
 import varsNext from '@site/docs/_variables.json';
@@ -33,7 +37,6 @@ const Var = ({ name }) => {
 export default {
   ...MDXComponents,
   StudioName,
-  ProductName,  
-  ProductName_CN,
+  ProductName, 
   Var,
 };

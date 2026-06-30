@@ -5,7 +5,7 @@
 <!--
 :::note
 
-<ProductName_CN /> Cloud 上建立的集群会自动添加 Storage 主机，用户无需手动执行`ADD HOSTS`。
+<ProductName /> Cloud 上建立的集群会自动添加 Storage 主机，用户无需手动执行`ADD HOSTS`。
 :::
 -->
 

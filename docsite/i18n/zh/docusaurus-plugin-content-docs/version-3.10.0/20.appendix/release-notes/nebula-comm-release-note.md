@@ -1,4 +1,4 @@
-# <ProductName_CN /> 更新说明
+# <ProductName /> 更新说明
 
 ## v3.8.0
 
