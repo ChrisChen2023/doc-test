@@ -1,17 +1,17 @@
-# 存算合并版 <ProductName_CN /> 
+# 存算合并版 <ProductName /> 
 
-存算合并版 <ProductName_CN /> 将存储服务（Meta 和 Storage）和计算服务（Graph）合并至一个进程，用于部署在单台机器上。本文介绍存算合并版 <ProductName_CN /> 的使用场景、安装步骤等。
+存算合并版 <ProductName /> 将存储服务（Meta 和 Storage）和计算服务（Graph）合并至一个进程，用于部署在单台机器上。本文介绍存算合并版 <ProductName /> 的使用场景、安装步骤等。
 
 :::danger
 
-存算合并版 <ProductName_CN /> 不用于生产环境。
+存算合并版 <ProductName /> 不用于生产环境。
 
 :::
 ## 背景信息
 
-传统的 <ProductName_CN /> 架构由 3 个服务构成，每个服务都有可执行的二进制文件和对应的进程，进程之间通过 RPC 协议进行调用。而在存算合并版 <ProductName_CN /> 中，<ProductName_CN /> 中 3 个服务对应的 3 个进程被合为 1 个进程。
+传统的 <ProductName /> 架构由 3 个服务构成，每个服务都有可执行的二进制文件和对应的进程，进程之间通过 RPC 协议进行调用。而在存算合并版 <ProductName /> 中，<ProductName /> 中 3 个服务对应的 3 个进程被合为 1 个进程。
 
-关于 <ProductName_CN /> 的更多信息，参见[架构总览](../1.introduction/3.nebula-graph-architecture/1.architecture-overview.md)。
+关于 <ProductName /> 的更多信息，参见[架构总览](../1.introduction/3.nebula-graph-architecture/1.architecture-overview.md)。
 
 ## 使用场景
 
@@ -24,11 +24,11 @@
 
 ## 环境准备
 
-关于安装存算合并版 <ProductName_CN /> 所需的环境，参见[编译 <ProductName_CN /> 源码要求](1.resource-preparations.md)。
+关于安装存算合并版 <ProductName /> 所需的环境，参见[编译 <ProductName /> 源码要求](1.resource-preparations.md)。
 
 ## 安装步骤
 
-目前仅支持使用源码安装存算合并版 <ProductName_CN /> 。其安装步骤与多进程的 <ProductName_CN /> 步骤类似，用户只需在**使用 CMake 生成 makefile 文件**步骤的命令中添加`-DENABLE_STANDALONE_VERSION=on`。示例如下：
+目前仅支持使用源码安装存算合并版 <ProductName /> 。其安装步骤与多进程的 <ProductName /> 步骤类似，用户只需在**使用 CMake 生成 makefile 文件**步骤的命令中添加`-DENABLE_STANDALONE_VERSION=on`。示例如下：
 
 ```bash
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local/nebula -DENABLE_TESTING=OFF -DENABLE_STANDALONE_VERSION=on -DCMAKE_BUILD_TYPE=Release ..
@@ -36,13 +36,13 @@ cmake -DCMAKE_INSTALL_PREFIX=/usr/local/nebula -DENABLE_TESTING=OFF -DENABLE_STA
 
 有关具体的安装步骤，参见[使用源码安装](2.compile-and-install-nebula-graph/1.install-nebula-graph-by-compiling-the-source-code.md)。
 
-用户完成存算合并版 <ProductName_CN /> 后，可以参见[连接服务](connect-to-nebula-graph.md)连接 <ProductName_CN /> 。
+用户完成存算合并版 <ProductName /> 后，可以参见[连接服务](connect-to-nebula-graph.md)连接 <ProductName /> 。
 
 ## 配置文件
 
-存算合并版 <ProductName_CN /> 的配置文件的路径默认为`/usr/local/nebula/etc`。
+存算合并版 <ProductName /> 的配置文件的路径默认为`/usr/local/nebula/etc`。
 
-用户可执行`sudo cat nebula-standalone.conf.default`查看配置文件内容。配置文件参数和描述和多进程的 <ProductName_CN /> 大体一致，除以下参数外：
+用户可执行`sudo cat nebula-standalone.conf.default`查看配置文件内容。配置文件参数和描述和多进程的 <ProductName /> 大体一致，除以下参数外：
 
 | 参数             | 预设值      | 说明                  |
 | ---------------- | ----------- | --------------------- |

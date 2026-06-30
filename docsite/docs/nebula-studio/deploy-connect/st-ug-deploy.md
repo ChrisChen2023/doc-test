@@ -27,7 +27,7 @@ Before you deploy RPM-based Studio, you must confirm that:
 
    | Installation package | Checksum | NebulaGraph version |
    | ----- | ----- | ----- |
-   | [nebula-graph-studio-{{studio.release}}.x86_64.rpm](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.x86_64.rpm) |  [nebula-graph-studio-{{studio.release}}.x86_64.rpm.sha256](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.x86_64.rpm.sha256) | {{nebula.release}} |
+   | [nebula-graph-studio-{{studio.release}}.x86_64.rpm](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.x86_64.rpm) |  [nebula-graph-studio-{{studio.release}}.x86_64.rpm.sha256](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.x86_64.rpm.sha256) | <Var name="nebula_release" /> |
 
 
 2. Use `sudo rpm -i <rpm_name>` to install RPM package.
@@ -218,13 +218,13 @@ Before you deploy Docker-based Studio, you must do a check of these:
 
 ### Procedure
 
-To deploy and start Docker-based Studio, run the following commands. Here we use NebulaGraph v{{nebula.release}} for demonstration:
+To deploy and start Docker-based Studio, run the following commands. Here we use NebulaGraph v<Var name="nebula_release" /> for demonstration:
 
 1. Download the configuration files for the deployment.
    
    | Installation package | NebulaGraph version |
    | ----- | ----- |
-   | [nebula-graph-studio-{{studio.release}}.tar.gz](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.tar.gz) | {{nebula.release}} |
+   | [nebula-graph-studio-{{studio.release}}.tar.gz](https://oss-cdn.nebula-graph.io/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.tar.gz) | <Var name="nebula_release" /> |
 
 2. Create the `nebula-graph-studio-{{studio.release}}` directory and decompress the installation package to the directory.
 

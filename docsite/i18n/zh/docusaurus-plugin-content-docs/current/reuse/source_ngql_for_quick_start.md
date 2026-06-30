@@ -2,11 +2,11 @@
 
 ### 图空间和 Schema
 
-一个 <ProductName_CN /> 实例由一个或多个图空间组成。每个图空间都是物理隔离的，用户可以在同一个实例中使用不同的图空间存储不同的数据集。
+一个 <ProductName /> 实例由一个或多个图空间组成。每个图空间都是物理隔离的，用户可以在同一个实例中使用不同的图空间存储不同的数据集。
 
-![<ProductName_CN />  and graph spaces](https://docs-cdn.nebula-graph.com.cn/docs-2.0/2.quick-start/nebula-graph-instance-and-graph-spaces.png)
+![<ProductName />  and graph spaces](https://docs-cdn.nebula-graph.com.cn/docs-2.0/2.quick-start/nebula-graph-instance-and-graph-spaces.png)
 
-为了在图空间中插入数据，需要为图数据库定义一个 Schema。 <ProductName_CN /> 的 Schema 是由如下几部分组成。
+为了在图空间中插入数据，需要为图数据库定义一个 Schema。 <ProductName /> 的 Schema 是由如下几部分组成。
 
 | 组成部分 | 说明|
 | :--- | :---  |
@@ -15,7 +15,7 @@
 | 边（Edge） | 表示两个点之间**有方向**的关系。|
 | 边类型（Edge type） | 边的类型，定义了一组描述边的类型的属性。 |
 
-更多信息，请参见[数据结构](https://docs.nebula-graph.com.cn/{{nebula.release}}/1.introduction/2.data-model/)。
+更多信息，请参见[数据结构](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/1.introduction/2.data-model/)。
 
 本文将使用下图的数据集演示基础操作的语法。
 
@@ -25,7 +25,7 @@
 
 :::caution
 
-在 <ProductName_CN /> 中，下列创建和修改操作是异步实现的。要在**下一个**心跳周期之后才能生效，否则访问会报错。为确保数据同步，后续操作能顺利进行，请等待 2 个心跳周期（20 秒）。
+在 <ProductName /> 中，下列创建和修改操作是异步实现的。要在**下一个**心跳周期之后才能生效，否则访问会报错。为确保数据同步，后续操作能顺利进行，请等待 2 个心跳周期（20 秒）。
 
 :::
 - `CREATE SPACE`
@@ -38,7 +38,7 @@
 
 :::note
 
-默认心跳周期是 10 秒。修改心跳周期参数`heartbeat_interval_secs`，请参见[配置简介](https://docs.nebula-graph.com.cn/{{nebula.release}}/5.configurations-and-logs/1.configurations/1.configurations/)。
+默认心跳周期是 10 秒。修改心跳周期参数`heartbeat_interval_secs`，请参见[配置简介](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/5.configurations-and-logs/1.configurations/1.configurations/)。
 
 :::
 ## 第一步：创建和选择图空间
@@ -57,7 +57,7 @@
     [COMMENT = '<comment>'];
     ```
 
-    参数详情请参见 [CREATE SPACE](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/9.space-statements/1.create-space/)。
+    参数详情请参见 [CREATE SPACE](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/9.space-statements/1.create-space/)。
 
     <!-- `charset`和`collate`当前只有一个可选值，忽略。
         charset = <charset>
@@ -86,7 +86,7 @@
 
   :::note
 
-    如果报错提示`[ERROR (-1005)]: Host not enough!`，请检查是否已[添加 Storage 主机](https://docs.nebula-graph.com.cn/{{nebula.release}}/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/)。
+    如果报错提示`[ERROR (-1005)]: Host not enough!`，请检查是否已[添加 Storage 主机](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/2.quick-start/3.quick-start-on-premise/3.1add-storage-hosts/)。
 
 :::
 2. 执行命令`SHOW HOSTS`检查分片的分布情况，确保平衡分布。
@@ -96,13 +96,13 @@
     +-------------+-----------+-----------+--------------+----------------------------------+------------------------+---------+
     | Host        | Port      | Status    | Leader count | Leader distribution              | Partition distribution | Version |
     +-------------+-----------+-----------+--------------+----------------------------------+------------------------+---------+
-    | "storaged0" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "{{nebula.release}}" |
-    | "storaged1" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "{{nebula.release}}" |
-    | "storaged2" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "{{nebula.release}}" |
+    | "storaged0" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "<Var name="nebula_release" />" |
+    | "storaged1" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "<Var name="nebula_release" />" |
+    | "storaged2" | 9779      | "ONLINE"  | 5            | "basketballplayer:5"             | "basketballplayer:5"   | "<Var name="nebula_release" />" |
     +-------------+-----------+-----------+--------------+----------------------------------+------------------------+---------+
     ```
 
-    如果** Leader distribution **分布不均匀，请执行命令`BALANCE LEADER`重新分配。更多信息，请参见 [Storage 负载均衡](https://docs.nebula-graph.com.cn/{{nebula.release}}/8.service-tuning/load-balance/)。
+    如果** Leader distribution **分布不均匀，请执行命令`BALANCE LEADER`重新分配。更多信息，请参见 [Storage 负载均衡](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/8.service-tuning/load-balance/)。
 
 3. 选择图空间`basketballplayer`。
 
@@ -136,7 +136,7 @@ CREATE {TAG | EDGE} [IF NOT EXISTS] {<tag_name> | <edge_type_name>}
     [COMMENT = '<comment>'];
 ```
 
-参数详情请参见 [CREATE TAG](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/10.tag-statements/1.create-tag/) 和 [CREATE EDGE](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/11.edge-type-statements/1.create-edge/)。
+参数详情请参见 [CREATE TAG](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/10.tag-statements/1.create-tag/) 和 [CREATE EDGE](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/11.edge-type-statements/1.create-edge/)。
 
 ### 示例
 
@@ -181,7 +181,7 @@ nebula> CREATE EDGE serve(start_year int, end_year int);
        [prop_value [, prop_value] ...]  
     ```
 
-    `vid`是 Vertex ID 的缩写，`vid`在一个图空间中是唯一的。参数详情请参见 [INSERT VERTEX](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/12.vertex-statements/1.insert-vertex/)。
+    `vid`是 Vertex ID 的缩写，`vid`在一个图空间中是唯一的。参数详情请参见 [INSERT VERTEX](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/12.vertex-statements/1.insert-vertex/)。
 
 - 插入边
 
@@ -197,7 +197,7 @@ nebula> CREATE EDGE serve(start_year int, end_year int);
     [ <prop_value> [, <prop_value> ] ...]
     ```
 
-    参数详情请参见 [INSERT EDGE](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/13.edge-statements/1.insert-edge/)。
+    参数详情请参见 [INSERT EDGE](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/13.edge-statements/1.insert-edge/)。
 
 ### 示例
 
@@ -227,13 +227,13 @@ nebula> CREATE EDGE serve(start_year int, end_year int);
 
 ## 第四步：查询数据
 
-- [GO](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/7.general-query-statements/3.go/) 语句可以根据指定的条件遍历数据库。`GO`语句从一个或多个点开始，沿着一条或多条边遍历，返回`YIELD`子句中指定的信息。
+- [GO](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/7.general-query-statements/3.go/) 语句可以根据指定的条件遍历数据库。`GO`语句从一个或多个点开始，沿着一条或多条边遍历，返回`YIELD`子句中指定的信息。
 
-- [FETCH](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/7.general-query-statements/4.fetch/) 语句可以获得点或边的属性。
+- [FETCH](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/7.general-query-statements/4.fetch/) 语句可以获得点或边的属性。
 
-- [LOOKUP](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/7.general-query-statements/5.lookup/) 语句是基于[索引](#_12)的，和`WHERE`子句一起使用，查找符合特定条件的数据。
+- [LOOKUP](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/7.general-query-statements/5.lookup/) 语句是基于[索引](#_12)的，和`WHERE`子句一起使用，查找符合特定条件的数据。
 
-- [MATCH](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/7.general-query-statements/2.match/) 语句是查询图数据最常用的，可以灵活的描述各种图模式，但是它依赖[索引](#_12)去匹配 <ProductName_CN /> 中的数据模型，性能也还需要调优。
+- [MATCH](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/7.general-query-statements/2.match/) 语句是查询图数据最常用的，可以灵活的描述各种图模式，但是它依赖[索引](#_12)去匹配 <ProductName /> 中的数据模型，性能也还需要调优。
 
 ### nGQL 语法
 
@@ -485,13 +485,13 @@ nebula> FETCH PROP ON player "player100" YIELD properties(vertex);
 
 ### 使用索引
 
-用户可以通过 [CREATE INDEX](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/14.native-index-statements/1.create-native-index/) 语句为 Tag 和 Edge type 增加索引。
+用户可以通过 [CREATE INDEX](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/14.native-index-statements/1.create-native-index/) 语句为 Tag 和 Edge type 增加索引。
 
 :::caution
 
 `MATCH`和`LOOKUP`语句的执行都依赖索引，但是索引会导致写性能大幅降低<!--（降低 90% 甚至更多）-->。请**不要随意**在生产环境中使用索引，除非很清楚使用索引对业务的影响。
 
-**必须**为“已写入但未构建索引”的数据重建索引，否则无法在`MATCH`和`LOOKUP`语句中返回这些数据。参见[重建索引](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/14.native-index-statements/4.rebuild-native-index/)。
+**必须**为“已写入但未构建索引”的数据重建索引，否则无法在`MATCH`和`LOOKUP`语句中返回这些数据。参见[重建索引](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/14.native-index-statements/4.rebuild-native-index/)。
 
 :::
 #### nGQL 语法
@@ -511,7 +511,7 @@ nebula> FETCH PROP ON player "player100" YIELD properties(vertex);
 
 :::note
 
-为没有指定长度的变量属性创建索引时，需要指定索引长度。在 utf-8 编码中，一个中文字符占 3 字节，请根据变量属性长度设置合适的索引长度。例如 10 个中文字符，索引长度需要为 30。详情请参见[创建索引](https://docs.nebula-graph.com.cn/{{nebula.release}}/3.ngql-guide/14.native-index-statements/1.create-native-index/)。
+为没有指定长度的变量属性创建索引时，需要指定索引长度。在 utf-8 编码中，一个中文字符占 3 字节，请根据变量属性长度设置合适的索引长度。例如 10 个中文字符，索引长度需要为 30。详情请参见[创建索引](https://docs.nebula-graph.com.cn/<Var name="nebula_release" />/3.ngql-guide/14.native-index-statements/1.create-native-index/)。
 
 :::
 #### 基于索引的`LOOKUP`和`MATCH`示例

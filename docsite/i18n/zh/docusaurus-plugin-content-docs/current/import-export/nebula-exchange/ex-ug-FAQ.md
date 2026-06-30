@@ -74,7 +74,7 @@ nebula-exchange-3.0.0.jar \
 
 ### Q：运行时报错`com.facebook.thrift.protocol.TProtocolException: Expected protocol id xxx`
 
-请检查 <ProductName_CN /> 服务端口配置是否正确。
+请检查 <ProductName /> 服务端口配置是否正确。
 
 - 如果是源码、RPM 或 DEB 安装，请配置各个服务的配置文件中`--port`对应的端口号。
 
@@ -105,7 +105,7 @@ nebula-exchange-3.0.0.jar \
 
 ### Q：运行时报错`Exception in thread "main" com.facebook.thrift.protocol.TProtocolException: The field 'code' has been assigned the invalid value -4`
 
-检查 Exchange 版本与 <ProductName_CN /> 版本是否匹配，详细信息可参考[使用限制](about-exchange/ex-ug-limitations.md)。
+检查 Exchange 版本与 <ProductName /> 版本是否匹配，详细信息可参考[使用限制](about-exchange/ex-ug-limitations.md)。
 
 ### Q：Spark 环境中导入数据时出现乱码如何解决？
 
@@ -177,11 +177,11 @@ Spark 日志提示 `Hive Schema version 1.2.0 does not match metastore's schema 
 
 ### Q：哪些配置项影响导入性能？
 
-- batch：每次发送给 <ProductName_CN /> 服务的 nGQL 语句中包含的数据条数。
+- batch：每次发送给 <ProductName /> 服务的 nGQL 语句中包含的数据条数。
 
-- partition：数据写入 <ProductName_CN /> 时需要创建的分区数，表示数据导入的并发数。
+- partition：数据写入 <ProductName /> 时需要创建的分区数，表示数据导入的并发数。
 
-- nebula.rate：向 <ProductName_CN /> 发送请求前先去令牌桶获取令牌。
+- nebula.rate：向 <ProductName /> 发送请求前先去令牌桶获取令牌。
 
     - limit：表示令牌桶的大小。
 
@@ -191,17 +191,17 @@ Spark 日志提示 `Hive Schema version 1.2.0 does not match metastore's schema 
 
 ## 其他问题
 
-### Q：Exchange 支持哪些版本的 <ProductName_CN /> ？
+### Q：Exchange 支持哪些版本的 <ProductName /> ？
 
 请参见 Exchange 的[使用限制](about-exchange/ex-ug-limitations.md)。
 
 ### Q：Exchange 与 Spark Writer 有什么关系？
 
-Exchange 是在 Spark Writer 基础上开发的 Spark 应用程序，二者均适用于在分布式环境中将集群的数据批量迁移到 <ProductName_CN /> 中，但是后期的维护工作将集中在 Exchange 上。与 Spark Writer 相比，Exchange 有以下改进：
+Exchange 是在 Spark Writer 基础上开发的 Spark 应用程序，二者均适用于在分布式环境中将集群的数据批量迁移到 <ProductName /> 中，但是后期的维护工作将集中在 Exchange 上。与 Spark Writer 相比，Exchange 有以下改进：
 
 - 支持更丰富的数据源，如 MySQL、Neo4j、Hive、HBase、Kafka、Pulsar 等。
 
-- 修复了 Spark Writer 的部分问题。例如 Spark 读取 HDFS 里的数据时，默认读取到的源数据均为 String 类型，可能与 <ProductName_CN /> 定义的 Schema 不同，所以 Exchange 增加了数据类型的自动匹配和类型转换，当 <ProductName_CN /> 定义的 Schema 中数据类型为非 String 类型（如 double）时，Exchange 会将 String 类型的源数据转换为对应的类型（如 double）。
+- 修复了 Spark Writer 的部分问题。例如 Spark 读取 HDFS 里的数据时，默认读取到的源数据均为 String 类型，可能与 <ProductName /> 定义的 Schema 不同，所以 Exchange 增加了数据类型的自动匹配和类型转换，当 <ProductName /> 定义的 Schema 中数据类型为非 String 类型（如 double）时，Exchange 会将 String 类型的源数据转换为对应的类型（如 double）。
 
 ### Q：Exchange 传输数据的性能如何？
 

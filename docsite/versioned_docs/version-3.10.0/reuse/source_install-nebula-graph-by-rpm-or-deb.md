@@ -102,10 +102,10 @@ wget https://oss-cdn.nebula-graph.io/package/nightly/2021.11.28/nebula-graph-202
 
   The option `--prefix` indicates the installation path. The default path is `/usr/local/nebula/`.
 
-  For example, to install an RPM package in the default path for the {{nebula.release}} version, run the following command.
+  For example, to install an RPM package in the default path for the <Var name="nebula_release" /> version, run the following command.
 
   ```bash
-  sudo rpm -ivh nebula-graph-{{nebula.release}}.el7.x86_64.rpm
+  sudo rpm -ivh nebula-graph-<Var name="nebula_release" />.el7.x86_64.rpm
   ```
 
 * Use the following syntax to install with a DEB package.
@@ -118,10 +118,10 @@ wget https://oss-cdn.nebula-graph.io/package/nightly/2021.11.28/nebula-graph-202
     Customizing the installation path is not supported when installing NebulaGraph with a DEB package. The default installation path is `/usr/local/nebula/`.
 
 :::
-  For example, to install a DEB package for the {{nebula.release}} version, run the following command.
+  For example, to install a DEB package for the <Var name="nebula_release" /> version, run the following command.
 
   ```bash
-  sudo dpkg -i nebula-graph-{{nebula.release}}.ubuntu1804.amd64.deb
+  sudo dpkg -i nebula-graph-<Var name="nebula_release" />.ubuntu1804.amd64.deb
   ```
 
   :::note
@@ -131,6 +131,6 @@ wget https://oss-cdn.nebula-graph.io/package/nightly/2021.11.28/nebula-graph-202
 :::
 ## Next to do
 
-- [Start NebulaGraph](https://docs.nebula-graph.io/{{nebula.release}}/2.quick-start/5.start-stop-service/)  <!--这里用外链。-->
+- [Start NebulaGraph](https://docs.nebula-graph.io/<Var name="nebula_release" />/2.quick-start/5.start-stop-service/)  <!--这里用外链。-->
 
-- [Connect to NebulaGraph](https://docs.nebula-graph.io/{{nebula.release}}/2.quick-start/3.connect-to-nebula-graph/)<!--这里用外链。-->
+- [Connect to NebulaGraph](https://docs.nebula-graph.io/<Var name="nebula_release" />/2.quick-start/3.connect-to-nebula-graph/)<!--这里用外链。-->

@@ -2,7 +2,7 @@
 
 ## 导入工具
 
-有多种方式可以将数据写入<ProductName_CN /> {{ nebula.release }}：
+有多种方式可以将数据写入<ProductName /> {{ nebula.release }}：
 
 - 使用[命令行 -f 的方式](../2.quick-start/3.quick-start-on-premise/3.connect-to-nebula-graph.md)导入：可以导入少量准备好的 nGQL 文件，适合少量手工测试数据准备。
   
@@ -20,7 +20,7 @@
 ## 导出工具
 
 - 使用 [Spark-connector](../connector/nebula-spark-connector.md)/[Flink-connector](../connector/nebula-flink-connector.md) 读写 API：这种方式需要编写少量代码来使用 Spark/Flink 连接器提供的 API。
-- 使用 Exchange 导出功能将数据导出至 CSV 文件或另一个图空间（支持不同 <ProductName_CN /> 集群）中。
+- 使用 Exchange 导出功能将数据导出至 CSV 文件或另一个图空间（支持不同 <ProductName /> 集群）中。
 
   :::enterpriseonly
 

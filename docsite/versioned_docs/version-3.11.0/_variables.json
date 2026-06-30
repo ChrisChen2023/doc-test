@@ -1,0 +1,11 @@
+{
+  "nebula_release": "3.11.0",
+  "nebula_tag": "v3.11.0",
+  "nebula_branch": "release-3.11",
+  "studio_release": "3.11.1",
+  "studio_tag": "v3.11.1",
+  "dashboard_release": "3.11.0",
+  "dashboard_tag": "v3.11.0",
+  "exchange_release": "3.11.0",
+  "exchange_tag": "v3.11.0"
+}

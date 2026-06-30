@@ -52,7 +52,7 @@ This example is done on MacOS. Here is the environment configuration information
 
 - Hadoop: 2.9.2, pseudo-distributed deployment
 
-- NebulaGraph: {{nebula.release}}. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
+- NebulaGraph: <Var name="nebula_release" />. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
 
 ## Prerequisites
 
@@ -216,7 +216,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
 
       # Specify a column of data in the table as the source of vertex VID in the NebulaGraph.
       # The value of vertex must be the same as that in the JSON file.
-      # Currently, NebulaGraph {{nebula.release}} supports only strings or integers of VID.
+      # Currently, NebulaGraph <Var name="nebula_release" /> supports only strings or integers of VID.
       vertex: {
         field:id
       # udf:{
@@ -295,7 +295,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
 
       # Specify a column as the source for the source and destination vertexes.
       # The value of vertex must be the same as that in the JSON file.
-      # Currently, NebulaGraph {{nebula.release}} supports only strings or integers of VID.
+      # Currently, NebulaGraph <Var name="nebula_release" /> supports only strings or integers of VID.
       source: {
         field: src
       # udf:{

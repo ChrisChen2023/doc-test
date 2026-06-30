@@ -101,4 +101,4 @@ The NebulaGraph services consist of the Meta Service, Graph Service, and Storage
 
 ## Next to do
 
-[Connect to NebulaGraph](https://docs.nebula-graph.io/{{nebula.release}}/2.quick-start/3.connect-to-nebula-graph/)<!--这里用外链。-->
+[Connect to NebulaGraph](https://docs.nebula-graph.io/<Var name="nebula_release" />/2.quick-start/3.connect-to-nebula-graph/)<!--这里用外链。-->

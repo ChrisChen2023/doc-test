@@ -65,7 +65,7 @@ This example is done on MacOS. Here is the environment configuration information
 
 - Hive: 2.3.7, Hive Metastore database is MySQL 8.0.22
 
-- NebulaGraph: {{nebula.release}}. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
+- NebulaGraph: <Var name="nebula_release" />. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
 
 ## Prerequisites
 
