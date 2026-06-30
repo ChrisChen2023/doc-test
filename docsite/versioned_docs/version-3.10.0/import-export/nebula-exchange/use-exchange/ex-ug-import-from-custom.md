@@ -1,6 +1,6 @@
 # Import data from custom data sources
 
-This topic provides an example to illustrate how to use Exchange to import a custom-type data source into {{nebula.name}}.
+This topic provides an example to illustrate how to use Exchange to import a custom-type data source into <ProductName />.
 
 ## The specific definition of custom type data
 
@@ -44,7 +44,7 @@ The parameters of the `getDataSourceConfigEntry` method are as follows:
 
 - `category`: Data source type at the Tag/EdgeType granularity.
 - `config`: Configuration items of the data source at the Tag/EdgeType granularity.
-- `nebulaConfig`: Configuration items of the {{nebula.name}} service.
+- `nebulaConfig`: Configuration items of the <ProductName /> service.
 
 The interface provides default parsing logic, which retrieves user-defined configurations from the custom field in the configuration. It includes the following content:
 
@@ -107,7 +107,7 @@ For the CSV file example, users only need to make the following modifications in
   # Spark configuration
   spark: {
     app: {
-      name: {{nebula.name}} Exchange 3.8.0
+      name: <ProductName /> Exchange 3.8.0
     }
     driver: {
       cores: 1
@@ -122,14 +122,14 @@ For the CSV file example, users only need to make the following modifications in
     }
   }
 
-  # {{nebula.name}} configuration
+  # <ProductName /> configuration
   nebula: {
     address:{
       graph:["host.docker.internal:9669"]
       meta:["host.docker.internal:9559"]
     }
 
-    # The account entered must have write permission for the {{nebula.name}} space.
+    # The account entered must have write permission for the <ProductName /> space.
     user: root
     pswd: 123456
     space: basketballplayer
@@ -154,12 +154,12 @@ For the CSV file example, users only need to make the following modifications in
   tags: [
     # Set the information about the Tag player.
     {
-      # Specify the Tag name defined in {{nebula.name}}.
+      # Specify the Tag name defined in <ProductName />.
       name: player
       type: {
         # Specify the data source file format to CSV.
         source: custom
-        # Specify how to import the data into {{nebula.name}}: Client or SST.
+        # Specify how to import the data into <ProductName />: Client or SST.
         sink: client
       }
 
@@ -263,9 +263,9 @@ For the CSV file example, users only need to make the following modifications in
 }
 ```
 
-### Step 4: Import data into {{nebula.name}}
+### Step 4: Import data into <ProductName />
 
-Run the following command to import CSV data into {{nebula.name}} in custom data source mode. For descriptions of the parameters, see [Options for import](../parameter-reference/ex-ug-para-import-command.md).
+Run the following command to import CSV data into <ProductName /> in custom data source mode. For descriptions of the parameters, see [Options for import](../parameter-reference/ex-ug-para-import-command.md).
 
 ```bash
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange --jars <custom-plugin.jar_path> <nebula-exchange.jar_path> -c <csv_application.conf_path> 
@@ -277,7 +277,7 @@ You can search for `batchSuccess.<tag_name/edge_name>` in the command output to 
 
 ### Step 5: (optional) Validate data
 
-Users can verify that data has been imported by executing a query in the {{nebula.name}} client (for example, NebulaGraph Studio). For example:
+Users can verify that data has been imported by executing a query in the <ProductName /> client (for example, NebulaGraph Studio). For example:
 
 ```ngql
 LOOKUP ON player YIELD id(vertex);

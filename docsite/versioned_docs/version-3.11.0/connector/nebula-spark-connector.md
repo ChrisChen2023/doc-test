@@ -44,9 +44,9 @@ The correspondence between the NebulaGraph Spark Connector version, the NebulaGr
 
 NebulaGraph Spark Connector applies to the following scenarios:
 
-- Read data from {{nebula.name}} for analysis and computation.
-- Write data back to {{nebula.name}} after analysis and computation.
-- Migrate the data of {{nebula.name}}.
+- Read data from <ProductName /> for analysis and computation.
+- Write data back to <ProductName /> after analysis and computation.
+- Migrate the data of <ProductName />.
 - Graph computing with [NebulaGraph Algorithm](../graph-computing/nebula-algorithm.md).
 
 ## Benefits
