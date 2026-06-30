@@ -56,7 +56,7 @@ oracle> desc serve;
 
 - Spark：2.4.7，单机版
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
   
 ## 前提条件
 

@@ -222,13 +222,13 @@ $ kill $(lsof -t -i :7001) # stop nebula-graph-studio
 
 ### 操作步骤
 
-在命令行工具中按以下步骤依次运行命令，部署并启动 Docker 版 Studio，这里我们用 <ProductName_CN /> 版本为 {{nebula.release}} 的进行演示：
+在命令行工具中按以下步骤依次运行命令，部署并启动 Docker 版 Studio，这里我们用 <ProductName_CN /> 版本为 <Var name="nebula_release" /> 的进行演示：
 
 1. 下载 Studio 的部署配置文件。
 
    | 安装包 | 适用 <ProductName_CN /> 版本 |
    | ----- | ----- |
-   | [nebula-graph-studio-{{studio.release}}.tar.gz](https://oss-cdn.nebula-graph.com.cn/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.tar.gz) | {{nebula.release}} |
+   | [nebula-graph-studio-{{studio.release}}.tar.gz](https://oss-cdn.nebula-graph.com.cn/nebula-graph-studio/{{studio.release}}/nebula-graph-studio-{{studio.release}}.tar.gz) | <Var name="nebula_release" /> |
 
 2. 创建`nebula-graph-studio-{{studio.release}}`目录，并将安装包解压至目录中。
 

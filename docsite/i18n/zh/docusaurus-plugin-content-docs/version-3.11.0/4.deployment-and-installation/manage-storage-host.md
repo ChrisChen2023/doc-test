@@ -59,8 +59,8 @@ nebula> SHOW HOSTS STORAGE;
 +-------------+------+----------+-----------+--------------+---------+
 | Host        | Port | Status   | Role      | Git Info Sha | Version |
 +-------------+------+----------+-----------+--------------+---------+
-| "storaged0" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "{{nebula.release}}" |
-| "storaged1" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "{{nebula.release}}" |
-| "storaged2" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "{{nebula.release}}" |
+| "storaged0" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "<Var name="nebula_release" />" |
+| "storaged1" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "<Var name="nebula_release" />" |
+| "storaged2" | 9779 | "ONLINE" | "STORAGE" | "3ba41bd"    | "<Var name="nebula_release" />" |
 +-------------+------+----------+-----------+--------------+---------+
 ```

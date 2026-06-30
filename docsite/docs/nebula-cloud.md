@@ -11,5 +11,5 @@ Cloud supports:
 
 :::note
 
-For now, Cloud does not support NebulaGraph core of version {{nebula.release}}. For the latest version of Cloud docs, see [What is NebulaGraph Cloud](https://docs.nebula-graph.io/{{cloud.azureLatestRelease}}/what-is-cloud/).
+For now, Cloud does not support NebulaGraph core of version <Var name="nebula_release" />. For the latest version of Cloud docs, see [What is NebulaGraph Cloud](https://docs.nebula-graph.io/{{cloud.azureLatestRelease}}/what-is-cloud/).
 :::

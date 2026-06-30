@@ -18,7 +18,7 @@
 
 - Hadoop：2.9.2 伪分布式部署
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 
@@ -186,7 +186,7 @@
 
       # 指定一个列作为 VID 的源。
       # vertex 的值必须与上述 fields 或者 csv.fields 中的列名保持一致。
-      # 目前，<ProductName_CN />  {{nebula.release}}仅支持字符串或整数类型的 VID。
+      # 目前，<ProductName_CN />  <Var name="nebula_release" />仅支持字符串或整数类型的 VID。
       vertex: {
         field:_c0
       # udf:{
@@ -272,7 +272,7 @@
 
       # 指定一个列作为起始点和目的点的源。
       # vertex 的值必须与上述 fields 或者 csv.fields 中的列名保持一致。
-      # 目前，<ProductName_CN />  {{nebula.release}}仅支持字符串或整数类型的 VID。
+      # 目前，<ProductName_CN />  <Var name="nebula_release" />仅支持字符串或整数类型的 VID。
       source: {
         field: _c0
       # udf:{

@@ -18,7 +18,7 @@
 
 - MaxCompute：阿里云官方版本
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 

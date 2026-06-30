@@ -55,7 +55,7 @@ ROW                                COLUMN+CELL
 
 - HBase：2.2.7
 
-- <ProductName_CN /> ：{{nebula.release}}。
+- <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 

@@ -1,6 +1,6 @@
-# 升级 <ProductName_CN /> 至 {{nebula.release}} 版本
+# 升级 <ProductName_CN /> 至 <Var name="nebula_release" /> 版本
 
-本文以 <ProductName_CN /> 2.6.1 版本升级到 {{nebula.release}} 版本为例，介绍 <ProductName_CN /> 2.x、3.x 版本升级到 {{nebula.release}} 版本的方法。
+本文以 <ProductName_CN /> 2.6.1 版本升级到 <Var name="nebula_release" /> 版本为例，介绍 <ProductName_CN /> 2.x、3.x 版本升级到 <Var name="nebula_release" /> 版本的方法。
 
 
 <!-- 
@@ -10,14 +10,14 @@
 
 ## 适用版本
 
-本文适用于将 <ProductName_CN /> 从 2.5.0 及之后的 2.x、3.x 版本升级到 {{nebula.release}} 版本。不适用于 2.5.0 之前的历史版本（含 1.x 版本）。如需升级历史版本，将其根据最新的 2.x 版本文档升级到 2.5 版本，然后根据本文的说明升级到 {{nebula.release}} 版本。
+本文适用于将 <ProductName_CN /> 从 2.5.0 及之后的 2.x、3.x 版本升级到 <Var name="nebula_release" /> 版本。不适用于 2.5.0 之前的历史版本（含 1.x 版本）。如需升级历史版本，将其根据最新的 2.x 版本文档升级到 2.5 版本，然后根据本文的说明升级到 <Var name="nebula_release" /> 版本。
 
 <!-- 结论：社区版 2.5之前的版本 不支持升级到3.4及以上 ，原因：2.x（x<5）之前的版本和3.x都没记录meta版本号，升级到3.4（记录版本号）时，无法识别是哪种，所以就在手册写禁止2.5之前的升级，而允许3.x的升级，因为2.5和2.6是有记录meta版本号的，所以可以升级至3.x；
 ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为是按照3.x来做的处理，某些情况下数据可能不正确（这里的某些比较复杂），所以就禁止了 -->
 
 :::caution
 
-如需从 2.0.0 之前的版本（含 1.x 版本）升级到 {{nebula.release}}，还需找到 {{nebula.release}} 版本文件中`share/resources`目录下的`date_time_zonespec.csv`文件，将其复制到 <ProductName_CN /> 安装路径下的相同目录内。也可从 [GitHub](https://github.com/vesoft-inc/nebula/blob/master/resources/date_time_zonespec.csv) 下载该文件。
+如需从 2.0.0 之前的版本（含 1.x 版本）升级到 <Var name="nebula_release" />，还需找到 <Var name="nebula_release" /> 版本文件中`share/resources`目录下的`date_time_zonespec.csv`文件，将其复制到 <ProductName_CN /> 安装路径下的相同目录内。也可从 [GitHub](https://github.com/vesoft-inc/nebula/blob/master/resources/date_time_zonespec.csv) 下载该文件。
 
 
 :::
@@ -47,7 +47,7 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
 
 - 客户端兼容
 
-  升级后旧版本客户端将无法连接 <ProductName_CN />，需将所有客户端都升级到兼容 <ProductName_CN /> {{nebula.release}} 的版本。
+  升级后旧版本客户端将无法连接 <ProductName_CN />，需将所有客户端都升级到兼容 <ProductName_CN /> <Var name="nebula_release" /> 的版本。
 
 - 配置变化
 
@@ -74,7 +74,7 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
 :::
 ## 升级准备
 
-- 根据操作系统和架构下载 <ProductName_CN /> {{nebula.release}} 版本的包文件并解压，升级过程中需要其中的二进制文件。下载地址参见 [Download 页面](https://nebula-graph.io/download/)。
+- 根据操作系统和架构下载 <ProductName_CN /> <Var name="nebula_release" /> 版本的包文件并解压，升级过程中需要其中的二进制文件。下载地址参见 [Download 页面](https://nebula-graph.io/download/)。
 
   :::note
 
@@ -166,7 +166,7 @@ ps：如果2.x（x<5）来做到3.4的升级，升级过程不会报错，因为
   nebula> MATCH (v) RETURN v LIMIT 5;
   ```
 
-  也可根据 {{nebula.release}} 版本的新功能测试，新功能列表参见[发布说明](../../20.appendix/release-notes/nebula-comm-release-note.md)。
+  也可根据 <Var name="nebula_release" /> 版本的新功能测试，新功能列表参见[发布说明](../../20.appendix/release-notes/nebula-comm-release-note.md)。
 
 ## 升级失败回滚
 

@@ -9,5 +9,5 @@ Cloud 支持：
 
 :::note
 
-Cloud 暂不支持 {{nebula.release}} 版本的内核。最新版本的 Cloud 文档参见[什么是 NebulaGraph Cloud](https://docs.nebula-graph.com.cn/{{cloud.azureLatestRelease}}/nebula-cloud/1.what-is-cloud/)。
+Cloud 暂不支持 <Var name="nebula_release" /> 版本的内核。最新版本的 Cloud 文档参见[什么是 NebulaGraph Cloud](https://docs.nebula-graph.com.cn/{{cloud.azureLatestRelease}}/nebula-cloud/1.what-is-cloud/)。
 :::

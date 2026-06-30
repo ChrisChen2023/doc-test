@@ -18,7 +18,7 @@
 
 - ClickHouse：docker 部署 yandex/clickhouse-server tag: latest(2021.07.01)
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 

@@ -41,7 +41,7 @@ Exchange 读取 Neo4j 数据时需要完成以下工作：
 
 - Neo4j：3.5.20 Community Edition
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 

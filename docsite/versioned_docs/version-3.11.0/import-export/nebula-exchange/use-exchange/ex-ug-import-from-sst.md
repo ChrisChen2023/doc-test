@@ -72,7 +72,7 @@ This example is done on MacOS. Here is the environment configuration information
 
 - Hadoop: 2.9.2, pseudo-distributed deployment
 
-- NebulaGraph: {{nebula.release}}.
+- NebulaGraph: <Var name="nebula_release" />.
 
 ## Prerequisites
 
@@ -271,7 +271,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
 
       # Specify a column of data in the table as the source of VIDs in NebulaGraph.
       # The value of vertex must be consistent with the column name in the above fields or csv.fields.
-      # Currently, NebulaGraph {{nebula.release}} supports only strings or integers of VID.
+      # Currently, NebulaGraph <Var name="nebula_release" /> supports only strings or integers of VID.
       vertex: {
         field:_c0
         # Add the specified prefix to the VID. For example, if the VID is `12345`, adding the prefix `tag1` will result in `tag1_12345`. The underscore cannot be modified.
@@ -352,7 +352,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
 
       # Specify a column as the source for the source and destination vertices.
       # The value of vertex must be consistent with the column name in the above fields or csv.fields.
-      # Currently, NebulaGraph {{nebula.release}} supports only strings or integers of VID.
+      # Currently, NebulaGraph <Var name="nebula_release" /> supports only strings or integers of VID.
       source: {
         field: _c0
         # Add the specified prefix to the VID. For example, if the VID is `12345`, adding the prefix `tag1` will result in `tag1_12345`. The underscore cannot be modified.

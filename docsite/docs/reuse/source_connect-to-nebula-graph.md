@@ -9,7 +9,7 @@ NebulaGraph supports multiple types of clients, including a CLI client, a GUI cl
 
 ## Prerequisites
 
-* You have started [NebulaGraph services](https://docs.nebula-graph.io/{{nebula.release}}/4.deployment-and-installation/manage-service/).<!--Use the external link here because this file is a source for reuse and using internal links creates errors.-->
+* You have started [NebulaGraph services](https://docs.nebula-graph.io/<Var name="nebula_release" />/4.deployment-and-installation/manage-service/).<!--Use the external link here because this file is a source for reuse and using internal links creates errors.-->
 
 * The machine on which you plan to run NebulaGraph Console has network access to the Graph Service of NebulaGraph.
 

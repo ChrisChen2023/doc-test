@@ -18,7 +18,7 @@ This example is done on MacOS. Here is the environment configuration information
 
 - ClickHouse: docker deployment yandex/clickhouse-server tag: latest(2021.07.01)
 
-- NebulaGraph: {{nebula.release}}. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
+- NebulaGraph: <Var name="nebula_release" />. [Deploy NebulaGraph with Docker Compose](../../../2.quick-start/1.quick-start-workflow.md).
 
 ## Prerequisites
 

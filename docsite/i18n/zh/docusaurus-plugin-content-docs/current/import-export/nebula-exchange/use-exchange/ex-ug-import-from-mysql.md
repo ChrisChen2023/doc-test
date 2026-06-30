@@ -58,7 +58,7 @@ mysql> desc serve;
 
 - MySQL： 8.0.23
 
--  <ProductName_CN /> ：{{nebula.release}}。
+-  <ProductName_CN /> ：<Var name="nebula_release" />。
 
 ## 前提条件
 

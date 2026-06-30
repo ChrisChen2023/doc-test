@@ -1,19 +1,19 @@
-# Upgrade NebulaGraph to {{nebula.release}}
+# Upgrade NebulaGraph to <Var name="nebula_release" />
 
-This topic describes how to upgrade NebulaGraph from version 2.x and 3.x to {{nebula.release}}, taking upgrading from version 2.6.1 to {{nebula.release}} as an example.
+This topic describes how to upgrade NebulaGraph from version 2.x and 3.x to <Var name="nebula_release" />, taking upgrading from version 2.6.1 to <Var name="nebula_release" /> as an example.
 
 ## Applicable source versions
 
-This topic applies to upgrading NebulaGraph from 2.5.0 and later 2.x, and 3.x versions to {{nebula.release}}. It does not apply to historical versions earlier than 2.5.0, including the 1.x versions.
+This topic applies to upgrading NebulaGraph from 2.5.0 and later 2.x, and 3.x versions to <Var name="nebula_release" />. It does not apply to historical versions earlier than 2.5.0, including the 1.x versions.
 
-To upgrade NebulaGraph from historical versions to {{nebula.release}}:
+To upgrade NebulaGraph from historical versions to <Var name="nebula_release" />:
 
 1. Upgrade it to the latest 2.5 version according to the docs of that version.
-2. Follow this topic to upgrade it to {{nebula.release}}.
+2. Follow this topic to upgrade it to <Var name="nebula_release" />.
 
 :::caution
 
-To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to {{nebula.release}}, you need to find the `date_time_zonespec.csv` in the `share/resources` directory of {{nebula.release}} files, and then copy it to the same directory in the NebulaGraph installation path.
+To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versions) to <Var name="nebula_release" />, you need to find the `date_time_zonespec.csv` in the `share/resources` directory of <Var name="nebula_release" /> files, and then copy it to the same directory in the NebulaGraph installation path.
 
 :::
 ## Limitations
@@ -48,7 +48,7 @@ To upgrade NebulaGraph from versions earlier than 2.0.0 (including the 1.x versi
 
 - Client compatibility
 
-  After the upgrade, you will not be able to connect to NebulaGraph from old clients. You will need to upgrade all clients to a version compatible with NebulaGraph {{nebula.release}}.
+  After the upgrade, you will not be able to connect to NebulaGraph from old clients. You will need to upgrade all clients to a version compatible with NebulaGraph <Var name="nebula_release" />.
 
 - Configuration changes
 
@@ -75,7 +75,7 @@ There may be other undiscovered influences. Before the upgrade, we recommend tha
 :::
 ## Preparations before the upgrade
 
-- Download the package of NebulaGraph {{nebula.release}} according to your operating system and system architecture. You need the binary files during the upgrade. Find the package on [the download page](https://nebula-graph.io/download/).
+- Download the package of NebulaGraph <Var name="nebula_release" /> according to your operating system and system architecture. You need the binary files during the upgrade. Find the package on [the download page](https://nebula-graph.io/download/).
 
   :::note
     You can also get the new binaries from the source code or the RPM/DEB package.
@@ -164,7 +164,7 @@ There may be other undiscovered influences. Before the upgrade, we recommend tha
   nebula> MATCH (v) RETURN v LIMIT 5;
   ```
 
-  You can also test against [new features](../../20.appendix/release-notes/nebula-comm-release-note.md) in version {{nebula.release}}.
+  You can also test against [new features](../../20.appendix/release-notes/nebula-comm-release-note.md) in version <Var name="nebula_release" />.
 
 ## Upgrade failure and rollback
 
