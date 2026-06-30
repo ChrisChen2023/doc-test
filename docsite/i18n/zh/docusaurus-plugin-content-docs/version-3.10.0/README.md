@@ -1,4 +1,4 @@
-# 欢迎阅读 <ProductName_CN /> {{ nebula.release }} 文档
+# 欢迎阅读 <ProductName_CN /> <Var name="nebula_release" /> 文档
 
 :::note
     
