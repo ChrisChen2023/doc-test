@@ -2,6 +2,11 @@
 
 The original version converted to Docusaurus with optimizations.
 
+Testing macros:
+
+Welcome to the world of <ProductName />.
+Here you can execute complex graph queries through <StudioName />.
+
 :::note
 
 This manual is for NebulaGraph Community Edition. For the latest version and updates, visit the [GitHub repository](https://github.com/vesoft-inc/nebula-docs).

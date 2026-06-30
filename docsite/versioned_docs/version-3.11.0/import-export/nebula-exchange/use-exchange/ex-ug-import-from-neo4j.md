@@ -201,7 +201,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       # policy:hash
       }
 
-      # The filtering rule. The data that matches the filter rule is imported into {{nebula.name}}.
+      # The filtering rule. The data that matches the filter rule is imported into <ProductName />.
       # filter: "name='Tom'"
 
       # Batch operation types, including INSERT, UPDATE, and DELETE. defaults to INSERT.

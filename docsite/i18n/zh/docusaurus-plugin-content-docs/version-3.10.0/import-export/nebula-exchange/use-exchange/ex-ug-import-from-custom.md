@@ -1,6 +1,6 @@
 # 导入自定义数据源数据
 
-本文以一个示例说明如何使用 Exchange 将自定义类型的数据源导入到 {{nebula.name}}。
+本文以一个示例说明如何使用 Exchange 将自定义类型的数据源导入到 <ProductName_CN />。
 
 ## 自定义类型数据的具体定义
 
@@ -46,7 +46,7 @@ abstract class DataSourceConfigResolver {
 
 - `category`：Tag/Edge type 粒度的数据源类型。
 - `config`：Tag/Edge type 粒度的数据源的配置项。
-- `nebulaConfig`：{{nebula.name}} 服务的配置项。
+- `nebulaConfig`：<ProductName_CN /> 服务的配置项。
 
 接口已经提供了默认的解析逻辑，也就是从配置项的`custom`字段中获取用户自定义配置，内容如下：
 
@@ -111,7 +111,7 @@ object CustomReaderImpl extends DataSourceCustomReader {
   # Spark 相关配置
   spark: {
     app: {
-      name: {{nebula.name}} Exchange 3.8.0
+      name: <ProductName_CN /> Exchange 3.8.0
     }
     driver: {
       cores: 1
@@ -126,14 +126,14 @@ object CustomReaderImpl extends DataSourceCustomReader {
     }
   }
 
-  # {{nebula.name}} 相关配置
+  # <ProductName_CN /> 相关配置
   nebula: {
     address:{
       graph:["host.docker.internal:9669"]
       meta:["host.docker.internal:9559"]
     }
 
-    # 指定拥有 {{nebula.name}} 写权限的用户名和密码。
+    # 指定拥有 <ProductName_CN /> 写权限的用户名和密码。
     user: root
     pswd: 123456
     space: basketballplayer
@@ -158,13 +158,13 @@ object CustomReaderImpl extends DataSourceCustomReader {
   tags: [
     # 设置 Tag player 相关信息。
     {
-      # 指定 {{nebula.name}} 中定义的 Tag 名称。
+      # 指定 <ProductName_CN /> 中定义的 Tag 名称。
       name: player
       type: {
         # 指定数据源，使用 CSV。
         # source: csv
         source: custom
-        # 指定如何将点数据导入 {{nebula.name}} ：Client 或 SST。
+        # 指定如何将点数据导入 <ProductName_CN /> ：Client 或 SST。
         sink: client
       }
 
@@ -185,10 +185,10 @@ object CustomReaderImpl extends DataSourceCustomReader {
         header: false
       }
 
-      # 指定单批次写入 {{nebula.name}} 的最大点数量。
+      # 指定单批次写入 <ProductName_CN /> 的最大点数量。
       batch: 256
 
-      # 数据写入 {{nebula.name}} 时需要创建的分区数。
+      # 数据写入 <ProductName_CN /> 时需要创建的分区数。
       partition: 32
     }
 
@@ -217,7 +217,7 @@ object CustomReaderImpl extends DataSourceCustomReader {
   edges: [
     # 设置 Edge type follow 相关信息。
     {
-      # 指定 {{nebula.name}} 中定义的 Edge type 名称。
+      # 指定 <ProductName_CN /> 中定义的 Edge type 名称。
       name: follow
       type: {
         source: csv
@@ -244,7 +244,7 @@ object CustomReaderImpl extends DataSourceCustomReader {
 
       batch: 256
 
-      # 数据写入 {{nebula.name}} 时需要创建的分区数。
+      # 数据写入 <ProductName_CN /> 时需要创建的分区数。
       partition: 32
     }
 
@@ -275,9 +275,9 @@ object CustomReaderImpl extends DataSourceCustomReader {
 }
 ```
 
-### 步骤 4：向 {{nebula.name}} 导入数据
+### 步骤 4：向 <ProductName_CN /> 导入数据
 
-运行如下命令，使用自定义数据源模式将 CSV 文件数据导入到 {{nebula.name}} 中。关于参数的说明，请参见[导入命令参数](../parameter-reference/ex-ug-para-import-command.md)。
+运行如下命令，使用自定义数据源模式将 CSV 文件数据导入到 <ProductName_CN /> 中。关于参数的说明，请参见[导入命令参数](../parameter-reference/ex-ug-para-import-command.md)。
 
 ```bash
 ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchange.Exchange --jars <custom-plugin.jar_path> <nebula-exchange.jar_path> -c <csv_application.conf_path> 
@@ -289,7 +289,7 @@ ${SPARK_HOME}/bin/spark-submit --master "local" --class com.vesoft.nebula.exchan
 
 ### 步骤 5：（可选）验证数据
 
-用户可以在 {{nebula.name}} 客户端（例如 NebulaGraph Studio）中执行查询语句，确认数据是否已导入。例如：
+用户可以在 <ProductName_CN /> 客户端（例如 NebulaGraph Studio）中执行查询语句，确认数据是否已导入。例如：
 
 ```ngql
 LOOKUP ON player YIELD id(vertex);

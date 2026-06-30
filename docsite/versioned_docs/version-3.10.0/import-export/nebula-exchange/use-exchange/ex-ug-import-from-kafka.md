@@ -206,7 +206,7 @@ When importing Kafka data, a configuration file can only handle one tag or edge 
       # policy:hash
       }
 
-      # The filtering rule. The data that matches the filter rule is imported into {{nebula.name}}.
+      # The filtering rule. The data that matches the filter rule is imported into <ProductName />.
       # filter: "name='Tom'"
 
       # Batch operation types, including INSERT, UPDATE, and DELETE. defaults to INSERT.
@@ -218,7 +218,7 @@ When importing Kafka data, a configuration file can only handle one tag or edge 
       # The number of data written to NebulaGraph in a single batch.
       batch: 10
 
-      # The number of partitions to be created when the data is written to {{nebula.name}}.
+      # The number of partitions to be created when the data is written to <ProductName />.
       partition: 10
       # The interval for message reading. Unit: second.
       interval.seconds: 10
@@ -300,7 +300,7 @@ When importing Kafka data, a configuration file can only handle one tag or edge 
   #    # The number of data written to NebulaGraph in a single batch.
   #    batch: 10
 
-  #    # The number of partitions to be created when the data is written to {{nebula.name}}.
+  #    # The number of partitions to be created when the data is written to <ProductName />.
   #    partition: 10
 
   #    # The interval for message reading. Unit: second.

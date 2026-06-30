@@ -180,7 +180,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       # policy:hash
       }
 
-      # The filtering rule. The data that matches the filter rule is imported into {{nebula.name}}.
+      # The filtering rule. The data that matches the filter rule is imported into <ProductName />.
       # filter: "name='Tom'"
 
       # Batch operation types, including INSERT, UPDATE, and DELETE. defaults to INSERT.
@@ -192,7 +192,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       # The number of data written to NebulaGraph in a single batch.
       batch: 10
 
-      # The number of partitions to be created when the data is written to {{nebula.name}}.
+      # The number of partitions to be created when the data is written to <ProductName />.
       partition: 10
       # The interval for message reading. Unit: second.
       interval.seconds: 10
@@ -283,7 +283,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       # (Optional) Specify a column as the source of the rank.
       #ranking: rank
 
-      # The filtering rule. The data that matches the filter rule is imported into {{nebula.name}}.
+      # The filtering rule. The data that matches the filter rule is imported into <ProductName />.
       # filter: "name='Tom'"
 
       # Batch operation types, including INSERT, UPDATE, and DELETE. defaults to INSERT.
@@ -292,7 +292,7 @@ After Exchange is compiled, copy the conf file `target/classes/application.conf`
       # The number of data written to NebulaGraph in a single batch.
       batch: 10
 
-      # The number of partitions to be created when the data is written to {{nebula.name}}.
+      # The number of partitions to be created when the data is written to <ProductName />.
       partition: 10
 
       # The interval for message reading. Unit: second.

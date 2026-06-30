@@ -1,13 +1,13 @@
 # NebulaGraph Flink Connector
 
-NebulaGraph Flink Connector 是一款帮助 Flink 用户快速访问{{nebula.name}}的连接器，支持从{{nebula.name}}图数据库中读取数据，或者将其他外部数据源读取的数据写入{{nebula.name}}图数据库。
+NebulaGraph Flink Connector 是一款帮助 Flink 用户快速访问<ProductName_CN />的连接器，支持从<ProductName_CN />图数据库中读取数据，或者将其他外部数据源读取的数据写入<ProductName_CN />图数据库。
 
 ## 适用场景
 
 NebulaGraph Flink Connector 适用于以下场景：
 
-- 读取{{nebula.name}}数据进行分析计算。
-- 分析计算完的数据写入{{nebula.name}}。
+- 读取<ProductName_CN />数据进行分析计算。
+- 分析计算完的数据写入<ProductName_CN />。
 - 迁移数据。
 
 ## 更新说明
@@ -16,9 +16,9 @@ NebulaGraph Flink Connector 适用于以下场景：
 
 ## 版本兼容性
 
-NebulaGraph Flink Connector 和{{nebula.name}}内核版本对应关系如下。
+NebulaGraph Flink Connector 和<ProductName_CN />内核版本对应关系如下。
 
-| Flink Connector 版本 | {{nebula.name}}版本 |
+| Flink Connector 版本 | <ProductName_CN />版本 |
 |:----------|:-----------|
 |     3.0-SNAPSHOT        |  nightly       |
 |       3.8.0             |  3.x.x         |
@@ -71,7 +71,7 @@ NebulaGraph Flink Connector 和{{nebula.name}}内核版本对应关系如下。
 
 ## 使用方法
 
-### 向{{nebula.name}}写入数据
+### 向<ProductName_CN />写入数据
 
 ```java
 StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
@@ -105,7 +105,7 @@ dataStream.addSink(nebulaSinkFunction);
 env.execute("write nebula")
 ```
 
-### 从{{nebula.name}}读取数据
+### 从<ProductName_CN />读取数据
 
 ```java
 NebulaClientOptions nebulaClientOptions = new NebulaClientOptions.NebulaClientOptionsBuilder()
@@ -151,12 +151,12 @@ env.execute("NebulaStreamSource");
 
 ### 参数说明
 
-- `NebulaClientOptions`是连接{{nebula.name}}的配置，说明如下。
+- `NebulaClientOptions`是连接<ProductName_CN />的配置，说明如下。
 
   |参数|类型|是否必须|说明|
   |:---|:---|:---|:---|
-  |`setGraphAddress` |String |是 | {{nebula.name}} Graph 服务地址。 |
-  |`setMetaAddress` | String|是 | {{nebula.name}} Meta 服务地址。 |
+  |`setGraphAddress` |String |是 | <ProductName_CN /> Graph 服务地址。 |
+  |`setMetaAddress` | String|是 | <ProductName_CN /> Meta 服务地址。 |
 
 - `VertexExecutionOptions`是执行点读写的配置，说明如下。
 
@@ -164,10 +164,10 @@ env.execute("NebulaStreamSource");
   |:---|:---|:---|:---|
   |`setGraphSpace` |String |是 | 图空间名称。 |
   |`setTag` |String |是 | Tag 名称。 |
-  |`setIdIndex` |Int |是 | 向{{nebula.name}}写入数据时作为 VID 的流数据字段下标。  |
-  |`setFields`  |List|是 | Tag 的属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。  |
-  |`setPositions` |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入{{nebula.name}}。需要和`setFields`一一对应。  |
-  |`setBatchSize` |String |否 | 每次写入{{nebula.name}}的最大数据记录条数。默认值为`2000`。  |
+  |`setIdIndex` |Int |是 | 向<ProductName_CN />写入数据时作为 VID 的流数据字段下标。  |
+  |`setFields`  |List|是 | Tag 的属性名集合。用于向<ProductName_CN />写入数据或从<ProductName_CN />读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。  |
+  |`setPositions` |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入<ProductName_CN />。需要和`setFields`一一对应。  |
+  |`setBatchSize` |String |否 | 每次写入<ProductName_CN />的最大数据记录条数。默认值为`2000`。  |
   |`setNoColumn` |String |否 | 读取数据时设置为`true`则不会读取属性。默认值为`false`。 |
   |`setLimit`  |String| 否| 读取数据时每次拉取的最大数据记录条数。默认值为`2000`。  |
 
@@ -177,12 +177,12 @@ env.execute("NebulaStreamSource");
   |:---|:---|:---|:---|
   |`setGraphSpace`  |String| 是| 图空间名称。  |
   |`setEdge`  |String |是 | Edge type 名称。 |
-  |`setSrcIndex`  |Int| 是| 向{{nebula.name}}写入数据时作为起始点 VID 的流数据字段下标。 |
-  |`setDstIndex`  |Int| 是| 向{{nebula.name}}写入数据时作为目的点 VID 的流数据字段下标。 |
-  |`setRankIndex` |Int| 是| 向{{nebula.name}}写入数据时作为边的 Rank 的流数据字段下标。 |
-  |`setFields`  |List| 是| Edge type 属性名集合。用于向{{nebula.name}}写入数据或从{{nebula.name}}读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。 |
-  |`setPositions`  |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入{{nebula.name}}。需要和`setFields`一一对应。  |
-  |`setBatchSize`  |String |否 | 每次写入{{nebula.name}}的最大数据记录条数。默认值为`2000`。  |
+  |`setSrcIndex`  |Int| 是| 向<ProductName_CN />写入数据时作为起始点 VID 的流数据字段下标。 |
+  |`setDstIndex`  |Int| 是| 向<ProductName_CN />写入数据时作为目的点 VID 的流数据字段下标。 |
+  |`setRankIndex` |Int| 是| 向<ProductName_CN />写入数据时作为边的 Rank 的流数据字段下标。 |
+  |`setFields`  |List| 是| Edge type 属性名集合。用于向<ProductName_CN />写入数据或从<ProductName_CN />读取数据。<br />读取时需要确保`setNoColumn`为`false`，否则配置无效。<br />读取时本参数为空，表示读取所有属性。 |
+  |`setPositions`  |List |是 | 流数据字段下标的集合。表示将对应的字段值作为属性值写入<ProductName_CN />。需要和`setFields`一一对应。  |
+  |`setBatchSize`  |String |否 | 每次写入<ProductName_CN />的最大数据记录条数。默认值为`2000`。  |
   |`setNoColumn`  |String |否 | 读取数据时设置为`true`则不会读取属性。默认值为`false`。 |
   |`setLimit`  |String| 否| 读取数据时每次拉取的最大数据记录条数。默认值为`2000`。  |
 

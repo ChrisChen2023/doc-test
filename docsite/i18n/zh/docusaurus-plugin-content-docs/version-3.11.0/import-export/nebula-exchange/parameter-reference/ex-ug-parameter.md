@@ -19,7 +19,7 @@ java -cp nebula-exchange_spark_2.4-3.0-SNAPSHOT.jar com.vesoft.exchange.common.G
 
 ## 使用加密密码
 
-用户在配置文件里设置连接 {{nebula.name}} 的密码时，可以使用明文密码，也可以使用 RSA 加密后的密码。
+用户在配置文件里设置连接 <ProductName_CN /> 的密码时，可以使用明文密码，也可以使用 RSA 加密后的密码。
 
 如果需要使用 RSA 加密后的密码，需要在配置文件内进行如下设置：
 
@@ -62,7 +62,7 @@ check: the real password decrypted by private key and encrypted password is: neb
 
 - Hive 配置（可选）
 
-- {{nebula.name}} 相关配置
+- <ProductName_CN /> 相关配置
 
 - 点配置
 
@@ -92,13 +92,13 @@ check: the real password decrypted by private key and encrypted password is: neb
 |`hive.connectionUserName`|list\[string\]|-|是|连接的用户名。|
 |`hive.connectionPassword`|list\[string\]|-|是|用户名对应的密码。|
 
-### {{nebula.name}}相关配置
+### <ProductName_CN />相关配置
 
 |参数|数据类型|默认值|是否必须|说明|
 |:---|:---|:---|:---|:---|
 |`nebula.address.graph`|list\[string\]|`["127.0.0.1:9669"]`|是|所有 Graph 服务的地址，包括 IP 和端口，多个地址用英文逗号（,）分隔。格式为`["ip1:port1","ip2:port2","ip3:port3"]`。|
 |`nebula.address.meta`|list\[string\]|`["127.0.0.1:9559"]`|是|所有 Meta 服务的地址，包括 IP 和端口，多个地址用英文逗号（,）分隔。格式为`["ip1:port1","ip2:port2","ip3:port3"]`。|
-|`nebula.user`|string|-|是|拥有 {{nebula.name}} 写权限的用户名。|
+|`nebula.user`|string|-|是|拥有 <ProductName_CN /> 写权限的用户名。|
 |`nebula.pswd`|string|-|是|用户名对应的密码。密码支持明文或者 RSA 加密后的密码。如果使用 RSA 加密后的密码，需要设置`enableRSA`和`privateKey`。如何加密密码，参见上文**使用加密密码**。|
 |`nebula.enableRSA`|bool|`false`|否|是否使用 RSA 加密的密码。|
 |`nebula.privateKey`|string|-|否|RSA 加密的密钥。|
@@ -125,7 +125,7 @@ check: the real password decrypted by private key and encrypted password is: neb
 
 :::note
 
- {{nebula.name}} 默认不支持无 Tag 的点。如果需要导入无 Tag 的点，需要先在集群内开启[支持无 Tag 点](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md)，然后在 Exchange 的配置文件内新增`nebula.enableTagless`参数，值为`true`。示例如下：
+ <ProductName_CN /> 默认不支持无 Tag 的点。如果需要导入无 Tag 的点，需要先在集群内开启[支持无 Tag 点](../../../3.ngql-guide/12.vertex-statements/1.insert-vertex.md)，然后在 Exchange 的配置文件内新增`nebula.enableTagless`参数，值为`true`。示例如下：
 
 ```bash
 nebula: {
@@ -151,22 +151,22 @@ nebula: {
 
 |参数|数据类型|默认值|是否必须|说明|
 |:---|:---|:---|:---|:---|
-|`tags.name`|string|-|是| {{nebula.name}} 中定义的 Tag 名称。|
+|`tags.name`|string|-|是| <ProductName_CN /> 中定义的 Tag 名称。|
 |`tags.type.source`|string|-|是|指定数据源。例如`csv`。|
 |`tags.type.sink`|string|`client`|是|指定导入方式，可选值为`client`和`SST`。|
 |`tags.writeMode`|string|`INSERT`|否|对数据的批量操作类型，包括批量导入、更新和删除。可选值为`INSERT`、`UPDATE`、`DELETE`。|
 |`tags.deleteEdge`|string|`false`|否|进行批量删除操作时是否删除该点关联的出边和入边。`tags.writeMode`为`DELETE`时该参数生效。|
 |`tags.fields`|list\[string\]|-|是|属性对应的列的表头或列名。如果有表头或列名，请直接使用该名称。如果 CSV 文件没有表头，用`[_c0, _c1, _c2]`的形式表示第一列、第二列、第三列，以此类推。|
-|`tags.nebula.fields`|list\[string\]|-|是| {{nebula.name}} 中定义的属性名称，顺序必须和`tags.fields`一一对应。例如`[_c1, _c2]`对应`[name, age]`，表示第二列为属性 name 的值，第三列为属性 age 的值。|
+|`tags.nebula.fields`|list\[string\]|-|是| <ProductName_CN /> 中定义的属性名称，顺序必须和`tags.fields`一一对应。例如`[_c1, _c2]`对应`[name, age]`，表示第二列为属性 name 的值，第三列为属性 age 的值。|
 |`tags.vertex.field`|string|-|是|点 ID 的列。例如 CSV 文件没有表头时，可以用`_c0`表示第一列的值作为点 ID。|
 |`tags.vertex.udf.separator`|string|-|否|通过自定义规则合并多列，该参数指定连接符。|
 |`tags.vertex.udf.oldColNames`|list|-|否|通过自定义规则合并多列，该参数指定待合并的列名。多个列用英文逗号（,）分隔。|
 |`tags.vertex.udf.newColName`|string|-|否|通过自定义规则合并多列，该参数指定新列的列名。|
 |`tags.vertex.prefix`|string|-|否|为 VID 增加指定的前缀。例如 VID 为`12345`，增加前缀`tag1`后为`tag1_12345`。下划线无法修改。|
 |`tags.vertex.policy`|string|-|否|仅支持取值`hash`。对 string 类型的 VID 进行哈希化操作。|
-|`tags.batch`|int|`256`|是|单批次写入{{nebula.name}}的最大点数量。|
-|`tags.partition`|int|`32`|是|数据写入{{nebula.name}}时需要创建的分区数。如果`tags.partition ≤ 1`，在{{nebula.name}}中创建的分区数和数据源的分区数相同。|
-|`tags.filter`|string|-|否|过滤规则。符合过滤规则的数据会被导入{{nebula.name}}。格式请参见[Dataset](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html#filter(conditionExpr:String):org.apache.spark.sql.Dataset[T])。|
+|`tags.batch`|int|`256`|是|单批次写入<ProductName_CN />的最大点数量。|
+|`tags.partition`|int|`32`|是|数据写入<ProductName_CN />时需要创建的分区数。如果`tags.partition ≤ 1`，在<ProductName_CN />中创建的分区数和数据源的分区数相同。|
+|`tags.filter`|string|-|否|过滤规则。符合过滤规则的数据会被导入<ProductName_CN />。格式请参见[Dataset](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html#filter(conditionExpr:String):org.apache.spark.sql.Dataset[T])。|
 
 
 #### Parquet/JSON/ORC 源特有参数
@@ -282,7 +282,7 @@ nebula: {
 |参数|数据类型|默认值|是否必须|说明|
 |:---|:---|:---|:---|:---|
 |`tags.path`|string|-|是|指定需要生成 SST 文件的源文件的路径。|
-|`tags.repartitionWithNebula`|bool|`true`|否|生成 SST 文件时是否要基于 {{nebula.name}} 中图空间的 partition 进行数据重分区。开启该功能可减少 DOWNLOAD 和 INGEST SST 文件需要的时间。|
+|`tags.repartitionWithNebula`|bool|`true`|否|生成 SST 文件时是否要基于 <ProductName_CN /> 中图空间的 partition 进行数据重分区。开启该功能可减少 DOWNLOAD 和 INGEST SST 文件需要的时间。|
 
 ### 边配置
 
@@ -294,12 +294,12 @@ nebula: {
 
 |参数|数据类型|默认值|是否必须|说明|
 |:---|:---|:---|:---|:---|
-|`edges.name`| string|-|是| {{nebula.name}} 中定义的 Edge type 名称。|
+|`edges.name`| string|-|是| <ProductName_CN /> 中定义的 Edge type 名称。|
 |`edges.type.source`|string|-|是|指定数据源。例如`csv`。|
 |`edges.type.sink`|string|`client`|是|指定导入方式，可选值为`client`和`SST`。|
 |`edges.writeMode`|string|`INSERT`|否|对数据的批量操作类型，包括批量导入、更新和删除。可选值为`INSERT`、`UPDATE`、`DELETE`。|
 |`edges.fields`|list\[string\]|-|是|属性对应的列的表头或列名。如果有表头或列名，请直接使用该名称。如果 CSV 文件没有表头，用`[_c0, _c1, _c2]`的形式表示第一列、第二列、第三列，以此类推。|
-|`edges.nebula.fields`|list\[string\]|-|是| {{nebula.name}} 中定义的属性名称，顺序必须和`edges.fields`一一对应。例如`[_c2, _c3]`对应`[start_year, end_year]`，表示第三列为开始年份的值，第四列为结束年份的值。|
+|`edges.nebula.fields`|list\[string\]|-|是| <ProductName_CN /> 中定义的属性名称，顺序必须和`edges.fields`一一对应。例如`[_c2, _c3]`对应`[start_year, end_year]`，表示第三列为开始年份的值，第四列为结束年份的值。|
 |`edges.source.field`|string|-|是|边的起始点的列。例如`_c0`表示第一列的值作为边的起始点。|
 |`edges.source.prefix`|string|-|否|为 VID 增加指定的前缀。例如 VID 为`12345`，增加前缀`tag1`后为`tag1_12345`。下划线无法修改。|
 |`edges.source.policy`|string|-|否|仅支持取值`hash`。对 string 类型的 VID 进行哈希化操作。|
@@ -307,9 +307,9 @@ nebula: {
 |`edges.target.prefix`|string|-|否|为 VID 增加指定的前缀。例如 VID 为`12345`，增加前缀`tag1`后为`tag1_12345`。下划线无法修改。|
 |`edges.target.policy`|string|-|否|仅支持取值`hash`。对 string 类型的 VID 进行哈希化操作。|
 |`edges.ranking`|int|-|否|rank 值的列。没有指定时，默认所有 rank 值为`0`。|
-|`edges.batch`|int|`256`|是|单批次写入{{nebula.name}}的最大边数量。|
-|`edges.partition`|int|`32`|是|数据写入{{nebula.name}}时需要创建的分区数。如果`edges.partition ≤ 1`，在{{nebula.name}}中创建的分区数和数据源的分区数相同。|
-|`edges.filter`|string|-|否|过滤规则。符合过滤规则的数据会被导入{{nebula.name}}。格式请参见[Dataset](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html#filter(conditionExpr:String):org.apache.spark.sql.Dataset[T])。|
+|`edges.batch`|int|`256`|是|单批次写入<ProductName_CN />的最大边数量。|
+|`edges.partition`|int|`32`|是|数据写入<ProductName_CN />时需要创建的分区数。如果`edges.partition ≤ 1`，在<ProductName_CN />中创建的分区数和数据源的分区数相同。|
+|`edges.filter`|string|-|否|过滤规则。符合过滤规则的数据会被导入<ProductName_CN />。格式请参见[Dataset](https://spark.apache.org/docs/latest/api/scala/org/apache/spark/sql/Dataset.html#filter(conditionExpr:String):org.apache.spark.sql.Dataset[T])。|
 
 
 #### 生成 SST 时的特有参数
@@ -317,4 +317,4 @@ nebula: {
 |参数|数据类型|默认值|是否必须|说明|
 |:---|:---|:---|:---|:---|
 |`edges.path`|string|-|是|指定需要生成 SST 文件的源文件的路径。|
-|`edges.repartitionWithNebula`|bool|`true`|否|生成 SST 文件时是否要基于 {{nebula.name}} 中图空间的 partition 进行数据重分区。开启该功能可减少 DOWNLOAD 和 INGEST SST 文件需要的时间。|
+|`edges.repartitionWithNebula`|bool|`true`|否|生成 SST 文件时是否要基于 <ProductName_CN /> 中图空间的 partition 进行数据重分区。开启该功能可减少 DOWNLOAD 和 INGEST SST 文件需要的时间。|
