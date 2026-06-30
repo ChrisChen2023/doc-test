@@ -15,8 +15,8 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/assets/css/styles.a0e6dd53.css">
-<script src="/doc-test/assets/js/runtime~main.efed0140.js" defer="defer"></script>
-<script src="/doc-test/assets/js/main.4211635c.js" defer="defer"></script>
+<script src="/doc-test/assets/js/runtime~main.fb9dfb89.js" defer="defer"></script>
+<script src="/doc-test/assets/js/main.982b2b4e.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -214,7 +214,7 @@ Users must upgrade <a class="" href="/doc-test/3.12.0/appendix/eco-tool-version"
 <p>You can use <a class="" href="/doc-test/3.12.0/graph-computing/nebula-algorithm">NebulaGraph Algorithm</a>.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-operation-and-maintenance">About operation and maintenance<a href="#about-operation-and-maintenance" class="hash-link" aria-label="Direct link to About operation and maintenance" title="Direct link to About operation and maintenance" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-runtime-log-files-are-too-large-how-to-recycle-the-logs">&quot;The runtime log files are too large. How to recycle the logs?&quot;<a href="#the-runtime-log-files-are-too-large-how-to-recycle-the-logs" class="hash-link" aria-label="Direct link to &quot;The runtime log files are too large. How to recycle the logs?&quot;" title="Direct link to &quot;The runtime log files are too large. How to recycle the logs?&quot;" translate="no">​</a></h3>
-<p>NebulaGraph uses <a href="https://github.com/google/glog" target="_blank" rel="noopener noreferrer" class="">glog</a> for log printing, which does not support log recycling. You can manage runtime logs by using cron jobs or the log management tool <a href="https://man7.org/linux/man-pages/man8/logrotate.8.html" target="_blank" rel="noopener noreferrer" class="">logrotate</a>. For operational details, see <a class="" href="/doc-test/3.12.0/configurations-and-logs/log-management/logs">Log recycling</a>.</p>
+<p><span>NebulaGraph Database</span> uses <a href="https://github.com/google/glog" target="_blank" rel="noopener noreferrer" class="">glog</a> for log printing, which does not support log recycling. You can manage runtime logs by using cron jobs or the log management tool <a href="https://man7.org/linux/man-pages/man8/logrotate.8.html" target="_blank" rel="noopener noreferrer" class="">logrotate</a>. For operational details, see <a class="" href="/doc-test/3.12.0/configurations-and-logs/log-management/logs">Log recycling</a>.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="how-to-check-the-nebulagraph-version">&quot;How to check the NebulaGraph version?&quot;<a href="#how-to-check-the-nebulagraph-version" class="hash-link" aria-label="Direct link to &quot;How to check the NebulaGraph version?&quot;" title="Direct link to &quot;How to check the NebulaGraph version?&quot;" translate="no">​</a></h3>
 <p>If the service is running: run command <code>SHOW HOSTS META</code> in <code>nebula-console</code>. See <a class="" href="/doc-test/3.12.0/ngql-guide/general-query-statements/show/show-hosts">SHOW HOSTS</a>.</p>
 <p>If the service is not running:</p>

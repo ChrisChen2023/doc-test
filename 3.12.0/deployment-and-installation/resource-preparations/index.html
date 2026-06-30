@@ -15,8 +15,8 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/assets/css/styles.a0e6dd53.css">
-<script src="/doc-test/assets/js/runtime~main.efed0140.js" defer="defer"></script>
-<script src="/doc-test/assets/js/main.4211635c.js" defer="defer"></script>
+<script src="/doc-test/assets/js/runtime~main.fb9dfb89.js" defer="defer"></script>
+<script src="/doc-test/assets/js/main.982b2b4e.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -34,7 +34,7 @@
 <p>Do not use remote storage devices, such as NAS or SAN. Do not connect an external virtual hard disk based on HDFS or Ceph.</p>
 </li>
 <li class="">
-<p>RAID is not recommended because NebulaGraph provides a multi-replica mechanism. Configuring RAID would result in a waste of resources.</p>
+<p>RAID is not recommended because <span>NebulaGraph Database</span> provides a multi-replica mechanism. Configuring RAID would result in a waste of resources.</p>
 </li>
 <li class="">
 <p>Use local SSD devices, or AWS Provisioned IOPS SSD equivalence.</p>
@@ -42,7 +42,7 @@
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="about-cpu-architecture">About CPU architecture<a href="#about-cpu-architecture" class="hash-link" aria-label="Direct link to About CPU architecture" title="Direct link to About CPU architecture" translate="no">​</a></h2>
 <p>Starting with 3.0.2, you can run containerized NebulaGraph databases on Docker Desktop for ARM macOS or on ARM Linux servers.</p>
-<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>We do not recommend you deploy NebulaGraph on Docker Desktop for Windows due to its subpar performance. For details, see <a href="https://github.com/docker/for-win/issues/12401" target="_blank" rel="noopener noreferrer" class="">#12401</a>.</p></div></div>
+<div class="theme-admonition theme-admonition-caution admonition_xJq3 alert alert--warning"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"></path></svg></span>caution</div><div class="admonitionContent_BuS1"><p>We do not recommend you deploy <span>NebulaGraph Database</span> on Docker Desktop for Windows due to its subpar performance. For details, see <a href="https://github.com/docker/for-win/issues/12401" target="_blank" rel="noopener noreferrer" class="">#12401</a>.</p></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="requirements-for-compiling-the-source-code">Requirements for compiling the source code<a href="#requirements-for-compiling-the-source-code" class="hash-link" aria-label="Direct link to Requirements for compiling the source code" title="Direct link to Requirements for compiling the source code" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="hardware-requirements-for-compiling-nebulagraph">Hardware requirements for compiling NebulaGraph<a href="#hardware-requirements-for-compiling-nebulagraph" class="hash-link" aria-label="Direct link to Hardware requirements for compiling NebulaGraph" title="Direct link to Hardware requirements for compiling NebulaGraph" translate="no">​</a></h3>
 <table><thead><tr><th>Item</th><th>Requirement</th></tr></thead><tbody><tr><td>CPU architecture</td><td>x86_64</td></tr><tr><td>Memory</td><td>4 GB</td></tr><tr><td>Disk</td><td>10 GB, SSD</td></tr></tbody></table>

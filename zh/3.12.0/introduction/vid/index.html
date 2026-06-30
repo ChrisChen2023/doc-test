@@ -15,8 +15,8 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/zh/assets/css/styles.a0e6dd53.css">
-<script src="/doc-test/zh/assets/js/runtime~main.17aeaca6.js" defer="defer"></script>
-<script src="/doc-test/zh/assets/js/main.5abdd552.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/runtime~main.704df29a.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/main.d985e8be.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -56,7 +56,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="vid-使用建议">VID 使用建议<a href="#vid-使用建议" class="hash-link" aria-label="VID 使用建议的直接链接" title="VID 使用建议的直接链接" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p>NebulaGraph 1.x 只支持 VID 类型为<code>INT64</code>，从 2.x 开始支持<code>INT64</code>和<code>FIXED_STRING(&lt;N&gt;)</code>。在<code>CREATE SPACE</code>中通过参数<code>vid_type</code>可以指定 VID 类型。</p>
+<p><span>悦数图数据库</span> 1.x 只支持 VID 类型为<code>INT64</code>，从 2.x 开始支持<code>INT64</code>和<code>FIXED_STRING(&lt;N&gt;)</code>。在<code>CREATE SPACE</code>中通过参数<code>vid_type</code>可以指定 VID 类型。</p>
 </li>
 <li class="">
 <p>可以使用<code>id()</code>函数，指定或引用该点的 VID。</p>
@@ -91,7 +91,7 @@
 <p>VID 的数据类型必须在<a class="" href="/doc-test/zh/3.12.0/ngql-guide/space-statements/create-space">创建图空间</a>时定义，且一旦定义无法修改。</p>
 <p>VID 必须在<a class="" href="/doc-test/zh/3.12.0/ngql-guide/vertex-statements/insert-vertex">插入点</a>时设置，且一旦设置无法修改。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="查询起始点start-vid-与全局扫描">&quot;查询起始点&quot;(<code>start vid</code>) 与全局扫描<a href="#查询起始点start-vid-与全局扫描" class="hash-link" aria-label="查询起始点start-vid-与全局扫描的直接链接" title="查询起始点start-vid-与全局扫描的直接链接" translate="no">​</a></h2>
-<p>绝大多数情况下，NebulaGraph 的查询语句（<code>MATCH</code>、<code>GO</code>、<code>LOOKUP</code>）的执行计划，必须要通过一定方式找到查询起始点的 VID（<code>start vid</code>）。</p>
+<p>绝大多数情况下，<span>悦数图数据库</span> 的查询语句（<code>MATCH</code>、<code>GO</code>、<code>LOOKUP</code>）的执行计划，必须要通过一定方式找到查询起始点的 VID（<code>start vid</code>）。</p>
 <p>定位 <code>start vid</code> 只有两种方式：</p>
 <ol>
 <li class="">

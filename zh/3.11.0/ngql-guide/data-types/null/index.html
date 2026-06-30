@@ -15,8 +15,8 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/zh/assets/css/styles.a0e6dd53.css">
-<script src="/doc-test/zh/assets/js/runtime~main.17aeaca6.js" defer="defer"></script>
-<script src="/doc-test/zh/assets/js/main.5abdd552.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/runtime~main.704df29a.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/main.d985e8be.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -28,11 +28,11 @@
 <p><code>AND</code>、<code>OR</code>、<code>XOR</code>和<code>NOT</code>的真值表如下。</p>
 <table><thead><tr><th>a</th><th>b</th><th>a AND b</th><th>a OR b</th><th>a XOR b</th><th>NOT a</th></tr></thead><tbody><tr><td>false</td><td>false</td><td>false</td><td>false</td><td>false</td><td>true</td></tr><tr><td>false</td><td>null</td><td>false</td><td>null</td><td>null</td><td>true</td></tr><tr><td>false</td><td>true</td><td>false</td><td>true</td><td>true</td><td>true</td></tr><tr><td>true</td><td>false</td><td>false</td><td>true</td><td>true</td><td>false</td></tr><tr><td>true</td><td>null</td><td>null</td><td>true</td><td>null</td><td>false</td></tr><tr><td>true</td><td>true</td><td>true</td><td>true</td><td>false</td><td>false</td></tr><tr><td>null</td><td>false</td><td>false</td><td>null</td><td>null</td><td>null</td></tr><tr><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td><td>null</td></tr><tr><td>null</td><td>true</td><td>null</td><td>true</td><td>null</td><td>null</td></tr></tbody></table>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="opencypher-兼容性">OpenCypher 兼容性<a href="#opencypher-兼容性" class="hash-link" aria-label="OpenCypher 兼容性的直接链接" title="OpenCypher 兼容性的直接链接" translate="no">​</a></h2>
-<p>NebulaGraph 中，NULL 的比较和操作与 openCypher 不同，后续也可能会有变化。</p>
+<p><span>悦数图数据库</span> 中，NULL 的比较和操作与 openCypher 不同，后续也可能会有变化。</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="null-的比较">NULL 的比较<a href="#null-的比较" class="hash-link" aria-label="NULL 的比较的直接链接" title="NULL 的比较的直接链接" translate="no">​</a></h3>
-<p>NebulaGraph 中，NULL 的比较操作不兼容 openCypher。</p>
+<p><span>悦数图数据库</span> 中，NULL 的比较操作不兼容 openCypher。</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="null-的操作和返回">NULL 的操作和返回<a href="#null-的操作和返回" class="hash-link" aria-label="NULL 的操作和返回的直接链接" title="NULL 的操作和返回的直接链接" translate="no">​</a></h3>
-<p>NebulaGraph 中，对 NULL 的操作以及返回结果不兼容 openCypher。</p>
+<p><span>悦数图数据库</span> 中，对 NULL 的操作以及返回结果不兼容 openCypher。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="示例">示例<a href="#示例" class="hash-link" aria-label="示例的直接链接" title="示例的直接链接" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="使用-not-null">使用 NOT NULL<a href="#使用-not-null" class="hash-link" aria-label="使用 NOT NULL的直接链接" title="使用 NOT NULL的直接链接" translate="no">​</a></h3>
 <p>创建 Tag，名称为<code>player</code>，指定属性<code>name</code>为<code>NOT NULL</code>。</p>

@@ -15,8 +15,8 @@
 
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css"><link rel="stylesheet" href="/doc-test/zh/assets/css/styles.a0e6dd53.css">
-<script src="/doc-test/zh/assets/js/runtime~main.17aeaca6.js" defer="defer"></script>
-<script src="/doc-test/zh/assets/js/main.5abdd552.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/runtime~main.704df29a.js" defer="defer"></script>
+<script src="/doc-test/zh/assets/js/main.d985e8be.js" defer="defer"></script>
 </head>
 <body>
 <svg style="display: none;"><defs>
@@ -27,7 +27,7 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="注意事项">注意事项<a href="#注意事项" class="hash-link" aria-label="注意事项的直接链接" title="注意事项的直接链接" translate="no">​</a></h2>
 <ul>
 <li class="">
-<p>在插入时间类型的属性值时，NebulaGraph 会根据<a class="" href="/doc-test/zh/3.12.0/configurations-and-logs/configurations/">配置文件</a>中<code>timezone_name</code>参数指定的时区，将该<code>DATE</code>、<code>TIME</code>、<code>DATETIME</code>转换成相应的世界协调时间（UTC）时间。</p>
+<p>在插入时间类型的属性值时，<span>悦数图数据库</span> 会根据<a class="" href="/doc-test/zh/3.12.0/configurations-and-logs/configurations/">配置文件</a>中<code>timezone_name</code>参数指定的时区，将该<code>DATE</code>、<code>TIME</code>、<code>DATETIME</code>转换成相应的世界协调时间（UTC）时间。</p>
 <div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>备注</div><div class="admonitionContent_BuS1"><p>如需修改当前时区，请同时修改所有服务的配置文件中的<code>timezone_name</code>参数。</p></div></div>
 </li>
 </ul>
@@ -65,14 +65,14 @@
 </li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="date">DATE<a href="#date" class="hash-link" aria-label="DATE的直接链接" title="DATE的直接链接" translate="no">​</a></h2>
-<p><code>DATE</code>包含日期，但是不包含时间。 NebulaGraph 检索和显示<code>DATE</code>的格式为<code>YYYY-MM-DD</code>。支持的范围是<code>-32768-01-01</code>到<code>32767-12-31</code>。</p>
+<p><code>DATE</code>包含日期，但是不包含时间。 <span>悦数图数据库</span> 检索和显示<code>DATE</code>的格式为<code>YYYY-MM-DD</code>。支持的范围是<code>-32768-01-01</code>到<code>32767-12-31</code>。</p>
 <p><code>date()</code>支持的属性名称包括<code>year</code>、<code>month</code>和<code>day</code>。<code>date()</code>支持输入<code>YYYY</code>、<code>YYYY-MM</code>或<code>YYYY-MM-DD</code>，未输入的月份或日期默认为<code>01</code>。</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; RETURN DATE({year:-123, month:12, day:3});</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| date({year:-(123),month:12,day:3}) |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| -123-12-03                         |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; RETURN DATE(&quot;23333&quot;);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| date(&quot;23333&quot;) |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| 23333-01-01   |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+---------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain" style="display:inline-block"></span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">nebula&gt; RETURN DATE(&quot;2023-12-12&quot;) - DATE(&quot;2023-12-11&quot;);</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-----------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| (date(&quot;2023-12-12&quot;)-date(&quot;2023-12-11&quot;)) |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-----------------------------------------+</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">| 1                                       |</span><br></div><div class="token-line" style="color:#393A34"><span class="token plain">+-----------------------------------------+</span><br></div></code></pre></div></div>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="time">TIME<a href="#time" class="hash-link" aria-label="TIME的直接链接" title="TIME的直接链接" translate="no">​</a></h2>
-<p><code>TIME</code>包含时间，但是不包含日期。 NebulaGraph 检索和显示<code>TIME</code>的格式为<code>hh:mm:ss.msmsmsususus</code>。支持的范围是<code>00:00:00.000000</code>到<code>23:59:59.999999</code>。</p>
+<p><code>TIME</code>包含时间，但是不包含日期。 <span>悦数图数据库</span> 检索和显示<code>TIME</code>的格式为<code>hh:mm:ss.msmsmsususus</code>。支持的范围是<code>00:00:00.000000</code>到<code>23:59:59.999999</code>。</p>
 <p><code>time()</code>支持的属性名称包括<code>hour</code>、<code>minute</code>和<code>second</code>。</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="datetime">DATETIME<a href="#datetime" class="hash-link" aria-label="DATETIME的直接链接" title="DATETIME的直接链接" translate="no">​</a></h2>
-<p><code>DATETIME</code>包含日期和时间。 NebulaGraph 检索和显示<code>DATETIME</code>的格式为<code>YYYY-MM-DDThh:mm:ss.msmsmsususus</code>。支持的范围是<code>-32768-01-01T00:00:00.000000</code>到<code>32767-12-31T23:59:59.999999</code>。</p>
+<p><code>DATETIME</code>包含日期和时间。 <span>悦数图数据库</span> 检索和显示<code>DATETIME</code>的格式为<code>YYYY-MM-DDThh:mm:ss.msmsmsususus</code>。支持的范围是<code>-32768-01-01T00:00:00.000000</code>到<code>32767-12-31T23:59:59.999999</code>。</p>
 <ul>
 <li class="">
 <p><code>datetime()</code>支持的属性名称包括<code>year</code>、<code>month</code>、<code>day</code>、<code>hour</code>、<code>minute</code>和<code>second</code>。</p>
