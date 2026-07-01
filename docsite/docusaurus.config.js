@@ -168,12 +168,13 @@ const config = {
     },
     
     [
-      '@cmfcmf/docusaurus-search-local',
-      {
-        language: ["en", "zh"], // 支持中英文双语分词与搜索
-        indexDocs: true,        // 开启文档检索
-        indexBlog: false,       // 关闭博客检索（配合你的设置）
-      },
+     'docusaurus-plugin-search-local', // 👈 统一成你安装的这个包名
+     {
+      hashed: true, // 开启哈希缓存，提升二次加载速度
+      language: ["en", "zh"], // 完美支持中英文双语搜索
+      indexDocs: true,
+      indexBlog: false,
+     },
     ],
 
   ],
