@@ -168,13 +168,14 @@ const config = {
     },
     
     [
-     'docusaurus-plugin-search-local', // 👈 统一成你安装的这个包名
-     {
-      hashed: true, // 开启哈希缓存，提升二次加载速度
-      language: ["en", "zh"], // 完美支持中英文双语搜索
-      indexDocs: true,
-      indexBlog: false,
-     },
+      '@easyops-cn/docusaurus-search-local', 
+      {
+        hashed: true,
+        language: ["en", "zh"],
+        indexDocs: true,
+        indexBlog: false,
+        docsRouteBasePath: '/', 
+      },
     ],
 
   ],
