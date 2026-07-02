@@ -5,6 +5,8 @@ import fs from 'fs';
 import path from 'path';
 
 const isProd = process.env.NODE_ENV === 'production';
+// 判断当前是否在 Cloudflare Pages 的构建环境
+const isCfPages = process.env.CF_PAGES === '1';
 
 // ==================== 1. NebulaGraph 全量组件宏矩阵定义 ====================
 const mkdocsMacros = {
@@ -55,8 +57,8 @@ const config = {
   title: 'NebulaGraph Database Manual',
   tagline: 'Documentation for NebulaGraph Database',
   favicon: 'https://docs-cdn.nebula-graph.com.cn/figures/favicon.ico',
-  url: 'https://chrischen2023.github.io',
-  baseUrl: '/doc-test/',
+  url: isCfPages ? 'https://doc-test.pages.dev' : 'https://chrischen2023.github.io',
+  baseUrl: isCfPages ? '/' : '/doc-test/',
 
   organizationName: 'ChrisChen2023',
   projectName: 'doc-test',
