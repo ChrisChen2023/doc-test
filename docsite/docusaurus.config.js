@@ -60,6 +60,7 @@ const config = {
   title: 'NebulaGraph Database Manual',
   tagline: 'Documentation for NebulaGraph Database',
   favicon: 'https://docs-cdn.nebula-graph.com.cn/figures/favicon.ico',
+  url: 'https://chrischen2023.github.io',
   baseUrl: isRootDeployment ? '/' : '/doc-test/',
 
   organizationName: 'ChrisChen2023',
